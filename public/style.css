@@ -287,3 +287,75 @@ button.ghost { background: none; border: 1px solid var(--border); color: var(--t
 .rchip .rday { font-weight: 650; font-variant-numeric: tabular-nums; text-align: right; }
 .rchip .r5, .rchip .rtime { font-size: 11.5px; color: var(--text-2); font-variant-numeric: tabular-nums; }
 .rchip .rtime { text-align: right; }
+
+/* ---------- 코치 ---------- */
+.mood { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.mood-main { display: flex; gap: 12px; align-items: flex-start; }
+.mood-icon { font-size: 28px; line-height: 1; }
+.mood-main b { font-size: 13px; color: var(--text-2); }
+.mood-main p { margin: 2px 0 0; font-size: 15.5px; font-weight: 600; }
+.mood-main p .flat { font-weight: 400; font-size: 13px; }
+.nudge { font-size: 14px; border-radius: 8px; padding: 8px 12px; }
+.nudge.ok { background: color-mix(in srgb, var(--sup) 12%, var(--surface)); }
+.nudge.warn { background: var(--warn-bg); color: var(--warn-text); }
+.nudge.stop { background: color-mix(in srgb, var(--up) 15%, var(--surface)); font-weight: 600; }
+
+.sec-h { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 24px 0 10px; flex-wrap: wrap; }
+.sec-h h3 { margin: 0; font-size: 17px; }
+.sec-h .note { margin: 0; }
+
+.picks { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 10px; }
+.pick { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.pick.empty { grid-column: 1 / -1; font-size: 14.5px; color: var(--text-2); }
+.pick-h { display: flex; align-items: center; gap: 10px; }
+.rank { width: 26px; height: 26px; border-radius: 50%; background: var(--text); color: var(--surface); display: grid; place-items: center; font-weight: 700; font-size: 13px; flex: 0 0 auto; }
+.pick-name { flex: 1; min-width: 0; }
+.pick-name b { font-size: 18px; }
+.pick-name small { color: var(--muted); margin-left: 6px; }
+.pick-now { font-size: 14px; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.pick-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+.pick-grid div:first-child { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; align-items: baseline; }
+.pick-grid div:first-child b { font-size: 15px; }
+.pick-grid div { background: var(--surface-2); border-radius: 8px; padding: 6px 8px; display: flex; flex-direction: column; min-width: 0; }
+.pick-grid span { font-size: 11.5px; color: var(--text-2); }
+.pick-grid b { font-size: 13.5px; font-variant-numeric: tabular-nums; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pick-grid em { font-style: normal; font-size: 11px; color: var(--muted); }
+.pick-coach { margin: 0; font-size: 14px; line-height: 1.5; }
+.pick-btns { display: flex; gap: 6px; justify-content: flex-end; }
+.ghostbtn { font: inherit; font-size: 13.5px; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; min-height: 36px; cursor: pointer; }
+.ghostbtn.strong { border-color: var(--text); font-weight: 600; }
+.linkbtn { font: inherit; font-size: 12.5px; background: none; border: 0; color: var(--text-2); text-decoration: underline; cursor: pointer; padding: 4px; }
+.small { font-size: 12px; }
+
+.pos { background: var(--surface); border: 1px solid var(--border); border-left-width: 4px; border-radius: var(--radius); padding: 12px 14px; margin-bottom: 8px; }
+.pos.st-stop { border-left-color: var(--up); } .pos.st-warn { border-left-color: #d9a100; } .pos.st-goal, .pos.st-up { border-left-color: var(--sup); } .pos.st-ok { border-left-color: var(--muted); } .pos.st-idle { border-left-color: var(--border); }
+.pos-h { display: flex; justify-content: space-between; gap: 10px; }
+.pos-h b { font-size: 17px; }
+.pos-h small { color: var(--muted); }
+.pos-r { text-align: right; font-size: 18px; font-weight: 700; font-variant-numeric: tabular-nums; display: flex; flex-direction: column; }
+.pos-r small { font-size: 12.5px; font-weight: 500; }
+.pos-st { font-size: 14px; margin: 8px 0; line-height: 1.5; }
+.pbar { position: relative; height: 22px; margin: 4px 6px 0; }
+.pbar-track { position: absolute; left: 0; right: 0; top: 9px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, var(--up), var(--border) 45%, var(--sup)); opacity: .7; }
+.pbar i { position: absolute; top: 3px; width: 2px; height: 16px; transform: translateX(-1px); }
+.pbar-buy { background: var(--text-2); }
+.pbar-cur { background: var(--text); width: 12px !important; height: 12px !important; top: 5px !important; border-radius: 50%; transform: translateX(-6px) !important; box-shadow: 0 0 0 2px var(--surface); }
+.pbar-lbl { display: flex; justify-content: space-between; font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.pos-f { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 8px; font-size: 13px; color: var(--text-2); font-variant-numeric: tabular-nums; }
+
+.jconnect { margin-top: 16px; background: var(--surface); border: 1px dashed var(--border); border-radius: var(--radius); padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 14px; }
+.jconnect p { margin: 4px 0 0; }
+.jc-row { display: flex; gap: 8px; }
+.jc-row input, dialog input, dialog select { font: inherit; font-size: 15px; background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; min-height: 40px; width: 100%; }
+.jc-row input { width: 200px; }
+
+dialog { border: 1px solid var(--border); border-radius: 14px; background: var(--surface); color: var(--text); padding: 18px; width: min(440px, calc(100vw - 32px)); }
+dialog::backdrop { background: rgb(0 0 0 / .45); }
+dialog h3 { margin: 0 0 12px; }
+dialog form { display: flex; flex-direction: column; gap: 10px; }
+dialog label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--text-2); }
+.frow { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.preview { font-size: 13.5px; line-height: 1.6; background: var(--surface-2); border-radius: 8px; padding: 8px 10px; }
+.preview:empty { display: none; }
+.dlg-btns { display: flex; justify-content: flex-end; gap: 8px; margin-top: 4px; }
+

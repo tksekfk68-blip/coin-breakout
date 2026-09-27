@@ -23,7 +23,8 @@
   </header>
 
   <nav class="tabs" role="tablist">
-    <button role="tab" class="tab active" data-tab="screen" aria-selected="true">지금 상태</button>
+    <button role="tab" class="tab active" data-tab="coach" aria-selected="true">🧭 코치</button>
+    <button role="tab" class="tab" data-tab="screen" aria-selected="false">지금 상태</button>
     <button role="tab" class="tab" data-tab="backtest" aria-selected="false">백테스트</button>
     <button role="tab" class="tab" data-tab="track" aria-selected="false">실전 성적표</button>
     <button role="tab" class="tab" data-tab="guide" aria-selected="false">설명</button>
@@ -31,7 +32,60 @@
 
   <main>
     <!-- 오늘의 신호 -->
-    <section id="tab-screen" class="panel active">
+    <!-- 코치 -->
+    <section id="tab-coach" class="panel active">
+      <div id="coachMood" class="mood"></div>
+
+      <div class="sec-h"><h3>오늘의 후보</h3><span class="note small">규칙상 괜찮은 자리 최대 3개 · 결정은 내가</span></div>
+      <div id="picks" class="picks"><p class="note">데이터 불러오는 중…</p></div>
+
+      <div class="sec-h"><h3>내 포지션</h3><button type="button" class="ghostbtn strong" data-coach="add">+ 매수 기록</button></div>
+      <div id="positions"></div>
+
+      <div class="sec-h"><h3>매매 일지</h3></div>
+      <div id="jStats" class="tiles"></div>
+      <div class="tablewrap"><table id="jHistory" class="grid"></table></div>
+      <div id="jConnect" class="jconnect"></div>
+
+      <dialog id="buyDlg">
+        <form id="buyForm" method="dialog">
+          <h3>매수 기록</h3>
+          <label>코인<input name="coin" list="coinOptions" required placeholder="예: BTC" autocomplete="off" /></label>
+          <div class="frow">
+            <label>매수가<input name="price" type="number" step="any" required /></label>
+            <label>금액(원, 선택)<input name="amount" type="number" step="any" placeholder="예: 300000" /></label>
+          </div>
+          <div class="frow">
+            <label>손절가<input name="stop" type="number" step="any" /></label>
+            <label>목표가<input name="target" type="number" step="any" /></label>
+          </div>
+          <label>근거
+            <select name="reason">
+              <option>눌림목</option><option>돌파</option><option>지지 반등</option><option>급등 추격</option><option>기타</option>
+            </select>
+          </label>
+          <label>메모<input name="memo" placeholder="왜 샀는지 한 줄" /></label>
+          <div id="buyPreview" class="preview"></div>
+          <div class="dlg-btns"><button type="button" class="ghostbtn" data-close>취소</button><button type="submit" class="primary">기록</button></div>
+        </form>
+      </dialog>
+
+      <dialog id="sellDlg">
+        <form id="sellForm" method="dialog">
+          <h3 id="sellTitle">매도 기록</h3>
+          <input type="hidden" name="id" />
+          <label>매도가<input name="price" type="number" step="any" required /></label>
+          <label>이유
+            <select name="why"><option>목표 도달</option><option>손절</option><option>계획 변경</option><option>기타</option></select>
+          </label>
+          <label>메모<input name="memo" placeholder="배운 점 한 줄" /></label>
+          <div class="dlg-btns"><button type="button" class="ghostbtn" data-close>취소</button><button type="submit" class="primary">기록</button></div>
+        </form>
+      </dialog>
+    </section>
+
+    <!-- 지금 상태 -->
+    <section id="tab-screen" class="panel">
       <div class="radar">
         <div class="radar-h">
           <h2>🚀 급등 레이더</h2>

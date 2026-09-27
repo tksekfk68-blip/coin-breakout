@@ -3,6 +3,7 @@ import {
   signalIndexes, splitClosed, todayKST,
 } from './lib/strategy.js';
 import { TONES, classify } from './lib/analysis.js';
+import { initCoach, renderCoach } from './coach.js';
 
 const UNIVERSE = 30;
 const $ = (s, r = document) => r.querySelector(s);
@@ -14,6 +15,7 @@ const state = {
   tickers: {},     // 실시간 시세
   data: {},        // market -> candles (마감 + 오늘 진행)
   order: [],
+  allKRW: [],
   selected: null,
 };
 
@@ -43,6 +45,7 @@ document.querySelectorAll('.tab').forEach((b) => b.addEventListener('click', () 
   document.querySelectorAll('.tab').forEach((x) => { x.classList.toggle('active', x === b); x.setAttribute('aria-selected', x === b); });
   document.querySelectorAll('.panel').forEach((p) => p.classList.toggle('active', p.id === `tab-${b.dataset.tab}`));
   if (b.dataset.tab === 'track') loadTrack();
+  if (b.dataset.tab === 'coach') renderCoach();
   if (b.dataset.tab === 'backtest' && !btDone) runBacktest();
 }));
 
@@ -96,6 +99,7 @@ async function loadAll() {
     const first = state.order.find((m) => ['breakout', 'pullback'].includes(cache[m]?.state)) || state.order[0];
     if (first) select(first);
     connectLive(state.allKRW);
+    renderCoach();
   } catch (e) {
     load.textContent = `데이터를 불러오지 못했어요: ${e.message}. 잠시 후 새로고침 해보세요.`;
   }
@@ -107,6 +111,7 @@ let filter = 'all';
 const cache = {}; // market -> classify 결과
 
 function info(m) {
+  if (!state.data[m]) return null;
   const r = classify(state.data[m], state.params);
   if (r) cache[m] = r;
   return r;
@@ -318,6 +323,7 @@ setInterval(() => {
   dirty = false;
   renderScreen();
 }, 2000);
+setInterval(() => { if ($('#tab-coach').classList.contains('active') && state.order.length) renderCoach(); }, 3000);
 
 // ---------- 🚀 급등 레이더 ----------
 const SURGE = {
@@ -524,4 +530,5 @@ async function loadTrack() {
 // 화면의 조건 숫자 채우기
 document.querySelectorAll('[data-p]').forEach((el) => { el.textContent = state.params[el.dataset.p]; });
 
+initCoach({ state, cache, fmtPrice, pct, pctPlain, sym, openCoin, info, todayKST });
 loadAll();
