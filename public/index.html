@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>코인 돌파 레이더</title>
+  <meta name="description" content="업비트 원화마켓 추세 돌파 신호 스크리너와 백테스트" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23e34948'/><path d='M7 22l6-6 4 4 8-9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.2.3/dist/lightweight-charts.standalone.production.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <h1>코인 돌파 레이더</h1>
+      <p class="sub">업비트 원화마켓 거래대금 상위 <span id="universeN">30</span>개 · 일봉 기준</p>
+    </div>
+    <div class="status">
+      <span id="liveDot" class="dot" aria-hidden="true"></span>
+      <span id="liveText">연결 중…</span>
+      <button id="themeBtn" class="ghost" type="button" aria-label="화면 테마 바꾸기">테마</button>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" class="tab active" data-tab="screen" aria-selected="true">오늘의 신호</button>
+    <button role="tab" class="tab" data-tab="backtest" aria-selected="false">백테스트</button>
+    <button role="tab" class="tab" data-tab="track" aria-selected="false">실전 성적표</button>
+    <button role="tab" class="tab" data-tab="guide" aria-selected="false">설명</button>
+  </nav>
+
+  <main>
+    <!-- 오늘의 신호 -->
+    <section id="tab-screen" class="panel active">
+      <div class="rule">
+        <strong>신호 조건</strong> (세 가지 모두 충족):
+        <span class="chip">① 종가가 최근 <b data-p="breakoutDays">20</b>일 최고가 돌파</span>
+        <span class="chip">② <b data-p="maFast">20</b>일선 &gt; <b data-p="maSlow">60</b>일선</span>
+        <span class="chip">③ 거래대금이 평소의 <b data-p="volMult">2</b>배 이상</span>
+      </div>
+      <div id="loadState" class="note">데이터를 불러오는 중…</div>
+      <div class="split">
+        <div class="tablewrap">
+          <table id="screenTable" class="grid">
+            <thead>
+              <tr>
+                <th>코인</th>
+                <th class="num">현재가</th>
+                <th class="num col-chg">24h</th>
+                <th title="어제 마감 캔들 기준">어제 마감</th>
+                <th title="지금 가격 기준, 거래량은 아직 집계 중">오늘 진행</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <aside class="chartbox">
+          <div class="charthead">
+            <h2 id="chartTitle">코인을 선택하세요</h2>
+            <div class="legend">
+              <span><i class="sw up"></i>양봉</span>
+              <span><i class="sw down"></i>음봉</span>
+              <span><i class="ln fast"></i><span data-p="maFast">20</span>일선</span>
+              <span><i class="ln slow"></i><span data-p="maSlow">60</span>일선</span>
+              <span>▲ 신호</span>
+            </div>
+          </div>
+          <div id="chart" class="chart"></div>
+          <div id="chartInfo" class="note small"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 백테스트 -->
+    <section id="tab-backtest" class="panel">
+      <form id="btForm" class="controls">
+        <label>기간
+          <select name="periodDays">
+            <option value="30">최근 30일</option>
+            <option value="60" selected>최근 60일</option>
+            <option value="90">최근 90일</option>
+            <option value="130">최근 130일</option>
+          </select>
+        </label>
+        <label>채점 시점
+          <select name="horizon">
+            <option value="3">3일 뒤</option>
+            <option value="7" selected>7일 뒤</option>
+            <option value="14">14일 뒤</option>
+          </select>
+        </label>
+        <label>돌파 기준
+          <select name="breakoutDays">
+            <option value="10">10일 최고가</option>
+            <option value="20" selected>20일 최고가</option>
+            <option value="40">40일 최고가</option>
+          </select>
+        </label>
+        <label>거래량 배수
+          <select name="volMult">
+            <option value="1.5">1.5배</option>
+            <option value="2" selected>2배</option>
+            <option value="3">3배</option>
+            <option value="5">5배</option>
+          </select>
+        </label>
+        <label>손절
+          <select name="stopLoss">
+            <option value="0" selected>안 함</option>
+            <option value="5">-5%</option>
+            <option value="7">-7%</option>
+            <option value="10">-10%</option>
+          </select>
+        </label>
+        <button type="submit" class="primary">다시 계산</button>
+      </form>
+
+      <div id="btWarn" class="warn" hidden></div>
+      <div id="btTiles" class="tiles"></div>
+      <div id="btCompare" class="compare"></div>
+
+      <h3>채점 시점별 성적</h3>
+      <div class="tablewrap"><table id="btHorizon" class="grid"></table></div>
+
+      <h3>신호 목록</h3>
+      <p class="note small">신호일 종가에 샀다고 가정. 빨강은 수익, 파랑은 손실.</p>
+      <div class="tablewrap"><table id="btTrades" class="grid"></table></div>
+    </section>
+
+    <!-- 실전 성적표 -->
+    <section id="tab-track" class="panel">
+      <p class="note">매일 오전 9시 5분에 그날의 신호를 자동으로 저장하고, 이후 가격으로 채점합니다. 백테스트와 달리 <b>미리 기록해 둔 뒤 결과를 보는 것</b>이라 가장 정직한 성적표예요.</p>
+      <div id="trackTiles" class="tiles"></div>
+      <div class="tablewrap"><table id="trackTable" class="grid"></table></div>
+    </section>
+
+    <!-- 설명 -->
+    <section id="tab-guide" class="panel prose">
+      <h2>이 화면 읽는 법</h2>
+      <p><b>추세 돌파</b>는 "오래 눌려 있던 천장을 거래량과 함께 뚫고 올라가는 순간"을 잡는 전략이에요. 댐이 넘치는 순간 물이 쏟아지는 것과 비슷하게, 저항선을 뚫으면 한동안 탄력이 붙는다는 가정입니다.</p>
+      <ul>
+        <li><b>어제 마감</b>: 확정된 어제 캔들로 판정. 조건 3개가 모두 켜지면 신호.</li>
+        <li><b>오늘 진행</b>: 지금 가격으로 돌파 여부를 실시간으로 봅니다. 거래량은 하루가 끝나야 확정돼서, 진행 중엔 참고만 하세요.</li>
+        <li><b>적중률</b>: 신호 후 정해진 날짜에 수익이었던 비율. 추세 돌파는 적중률보다 <b>이길 때 크게, 질 때 작게</b>가 핵심이에요.</li>
+        <li><b>아무 날이나 샀을 때</b>: 같은 기간 같은 코인들을 무작위로 샀다면 어땠을지. 신호가 이것보다 나아야 의미가 있어요. 상승장에서는 뭘 사도 오르기 때문에 이 비교가 꼭 필요해요.</li>
+        <li><b>신호 수</b>가 30개 미만이면 결과가 우연일 가능성이 커요.</li>
+      </ul>
+      <p class="warn">투자 권유가 아닙니다. 과거 성적이 미래 수익을 보장하지 않으며, 코인은 변동성이 매우 큽니다.</p>
+    </section>
+  </main>
+
+  <footer class="foot">데이터: 업비트 공개 시세 · 신호는 일봉 마감(오전 9시) 기준 · 투자 판단의 책임은 본인에게 있습니다</footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
