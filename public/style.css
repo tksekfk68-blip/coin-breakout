@@ -389,3 +389,14 @@ dialog label { display: flex; flex-direction: column; gap: 4px; font-size: 13px;
 .ck2.on { background: color-mix(in srgb, var(--sup) 16%, var(--surface)); color: var(--text); text-decoration: none; }
 
 .late-note { grid-column: 1 / -1; font-size: 13.5px; color: var(--text-2); background: var(--surface-2); border-radius: 8px; padding: 10px 12px; line-height: 1.5; }
+
+/* ---------- 실제 데이터 검증 ---------- */
+.rs-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px; margin: 10px 0; }
+.rs-col { background: var(--surface-2); border-radius: 10px; padding: 12px; }
+.rs-col h4 { margin: 0 0 8px; font-size: 14px; }
+.rs-col p { margin: 6px 0 0; line-height: 1.5; }
+.rs-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.rs-grid div { background: var(--surface); border-radius: 8px; padding: 6px 8px; display: flex; flex-direction: column; }
+.rs-grid span { font-size: 11.5px; color: var(--text-2); }
+.rs-grid b { font-size: 16px; font-variant-numeric: tabular-nums; }
+code { background: var(--surface-2); border-radius: 4px; padding: 1px 5px; font-size: 12.5px; }

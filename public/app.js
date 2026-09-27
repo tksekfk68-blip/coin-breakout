@@ -100,6 +100,7 @@ async function loadAll() {
     const first = state.order.find((m) => ['breakout', 'pullback'].includes(cache[m]?.state)) || state.order[0];
     if (first) select(first);
     connectLive(state.allKRW);
+    await loadResearch();
     buildPro();
     renderCoach();
   } catch (e) {
@@ -433,7 +434,56 @@ let btDone = false;
 const DEFAULT_PRO = { minScore: 7, tATR: 2, sATR: 1.5, maxHold: 14, needMarket: true };
 function proMode() { try { return localStorage.getItem('proMode') || 'win'; } catch { return 'win'; } }
 
-function buildPro(mode = proMode(), days = 130) {
+// ---------- 📊 실제 데이터 검증 (GitHub에서 매일 생성) ----------
+async function loadResearch() {
+  try {
+    const res = await fetch('/research/report.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error(res.status);
+    state.research = await res.json();
+  } catch { state.research = null; }
+  renderResearch();
+}
+
+function renderResearch() {
+  const box = $('#researchBox');
+  const R = state.research;
+  if (!R) { box.innerHTML = '<p class="note">아직 실제 데이터 검증 결과가 없어요.</p>'; return; }
+  const f2 = (x) => (x == null ? '-' : x.toFixed(2));
+  const mult = (x) => (x == null ? '-' : `${x >= 1 ? '+' : ''}${((x - 1) * 100).toFixed(0)}%`);
+  const col = (mode, title) => {
+    const M = R.modes[mode];
+    if (!M) return '';
+    const o = M.oos, real = M.real1pct3, nl = M.foldsNoLast;
+    return `<div class="rs-col">
+      <h4>${title}</h4>
+      <div class="rs-grid">
+        <div><span>승률</span><b>${pw(o.win)}</b></div>
+        <div><span>평균</span><b>${o.avgR >= 0 ? '+' : ''}${f2(o.avgR)}R</b></div>
+        <div><span>손익비(PF)</span><b>${f2(o.pf)}</b></div>
+        <div><span>거래</span><b>${o.n}회</b></div>
+      </div>
+      ${real ? `<p class="small">💰 현실 시뮬(1회 위험 1%, 동시 3개까지): 자산 <b>${mult(real.final)}</b> · 최대 낙폭 <b class="down">${(real.mdd * 100).toFixed(0)}%</b></p>` : ''}
+      ${nl && nl.n ? `<p class="small">마지막 상승장 구간을 빼면: 승률 ${pw(nl.win)} · 평균 ${nl.avgR >= 0 ? '+' : ''}${f2(nl.avgR)}R (${nl.n}회)</p>` : ''}
+      <p class="small flat">지금 조합: ${proWords(M.latest?.p || DEFAULT_PRO)}</p>
+    </div>`;
+  };
+  const M = R.modes.win;
+  const folds = M.folds.map((f) => `<tr><td>${f.testFrom.slice(2)}~${f.testTo.slice(5)}</td><td class="num">${f.btcRet == null ? '-' : pct(f.btcRet, 0)}</td>
+    ${['win', 'profit'].map((k) => { const x = R.modes[k].folds.find((y) => y.testFrom === f.testFrom); return x && x.test ? `<td class="num">${x.test.n}회 · ${pw(x.test.win)} · ${x.test.avgR >= 0 ? '+' : ''}${f2(x.test.avgR)}R</td>` : '<td class="num flat">쉼</td>'; }).join('')}</tr>`).join('');
+  const nlBad = ['win', 'profit'].every((k) => !(R.modes[k].foldsNoLast?.avgR > 0));
+  box.innerHTML = `
+    <div class="sec-h" style="margin-top:0"><h3>📊 실제 데이터 검증</h3><span class="note small">업비트 ${R.coins}개 코인 · ${R.from} ~ ${R.to} · 수수료+호가차이 포함 · 매일 09:40 갱신 (${new Date(R.generatedAt).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })})</span></div>
+    <p class="note small">150일로 조합을 고르고 <b>처음 보는 다음 50일</b>에 시험하는 걸 반복한 결과예요. 과거에 끼워 맞춘 성적이 아니라 "그때 이 방법을 썼으면" 성적이에요.</p>
+    <div class="rs-cols">${col('win', '승률 우선')}${col('profit', '수익 우선')}</div>
+    <div class="tablewrap"><table class="grid"><thead><tr><th>시험 구간</th><th class="num">BTC 등락</th><th class="num">승률 우선</th><th class="num">수익 우선</th></tr></thead><tbody>${folds}</tbody></table></div>
+    <div class="verdict">${nlBad ? '⚠️ <b>솔직한 결론:</b> 이 전략은 <b>상승장에서 돈을 벌고, 하락장에선 잃어요.</b> 최근 상승장 구간을 빼면 본전 근처예요. 비트코인이 꺾이면 비중을 확 줄이는 게 핵심이에요.' : '✅ 여러 구간에서 고르게 플러스였어요. 그래도 과거 성적이니 작게 시작하세요.'}</div>
+    <p class="note small">비교: 같은 코인을 아무 날이나 사서 14일 들고 있었으면 승률 ${pw(R.baseline14.win)}, 평균 ${pct(R.baseline14.avgRet)}. 이 기간 비트코인 ${pct(R.btc.to / R.btc.from - 1, 0)}.</p>
+    <details class="checkbox-detail"><summary>트레이딩뷰로 직접 검산하기</summary>
+      <p class="small">같은 규칙을 트레이딩뷰 전략 코드로 만들어 뒀어요. <a href="/tradingview/kkanbu.pine" target="_blank">kkanbu.pine</a>을 열어 전체 복사 → 트레이딩뷰 Pine 편집기에 붙여넣기 → 차트에 추가 → 일봉 <code>UPBIT:코인KRW</code> 차트에서 "전략 테스터" 탭을 보세요. 설정값을 위의 '지금 조합'과 맞추면 돼요.</p>
+    </details>`;
+}
+
+function buildPro(mode = proMode(), days = 130, forceLocal = false) {
   const btc = state.data['KRW-BTC'] ? splitClosed(state.data['KRW-BTC']).closed : null;
   const preps = {};
   for (const m of state.order) {
@@ -441,11 +491,13 @@ function buildPro(mode = proMode(), days = 130) {
     if (closed.length >= 80) preps[m] = prepare(closed, btc);
   }
   const o = optimize(preps, { mode, days });
+  const RM = !forceLocal && state.research?.modes?.[mode];
   state.pro = {
     mode, days, preps, range: o.range, ranked: o.ranked,
-    params: o.best ? o.best.p : DEFAULT_PRO,
+    params: RM?.latest?.p || (o.best ? o.best.p : DEFAULT_PRO),
     ins: o.best ? o.best.ins : null,
-    out: o.best ? o.best.out : null,
+    out: RM ? RM.oos : o.best ? o.best.out : null,
+    verified: !!RM,
     fallback: !o.best,
   };
   renderPro();
@@ -492,7 +544,7 @@ $('#proForm').addEventListener('submit', (e) => {
   const f = new FormData(e.target);
   const mode = f.get('mode');
   try { localStorage.setItem('proMode', mode); } catch {}
-  buildPro(mode, Number(f.get('days')));
+  buildPro(mode, Number(f.get('days')), true);
   renderCoach();
 });
 try { const m = localStorage.getItem('proMode'); if (m) $('#proForm [name=mode]').value = m; } catch {}

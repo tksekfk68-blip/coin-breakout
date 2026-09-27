@@ -187,9 +187,14 @@ function renderPicks() {
     .sort((a, b) => (a.s.wild - b.s.wild) || (ORDER[a.s.kind] - ORDER[b.s.kind]) || (b.s.score - a.s.score))
     .slice(0, 3);
   const lateHtml = late.length ? `<div class="late-note">🏃 이미 지나간 자리: ${late.map((x) => `<b>${C.sym(x.m)}</b> (신호 뒤 ${C.pctPlain(x.s.lateBy)})`).join(', ')} — 지금 따라 사면 손익비가 안 맞아. 다음 눌림을 기다리자.</div>` : '';
-  const stat = P.out && P.out.n >= 8 ? P.out : P.ins;
+  const stat = P.verified ? P.out : P.out && P.out.n >= 8 ? P.out : P.ins;
   const modeTxt = P.mode === 'win' ? '승률 우선 (목표 짧게·손절 넓게 → 자주 이기지만 한 번 질 때 커)' : '수익 우선 (자주 지지만 이길 때 크게)';
-  $('#picksNote').innerHTML = stat ? `${modeTxt} · 과거 승률 <b>${Math.round(stat.win * 100)}%</b> · 평균 ${stat.avgR >= 0 ? '+' : ''}${stat.avgR.toFixed(2)}R (${stat.n}회)` : modeTxt;
+  $('#picksNote').innerHTML = stat ? `${modeTxt} · ${P.verified ? '실제 데이터 검증' : '과거'} 승률 <b>${Math.round(stat.win * 100)}%</b> · 평균 ${stat.avgR >= 0 ? '+' : ''}${stat.avgR.toFixed(2)}R (${stat.n}회${P.verified ? ', 수수료 포함' : ''})` : modeTxt;
+  const paused = Object.keys(P.preps).some((m) => C.state.proSetup(m)?.paused);
+  if (!list.length && paused) {
+    box.innerHTML = `<div class="pick empty">🧊 비트코인이 EMA50 아래라 <b>우리 규칙상 쉬는 구간</b>이야. 하락장에서 잃은 게 이 전략의 약점이었거든. 현금 지키면서 기다리자.</div>${lateHtml}`;
+    return;
+  }
   if (!list.length) {
     box.innerHTML = `<div class="pick empty">오늘은 들어갈 만한 자리가 없어. <b>안 사는 것도 실력</b>이야. 내일 9시에 새로 계산해 볼게.</div>${lateHtml}`;
     return;

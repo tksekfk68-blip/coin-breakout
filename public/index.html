@@ -143,9 +143,10 @@
 
     <!-- 백테스트 -->
     <section id="tab-backtest" class="panel">
+      <div id="researchBox" class="pro-box"><p class="note">실제 데이터 검증 결과 불러오는 중…</p></div>
       <div class="pro-box">
-        <div class="sec-h" style="margin-top:0"><h3>🏆 프로 전략 자동 최적화</h3><span class="note small">EMA·ADX·MACD·RSI·OBV·BTC 대비 강도·시장 필터 + ATR 손절/목표</span></div>
-        <p class="note small">여러 조합을 업비트 실제 데이터로 돌려서, <b>앞 기간(60%)에서 제일 좋은 조합을 고르고 뒤 기간(40%)에서 검증</b>해요. 코치 탭의 후보는 여기서 고른 조합으로 뽑아요.</p>
+        <div class="sec-h" style="margin-top:0"><h3>🏆 직접 최적화 (상위 30개 · 200일)</h3><span class="note small">EMA·ADX·MACD·RSI·OBV·BTC 대비 강도·시장 필터 + ATR 손절/목표</span></div>
+        <p class="note small">여러 조합을 업비트 실제 데이터로 돌려서, <b>앞 기간(60%)에서 제일 좋은 조합을 고르고 뒤 기간(40%)에서 검증</b>해요. 깐부 탭 후보는 기본적으로 위의 실제 검증 조합을 쓰고, 여기서 실행하면 이 조합으로 바뀌어요.</p>
         <form id="proForm" class="controls">
           <label>목표
             <select name="mode"><option value="win">승률 우선</option><option value="profit">수익(기대값) 우선</option></select>
