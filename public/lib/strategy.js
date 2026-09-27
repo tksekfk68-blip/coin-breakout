@@ -5,6 +5,7 @@
 //   { t: 'YYYY-MM-DD', o, h, l, c, v }   v = 하루 거래대금(원)
 
 export const DEFAULT_PARAMS = {
+  strategy: 'breakout', // 'breakout' 추세 돌파 | 'pullback' 눌림목
   breakoutDays: 20,   // 최근 N일 최고가를 넘으면 "돌파"
   maFast: 20,         // 단기 이동평균
   maSlow: 60,         // 장기 이동평균
@@ -106,8 +107,12 @@ export function evaluate(candles, p = DEFAULT_PARAMS) {
   });
 }
 
-/** 신호가 뜬 날짜 인덱스 목록 (쿨다운 적용) */
+/**
+ * 신호가 뜬 날짜 인덱스 목록 (쿨다운 적용)
+ * p.strategy: 'breakout'(추세 돌파, 기본) | 'pullback'(눌림목)
+ */
 export function signalIndexes(candles, p = DEFAULT_PARAMS) {
+  if (p.strategy === 'pullback') return pullbackIndexes(candles, p);
   const ev = evaluate(candles, p);
   const out = [];
   let last = -Infinity;
@@ -118,6 +123,94 @@ export function signalIndexes(candles, p = DEFAULT_PARAMS) {
     }
   });
   return { ev, idx: out };
+}
+
+// ---------- 눌림목 ----------
+
+export const PULLBACK = {
+  lookback: 12,     // 최근 N일 안에 거래량 동반 돌파가 있었어야 함
+  minDrop: 0.03,    // 고점 대비 최소 3% 조정
+  maxDrop: 0.18,    // 18% 넘게 빠지면 눌림이 아니라 붕괴로 봄
+  near: 0.03,       // 지지선(20일선/옛 저항) ±3% 안
+  volDry: 0.6,      // 최근 3일 거래대금이 돌파 때의 60% 미만
+};
+
+/**
+ * 날짜별 눌림목 상태.
+ * 반환 배열 원소: null 또는 { stage: 'setup'|'bounce', support, supportKind, drop, breakoutIdx }
+ *   setup  = 조건은 갖췄고 반등 확인 전 (지켜보기)
+ *   bounce = 지지선에서 양봉으로 반등 (신호)
+ */
+export function pullbackStates(candles, p = DEFAULT_PARAMS, q = PULLBACK) {
+  const ev = evaluate(candles, p);
+  const c = candles.map((x) => x.c);
+  const h = candles.map((x) => x.h);
+  const l = candles.map((x) => x.l);
+  const v = candles.map((x) => x.v);
+  const maF = sma(c, p.maFast);
+
+  return candles.map((cd, i) => {
+    const e = ev[i];
+    if (!e || i < 6) return null;
+    // 추세: 20일선 > 60일선, 20일선이 오르는 중
+    if (!(e.trend && maF[i] > maF[i - 5])) return null;
+    // 최근에 거래량 동반 돌파가 있었나
+    let j = -1;
+    for (let k = i - 2; k >= i - q.lookback && k >= 0; k--) {
+      if (ev[k] && ev[k].breakout && ev[k].volume) { j = k; break; }
+    }
+    if (j < 0) return null;
+    const high = maxRange(h, j, i);
+    const drop = 1 - c[i] / high;
+    if (drop < q.minDrop || drop > q.maxDrop) return null;
+    // 지지선 근처: 옛 저항(돌파했던 가격) 또는 20일선
+    const oldRes = ev[j].prevHigh;
+    const nearOld = l[i] <= oldRes * (1 + q.near) && c[i] >= oldRes * (1 - q.near);
+    const nearMa = l[i] <= maF[i] * (1 + q.near) && c[i] >= maF[i] * (1 - q.near);
+    if (!nearOld && !nearMa) return null;
+    // 거래량이 말라야 함 (팔자는 힘이 약해짐)
+    const recent = avgRange(v, Math.max(j + 1, i - 2), i + 1);
+    const burst = avgRange(v, j, Math.min(j + 3, i));
+    if (!(recent < burst * q.volDry)) return null;
+    const support = nearOld ? oldRes : maF[i];
+    return {
+      stage: cd.c > cd.o ? 'bounce' : 'setup',
+      support,
+      supportKind: nearOld ? '돌파했던 가격' : `${p.maFast}일선`,
+      drop,
+      breakoutIdx: j,
+    };
+  });
+}
+
+function pullbackIndexes(candles, p) {
+  const ev = evaluate(candles, p);
+  const st = pullbackStates(candles, p);
+  const out = [];
+  let last = -Infinity;
+  st.forEach((s, i) => {
+    if (s && s.stage === 'bounce' && i - last > p.cooldown) { out.push(i); last = i; }
+  });
+  return { ev, idx: out, states: st };
+}
+
+// ---------- RSI ----------
+export function rsi(values, n = 14) {
+  const out = new Array(values.length).fill(null);
+  let g = 0, lo = 0;
+  for (let i = 1; i < values.length; i++) {
+    const d = values[i] - values[i - 1];
+    const up = Math.max(d, 0), dn = Math.max(-d, 0);
+    if (i <= n) {
+      g += up; lo += dn;
+      if (i === n) { g /= n; lo /= n; out[i] = lo === 0 ? 100 : 100 - 100 / (1 + g / lo); }
+    } else {
+      g = (g * (n - 1) + up) / n;
+      lo = (lo * (n - 1) + dn) / n;
+      out[i] = lo === 0 ? 100 : 100 - 100 / (1 + g / lo);
+    }
+  }
+  return out;
 }
 
 // ---------- 신호 1개 채점 ----------

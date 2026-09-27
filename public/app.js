@@ -1,7 +1,8 @@
 import {
   DEFAULT_PARAMS, HORIZONS, STABLES, backtest, evaluate, normalizeUpbitCandles,
-  screenMarket, signalIndexes, splitClosed, todayKST,
+  signalIndexes, splitClosed, todayKST,
 } from './lib/strategy.js';
+import { TONES, classify } from './lib/analysis.js';
 
 const UNIVERSE = 30;
 const $ = (s, r = document) => r.querySelector(s);
@@ -86,7 +87,7 @@ async function loadAll() {
     load.textContent = '';
     load.hidden = true;
     renderScreen();
-    const first = state.order.find((m) => rowInfo(m)?.hasSignal) || state.order[0];
+    const first = state.order.find((m) => ['breakout', 'pullback'].includes(cache[m]?.state)) || state.order[0];
     if (first) select(first);
     connectLive(state.order);
   } catch (e) {
@@ -94,58 +95,99 @@ async function loadAll() {
   }
 }
 
-// ---------- 오늘의 신호 ----------
-function rowInfo(m) {
-  const s = screenMarket(state.data[m], state.params, 3);
-  if (!s) return null;
-  const yesterday = s.lastEv;
-  const liveBreak = s.live && s.live.breakout && s.live.trend;
-  return { s, yesterday, liveBreak, hasSignal: s.confirmed.length > 0 };
+// ---------- 지금 상태 ----------
+const ORDER = ['breakout', 'pullback', 'pullwait', 'near', 'hot', 'neutral', 'down'];
+let filter = 'all';
+const cache = {}; // market -> classify 결과
+
+function info(m) {
+  const r = classify(state.data[m], state.params);
+  if (r) cache[m] = r;
+  return r;
 }
 
-function checks(e) {
-  if (!e) return '<span class="flat">-</span>';
-  const c = (on, n, title) => `<span class="ck ${on ? 'on' : ''}" title="${title}">${n}</span>`;
-  return `<span class="checks">${c(e.breakout, '①', '돌파')}${c(e.trend, '②', '추세')}${c(e.volume, '③', '거래량 ' + e.volRatio.toFixed(1) + '배')}</span>`;
+function pill(r, big = false) {
+  return `<span class="pill t-${r.state} ${big ? 'big' : ''}">${r.icon} ${r.label}</span>`;
 }
 
-function renderScreen() {
-  const rows = state.order.map((m) => ({ m, info: rowInfo(m) })).filter((r) => r.info);
-  rows.sort((a, b) =>
-    (b.info.hasSignal - a.info.hasSignal) ||
-    (b.info.liveBreak - a.info.liveBreak) ||
-    ((state.tickers[b.m]?.acc_trade_price_24h || 0) - (state.tickers[a.m]?.acc_trade_price_24h || 0)));
-  const tb = $('#screenTable tbody');
-  tb.innerHTML = rows.map(({ m, info }) => {
-    const t = state.tickers[m] || {};
-    const sig = info.s.confirmed.at(-1);
-    const sigBadge = sig ? `<span class="badge sig" title="${sig.date} 신호">신호 ${sig.date.slice(5).replace('-', '/')}</span>` : '';
-    const live = info.s.live;
-    const liveCell = !live ? '<span class="flat">-</span>'
-      : `${checks(live)}${info.liveBreak ? '<span class="badge live">돌파 중</span>' : ''}`;
-    return `<tr class="row ${state.selected === m ? 'sel' : ''}" data-m="${m}">
-      <td class="coin"><b>${sym(m)}</b><small>${state.names[m] || ''}</small></td>
-      <td class="num" data-f="price">${fmtPrice(t.trade_price)}</td>
-      <td class="num col-chg" data-f="chg">${pct(t.signed_change_rate, 2)}</td>
-      <td>${checks(info.yesterday)}${sigBadge}</td>
-      <td data-f="live">${liveCell}</td>
-    </tr>`;
-  }).join('');
+function renderFilters(list) {
+  const cnt = { all: list.length };
+  list.forEach(({ r }) => { cnt[r.state] = (cnt[r.state] || 0) + 1; });
+  const items = [['all', '전체'], ...ORDER.map((k) => [k, `${TONES[k].icon} ${TONES[k].label}`])]
+    .filter(([k]) => k === 'all' || cnt[k]);
+  $('#filters').innerHTML = items.map(([k, label]) =>
+    `<button type="button" class="fchip ${filter === k ? 'on' : ''}" data-f="${k}">${label} <b>${cnt[k] || 0}</b></button>`).join('');
 }
-$('#screenTable tbody').addEventListener('click', (e) => {
-  const tr = e.target.closest('tr[data-m]');
-  if (tr) select(tr.dataset.m);
+$('#filters').addEventListener('click', (e) => {
+  const b = e.target.closest('[data-f]');
+  if (!b) return;
+  filter = b.dataset.f;
+  renderScreen();
 });
 
-function select(m) {
+function renderScreen() {
+  const list = state.order.map((m) => ({ m, r: info(m) })).filter((x) => x.r);
+  list.sort((a, b) => (ORDER.indexOf(a.r.state) - ORDER.indexOf(b.r.state)) ||
+    ((state.tickers[b.m]?.acc_trade_price_24h || 0) - (state.tickers[a.m]?.acc_trade_price_24h || 0)));
+  renderFilters(list);
+  const shown = filter === 'all' ? list : list.filter((x) => x.r.state === filter);
+  $('#coinList').innerHTML = shown.map(({ m, r }) => {
+    const t = state.tickers[m] || {};
+    return `<button type="button" class="coin-row ${state.selected === m ? 'sel' : ''}" data-m="${m}">
+      <span class="c-name"><b>${sym(m)}</b><small>${state.names[m] || ''}</small></span>
+      <span class="c-state">${pill(r)}${r.action ? `<em>${r.action}</em>` : ''}</span>
+      <span class="c-price"><b>${fmtPrice(t.trade_price ?? r.price)}</b>${pct(t.signed_change_rate, 2)}</span>
+      <span class="c-reason">${r.reason}</span>
+    </button>`;
+  }).join('') || '<p class="note">해당하는 코인이 없어요.</p>';
+  if (state.selected) renderDetail(state.selected, false);
+}
+$('#coinList').addEventListener('click', (e) => {
+  const b = e.target.closest('[data-m]');
+  if (b) select(b.dataset.m, true);
+});
+
+function select(m, scroll = false) {
   state.selected = m;
-  document.querySelectorAll('#screenTable tr[data-m]').forEach((r) => r.classList.toggle('sel', r.dataset.m === m));
-  drawChart(m);
+  document.querySelectorAll('.coin-row').forEach((r) => r.classList.toggle('sel', r.dataset.m === m));
+  renderDetail(m, true);
+  if (scroll && matchMedia('(max-width: 900px)').matches) $('#detail').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function renderDetail(m, redraw) {
+  const r = cache[m] || info(m);
+  if (!r) return;
+  const t = state.tickers[m] || {};
+  const p = state.params;
+  $('#dTitle').innerHTML = `${sym(m)} <small>${state.names[m] || ''}</small>`;
+  $('#dPrice').innerHTML = `${fmtPrice(t.trade_price ?? r.price)}원 ${pct(t.signed_change_rate, 2)}`;
+  $('#dPill').innerHTML = `${pill(r, true)}<div class="dact">${r.action}</div>`;
+  $('#dReason').textContent = r.reason;
+
+  const gap = (x) => (x ? pctPlain(x / r.price - 1) : '');
+  const cell = (k, v, s = '', cls = '') => `<div class="lv ${cls}"><div class="k">${k}</div><div class="v">${v}</div><div class="s">${s}</div></div>`;
+  const res = r.resistances[0], sup = r.supports[0];
+  $('#dLevels').innerHTML = [
+    cell('위 저항', res ? fmtPrice(res.price) : '없음', res ? `${gap(res.price)} · ${res.touches}번 막힘` : '신고가 구간', 'res'),
+    cell('아래 지지', sup ? fmtPrice(sup.price) : '-', sup ? `${gap(sup.price)} · ${sup.touches}번 받침` : '', 'sup'),
+    cell('손절 기준', r.stop ? fmtPrice(r.stop) : '-', r.stop ? `${gap(r.stop)}` : '진입 자리 아님', 'stop'),
+    cell('RSI', r.rsi == null ? '-' : r.rsi.toFixed(0), r.rsi > 70 ? '과열권' : r.rsi < 30 ? '침체권' : '보통'),
+  ].join('');
+
+  const c = r.checks;
+  const yes = (b) => (b ? '✅' : '⬜');
+  $('#dChecks').innerHTML = `
+    <div>${yes(c.breakout)} 어제 종가가 직전 ${p.breakoutDays}일 최고가(${fmtPrice(c.prevHigh)}) 위</div>
+    <div>${yes(c.trend)} ${p.maFast}일선(${fmtPrice(c.maF)}) &gt; ${p.maSlow}일선(${fmtPrice(c.maS)})</div>
+    <div>${yes(c.volume)} 어제 거래대금 평소의 ${c.volRatio.toFixed(1)}배 (기준 ${p.volMult}배)</div>
+    <div>20일선 대비 ${pctPlain(r.ext)}${r.stopWhy ? ` · 손절 근거: ${r.stopWhy}` : ''}</div>
+    <div>저항 후보: ${r.resistances.map((x) => fmtPrice(x.price)).join(', ') || '없음'} · 지지 후보: ${r.supports.map((x) => fmtPrice(x.price)).join(', ') || '없음'}</div>`;
+  if (redraw) drawChart(m, r);
 }
 
 // ---------- 차트 ----------
 let chart = null;
-function drawChart(m) {
+function drawChart(m, r = cache[m]) {
   const box = $('#chart');
   if (!window.LightweightCharts) { box.textContent = '차트 라이브러리를 불러오지 못했어요.'; return; }
   if (chart) { chart.remove(); chart = null; }
@@ -179,17 +221,23 @@ function drawChart(m) {
   chart.priceScale('vol').applyOptions({ scaleMargins: { top: 0.82, bottom: 0 } });
   vol.setData(candles.map((c) => ({ time: c.t, value: c.v, color: (c.c >= c.o ? up : down) + '55' })));
 
-  const { closed } = splitClosed(candles);
-  const { idx } = signalIndexes(closed, p);
-  cs.setMarkers(idx.map((i) => ({ time: closed[i].t, position: 'belowBar', color: css('--text'), shape: 'arrowUp', text: '신호' })));
-  chart.timeScale().setVisibleLogicalRange({ from: candles.length - 100, to: candles.length + 2 });
+  // 지지 / 저항 / 손절 선
+  if (r) {
+    r.resistances.slice(0, 2).forEach((x, k) => cs.createPriceLine({ price: x.price, color: css('--res'), lineWidth: k ? 1 : 2, lineStyle: 2, axisLabelVisible: true, title: k ? '' : '저항' }));
+    r.supports.slice(0, 2).forEach((x, k) => cs.createPriceLine({ price: x.price, color: css('--sup'), lineWidth: k ? 1 : 2, lineStyle: 2, axisLabelVisible: true, title: k ? '' : '지지' }));
+    if (r.stop) cs.createPriceLine({ price: r.stop, color: css('--muted'), lineWidth: 1, lineStyle: 1, axisLabelVisible: true, title: '손절' });
+  }
 
-  $('#chartTitle').textContent = `${sym(m)} ${state.names[m] || ''}`;
-  const info = rowInfo(m);
-  const last = info?.yesterday;
-  $('#chartInfo').innerHTML = last
-    ? `어제 기준 · 직전 ${p.breakoutDays}일 최고가 ${fmtPrice(last.prevHigh)} · 거래대금 평소의 ${last.volRatio.toFixed(1)}배 · 최근 200일간 신호 ${idx.length}회`
-    : '';
+  // 신호 표시: 돌파 ▲, 눌림 ●
+  const { closed } = splitClosed(candles);
+  const bo = signalIndexes(closed, { ...p, strategy: 'breakout' }).idx;
+  const pb = signalIndexes(closed, { ...p, strategy: 'pullback' }).idx;
+  const marks = [
+    ...bo.map((i) => ({ time: closed[i].t, position: 'belowBar', color: css('--up'), shape: 'arrowUp', text: '돌파' })),
+    ...pb.map((i) => ({ time: closed[i].t, position: 'belowBar', color: css('--sup'), shape: 'circle', text: '눌림' })),
+  ].sort((a, b) => (a.time < b.time ? -1 : 1));
+  cs.setMarkers(marks);
+  chart.timeScale().setVisibleLogicalRange({ from: candles.length - 90, to: candles.length + 3 });
 }
 
 // ---------- 실시간 시세 (업비트 웹소켓) ----------
@@ -227,9 +275,7 @@ function connectLive(codes) {
 setInterval(() => {
   if (!dirty) return;
   dirty = false;
-  const sel = state.selected;
   renderScreen();
-  if (sel) document.querySelector(`#screenTable tr[data-m="${sel}"]`)?.classList.add('sel');
 }, 2000);
 
 // ---------- 백테스트 ----------
@@ -240,7 +286,7 @@ function runBacktest() {
   if (!state.order.length) { $('#btWarn').hidden = false; $('#btWarn').textContent = '데이터를 불러오는 중이에요. 잠시 후 다시 눌러주세요.'; return; }
   const f = new FormData($('#btForm'));
   const p = { ...state.params };
-  for (const [k, v] of f.entries()) p[k] = Number(v);
+  for (const [k, v] of f.entries()) p[k] = k === 'strategy' ? v : Number(v);
   const data = {};
   for (const m of state.order) data[m] = splitClosed(state.data[m]).closed;
   const { trades, stats, baseline } = backtest(data, p);
@@ -325,8 +371,8 @@ async function loadTrack() {
       <div class="tile"><div class="k">기록한 날</div><div class="v">${days}</div><div class="s">총 신호 ${picks.length}개</div></div>
       <div class="tile"><div class="k">7일 적중률</div><div class="v">${wr}</div><div class="s">채점 ${s7.length}개</div></div>
       <div class="tile"><div class="k">7일 평균 수익률</div><div class="v">${pct(avg)}</div><div class="s">신호일 종가 매수 가정</div></div>`;
-    table.innerHTML = `<thead><tr><th>신호일</th><th>코인</th><th class="num">매수가</th>${HORIZONS.map((h) => `<th class="num">${h}일 뒤</th>`).join('')}<th class="num">지금까지</th></tr></thead><tbody>${
-      picks.map((p) => `<tr><td>${p.date}</td><td class="coin"><b>${sym(p.market)}</b></td><td class="num">${fmtPrice(p.entry)}</td>${
+    table.innerHTML = `<thead><tr><th>신호일</th><th>코인</th><th>전략</th><th class="num">매수가</th>${HORIZONS.map((h) => `<th class="num">${h}일 뒤</th>`).join('')}<th class="num">지금까지</th></tr></thead><tbody>${
+      picks.map((p) => `<tr><td>${p.date}</td><td class="coin"><b>${sym(p.market)}</b></td><td>${p.strategy === 'pullback' ? '🎯 눌림목' : '🔥 돌파'}</td><td class="num">${fmtPrice(p.entry)}</td>${
         HORIZONS.map((h) => `<td class="num">${p.returns[h] != null ? pct(p.returns[h]) : '<span class="flat">대기</span>'}</td>`).join('')
       }<td class="num">${pct(p.now)}</td></tr>`).join('')}</tbody>`;
   } catch (e) {

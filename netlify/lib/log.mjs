@@ -1,6 +1,6 @@
-// 오늘의 신호를 저장하는 공용 로직
+// 오늘의 신호를 저장하는 공용 로직 (추세 돌파 + 눌림목)
 import { getStore } from '@netlify/blobs';
-import { DEFAULT_PARAMS, screenMarket, todayKST } from '../../public/lib/strategy.js';
+import { DEFAULT_PARAMS, signalIndexes, splitClosed, todayKST } from '../../public/lib/strategy.js';
 import { topMarkets, candlesFor } from './upbit.mjs';
 
 export async function runDailyLog() {
@@ -10,15 +10,17 @@ export async function runDailyLog() {
   const today = todayKST();
   const picks = [];
   for (const [market, candles] of Object.entries(data)) {
-    const s = screenMarket(candles, p, 1, today);
-    if (s && s.confirmed.length) {
-      const c = s.confirmed[0];
-      picks.push({ market, date: c.date, entry: c.close, volRatio: c.volRatio });
+    const { closed } = splitClosed(candles, today);
+    if (closed.length < p.maSlow + 10) continue;
+    const last = closed.length - 1;
+    for (const strategy of ['breakout', 'pullback']) {
+      const { idx, ev } = signalIndexes(closed, { ...p, strategy });
+      if (idx.includes(last)) {
+        picks.push({ market, strategy, date: closed[last].t, entry: closed[last].c, volRatio: ev[last].volRatio });
+      }
     }
   }
-  const signalDate = picks[0]?.date || null;
-  const record = { loggedAt: new Date().toISOString(), today, signalDate, params: p, universe: Object.keys(data).length, picks };
+  const record = { loggedAt: new Date().toISOString(), today, params: p, universe: Object.keys(data).length, picks };
   await getStore('picks').setJSON(today, record);
   return record;
 }
-
