@@ -135,6 +135,8 @@ export function prepare(cs, btc) {
 }
 
 // ---------- ATR 청산 백테스트 ----------
+/** 한쪽(매수 또는 매도)당 비용: 수수료 0.05% + 호가 차이 0.1% */
+export const COST_PER_SIDE = 0.0015;
 /**
  * p: { minScore, tATR, sATR, maxHold }
  * from/to: 신호 날짜 범위 (문자열, 포함)
@@ -155,6 +157,7 @@ export function simulate(prep, p, from = '0000', to = '9999') {
     let exit = null, why = null, k = 1;
     for (; k <= p.maxHold && i + k < cs.length; k++) {
       const d = cs[i + k];
+      if (d.o <= stop) { exit = d.o; why = '손절(갭하락)'; break; } // 시가부터 손절선 아래면 시가에 팔림
       if (d.l <= stop) { exit = stop; why = '손절'; break; }
       if (d.h >= target) { exit = target; why = '목표'; break; }
     }
@@ -162,8 +165,11 @@ export function simulate(prep, p, from = '0000', to = '9999') {
       if (i + p.maxHold < cs.length) { k = p.maxHold; exit = cs[i + k].c; why = '기간 만료'; }
       else { trades.push({ t: r.t, entry, stop, target, open: true }); busyUntil = cs.length; continue; }
     }
-    const ret = exit / entry - 1;
-    trades.push({ t: r.t, entry, stop, target, exit, why, ret, R: (exit - entry) / (entry - stop), days: k });
+    // 수수료(업비트 0.05%) + 호가 차이(슬리피지)를 사고팔 때 각각 반영
+    const cost = p.cost ?? COST_PER_SIDE;
+    const ret = (exit * (1 - cost)) / (entry * (1 + cost)) - 1;
+    const risk = (entry - stop) / entry;
+    trades.push({ t: r.t, entry, stop, target, exit, why, ret, R: ret / risk, days: k });
     busyUntil = i + k;
   }
   return trades;

@@ -1,0 +1,42 @@
+name: research
+
+# 실제 업비트 데이터로 전략 검증 → public/research/report.json 갱신
+# 매일 09:40(KST) 자동 실행 + 수동 실행 + scripts 변경 시 실행
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 0 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/research.mjs'
+      - 'public/lib/pro.js'
+      - '.github/workflows/research.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run research
+        run: node scripts/research.mjs
+      - name: Commit report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/research/report.json
+          git diff --cached --quiet && exit 0
+          git commit -m "research: 실제 데이터 검증 결과 갱신"
+          git pull --rebase origin main
+          git push origin HEAD:main
