@@ -6,6 +6,7 @@ const json = (body, maxAge, status = 200) => new Response(JSON.stringify(body), 
   headers: {
     'content-type': 'application/json; charset=utf-8',
     'cache-control': `public, max-age=${maxAge}`,
+    'netlify-vary': 'query',
     'netlify-cdn-cache-control': `public, s-maxage=${maxAge}, stale-while-revalidate=30`,
   },
 });
