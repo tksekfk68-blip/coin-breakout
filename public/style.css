@@ -270,3 +270,20 @@ button.ghost { background: none; border: 1px solid var(--border); color: var(--t
 .plan-row em.up { color: var(--up); } .plan-row em.down { color: var(--down); }
 :root[data-theme="dark"] .badge.zone { color: #1a1a19; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .badge.zone { color: #1a1a19; } }
+
+/* ---------- 급등 레이더 ---------- */
+.radar { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; margin-bottom: 14px; }
+.radar-h { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; margin-bottom: 8px; }
+.radar-h h2 { font-size: 16px; }
+.radar-h .note { margin: 0; }
+#coinSearch { margin-left: auto; font: inherit; font-size: 14px; background: var(--bg); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 7px 10px; min-height: 38px; width: 220px; max-width: 100%; }
+@media (max-width: 600px) { #coinSearch { margin-left: 0; width: 100%; } }
+.radar-list { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 2px; }
+.radar-list .note { margin: 0; }
+.rchip { flex: 0 0 auto; display: grid; grid-template-columns: auto auto; gap: 0 10px; align-items: baseline; text-align: left; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 8px 12px; cursor: pointer; min-width: 140px; }
+.rchip.fast { border-color: var(--up); box-shadow: inset 0 0 0 1px var(--up); }
+.rchip b { font-size: 15px; }
+.rchip small { color: var(--muted); font-size: 11.5px; grid-column: 1 / -1; order: 3; }
+.rchip .rday { font-weight: 650; font-variant-numeric: tabular-nums; text-align: right; }
+.rchip .r5, .rchip .rtime { font-size: 11.5px; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.rchip .rtime { text-align: right; }

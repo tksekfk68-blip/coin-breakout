@@ -32,6 +32,15 @@
   <main>
     <!-- 오늘의 신호 -->
     <section id="tab-screen" class="panel active">
+      <div class="radar">
+        <div class="radar-h">
+          <h2>🚀 급등 레이더</h2>
+          <span class="note small">원화마켓 전체 <span id="radarN">-</span>개 실시간 감시</span>
+          <input id="coinSearch" list="coinOptions" type="search" placeholder="코인 검색 (예: SUN, 비트코인)" autocomplete="off" />
+          <datalist id="coinOptions"></datalist>
+        </div>
+        <div id="radarList" class="radar-list"><p class="note small">연결 중…</p></div>
+      </div>
       <div id="filters" class="filters" role="group" aria-label="상태별 보기"></div>
       <div id="loadState" class="note">데이터를 불러오는 중…</div>
       <div class="split">
@@ -147,6 +156,9 @@
       </table>
       <h2>지지선과 저항선</h2>
       <p>최근 120일 동안 가격이 여러 번 멈추고 돌아선 가격대를 모아서 그렸어요. <b>저항</b>은 위에서 막았던 천장, <b>지지</b>는 아래에서 받쳐준 바닥이에요. 여러 번 부딪힌 선일수록 강합니다. 천장을 뚫고 나면 그 천장이 새 바닥(지지)이 되는 경우가 많아요.</p>
+      <h2>🚀 급등 레이더</h2>
+      <p>업비트 원화마켓 <b>전체 코인</b>의 실시간 체결을 받아서, <b>5분 사이 +3% 이상 오르면서 거래대금이 평소의 3배 넘게 몰리면</b> ⚡ 표시와 함께 바로 띄워요. 오늘(오전 9시 이후) +15% 넘게 오른 코인도 보여줘요. 누르면 그 코인의 상태·지지·저항·타점을 바로 분석해요.</p>
+      <p>급등 코인은 이미 많이 오른 뒤인 경우가 대부분이라 대개 <b>⚠️ 과열</b>로 나와요. 따라가서 사기보다 <b>조정 대기 타점</b>까지 내려오는지 보는 용도로 쓰세요. 페이지를 켜둔 동안만 감시해요.</p>
       <h2>📍 예상 매수 타점</h2>
       <p>코인 상태에 따라 "이 가격대에 오면 전략 조건에 맞는 자리"를 계산해요. 가격을 맞히는 예언이 아니라 <b>미리 정해두는 주문 계획</b>이에요.</p>
       <ul>

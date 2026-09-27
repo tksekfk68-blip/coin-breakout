@@ -65,6 +65,12 @@ async function loadAll() {
       api({ ep: 'tickers' }),
     ]);
     markets.forEach((m) => { state.names[m.market] = m.korean_name; });
+    state.allKRW = markets.map((m) => m.market).filter((m) => m.startsWith('KRW-') && !STABLES.has(sym(m)));
+    if (!state.allKRW.length) state.allKRW = tickers.map((t) => t.market);
+    fillSearch();
+    // 처음 열었을 때 이미 많이 오른 코인은 바로 레이더에 표시
+    tickers.forEach((t) => { if (t.signed_change_rate >= SURGE.day) markSurge(t.market, { day: t.signed_change_rate, why: 'day' }); });
+    renderRadar();
     tickers.forEach((t) => { state.tickers[t.market] = t; });
 
     const top = tickers
@@ -89,7 +95,7 @@ async function loadAll() {
     renderScreen();
     const first = state.order.find((m) => ['breakout', 'pullback'].includes(cache[m]?.state)) || state.order[0];
     if (first) select(first);
-    connectLive(state.order);
+    connectLive(state.allKRW);
   } catch (e) {
     load.textContent = `데이터를 불러오지 못했어요: ${e.message}. 잠시 후 새로고침 해보세요.`;
   }
@@ -164,7 +170,16 @@ function select(m, scroll = false) {
 
 function renderDetail(m, redraw) {
   const r = cache[m] || info(m);
-  if (!r) return;
+  if (!r) {
+    const t = state.tickers[m] || {};
+    $('#dTitle').innerHTML = `${sym(m)} <small>${state.names[m] || ''}</small>`;
+    $('#dPrice').innerHTML = `${fmtPrice(t.trade_price)}원 ${pct(t.signed_change_rate, 2)}`;
+    $('#dPill').innerHTML = '<span class="pill t-neutral big">🆕 데이터 부족</span>';
+    $('#dReason').textContent = `상장한 지 얼마 안 돼 일봉이 ${state.data[m]?.length || 0}개뿐이에요. 추세·지지·저항을 판단하려면 최소 ${state.params.maSlow + 10}일이 필요해요. 급등 신규 코인은 변동이 특히 커요.`;
+    $('#dPlan').innerHTML = ''; $('#dLevels').innerHTML = ''; $('#dChecks').innerHTML = '';
+    if (redraw) drawChart(m, null);
+    return;
+  }
   const t = state.tickers[m] || {};
   const p = state.params;
   $('#dTitle').innerHTML = `${sym(m)} <small>${state.names[m] || ''}</small>`;
@@ -282,14 +297,15 @@ function connectLive(codes) {
     t.trade_price = d.trade_price;
     t.signed_change_rate = d.signed_change_rate;
     t.acc_trade_price_24h = d.acc_trade_price_24h;
+    trackSurge(m, d);
     const cs = state.data[m];
     if (cs && cs.length) {
       const today = todayKST();
       let last = cs[cs.length - 1];
       if (last.t !== today) { last = { t: today, o: d.opening_price, h: d.high_price, l: d.low_price, c: d.trade_price, v: d.acc_trade_price }; cs.push(last); }
       else Object.assign(last, { h: d.high_price, l: d.low_price, c: d.trade_price, v: d.acc_trade_price });
+      dirty = true;
     }
-    dirty = true;
   };
   ws.onclose = () => {
     dot.classList.remove('on'); txt.textContent = '재연결 중…';
@@ -297,10 +313,110 @@ function connectLive(codes) {
   };
 }
 setInterval(() => {
+  if (radarDirty) { radarDirty = false; renderRadar(); }
   if (!dirty) return;
   dirty = false;
   renderScreen();
 }, 2000);
+
+// ---------- 🚀 급등 레이더 ----------
+const SURGE = {
+  win: 5 * 60 * 1000,  // 5분 창
+  min5: 0.03,          // 5분 사이 +3% 이상
+  vol5: 3,             // 5분 거래대금이 평소 5분의 3배 이상
+  day: 0.15,           // 또는 오늘(09시 이후) +15% 이상
+};
+const hist = {};     // market -> [{t, p, acc}]
+const surges = {};   // market -> { at, chg5, vol5, day, last }
+let radarDirty = false;
+
+function trackSurge(m, d) {
+  const now = Date.now();
+  const h = hist[m] || (hist[m] = []);
+  if (!h.length || now - h[h.length - 1].t >= 5000) h.push({ t: now, p: d.trade_price, acc: d.acc_trade_price });
+  while (h.length && now - h[0].t > SURGE.win + 60000) h.shift();
+  // 5분 전 기준점 (최소 1분 이상 쌓였을 때만)
+  const base = h.find((x) => now - x.t <= SURGE.win) || h[0];
+  let chg5 = null, vol5 = null;
+  if (base && now - base.t >= 60000) {
+    chg5 = d.trade_price / base.p - 1;
+    const span = (now - base.t) / 60000;              // 분
+    const normal = (d.acc_trade_price_24h / 1440) * span; // 평소 같은 시간 거래대금
+    vol5 = normal > 0 ? Math.max(0, d.acc_trade_price - base.acc) / normal : null;
+  }
+  const fast = chg5 != null && chg5 >= SURGE.min5 && vol5 != null && vol5 >= SURGE.vol5;
+  if (fast || d.signed_change_rate >= SURGE.day) {
+    markSurge(m, { chg5, vol5, day: d.signed_change_rate, why: fast ? 'fast' : 'day' });
+  } else if (surges[m]) {
+    surges[m].day = d.signed_change_rate;
+    if (chg5 != null) surges[m].chg5 = chg5;
+    radarDirty = true;
+  }
+}
+
+function markSurge(m, x) {
+  const cur = surges[m];
+  if (!cur) {
+    surges[m] = { at: Date.now(), ...x, fast: x.why === 'fast' };
+  } else {
+    Object.assign(cur, { day: x.day, chg5: x.chg5 ?? cur.chg5, vol5: x.vol5 ?? cur.vol5 });
+    if (x.why === 'fast' && !cur.fast) { cur.fast = true; cur.at = Date.now(); }
+  }
+  radarDirty = true;
+}
+
+function renderRadar() {
+  const box = $('#radarList');
+  if (!box) return;
+  $('#radarN').textContent = state.allKRW?.length || 0;
+  const list = Object.entries(surges)
+    .filter(([, s]) => s.fast || s.day >= SURGE.day)
+    .sort((a, b) => (b[1].fast - a[1].fast) || (b[1].at - a[1].at) || (b[1].day - a[1].day))
+    .slice(0, 12);
+  if (!list.length) {
+    box.innerHTML = '<p class="note small">지금은 급등 중인 코인이 없어요. 5분 사이 +3% 이상 오르면서 거래가 평소의 3배 넘게 몰리거나, 오늘 +15% 넘게 오르면 여기에 떠요.</p>';
+    return;
+  }
+  box.innerHTML = list.map(([m, s]) => {
+    const tm = new Date(s.at).toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' });
+    return `<button type="button" class="rchip ${s.fast ? 'fast' : ''}" data-open="${m}">
+      <b>${sym(m)}</b><small>${state.names[m] || ''}</small>
+      <span class="rday">${pct(s.day, 1)}</span>
+      ${s.chg5 != null ? `<span class="r5">5분 ${pctPlain(s.chg5)}</span>` : ''}
+      ${s.vol5 != null && s.fast ? `<span class="r5">거래 ${s.vol5.toFixed(0)}배</span>` : ''}
+      <span class="rtime">${s.fast ? '⚡ ' : ''}${tm}</span>
+    </button>`;
+  }).join('');
+}
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-open]');
+  if (b) openCoin(b.dataset.open);
+});
+
+// ---------- 코인 검색 / 목록에 없는 코인 열기 ----------
+function fillSearch() {
+  $('#coinOptions').innerHTML = state.allKRW
+    .map((m) => `<option value="${sym(m)} ${state.names[m] || ''}"></option>`).join('');
+}
+$('#coinSearch').addEventListener('change', (e) => {
+  const q = e.target.value.trim().split(/\s+/)[0].toUpperCase();
+  const hit = state.allKRW.find((m) => sym(m) === q) ||
+    state.allKRW.find((m) => (state.names[m] || '').includes(e.target.value.trim()));
+  if (hit) { openCoin(hit); e.target.value = ''; }
+});
+
+async function openCoin(m) {
+  document.querySelector('.tab[data-tab="screen"]').click();
+  if (!state.data[m]) {
+    try {
+      state.data[m] = normalizeUpbitCandles(await api({ ep: 'candles', market: m, count: 200 }));
+    } catch { alert('데이터를 불러오지 못했어요. 잠시 후 다시 시도해 주세요.'); return; }
+  }
+  if (!state.order.includes(m)) state.order.unshift(m);
+  filter = 'all';
+  renderScreen();
+  select(m, true);
+}
 
 // ---------- 백테스트 ----------
 let btDone = false;
