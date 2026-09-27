@@ -24,7 +24,7 @@ export default async () => {
     return { ...p, returns, now: nowPrice / p.entry - 1 };
   }).sort((a, b) => (a.date < b.date ? 1 : -1));
 
-  return new Response(JSON.stringify({ days: records.length, picks: graded }), {
+  return new Response(JSON.stringify({ days: new Set(records.map((r) => r.today)).size, picks: graded }), {
     headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=120' },
   });
 };

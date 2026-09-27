@@ -3,12 +3,16 @@ import { getStore } from '@netlify/blobs';
 import { DEFAULT_PARAMS, signalIndexes, splitClosed, todayKST } from '../../public/lib/strategy.js';
 import { topMarkets, candlesFor } from './upbit.mjs';
 
-export async function runDailyLog() {
+export const PARTS = 4;
+const PER_PART = 40;
+
+/** part: 0~3. 함수 실행 시간 제한(10~30초) 때문에 40개씩 나눠서 기록 */
+export async function runDailyLog(part = 0) {
   const p = DEFAULT_PARAMS;
   // 상위 30개만 보면 SOON처럼 조용하던 코인의 돌파를 놓쳐서,
   // 하루 거래대금 10억 원 이상인 코인 전체(최대 150개)를 봅니다.
-  const tops = await topMarkets(150, 1e9);
-  const data = await candlesFor(tops.map((t) => t.market), 90, 8, 900);
+  const tops = (await topMarkets(PARTS * PER_PART, 1e9)).slice(part * PER_PART, (part + 1) * PER_PART);
+  const data = await candlesFor(tops.map((t) => t.market), 90, 8, 700);
   const today = todayKST();
   const picks = [];
   for (const [market, candles] of Object.entries(data)) {
@@ -22,7 +26,7 @@ export async function runDailyLog() {
       }
     }
   }
-  const record = { loggedAt: new Date().toISOString(), today, params: p, universe: Object.keys(data).length, picks };
-  await getStore('picks').setJSON(today, record);
+  const record = { loggedAt: new Date().toISOString(), today, part, params: p, universe: Object.keys(data).length, picks };
+  await getStore('picks').setJSON(part ? `${today}-p${part}` : today, record);
   return record;
 }
