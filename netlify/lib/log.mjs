@@ -5,8 +5,10 @@ import { topMarkets, candlesFor } from './upbit.mjs';
 
 export async function runDailyLog() {
   const p = DEFAULT_PARAMS;
-  const tops = await topMarkets(30);
-  const data = await candlesFor(tops.map((t) => t.market), 120);
+  // 상위 30개만 보면 SOON처럼 조용하던 코인의 돌파를 놓쳐서,
+  // 하루 거래대금 10억 원 이상인 코인 전체(최대 150개)를 봅니다.
+  const tops = await topMarkets(150, 1e9);
+  const data = await candlesFor(tops.map((t) => t.market), 90, 8, 900);
   const today = todayKST();
   const picks = [];
   for (const [market, candles] of Object.entries(data)) {
