@@ -61,6 +61,29 @@ function equity(trades, riskPct = 0.01) {
   return { final: eq, mdd };
 }
 
+/** 현실 버전: 동시에 최대 maxOpen개만 보유 (나머지 신호는 건너뜀), 점수 높은 순 우선 */
+function equityLimited(trades, riskPct = 0.01, maxOpen = 3) {
+  const addDays = (t, d) => new Date(Date.parse(t) + d * 864e5).toISOString().slice(0, 10);
+  const done = trades.filter((t) => !t.open).sort((a, b) => (a.t < b.t ? -1 : a.t > b.t ? 1 : 0));
+  let eq = 1, peak = 1, mdd = 0, taken = 0;
+  let open = []; // {end, R}
+  const close = (upTo) => {
+    open.sort((a, b) => (a.end < b.end ? -1 : 1));
+    while (open.length && open[0].end <= upTo) {
+      const x = open.shift();
+      eq *= 1 + riskPct * x.R; peak = Math.max(peak, eq); mdd = Math.min(mdd, eq / peak - 1);
+    }
+  };
+  for (const t of done) {
+    close(t.t);
+    if (open.length >= maxOpen) continue;
+    open.push({ end: addDays(t.t, t.days), R: t.R });
+    taken++;
+  }
+  close('9999');
+  return { final: eq, mdd, taken, skipped: done.length - taken };
+}
+
 async function main() {
   const t0 = Date.now();
   const tickers = await get('/ticker/all?quote_currencies=KRW');
@@ -129,12 +152,15 @@ async function main() {
     for (const nm of [false, true]) {
       const all = [];
       for (const f of foldRows) if (f.p) all.push(...runAll(preps, { ...f.p, needMarket: nm }, f.testFrom, f.testTo));
-      forced[nm ? 'withMarketFilter' : 'noMarketFilter'] = { ...stats(all), equity1pct: equity(all, 0.01) };
+      forced[nm ? 'withMarketFilter' : 'noMarketFilter'] = { ...stats(all), equity1pct: equity(all, 0.01), real3: equityLimited(all, 0.01, 3) };
     }
     report.modes[mode] = {
       oos: stats(oos),
       equity1pct: equity(oos, 0.01),
       equity2pct: equity(oos, 0.02),
+      real1pct3: equityLimited(oos, 0.01, 3),
+      real2pct3: equityLimited(oos, 0.02, 3),
+      foldsNoLast: stats(oos.filter((t) => folds.length && t.t < folds[folds.length - 1].testFrom)),
       forced,
       folds: foldRows,
       latest,
