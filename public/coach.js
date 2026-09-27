@@ -179,16 +179,19 @@ function renderPicks() {
   const P = C.state.pro;
   if (!P) { box.innerHTML = '<p class="note">데이터 불러오는 중…</p>'; return; }
   const ORDER = { go: 0, live: 1, ready: 2 };
-  const list = Object.keys(P.preps)
+  const all = Object.keys(P.preps)
     .map((m) => ({ m, s: C.state.proSetup(m) }))
-    .filter((x) => x.s && x.s.kind)
-    .sort((a, b) => (ORDER[a.s.kind] - ORDER[b.s.kind]) || (b.s.score - a.s.score))
+    .filter((x) => x.s && x.s.kind);
+  const late = all.filter((x) => x.s.late);
+  const list = all.filter((x) => !x.s.late)
+    .sort((a, b) => (a.s.wild - b.s.wild) || (ORDER[a.s.kind] - ORDER[b.s.kind]) || (b.s.score - a.s.score))
     .slice(0, 3);
+  const lateHtml = late.length ? `<div class="late-note">🏃 이미 지나간 자리: ${late.map((x) => `<b>${C.sym(x.m)}</b> (신호 뒤 ${C.pctPlain(x.s.lateBy)})`).join(', ')} — 지금 따라 사면 손익비가 안 맞아. 다음 눌림을 기다리자.</div>` : '';
   const stat = P.out && P.out.n >= 8 ? P.out : P.ins;
   const modeTxt = P.mode === 'win' ? '승률 우선 (목표 짧게·손절 넓게 → 자주 이기지만 한 번 질 때 커)' : '수익 우선 (자주 지지만 이길 때 크게)';
   $('#picksNote').innerHTML = stat ? `${modeTxt} · 과거 승률 <b>${Math.round(stat.win * 100)}%</b> · 평균 ${stat.avgR >= 0 ? '+' : ''}${stat.avgR.toFixed(2)}R (${stat.n}회)` : modeTxt;
   if (!list.length) {
-    box.innerHTML = `<div class="pick empty">오늘은 점수 ${P.params.minScore}점 넘는 자리가 없어. <b>안 사는 것도 실력</b>이야. 내일 9시에 새로 계산해 볼게.</div>`;
+    box.innerHTML = `<div class="pick empty">오늘은 들어갈 만한 자리가 없어. <b>안 사는 것도 실력</b>이야. 내일 9시에 새로 계산해 볼게.</div>${lateHtml}`;
     return;
   }
   box.innerHTML = list.map(({ m, s }, i) => {
@@ -198,9 +201,11 @@ function renderPicks() {
     const head = s.kind === 'go' ? '<span class="pill t-pullback">✅ 진입 신호</span>'
       : s.kind === 'live' ? '<span class="pill t-breakout">⚡ 지금 트리거 돌파</span>'
       : '<span class="pill t-pullwait">⏳ 트리거 대기</span>';
-    const line = s.kind === 'go' ? '어제 전일 고가를 양봉으로 넘겼어. 조건 다 맞았어.'
+    const wildTxt = s.wild ? ' <b>다만 변동이 커서 손절폭이 넓어</b>. 금액을 작게.' : '';
+    const moved = s.kind === 'go' && Math.abs(s.lateBy) >= 0.01 ? ` (신호 종가 ${C.fmtPrice(s.ref)} 대비 지금 ${C.pctPlain(s.lateBy)})` : '';
+    const line = s.kind === 'go' ? `어제 전일 고가를 양봉으로 넘겼어. 조건 다 맞았어${moved}.${wildTxt}`
       : s.kind === 'live' ? `지금 어제 고가(${C.fmtPrice(s.trigger)})를 넘는 중이야. 마감까지 버티면 신호 확정.`
-      : `오늘 <b>${C.fmtPrice(s.trigger)}</b>(어제 고가)를 넘으면 들어갈 자리야. 알림 걸어두자.`;
+      : `오늘 <b>${C.fmtPrice(s.trigger)}</b>(어제 고가)를 넘으면 들어갈 자리야. 알림 걸어두자.${wildTxt}`;
     const chips = C.CHECKS.map((k) => `<span class="ck2 ${r.chk[k.key] ? 'on' : ''}" title="${k.desc}">${k.label}</span>`).join('');
     return `<div class="pick">
       <div class="pick-h">
@@ -214,7 +219,7 @@ function renderPicks() {
         <div><span>진입</span><b>${C.fmtPrice(s.entry)}</b></div>
         <div><span>손절</span><b class="down">${C.fmtPrice(s.stop)}</b><em>${C.pctPlain(s.stop / s.entry - 1)}</em></div>
         <div><span>목표</span><b class="up">${C.fmtPrice(s.target)}</b><em>${C.pctPlain(s.target / s.entry - 1)}</em></div>
-        <div><span>손익비</span><b>1:${((s.target - s.entry) / (s.entry - s.stop)).toFixed(1)}</b></div>
+        <div><span>손익비</span><b>1:${s.rr.toFixed(1)}</b></div>
       </div>
       <p class="pick-coach">🤝 ${line}${sz ? `<br><b>이번엔 ${man(sz.amt)}어치만 사자.</b> 틀려도 ${won(sz.loss)}(자산의 ${sz.riskPct}%)만 잃어.${sz.capped ? ` <span class="flat small">(${sz.capped} 때문에 줄였어)</span>` : ''}` : journal.data ? '<br><span class="flat small">자산 계획을 세우면 얼마치 살지도 계산해 줄게.</span>' : ''}</p>
       <div class="pick-btns">
@@ -222,7 +227,7 @@ function renderPicks() {
         <button type="button" class="ghostbtn strong" data-coach="buy" data-m="${m}">샀어 · 기록</button>
       </div>
     </div>`;
-  }).join('');
+  }).join('') + lateHtml;
 }
 
 // ---------- 내 포지션 ----------
@@ -383,7 +388,7 @@ function prefillFromCoin(v) {
   const cur = price(m);
   if (cur != null) f.price.value = cur;
   const ps = C.state.proSetup?.(m);
-  if (ps && ps.kind) {
+  if (ps && ps.kind && !ps.late) {
     f.stop.value = +ps.stop.toPrecision(6);
     f.target.value = +ps.target.toPrecision(6);
     f.reason.value = '프로 점수';

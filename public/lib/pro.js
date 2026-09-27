@@ -235,17 +235,27 @@ export function currentSetup(prep, p, livePrice = null) {
   const last = cs.length - 1;
   const r = rows[last];
   if (!r) return null;
-  const base = { row: r, score: r.score, atr: r.atr };
-  // 어제 마감에 신호 확정
+  const base = { row: r, score: r.score, atr: r.atr, atrPct: r.atr / cs[last].c };
+  let s;
   if (r.chk.trend && r.trigger && r.score >= p.minScore) {
-    const entry = livePrice ?? cs[last].c;
-    return { ...base, kind: 'go', entry, stop: cs[last].c - p.sATR * r.atr, target: cs[last].c + p.tATR * r.atr, trigger: null };
-  }
-  // 점수는 되는데 트리거 전: 오늘 어제 고가를 넘으면 진입
-  if (r.chk.trend && r.score >= p.minScore) {
+    // 어제 마감에 신호 확정: 손절/목표는 어제 종가 기준으로 고정
+    const ref = cs[last].c;
+    s = { ...base, kind: 'go', ref, stop: ref - p.sATR * r.atr, target: ref + p.tATR * r.atr, trigger: null };
+  } else if (r.chk.trend && r.score >= p.minScore) {
+    // 점수는 되는데 트리거 전: 오늘 어제 고가를 넘으면 진입
     const trig = cs[last].h;
     const hit = livePrice != null && livePrice > trig;
-    return { ...base, kind: hit ? 'live' : 'ready', entry: hit ? livePrice : trig, stop: trig - p.sATR * r.atr, target: trig + p.tATR * r.atr, trigger: trig };
+    s = { ...base, kind: hit ? 'live' : 'ready', ref: trig, stop: trig - p.sATR * r.atr, target: trig + p.tATR * r.atr, trigger: trig };
+  } else {
+    return { ...base, kind: null };
   }
-  return { ...base, kind: null };
+  // 지금 가격에 사면 어떻게 되나 (신호 뒤 이미 많이 올랐으면 늦은 자리)
+  s.entry = s.kind === 'ready' ? s.ref : (livePrice ?? s.ref);
+  s.rr = s.entry > s.stop ? (s.target - s.entry) / (s.entry - s.stop) : null;
+  const plannedRR = (s.target - s.ref) / (s.ref - s.stop);
+  s.late = s.kind !== 'ready' && (s.entry >= s.target || s.rr == null || s.rr < plannedRR * 0.5);
+  s.lateBy = s.entry / s.ref - 1;
+  // 변동성이 너무 크면(손절폭 12% 초과) 초보 친화적이지 않음
+  s.wild = (s.ref - s.stop) / s.ref > 0.12;
+  return s;
 }
