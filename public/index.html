@@ -23,7 +23,7 @@
   </header>
 
   <nav class="tabs" role="tablist">
-    <button role="tab" class="tab active" data-tab="coach" aria-selected="true">🧭 코치</button>
+    <button role="tab" class="tab active" data-tab="coach" aria-selected="true">🤝 깐부</button>
     <button role="tab" class="tab" data-tab="screen" aria-selected="false">지금 상태</button>
     <button role="tab" class="tab" data-tab="backtest" aria-selected="false">백테스트</button>
     <button role="tab" class="tab" data-tab="track" aria-selected="false">실전 성적표</button>
@@ -35,8 +35,9 @@
     <!-- 코치 -->
     <section id="tab-coach" class="panel active">
       <div id="coachMood" class="mood"></div>
+      <div id="planCard"></div>
 
-      <div class="sec-h"><h3>오늘의 후보</h3><span class="note small">규칙상 괜찮은 자리 최대 3개 · 결정은 내가</span></div>
+      <div class="sec-h"><h3>오늘의 후보</h3><span id="picksNote" class="note small"></span></div>
       <div id="picks" class="picks"><p class="note">데이터 불러오는 중…</p></div>
 
       <div class="sec-h"><h3>내 포지션</h3><button type="button" class="ghostbtn strong" data-coach="add">+ 매수 기록</button></div>
@@ -61,12 +62,26 @@
           </div>
           <label>근거
             <select name="reason">
-              <option>눌림목</option><option>돌파</option><option>지지 반등</option><option>급등 추격</option><option>기타</option>
+              <option>프로 점수</option><option>눌림목</option><option>돌파</option><option>지지 반등</option><option>급등 추격</option><option>기타</option>
             </select>
           </label>
           <label>메모<input name="memo" placeholder="왜 샀는지 한 줄" /></label>
           <div id="buyPreview" class="preview"></div>
           <div class="dlg-btns"><button type="button" class="ghostbtn" data-close>취소</button><button type="submit" class="primary">기록</button></div>
+        </form>
+      </dialog>
+
+      <dialog id="planDlg">
+        <form id="planForm" method="dialog">
+          <h3>💰 우리 자산 계획</h3>
+          <label>시드 (코인에 쓸 총 금액, 원)<input name="seed" type="number" step="10000" min="0" required placeholder="예: 5000000" /></label>
+          <div class="frow">
+            <label>목표 수익률 (%)<input name="goalPct" type="number" step="1" min="1" value="30" /></label>
+            <label>1회 최대 손실 (%)<input name="riskPct" type="number" step="0.5" min="0.5" max="5" value="1" /></label>
+          </div>
+          <label>한 코인 최대 비중 (%)<input name="maxPosPct" type="number" step="5" min="5" max="100" value="30" /></label>
+          <p class="note small">1회 최대 손실 1%면, 손절에 걸려도 자산의 1%만 잃도록 살 금액을 정해줘. 프로들은 보통 0.5~2%를 써. 10번 연속 틀려도 자산의 90%가 남아.</p>
+          <div class="dlg-btns"><button type="button" class="ghostbtn" data-close>취소</button><button type="submit" class="primary">저장</button></div>
         </form>
       </dialog>
 
@@ -128,6 +143,22 @@
 
     <!-- 백테스트 -->
     <section id="tab-backtest" class="panel">
+      <div class="pro-box">
+        <div class="sec-h" style="margin-top:0"><h3>🏆 프로 전략 자동 최적화</h3><span class="note small">EMA·ADX·MACD·RSI·OBV·BTC 대비 강도·시장 필터 + ATR 손절/목표</span></div>
+        <p class="note small">여러 조합을 업비트 실제 데이터로 돌려서, <b>앞 기간(60%)에서 제일 좋은 조합을 고르고 뒤 기간(40%)에서 검증</b>해요. 코치 탭의 후보는 여기서 고른 조합으로 뽑아요.</p>
+        <form id="proForm" class="controls">
+          <label>목표
+            <select name="mode"><option value="win">승률 우선</option><option value="profit">수익(기대값) 우선</option></select>
+          </label>
+          <label>기간
+            <select name="days"><option value="90">최근 90일</option><option value="130" selected>최근 130일</option></select>
+          </label>
+          <button type="submit" class="primary">최적화 실행</button>
+        </form>
+        <div id="proResult"></div>
+      </div>
+
+      <h3 class="sub-h">기본 전략 백테스트</h3>
       <form id="btForm" class="controls">
         <label>전략
           <select name="strategy">

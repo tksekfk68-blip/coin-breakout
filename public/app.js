@@ -4,6 +4,7 @@ import {
 } from './lib/strategy.js';
 import { TONES, classify } from './lib/analysis.js';
 import { initCoach, renderCoach } from './coach.js';
+import { CHECKS, MAX_SCORE, optimize, prepare, currentSetup } from './lib/pro.js';
 
 const UNIVERSE = 30;
 const $ = (s, r = document) => r.querySelector(s);
@@ -99,6 +100,7 @@ async function loadAll() {
     const first = state.order.find((m) => ['breakout', 'pullback'].includes(cache[m]?.state)) || state.order[0];
     if (first) select(first);
     connectLive(state.allKRW);
+    buildPro();
     renderCoach();
   } catch (e) {
     load.textContent = `데이터를 불러오지 못했어요: ${e.message}. 잠시 후 새로고침 해보세요.`;
@@ -426,6 +428,74 @@ async function openCoin(m) {
 
 // ---------- 백테스트 ----------
 let btDone = false;
+
+// ---------- 🏆 프로 전략 ----------
+const DEFAULT_PRO = { minScore: 7, tATR: 2, sATR: 1.5, maxHold: 14 };
+function proMode() { try { return localStorage.getItem('proMode') || 'win'; } catch { return 'win'; } }
+
+function buildPro(mode = proMode(), days = 130) {
+  const btc = state.data['KRW-BTC'] ? splitClosed(state.data['KRW-BTC']).closed : null;
+  const preps = {};
+  for (const m of state.order) {
+    const closed = splitClosed(state.data[m]).closed;
+    if (closed.length >= 80) preps[m] = prepare(closed, btc);
+  }
+  const o = optimize(preps, { mode, days });
+  state.pro = {
+    mode, days, preps, range: o.range, ranked: o.ranked,
+    params: o.best ? o.best.p : DEFAULT_PRO,
+    ins: o.best ? o.best.ins : null,
+    out: o.best ? o.best.out : null,
+    fallback: !o.best,
+  };
+  renderPro();
+  return state.pro;
+}
+state.proSetup = (m) => {
+  const pr = state.pro?.preps[m];
+  if (!pr) return null;
+  return currentSetup(pr, state.pro.params, state.tickers[m]?.trade_price ?? null);
+};
+
+const pw = (x) => (x == null ? '-' : Math.round(x * 100) + '%');
+function proWords(p) {
+  return `점수 <b>${p.minScore}/${MAX_SCORE}</b> 이상 + 추세 정배열 + <b>전일 고가를 양봉으로 넘길 때</b> 매수 → 손절 <b>ATR×${p.sATR}</b> · 목표 <b>ATR×${p.tATR}</b> · 최대 <b>${p.maxHold}일</b> 보유`;
+}
+function renderPro() {
+  const P = state.pro, box = $('#proResult');
+  if (!P || !box) return;
+  const row = (name, s) => s ? `<tr><td>${name}</td><td class="num">${s.n}</td><td class="num"><b>${pw(s.win)}</b></td><td class="num">${pct(s.avgRet)}</td><td class="num">${s.avgR == null ? '-' : s.avgR.toFixed(2) + 'R'}</td><td class="num">${s.pf == null ? '-' : s.pf.toFixed(2)}</td></tr>` : '';
+  const o = P.out;
+  const verdict = P.fallback ? '⚠️ 조건(15회 이상 + 기대값 플러스)을 만족하는 조합이 없어서 기본값을 써요. 요즘 장이 전략에 불리하다는 뜻이기도 해요.'
+    : !o || o.n < 8 ? '🤔 검증 기간 거래가 너무 적어서 아직 판단하기 일러요.'
+    : o.avgR > 0 && o.win >= (P.ins.win - 0.15) ? '✅ 검증 기간에도 통했어요. 그래도 과거 성적이라 소액부터.'
+    : o.avgR > 0 ? '🙂 검증 기간에도 플러스지만 승률이 꽤 떨어졌어요. 기대치를 낮춰서 보세요.'
+    : '⚠️ 검증 기간에선 마이너스예요. 과거에만 맞았던 조합일 가능성이 커요. 비중을 확 줄이거나 쉬어가세요.';
+  box.innerHTML = `
+    <div class="pro-best"><div class="k">${P.mode === 'win' ? '승률 우선' : '수익 우선'}으로 고른 조합</div><div class="v">${proWords(P.params)}</div></div>
+    <div class="tablewrap"><table class="grid"><thead><tr><th>구간</th><th class="num">거래</th><th class="num">승률</th><th class="num">평균 수익</th><th class="num">평균 R</th><th class="num">손익비(PF)</th></tr></thead>
+      <tbody>${row(`고른 기간 ${P.range.start.slice(5)}~${P.range.cut.slice(5)}`, P.ins)}${row(`검증 기간 ${P.range.cut.slice(5)}~${P.range.end.slice(5)}`, P.out)}</tbody></table></div>
+    <div class="verdict">${verdict}</div>
+    <details class="checkbox-detail"><summary>다른 상위 조합 보기</summary>
+      <div class="tablewrap"><table class="grid"><thead><tr><th>조합</th><th class="num">고른 기간 승률</th><th class="num">검증 승률</th><th class="num">검증 평균 R</th><th class="num">검증 거래</th></tr></thead><tbody>${
+        P.ranked.map((r) => `<tr><td>점수≥${r.p.minScore} · 손절 ${r.p.sATR} · 목표 ${r.p.tATR} · ${r.p.maxHold}일</td><td class="num">${pw(r.ins.win)}</td><td class="num">${pw(r.out.win)}</td><td class="num">${r.out.avgR == null ? '-' : r.out.avgR.toFixed(2)}</td><td class="num">${r.out.n}</td></tr>`).join('')
+      }</tbody></table></div>
+      <p class="note small">R = 손절폭 대비 수익. +1R이면 "손절폭만큼 벌었다", -1R이면 "손절에 걸렸다". 평균 R이 플러스여야 오래 하면 자산이 불어요.</p>
+    </details>
+    <details class="checkbox-detail"><summary>점수 항목 (총 ${MAX_SCORE}점)</summary>
+      <ul class="small">${CHECKS.map((c) => `<li><b>${c.label}</b> (${c.w}점) — ${c.desc}</li>`).join('')}</ul>
+    </details>`;
+}
+$('#proForm').addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (!state.order.length) return;
+  const f = new FormData(e.target);
+  const mode = f.get('mode');
+  try { localStorage.setItem('proMode', mode); } catch {}
+  buildPro(mode, Number(f.get('days')));
+  renderCoach();
+});
+try { const m = localStorage.getItem('proMode'); if (m) $('#proForm [name=mode]').value = m; } catch {}
 $('#btForm').addEventListener('submit', (e) => { e.preventDefault(); runBacktest(); });
 
 function runBacktest() {
@@ -530,5 +600,5 @@ async function loadTrack() {
 // 화면의 조건 숫자 채우기
 document.querySelectorAll('[data-p]').forEach((el) => { el.textContent = state.params[el.dataset.p]; });
 
-initCoach({ state, cache, fmtPrice, pct, pctPlain, sym, openCoin, info, todayKST });
+initCoach({ state, cache, fmtPrice, pct, pctPlain, sym, openCoin, info, todayKST, CHECKS, MAX_SCORE });
 loadAll();
