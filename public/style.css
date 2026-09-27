@@ -12,6 +12,7 @@
   --ma-fast: #eda100;
   --ma-slow: #4a3aa7;
   --res: #d9622b;
+  --entry: #c2417a;
   --sup: #1a9c5e;
   --t-hot-bg: #e34948; --t-pb-bg: #1a9c5e; --t-warn-bg: #d9622b;
   --ok: #008300;
@@ -35,9 +36,12 @@
     --ma-fast: #c98500;
     --ma-slow: #9085e9;
   --res: #e8834f;
+  --entry: #e87ba4;
   --sup: #3fbf7f;
   --t-hot-bg: #d94646; --t-pb-bg: #1f8a55; --t-warn-bg: #c4561f;
     --res: #e8834f;
+  --entry: #e87ba4;
+    --entry: #e87ba4;
     --sup: #3fbf7f;
     --t-hot-bg: #d94646; --t-pb-bg: #1f8a55; --t-warn-bg: #c4561f;
     --ok: #3fae3f;
@@ -60,6 +64,7 @@
   --ma-fast: #c98500;
   --ma-slow: #9085e9;
   --res: #e8834f;
+  --entry: #e87ba4;
   --sup: #3fbf7f;
   --t-hot-bg: #d94646; --t-pb-bg: #1f8a55; --t-warn-bg: #c4561f;
   --ok: #3fae3f;
@@ -245,3 +250,23 @@ button.ghost { background: none; border: 1px solid var(--border); color: var(--t
 .checkbox-detail div div { margin: 3px 0; }
 .grid.guide td { white-space: normal; vertical-align: top; }
 .grid.guide td:first-child { white-space: nowrap; }
+
+/* ---------- 매수 타점 ---------- */
+.ln.entry { background: var(--entry); }
+.c-plan { grid-column: 1 / -1; font-size: 13px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-variant-numeric: tabular-nums; }
+.c-plan b { color: var(--entry); font-weight: 650; }
+.badge.zone { background: var(--entry); color: #fff; margin-left: 0; }
+.plan { border: 1.5px solid var(--entry); border-radius: var(--radius); padding: 12px 14px; margin-bottom: 12px; background: color-mix(in srgb, var(--entry) 6%, var(--surface)); }
+.plan-h { font-size: 13px; font-weight: 650; color: var(--entry); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.plan-zone { font-size: 22px; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; margin: 2px 0; }
+.plan-zone small { font-size: 13px; font-weight: 400; color: var(--text-2); margin-left: 8px; }
+.plan-why { font-size: 13.5px; color: var(--text-2); }
+.plan-none { font-size: 14px; color: var(--text-2); margin-top: 4px; }
+.plan-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 10px; }
+.plan-row div { background: var(--surface); border-radius: 8px; padding: 6px 10px; display: flex; flex-direction: column; }
+.plan-row span { font-size: 12px; color: var(--text-2); }
+.plan-row b { font-size: 15px; font-variant-numeric: tabular-nums; }
+.plan-row em { font-style: normal; font-size: 12px; color: var(--muted); }
+.plan-row em.up { color: var(--up); } .plan-row em.down { color: var(--down); }
+:root[data-theme="dark"] .badge.zone { color: #1a1a19; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .badge.zone { color: #1a1a19; } }

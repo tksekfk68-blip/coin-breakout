@@ -110,10 +110,17 @@ function pill(r, big = false) {
   return `<span class="pill t-${r.state} ${big ? 'big' : ''}">${r.icon} ${r.label}</span>`;
 }
 
+function planLine(r) {
+  const pl = r.plan;
+  if (!pl || pl.none) return '';
+  const where = pl.inZone ? '<span class="badge zone">📍 지금 타점 안</span>' : `<span class="flat">현재가 대비 ${pctPlain(pl.dist)}</span>`;
+  return `<span class="c-plan"><b>📍 ${pl.kind}</b> ${fmtPrice(pl.low)} ~ ${fmtPrice(pl.high)} ${where}</span>`;
+}
+
 function renderFilters(list) {
   const cnt = { all: list.length };
-  list.forEach(({ r }) => { cnt[r.state] = (cnt[r.state] || 0) + 1; });
-  const items = [['all', '전체'], ...ORDER.map((k) => [k, `${TONES[k].icon} ${TONES[k].label}`])]
+  list.forEach(({ r }) => { cnt[r.state] = (cnt[r.state] || 0) + 1; if (r.plan?.inZone) cnt.zone = (cnt.zone || 0) + 1; });
+  const items = [['all', '전체'], ['zone', '📍 타점 안'], ...ORDER.map((k) => [k, `${TONES[k].icon} ${TONES[k].label}`])]
     .filter(([k]) => k === 'all' || cnt[k]);
   $('#filters').innerHTML = items.map(([k, label]) =>
     `<button type="button" class="fchip ${filter === k ? 'on' : ''}" data-f="${k}">${label} <b>${cnt[k] || 0}</b></button>`).join('');
@@ -130,7 +137,7 @@ function renderScreen() {
   list.sort((a, b) => (ORDER.indexOf(a.r.state) - ORDER.indexOf(b.r.state)) ||
     ((state.tickers[b.m]?.acc_trade_price_24h || 0) - (state.tickers[a.m]?.acc_trade_price_24h || 0)));
   renderFilters(list);
-  const shown = filter === 'all' ? list : list.filter((x) => x.r.state === filter);
+  const shown = filter === 'all' ? list : filter === 'zone' ? list.filter((x) => x.r.plan?.inZone) : list.filter((x) => x.r.state === filter);
   $('#coinList').innerHTML = shown.map(({ m, r }) => {
     const t = state.tickers[m] || {};
     return `<button type="button" class="coin-row ${state.selected === m ? 'sel' : ''}" data-m="${m}">
@@ -138,6 +145,7 @@ function renderScreen() {
       <span class="c-state">${pill(r)}${r.action ? `<em>${r.action}</em>` : ''}</span>
       <span class="c-price"><b>${fmtPrice(t.trade_price ?? r.price)}</b>${pct(t.signed_change_rate, 2)}</span>
       <span class="c-reason">${r.reason}</span>
+      ${planLine(r)}
     </button>`;
   }).join('') || '<p class="note">해당하는 코인이 없어요.</p>';
   if (state.selected) renderDetail(state.selected, false);
@@ -165,12 +173,23 @@ function renderDetail(m, redraw) {
   $('#dReason').textContent = r.reason;
 
   const gap = (x) => (x ? pctPlain(x / r.price - 1) : '');
+  const pl = r.plan;
+  $('#dPlan').innerHTML = !pl ? '' : pl.none
+    ? `<div class="plan-h">📍 예상 매수 타점</div><div class="plan-none">${pl.why}</div>`
+    : `<div class="plan-h">📍 예상 매수 타점 · ${pl.kind} ${pl.inZone ? '<span class="badge zone">지금 타점 안</span>' : ''}</div>
+       <div class="plan-zone">${fmtPrice(pl.low)} ~ ${fmtPrice(pl.high)}<small>${pl.inZone ? '현재가가 구간 안' : `현재가 대비 ${pctPlain(pl.dist)}`}</small></div>
+       <div class="plan-why">${pl.why}</div>
+       <div class="plan-row">
+         <div><span>손절</span><b>${fmtPrice(pl.stop)}</b><em class="down">${pctPlain(pl.stop / ((pl.low + pl.high) / 2) - 1)}</em></div>
+         <div><span>목표</span><b>${pl.target ? fmtPrice(pl.target) : '위 저항 없음'}</b><em class="up">${pl.target ? pctPlain(pl.target / ((pl.low + pl.high) / 2) - 1) : '추세 따라가기'}</em></div>
+         <div><span>손익비</span><b>${pl.rr ? '1 : ' + pl.rr.toFixed(1) : '-'}</b><em>${pl.rr == null ? '' : pl.rr >= 2 ? '좋음' : pl.rr >= 1.5 ? '보통' : '불리'}</em></div>
+       </div>`;
   const cell = (k, v, s = '', cls = '') => `<div class="lv ${cls}"><div class="k">${k}</div><div class="v">${v}</div><div class="s">${s}</div></div>`;
   const res = r.resistances[0], sup = r.supports[0];
   $('#dLevels').innerHTML = [
     cell('위 저항', res ? fmtPrice(res.price) : '없음', res ? `${gap(res.price)} · ${res.touches}번 막힘` : '신고가 구간', 'res'),
     cell('아래 지지', sup ? fmtPrice(sup.price) : '-', sup ? `${gap(sup.price)} · ${sup.touches}번 받침` : '', 'sup'),
-    cell('손절 기준', r.stop ? fmtPrice(r.stop) : '-', r.stop ? `${gap(r.stop)}` : '진입 자리 아님', 'stop'),
+    cell(`${state.params.maFast}일선`, fmtPrice(r.maF), `현재가가 ${pctPlain(r.ext)} 위치`),
     cell('RSI', r.rsi == null ? '-' : r.rsi.toFixed(0), r.rsi > 70 ? '과열권' : r.rsi < 30 ? '침체권' : '보통'),
   ].join('');
 
@@ -225,7 +244,12 @@ function drawChart(m, r = cache[m]) {
   if (r) {
     r.resistances.slice(0, 2).forEach((x, k) => cs.createPriceLine({ price: x.price, color: css('--res'), lineWidth: k ? 1 : 2, lineStyle: 2, axisLabelVisible: true, title: k ? '' : '저항' }));
     r.supports.slice(0, 2).forEach((x, k) => cs.createPriceLine({ price: x.price, color: css('--sup'), lineWidth: k ? 1 : 2, lineStyle: 2, axisLabelVisible: true, title: k ? '' : '지지' }));
-    if (r.stop) cs.createPriceLine({ price: r.stop, color: css('--muted'), lineWidth: 1, lineStyle: 1, axisLabelVisible: true, title: '손절' });
+    const pl = r.plan;
+    if (pl && !pl.none) {
+      cs.createPriceLine({ price: pl.high, color: css('--entry'), lineWidth: 2, lineStyle: 0, axisLabelVisible: true, title: '타점' });
+      cs.createPriceLine({ price: pl.low, color: css('--entry'), lineWidth: 2, lineStyle: 0, axisLabelVisible: true, title: '' });
+      cs.createPriceLine({ price: pl.stop, color: css('--muted'), lineWidth: 1, lineStyle: 1, axisLabelVisible: true, title: '손절' });
+    }
   }
 
   // 신호 표시: 돌파 ▲, 눌림 ●
