@@ -1,0 +1,68 @@
+//@version=5
+// 깐부 프로 점수 전략 (코인 레이더와 같은 규칙)
+// 사용법: 트레이딩뷰 → 차트 아래 "Pine 편집기" → 전체 붙여넣기 → "차트에 추가"
+//        → 아래 "전략 테스터" 탭에서 승률·손익·최대낙폭 확인
+// 차트는 일봉(1D), UPBIT:코인KRW 로 보세요. 예) UPBIT:XRPKRW
+strategy("깐부 프로 점수 전략", overlay = true,
+     initial_capital = 1000000, currency = currency.KRW,
+     commission_type = strategy.commission.percent, commission_value = 0.05,  // 업비트 수수료
+     slippage = 2, process_orders_on_close = true, pyramiding = 0)
+
+// ---------- 설정 (사이트 백테스트 탭의 '고른 조합'과 맞추세요) ----------
+minScore = input.int(7,   "최소 점수 (9점 만점)", minval = 1, maxval = 9)
+tATR     = input.float(1.0, "목표 = ATR ×", step = 0.5)
+sATR     = input.float(2.0, "손절 = ATR ×", step = 0.5)
+maxHold  = input.int(14,  "최대 보유일")
+riskPct  = input.float(1.0, "1회 최대 손실 (자산 %)", step = 0.5)
+maxPos   = input.float(30.0, "1코인 최대 비중 (%)", step = 5)
+btcSym   = input.symbol("UPBIT:BTCKRW", "비교용 비트코인")
+
+// ---------- 지표 ----------
+e20 = ta.ema(close, 20)
+e50 = ta.ema(close, 50)
+atr = ta.atr(14)
+[pdi, ndi, adx] = ta.dmi(14, 14)
+[_m, _s, hist] = ta.macd(close, 12, 26, 9)
+rsi = ta.rsi(close, 14)
+obv = ta.obv
+obvMa = ta.sma(obv, 20)
+[btc, btcE50] = request.security(btcSym, "D", [close, ta.ema(close, 50)], lookahead = barmerge.lookahead_off)
+
+// ---------- 점수 (추세 2점 + 나머지 각 1점 = 9점) ----------
+cTrend  = close > e20 and e20 > e50 and e50 > e50[5]
+cAdx    = adx >= 20 and pdi > ndi
+cMacd   = hist > 0 or (hist > hist[1] and hist[1] > hist[2])
+cRsi    = rsi >= 45 and rsi <= 68
+cObv    = obv > obvMa
+cRs     = (close / close[20] - 1) > (btc / btc[20] - 1)
+cMarket = btc > btcE50
+cNotExt = close - e20 <= 1.5 * atr
+score = (cTrend ? 2 : 0) + (cAdx ? 1 : 0) + (cMacd ? 1 : 0) + (cRsi ? 1 : 0) + (cObv ? 1 : 0) + (cRs ? 1 : 0) + (cMarket ? 1 : 0) + (cNotExt ? 1 : 0)
+trigger = close > high[1] and close > open   // 전일 고가를 양봉으로 넘김
+signal = cTrend and trigger and score >= minScore
+
+// ---------- 진입 / 청산 ----------
+var float stopPx = na
+var float tgtPx = na
+var int entryBar = na
+if signal and strategy.position_size == 0
+    stopPx := close - sATR * atr
+    tgtPx := close + tATR * atr
+    riskQty = (strategy.equity * riskPct / 100) / (close - stopPx)
+    capQty = (strategy.equity * maxPos / 100) / close
+    strategy.entry("L", strategy.long, qty = math.min(riskQty, capQty))
+    entryBar := bar_index
+if strategy.position_size > 0
+    strategy.exit("X", "L", stop = stopPx, limit = tgtPx)
+    if bar_index - entryBar >= maxHold
+        strategy.close("L", comment = "기간 만료")
+
+// ---------- 표시 ----------
+plot(e20, "EMA20", color = color.orange)
+plot(e50, "EMA50", color = color.purple)
+plotshape(signal, "진입 신호", shape.triangleup, location.belowbar, color.green, size = size.small)
+plot(strategy.position_size > 0 ? stopPx : na, "손절", color.red, style = plot.style_linebr)
+plot(strategy.position_size > 0 ? tgtPx : na, "목표", color.teal, style = plot.style_linebr)
+var table t = table.new(position.top_right, 1, 1)
+if barstate.islast
+    table.cell(t, 0, 0, "점수 " + str.tostring(score) + "/9" + (signal ? "  ✅ 신호" : ""), text_color = color.white, bgcolor = signal ? color.green : color.gray)

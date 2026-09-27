@@ -151,6 +151,7 @@ export function simulate(prep, p, from = '0000', to = '9999') {
     if (!r || i <= busyUntil) continue;
     if (r.t < from || r.t > to) continue;
     if (!(r.chk.trend && r.trigger && r.score >= p.minScore)) continue;
+    if (p.needMarket && !r.chk.market) continue; // 비트코인 하락장이면 쉼
     const entry = cs[i].c;
     const stop = entry - p.sATR * r.atr;
     const target = entry + p.tATR * r.atr;
@@ -198,6 +199,7 @@ export const GRID = {
   tATR: [1, 1.5, 2, 3],
   sATR: [1, 1.5, 2],
   maxHold: [7, 14],
+  needMarket: [false, true], // true = 비트코인이 EMA50 위일 때만 거래
 };
 
 /**
@@ -215,8 +217,9 @@ export function optimize(preps, { mode = 'win', days = 120, minN = 15 } = {}) {
   for (const minScore of GRID.minScore)
     for (const tATR of GRID.tATR)
       for (const sATR of GRID.sATR)
-        for (const maxHold of GRID.maxHold) {
-          const p = { minScore, tATR, sATR, maxHold };
+        for (const maxHold of GRID.maxHold)
+        for (const needMarket of GRID.needMarket) {
+          const p = { minScore, tATR, sATR, maxHold, needMarket };
           const ins = [], out = [];
           for (const pr of Object.values(preps)) {
             ins.push(...simulate(pr, p, start, cut));
@@ -243,6 +246,7 @@ export function currentSetup(prep, p, livePrice = null) {
   if (!r) return null;
   const base = { row: r, score: r.score, atr: r.atr, atrPct: r.atr / cs[last].c };
   let s;
+  if (p.needMarket && !r.chk.market) return { ...base, kind: null, paused: true };
   if (r.chk.trend && r.trigger && r.score >= p.minScore) {
     // 어제 마감에 신호 확정: 손절/목표는 어제 종가 기준으로 고정
     const ref = cs[last].c;

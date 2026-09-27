@@ -39,8 +39,8 @@ async function candles(market) {
 }
 
 const combos = [];
-for (const minScore of GRID.minScore) for (const tATR of GRID.tATR) for (const sATR of GRID.sATR) for (const maxHold of GRID.maxHold)
-  combos.push({ minScore, tATR, sATR, maxHold });
+for (const minScore of GRID.minScore) for (const tATR of GRID.tATR) for (const sATR of GRID.sATR) for (const maxHold of GRID.maxHold) for (const needMarket of GRID.needMarket)
+  combos.push({ minScore, tATR, sATR, maxHold, needMarket });
 
 function runAll(preps, p, from, to) {
   const t = [];
@@ -107,7 +107,8 @@ async function main() {
       if (!best) { foldRows.push({ ...f, skipped: true, btcRet }); continue; }
       const tt = runAll(preps, best.p, f.testFrom, f.testTo);
       oos.push(...tt);
-      foldRows.push({ ...f, p: best.p, train: best.s, test: stats(tt), btcRet });
+      const alt = stats(runAll(preps, { ...best.p, needMarket: !best.p.needMarket }, f.testFrom, f.testTo));
+      foldRows.push({ ...f, p: best.p, train: best.s, test: stats(tt), alt, btcRet });
     }
     // 최신 조합: 가장 최근 150일로 고름
     const lastFrom = dates[Math.max(first, dates.length - TRAIN)], lastTo = dates.at(-1);
@@ -124,10 +125,17 @@ async function main() {
       .sort((a, b) => (a.kind === 'go' ? -1 : 1) - (b.kind === 'go' ? -1 : 1) || b.score - a.score)
       : [];
     const oosDone = oos.filter((t) => !t.open);
+    const forced = {};
+    for (const nm of [false, true]) {
+      const all = [];
+      for (const f of foldRows) if (f.p) all.push(...runAll(preps, { ...f.p, needMarket: nm }, f.testFrom, f.testTo));
+      forced[nm ? 'withMarketFilter' : 'noMarketFilter'] = { ...stats(all), equity1pct: equity(all, 0.01) };
+    }
     report.modes[mode] = {
       oos: stats(oos),
       equity1pct: equity(oos, 0.01),
       equity2pct: equity(oos, 0.02),
+      forced,
       folds: foldRows,
       latest,
       setups,

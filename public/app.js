@@ -430,7 +430,7 @@ async function openCoin(m) {
 let btDone = false;
 
 // ---------- 🏆 프로 전략 ----------
-const DEFAULT_PRO = { minScore: 7, tATR: 2, sATR: 1.5, maxHold: 14 };
+const DEFAULT_PRO = { minScore: 7, tATR: 2, sATR: 1.5, maxHold: 14, needMarket: true };
 function proMode() { try { return localStorage.getItem('proMode') || 'win'; } catch { return 'win'; } }
 
 function buildPro(mode = proMode(), days = 130) {
@@ -459,7 +459,7 @@ state.proSetup = (m) => {
 
 const pw = (x) => (x == null ? '-' : Math.round(x * 100) + '%');
 function proWords(p) {
-  return `점수 <b>${p.minScore}/${MAX_SCORE}</b> 이상 + 추세 정배열 + <b>전일 고가를 양봉으로 넘길 때</b> 매수 → 손절 <b>ATR×${p.sATR}</b> · 목표 <b>ATR×${p.tATR}</b> · 최대 <b>${p.maxHold}일</b> 보유`;
+  return `${p.needMarket ? '<b>비트코인이 EMA50 위일 때만</b>, ' : ''}점수 <b>${p.minScore}/${MAX_SCORE}</b> 이상 + 추세 정배열 + <b>전일 고가를 양봉으로 넘길 때</b> 매수 → 손절 <b>ATR×${p.sATR}</b> · 목표 <b>ATR×${p.tATR}</b> · 최대 <b>${p.maxHold}일</b> 보유`;
 }
 function renderPro() {
   const P = state.pro, box = $('#proResult');
@@ -478,7 +478,7 @@ function renderPro() {
     <div class="verdict">${verdict}</div>
     <details class="checkbox-detail"><summary>다른 상위 조합 보기</summary>
       <div class="tablewrap"><table class="grid"><thead><tr><th>조합</th><th class="num">고른 기간 승률</th><th class="num">검증 승률</th><th class="num">검증 평균 R</th><th class="num">검증 거래</th></tr></thead><tbody>${
-        P.ranked.map((r) => `<tr><td>점수≥${r.p.minScore} · 손절 ${r.p.sATR} · 목표 ${r.p.tATR} · ${r.p.maxHold}일</td><td class="num">${pw(r.ins.win)}</td><td class="num">${pw(r.out.win)}</td><td class="num">${r.out.avgR == null ? '-' : r.out.avgR.toFixed(2)}</td><td class="num">${r.out.n}</td></tr>`).join('')
+        P.ranked.map((r) => `<tr><td>점수≥${r.p.minScore} · 손절 ${r.p.sATR} · 목표 ${r.p.tATR} · ${r.p.maxHold}일${r.p.needMarket ? ' · BTC필터' : ''}</td><td class="num">${pw(r.ins.win)}</td><td class="num">${pw(r.out.win)}</td><td class="num">${r.out.avgR == null ? '-' : r.out.avgR.toFixed(2)}</td><td class="num">${r.out.n}</td></tr>`).join('')
       }</tbody></table></div>
       <p class="note small">R = 손절폭 대비 수익. +1R이면 "손절폭만큼 벌었다", -1R이면 "손절에 걸렸다". 평균 R이 플러스여야 오래 하면 자산이 불어요.</p>
     </details>
