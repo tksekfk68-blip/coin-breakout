@@ -1,4 +1,6 @@
 [build]
+  # 데이터 파일(검증 결과·브리핑)만 바뀐 커밋은 배포 안 함 → 크레딧 절약
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)public/research' ':(exclude)public/briefing' ':(exclude)scripts' ':(exclude).github'"
   publish = "public"
   functions = "netlify/functions"
 

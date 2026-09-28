@@ -436,9 +436,12 @@ const DEFAULT_PRO = { minScore: 7, tATR: 2, sATR: 1.5, maxHold: 14, needMarket: 
 function proMode() { try { return localStorage.getItem('proMode') || 'win'; } catch { return 'win'; } }
 
 // ---------- 📊 실제 데이터 검증 (GitHub에서 매일 생성) ----------
+const RAW = 'https://raw.githubusercontent.com/tksekfk68-blip/coin-breakout/main';
 async function loadResearch() {
   try {
-    const res = await fetch('/research/report.json', { cache: 'no-store' });
+    // 매일 갱신되는 결과는 GitHub에서 직접 읽음 (넷리파이 배포 없이 최신 유지)
+    let res = await fetch(`${RAW}/public/research/report.json?t=${Date.now()}`, { cache: 'no-store' }).catch(() => null);
+    if (!res || !res.ok) res = await fetch('/research/report.json', { cache: 'no-store' });
     if (!res.ok) throw new Error(res.status);
     state.research = await res.json();
   } catch { state.research = null; }

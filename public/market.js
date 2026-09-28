@@ -2,10 +2,14 @@
 const $ = (s, r = document) => r.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 export const market = { briefing: null, pulse: null };
+// 브리핑은 매일 GitHub에 올라감 → 넷리파이 재배포 없이 바로 반영
+const RAW = 'https://raw.githubusercontent.com/tksekfk68-blip/coin-breakout/main';
 
 export async function loadMarket() {
   const [b, p] = await Promise.allSettled([
-    fetch('/briefing/latest.json', { cache: 'no-store' }).then((r) => (r.ok ? r.json() : null)),
+    fetch(`${RAW}/public/briefing/latest.json?t=${Date.now()}`, { cache: 'no-store' })
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .catch(() => fetch('/briefing/latest.json', { cache: 'no-store' }).then((r) => (r.ok ? r.json() : null))),
     fetch('/api/pulse').then((r) => (r.ok ? r.json() : null)),
   ]);
   market.briefing = b.status === 'fulfilled' ? b.value : null;
