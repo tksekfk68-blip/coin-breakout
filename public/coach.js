@@ -28,6 +28,7 @@ export function initCoach(ctx) {
     if (act === 'add') openBuy(null);
     if (act === 'connect') connect();
     if (act === 'plan') openPlan();
+    if (act === 'news') document.querySelector('.tab[data-tab="news"]').click();
     if (act === 'logout') { journal.code = null; journal.data = null; try { localStorage.removeItem('journalCode'); } catch {} renderConnect(); renderCoach(); }
   });
 
@@ -167,6 +168,8 @@ export function renderCoach() {
   $('#coachMood').innerHTML = `
     <div class="mood-main"><span class="mood-icon">${mood.icon}</span><div><b>깐부 한마디</b><p>${mood.text}${mood.extra.length ? ` <span class="flat">(${mood.extra.join(' · ')})</span>` : ''}</p></div></div>
     ${ng.map(([k, t]) => `<div class="nudge ${k}">${{ stop: '🛑', warn: '⚠️', good: '🎉', ok: '✅' }[k]} ${t}</div>`).join('')}`;
+  const B = C.market?.briefing;
+  $('#briefLine').innerHTML = B ? `<button type="button" class="brief-line" data-coach="news">📰 <b>오늘 시황:</b> ${esc(B.title)} <span class="flat">→</span></button>` : '';
   renderPlanCard();
   renderPicks();
   renderPositions();
@@ -204,12 +207,12 @@ function renderPicks() {
     const cur = price(m);
     const sz = sizing(s.entry, s.stop);
     const head = s.kind === 'go' ? '<span class="pill t-pullback">✅ 진입 신호</span>'
-      : s.kind === 'live' ? '<span class="pill t-breakout">⚡ 지금 트리거 돌파</span>'
+      : s.kind === 'live' ? '<span class="pill t-near">⚡ 돌파 중 · 마감 확인 전</span>'
       : '<span class="pill t-pullwait">⏳ 트리거 대기</span>';
     const wildTxt = s.wild ? ' <b>다만 변동이 커서 손절폭이 넓어</b>. 금액을 작게.' : '';
     const moved = s.kind === 'go' && Math.abs(s.lateBy) >= 0.01 ? ` (신호 종가 ${C.fmtPrice(s.ref)} 대비 지금 ${C.pctPlain(s.lateBy)})` : '';
     const line = s.kind === 'go' ? `어제 전일 고가를 양봉으로 넘겼어. 조건 다 맞았어${moved}.${wildTxt}`
-      : s.kind === 'live' ? `지금 어제 고가(${C.fmtPrice(s.trigger)})를 넘는 중이야. 마감까지 버티면 신호 확정.`
+      : s.kind === 'live' ? `지금 어제 고가(${C.fmtPrice(s.trigger)})를 넘는 중이야. <b>아직 사지 마.</b> 장중 돌파는 자주 꺼져. 오전 9시 마감까지 버티면 그때 신호 확정이야.`
       : `오늘 <b>${C.fmtPrice(s.trigger)}</b>(어제 고가)를 넘으면 들어갈 자리야. 알림 걸어두자.${wildTxt}`;
     const chips = C.CHECKS.map((k) => `<span class="ck2 ${r.chk[k.key] ? 'on' : ''}" title="${k.desc}">${k.label}</span>`).join('');
     return `<div class="pick">

@@ -4,6 +4,7 @@ import {
 } from './lib/strategy.js';
 import { TONES, classify } from './lib/analysis.js';
 import { initCoach, renderCoach } from './coach.js';
+import { loadMarket, market } from './market.js';
 import { CHECKS, MAX_SCORE, optimize, prepare, currentSetup } from './lib/pro.js';
 
 const UNIVERSE = 30;
@@ -652,5 +653,6 @@ async function loadTrack() {
 // 화면의 조건 숫자 채우기
 document.querySelectorAll('[data-p]').forEach((el) => { el.textContent = state.params[el.dataset.p]; });
 
-initCoach({ state, cache, fmtPrice, pct, pctPlain, sym, openCoin, info, todayKST, CHECKS, MAX_SCORE });
+loadMarket().then(() => renderCoach());
+initCoach({ market, state, cache, fmtPrice, pct, pctPlain, sym, openCoin, info, todayKST, CHECKS, MAX_SCORE });
 loadAll();

@@ -24,6 +24,7 @@
 
   <nav class="tabs" role="tablist">
     <button role="tab" class="tab active" data-tab="coach" aria-selected="true">🤝 깐부</button>
+    <button role="tab" class="tab" data-tab="news" aria-selected="false">📰 시황</button>
     <button role="tab" class="tab" data-tab="screen" aria-selected="false">지금 상태</button>
     <button role="tab" class="tab" data-tab="backtest" aria-selected="false">백테스트</button>
     <button role="tab" class="tab" data-tab="track" aria-selected="false">실전 성적표</button>
@@ -34,6 +35,7 @@
     <!-- 오늘의 신호 -->
     <!-- 코치 -->
     <section id="tab-coach" class="panel active">
+      <div id="briefLine"></div>
       <div id="coachMood" class="mood"></div>
       <div id="planCard"></div>
 
@@ -99,12 +101,17 @@
       </dialog>
     </section>
 
+    <!-- 시황 -->
+    <section id="tab-news" class="panel">
+      <div id="newsBody"><p class="note">시황 불러오는 중…</p></div>
+    </section>
+
     <!-- 지금 상태 -->
     <section id="tab-screen" class="panel">
       <div class="radar">
         <div class="radar-h">
           <h2>🚀 급등 레이더</h2>
-          <span class="note small">원화마켓 전체 <span id="radarN">-</span>개 실시간 감시</span>
+          <span class="note small">원화마켓 전체 <span id="radarN">-</span>개 실시간 감시 · <b>관찰용, 매수 신호 아님</b></span>
           <input id="coinSearch" list="coinOptions" type="search" placeholder="코인 검색 (예: SUN, 비트코인)" autocomplete="off" />
           <datalist id="coinOptions"></datalist>
         </div>

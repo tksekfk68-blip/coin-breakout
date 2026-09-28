@@ -1,0 +1,36 @@
+{
+  "writtenAt": "2026-09-29T07:55:00+09:00",
+  "title": "지정학·금리 부담에 숨 고르기 — 이번 주 분수령은 금요일 밤 미국 고용지표",
+  "mood": "조심",
+  "moodNote": "지난주 반등 뒤 위험자산 전반이 쉬는 구간. 신규 진입은 평소 절반 크기로.",
+  "coin": [
+    "비트코인 약 8.3만 달러(업비트 약 1억 1,360만 원). 지난주 +4% 오른 뒤 이틀째 밀리는 중. 오늘 아침 업비트 원화마켓 코인 약 73%가 하락.",
+    "트럼프 대통령이 이란의 '7일 휴전안'을 거부하면서 유가(브렌트유 100달러 돌파)·달러·미국 국채금리가 함께 올라 코인 같은 위험자산을 누르는 중.",
+    "이더리움 약 2,660달러(업비트 365만 원 안팎). 1주일째 좁은 박스권.",
+    "지난주 급하게 오른 알트코인들이 되돌림 중. 예: 파일코인(FIL)은 9/26 장중 +17% 급등분을 거의 반납(오늘 -8% 안팎).",
+    "솔라나 합의 알고리즘 대형 업그레이드(알펜글로) 9/28 적용."
+  ],
+  "macro": [
+    "미국 연준 9/16 기준금리 인상(3.75~4.00%, 12대0 만장일치). 물가 잡기 우선 → 추가 인상 경계감 남아 있음.",
+    "원/달러 환율 1,365.1원(9/28 마감, 하루 +7.6원). 달러 강세라 원화로 코인 사는 입장에선 부담.",
+    "유가 급등은 물가를 다시 밀어올릴 수 있어서, 금리 인상 우려 → 코인에 불리하게 작용."
+  ],
+  "events": [
+    { "when": "9/30(수) 21:30", "what": "미국 2분기 GDP 확정치 · 근원 PCE 물가", "why": "연준이 제일 중요하게 보는 물가 지표. 높게 나오면 코인에 악재" },
+    { "when": "10/1(목) 21:30", "what": "미국 신규 실업수당 청구", "why": "고용 체력 확인" },
+    { "when": "10/1(목) 23:00", "what": "미국 ISM 제조업지수", "why": "경기 체력 확인" },
+    { "when": "10/2(금) 21:30", "what": "미국 9월 비농업 고용(예상 8.4만 명) · 시간당 임금", "why": "이번 주 최대 이벤트. 결과 따라 크게 출렁일 수 있음" }
+  ],
+  "strategy": [
+    "비트코인이 아직 50일 평균선 위라 우리 규칙상 '거래 가능' 구간이지만, 지정학 뉴스 한 줄에 흔들리는 장이에요.",
+    "새로 살 땐 평소 절반 크기, 사자마자 업비트에 손절·목표 주문부터 걸어두기.",
+    "지난주 급등한 알트는 '급등 전 가격'이 지지선. 거기 깨지면 규칙대로 정리하고, 물타기는 하지 않기.",
+    "고용지표 나오는 금요일 밤 직전엔 새 포지션을 늘리지 않는 게 안전해요."
+  ],
+  "sources": [
+    { "title": "Yahoo Finance · Bitcoin loses ground after Trump rejects Iran's 7-day plan (9/28)", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-monday-september-28-2026-bitcoin-loses-ground-after-trump-rejects-irans-7-day-plan-113444329.html" },
+    { "title": "CoinDesk · Bitcoin rally takes a breather ahead of key U.S. employment data (9/28)", "url": "https://www.coindesk.com/markets/2026/09/28/bitcoin-rally-takes-a-breather-ahead-of-key-u-s-employment-data-crypto-week-ahead" },
+    { "title": "CNBC · Fed rate decision September 2026: Rates rise to 3.75%-4%", "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html" },
+    { "title": "뉴시스 · 원·달러 환율, 7.6원 오른 1365.1원 마감 (9/28)", "url": "https://www.newsis.com/view/NISX20260928_0003805621" }
+  ]
+}
