@@ -1,0 +1,24 @@
+name: check
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/check.mjs']
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node scripts/check.mjs
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/research/check.json
+          git diff --cached --quiet && exit 0
+          git commit -m "check: 추천 코인 사후 확인"
+          git pull --rebase origin main
+          git push origin HEAD:main
