@@ -69,6 +69,9 @@ export async function onRequestGet({ request, waitUntil }) {
       out.global = { mcapUsd: d.data.total_market_cap.usd, mcapChg24h: d.data.market_cap_change_percentage_24h_usd / 100, btcDom: d.data.market_cap_percentage.btc / 100, ethDom: d.data.market_cap_percentage.eth / 100 };
     }).catch(() => j('https://api.coinpaprika.com/v1/global').then((d) => {
       out.global = { mcapUsd: d.market_cap_usd, mcapChg24h: d.market_cap_change_24h / 100, btcDom: d.bitcoin_dominance_percentage / 100 };
+    })).catch(() => j('https://api.coinlore.net/api/global/').then((d) => {
+      const g = d[0];
+      out.global = { mcapUsd: +g.total_mcap, mcapChg24h: +g.mcap_change / 100, btcDom: +g.btc_d / 100 };
     })),
     j('https://open.er-api.com/v6/latest/USD').then((d) => { out.usdkrw = d.rates.KRW; }),
     j('https://api.coinbase.com/v2/prices/BTC-USD/spot').then((d) => { out.btcUsd = +d.data.amount; })
