@@ -22,10 +22,22 @@ const state = {
 };
 
 // ---------- 공통 ----------
+const UPBIT_DIRECT = {
+  tickers: () => 'https://api.upbit.com/v1/ticker/all?quote_currencies=KRW',
+  markets: () => 'https://api.upbit.com/v1/market/all?isDetails=false',
+  candles: (q) => `https://api.upbit.com/v1/candles/days?market=${q.market}&count=${q.count || 200}`,
+};
 async function api(q) {
-  const res = await fetch(`/api/upbit?${new URLSearchParams(q)}`);
-  if (!res.ok) throw new Error(`요청 실패 ${res.status}`);
-  return res.json();
+  // 서버 중계가 막히면 브라우저에서 업비트로 직접 요청
+  try {
+    const res = await fetch(`/api/upbit?${new URLSearchParams(q)}`);
+    if (!res.ok) throw new Error(`요청 실패 ${res.status}`);
+    return await res.json();
+  } catch (e) {
+    const res = await fetch(UPBIT_DIRECT[q.ep](q));
+    if (!res.ok) throw e;
+    return res.json();
+  }
 }
 const sym = (m) => m.replace('KRW-', '');
 function fmtPrice(p) {
@@ -628,28 +640,31 @@ async function loadTrack() {
   const tiles = $('#trackTiles'), table = $('#trackTable');
   table.innerHTML = '<tbody><tr><td class="flat">불러오는 중…</td></tr></tbody>';
   try {
-    const res = await fetch('/api/track');
+    const res = await fetch(`${RAW}/public/research/track.json?t=${Date.now()}`, { cache: 'no-store' });
     if (!res.ok) throw new Error(res.status);
-    const { days, picks } = await res.json();
+    const { days, picks, summary, at } = await res.json();
     if (!picks.length) {
       tiles.innerHTML = '';
-      table.innerHTML = `<tbody><tr><td class="flat">아직 기록된 신호가 없어요. 매일 오전 9시 5분에 자동으로 쌓입니다. (기록한 날 ${days}일)</td></tr></tbody>`;
+      table.innerHTML = `<tbody><tr><td class="flat">아직 기록된 신호가 없어요. 매일 오전 9시 10분에 자동으로 쌓여요.</td></tr></tbody>`;
       return;
     }
-    const s7 = picks.filter((p) => p.returns[7] != null).map((p) => p.returns[7]);
-    const wr = s7.length ? Math.round((s7.filter((x) => x > 0).length / s7.length) * 100) + '%' : '-';
-    const avg = s7.length ? s7.reduce((a, b) => a + b, 0) / s7.length : null;
-    tiles.innerHTML = `
-      <div class="tile"><div class="k">기록한 날</div><div class="v">${days}</div><div class="s">총 신호 ${picks.length}개</div></div>
-      <div class="tile"><div class="k">7일 적중률</div><div class="v">${wr}</div><div class="s">채점 ${s7.length}개</div></div>
-      <div class="tile"><div class="k">7일 평균 수익률</div><div class="v">${pct(avg)}</div><div class="s">신호일 종가 매수 가정</div></div>`;
-    table.innerHTML = `<thead><tr><th>신호일</th><th>코인</th><th>전략</th><th class="num">매수가</th>${HORIZONS.map((h) => `<th class="num">${h}일 뒤</th>`).join('')}<th class="num">지금까지</th></tr></thead><tbody>${
-      picks.map((p) => `<tr><td>${p.date}</td><td class="coin"><b>${sym(p.market)}</b></td><td>${p.strategy === 'pullback' ? '🎯 눌림목' : '🔥 돌파'}</td><td class="num">${fmtPrice(p.entry)}</td>${
+    const S = summary || {};
+    const tile = (k, v, s = '') => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div><div class="s">${s}</div></div>`;
+    const pr = S.pro || {};
+    tiles.innerHTML = [
+      tile('기록한 날', days, `${new Date(at).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })} 갱신`),
+      tile('🤝 깐부(점수제) 결과', pr.closed ? `목표 ${pr.hitTarget} · 손절 ${pr.hitStop}` : '대기 중', `신호 ${pr.n || 0}개 · 끝난 것 ${pr.closed || 0}개`),
+      tile('🤝 7일 뒤 승률', pr.win7 == null ? '-' : Math.round(pr.win7 * 100) + '%', pr.n7 ? `채점 ${pr.n7}개 · 평균 ${pctPlain(pr.avg7)}` : '7일 지나야 채점'),
+      tile('🔥 돌파 7일 승률', S.breakout?.win7 == null ? '-' : Math.round(S.breakout.win7 * 100) + '%', S.breakout?.n7 ? `채점 ${S.breakout.n7}개 · 평균 ${pctPlain(S.breakout.avg7)}` : ''),
+    ].join('');
+    const label = { pro: '🤝 깐부', pullback: '🎯 눌림목', breakout: '🔥 돌파' };
+    table.innerHTML = `<thead><tr><th>신호일</th><th>코인</th><th>전략</th><th class="num">매수가</th>${HORIZONS.map((h) => `<th class="num">${h}일 뒤</th>`).join('')}<th class="num">지금까지</th><th>결과</th></tr></thead><tbody>${
+      picks.map((p) => `<tr><td>${p.date}</td><td class="coin"><b>${sym(p.market)}</b></td><td>${label[p.strategy] || p.strategy}</td><td class="num">${fmtPrice(p.entry)}</td>${
         HORIZONS.map((h) => `<td class="num">${p.returns[h] != null ? pct(p.returns[h]) : '<span class="flat">대기</span>'}</td>`).join('')
-      }<td class="num">${pct(p.now)}</td></tr>`).join('')}</tbody>`;
+      }<td class="num">${pct(p.now)}</td><td>${p.outcome ? `${p.outcome.why === '목표' ? '🎯' : '🛑'} ${p.outcome.why} ${pct(p.outcome.ret)} (${p.outcome.days}일)` : p.strategy === 'pro' ? '<span class="flat">진행 중</span>' : ''}</td></tr>`).join('')}</tbody>`;
   } catch (e) {
     tiles.innerHTML = '';
-    table.innerHTML = `<tbody><tr><td class="flat">성적표를 불러오지 못했어요 (${e.message}). 넷리파이에 배포된 뒤부터 동작해요.</td></tr></tbody>`;
+    table.innerHTML = `<tbody><tr><td class="flat">성적표를 불러오지 못했어요 (${e.message}).</td></tr></tbody>`;
   }
 }
 
