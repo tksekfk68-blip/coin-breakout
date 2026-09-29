@@ -1,0 +1,14 @@
+{
+  // Cloudflare Workers 설정 (대시보드의 Workers 프로젝트 이름과 같아야 함)
+  "name": "coin-breakout",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "kv_namespaces": [{ "binding": "JOURNAL" }]
+  // 매매 일지용 KV: ID를 비워두면 첫 배포 때 자동으로 만들어짐
+
+}
