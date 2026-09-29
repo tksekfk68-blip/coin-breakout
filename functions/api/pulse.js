@@ -34,11 +34,26 @@ function parseRss(xml, source, n = 8) {
   return items;
 }
 
+// 카테고리별로 여러 출처를 순서대로 시도 (서버 위치에 따라 막히는 곳이 있어서)
 const FEEDS = [
-  { key: 'coinKo', url: 'https://news.google.com/rss/search?q=%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8+OR+%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0+when:1d&hl=ko&gl=KR&ceid=KR:ko', source: '구글 뉴스' },
-  { key: 'macroKo', url: 'https://news.google.com/rss/search?q=%ED%99%98%EC%9C%A8+OR+%EC%97%B0%EC%A4%80+OR+%EC%BD%94%EC%8A%A4%ED%94%BC+when:1d&hl=ko&gl=KR&ceid=KR:ko', source: '구글 뉴스' },
-  { key: 'coinEn', url: 'https://www.coindesk.com/arc/outboundfeeds/rss/', source: 'CoinDesk' },
+  { key: 'coinKo', urls: [
+    ['https://www.blockmedia.co.kr/feed', '블록미디어'],
+    ['https://www.tokenpost.kr/rss', '토큰포스트'],
+    ['https://news.google.com/rss/search?q=%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8+when:1d&hl=ko&gl=KR&ceid=KR:ko', '구글 뉴스'],
+  ] },
+  { key: 'macroKo', urls: [
+    ['https://www.yna.co.kr/rss/economy.xml', '연합뉴스'],
+    ['https://www.hankyung.com/feed/economy', '한국경제'],
+    ['https://news.google.com/rss/search?q=%ED%99%98%EC%9C%A8+OR+%EC%97%B0%EC%A4%80+when:1d&hl=ko&gl=KR&ceid=KR:ko', '구글 뉴스'],
+  ] },
+  { key: 'coinEn', urls: [['https://www.coindesk.com/arc/outboundfeeds/rss/', 'CoinDesk']] },
 ];
+async function firstFeed(f) {
+  for (const [url, source] of f.urls) {
+    try { const items = parseRss(await txt(url), source); if (items.length) return items; } catch {}
+  }
+  throw new Error('no feed ' + f.key);
+}
 
 export async function onRequestGet({ request, waitUntil }) {
   const cache = caches.default;
@@ -52,14 +67,18 @@ export async function onRequestGet({ request, waitUntil }) {
     }),
     j('https://api.coingecko.com/api/v3/global').then((d) => {
       out.global = { mcapUsd: d.data.total_market_cap.usd, mcapChg24h: d.data.market_cap_change_percentage_24h_usd / 100, btcDom: d.data.market_cap_percentage.btc / 100, ethDom: d.data.market_cap_percentage.eth / 100 };
-    }),
+    }).catch(() => j('https://api.coinpaprika.com/v1/global').then((d) => {
+      out.global = { mcapUsd: d.market_cap_usd, mcapChg24h: d.market_cap_change_24h / 100, btcDom: d.bitcoin_dominance_percentage / 100 };
+    })),
     j('https://open.er-api.com/v6/latest/USD').then((d) => { out.usdkrw = d.rates.KRW; }),
-    j('https://api.binance.com/api/v3/ticker/24hr?symbol=BTCUSDT').then((d) => { out.btcUsd = +d.lastPrice; out.btcUsdChg = +d.priceChangePercent / 100; })
-      .catch(() => j('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true').then((d) => { out.btcUsd = d.bitcoin.usd; out.btcUsdChg = d.bitcoin.usd_24h_change / 100; })),
+    j('https://api.coinbase.com/v2/prices/BTC-USD/spot').then((d) => { out.btcUsd = +d.data.amount; })
+      .catch(() => j('https://api.kraken.com/0/public/Ticker?pair=XBTUSD').then((d) => { out.btcUsd = +Object.values(d.result)[0].c[0]; }))
+      .catch(() => j('https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT').then((d) => { out.btcUsd = +d.price; })),
+    j('https://api.kraken.com/0/public/Ticker?pair=XBTUSD').then((d) => { const t = Object.values(d.result)[0]; out.btcUsdChg = +t.c[0] / +t.o - 1; }).catch(() => {}),
     j('https://api.upbit.com/v1/ticker?markets=KRW-BTC,KRW-USDT').then((d) => {
       for (const t of d) { if (t.market === 'KRW-BTC') out.btcKrw = t.trade_price; if (t.market === 'KRW-USDT') out.usdtKrw = t.trade_price; }
     }),
-    ...FEEDS.map((f) => txt(f.url).then((x) => { (out.news ||= {})[f.key] = parseRss(x, f.source); })),
+    ...FEEDS.map((f) => firstFeed(f).then((items) => { (out.news ||= {})[f.key] = items; })),
   ];
   const settled = await Promise.allSettled(tasks);
   out.errors = settled.filter((r) => r.status === "rejected").length;
