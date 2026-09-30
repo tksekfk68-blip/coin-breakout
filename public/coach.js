@@ -11,6 +11,8 @@ const RULES = { maxOpen: 3, maxDailyBuys: 2, lossStreak: 2 };
 const DEFAULT_SET = { seed: 0, goalPct: 30, riskPct: 1, maxPosPct: 30 };
 
 // ---------- 시작 ----------
+export const journalApi = { get: () => journal.data, save: () => saveJournal() };
+
 export function initCoach(ctx) {
   C = ctx;
   try { journal.code = localStorage.getItem('journalCode'); } catch {}

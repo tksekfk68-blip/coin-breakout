@@ -38,6 +38,7 @@
       <div id="briefLine"></div>
       <div id="coachMood" class="mood"></div>
       <div id="planCard"></div>
+      <div id="holdings"></div>
 
       <div class="sec-h"><h3>오늘의 후보</h3><span id="picksNote" class="note small"></span></div>
       <div id="picks" class="picks"><p class="note">데이터 불러오는 중…</p></div>
@@ -83,6 +84,17 @@
           </div>
           <label>한 코인 최대 비중 (%)<input name="maxPosPct" type="number" step="5" min="5" max="100" value="30" /></label>
           <p class="note small">1회 최대 손실 1%면, 손절에 걸려도 자산의 1%만 잃도록 살 금액을 정해줘. 프로들은 보통 0.5~2%를 써. 10번 연속 틀려도 자산의 90%가 남아.</p>
+          <div class="dlg-btns"><button type="button" class="ghostbtn" data-close>취소</button><button type="submit" class="primary">저장</button></div>
+        </form>
+      </dialog>
+
+      <dialog id="holdDlg">
+        <form id="holdForm" method="dialog">
+          <h3 id="holdTitle">평단·수량</h3>
+          <input type="hidden" name="m" />
+          <label>매수 평균가 (원)<input name="avg" type="number" step="any" min="0" placeholder="업비트 '매수평균가'" /></label>
+          <label>보유 수량 (선택)<input name="qty" type="number" step="any" min="0" placeholder="업비트 '보유수량'" /></label>
+          <p class="note small">내 일지에만 비공개로 저장돼요. 비우고 저장하면 지워져요.</p>
           <div class="dlg-btns"><button type="button" class="ghostbtn" data-close>취소</button><button type="submit" class="primary">저장</button></div>
         </form>
       </dialog>

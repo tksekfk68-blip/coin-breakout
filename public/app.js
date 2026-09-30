@@ -3,7 +3,8 @@ import {
   signalIndexes, splitClosed, todayKST,
 } from './lib/strategy.js';
 import { TONES, classify } from './lib/analysis.js';
-import { initCoach, renderCoach } from './coach.js';
+import { initCoach, renderCoach, journalApi } from './coach.js';
+import { initHoldings, renderHoldings } from './holdings.js';
 import { loadMarket, market } from './market.js';
 import { CHECKS, MAX_SCORE, optimize, prepare, currentSetup } from './lib/pro.js';
 
@@ -340,6 +341,7 @@ setInterval(() => {
   renderScreen();
 }, 2000);
 setInterval(() => { if ($('#tab-coach').classList.contains('active') && state.order.length) renderCoach(); }, 3000);
+setInterval(() => { if ($('#tab-coach').classList.contains('active')) renderHoldings(); }, 2000);
 
 // ---------- 🚀 급등 레이더 ----------
 const SURGE = {
@@ -673,4 +675,6 @@ document.querySelectorAll('[data-p]').forEach((el) => { el.textContent = state.p
 
 loadMarket().then(() => renderCoach());
 initCoach({ market, state, cache, fmtPrice, pct, pctPlain, sym, openCoin, info, todayKST, CHECKS, MAX_SCORE });
+initHoldings({ state, fmtPrice, pct, pctPlain, sym, getJournal: journalApi.get, saveJournal: journalApi.save });
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(() => {});
 loadAll();
