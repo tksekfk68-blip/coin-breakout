@@ -5,6 +5,7 @@ const RAW = 'https://raw.githubusercontent.com/tksekfk68-blip/coin-breakout/main
 
 let C = null;
 let A = null;          // analyze.json
+let N = null;          // holdings-news.json (호재·악재, 매일 아침)
 const zones = {};      // market -> 마지막으로 본 구간 (알림용)
 
 export function initHoldings(ctx) {
@@ -22,8 +23,12 @@ export function initHoldings(ctx) {
 
 async function loadAnalysis() {
   try {
-    const r = await fetch(`${RAW}/public/research/analyze.json?t=${Date.now()}`, { cache: 'no-store' });
+    const [r, n] = await Promise.all([
+      fetch(`${RAW}/public/research/analyze.json?t=${Date.now()}`, { cache: 'no-store' }),
+      fetch(`${RAW}/public/research/holdings-news.json?t=${Date.now()}`, { cache: 'no-store' }).catch(() => null),
+    ]);
     if (r.ok) A = await r.json();
+    if (n && n.ok) N = await n.json();
   } catch {}
   renderHoldings();
 }
@@ -74,6 +79,7 @@ export function renderHoldings() {
       </div>
       <div class="g-lbl"><span class="gl-bad">깨지면 끝<br><b>${C.fmtPrice(x.downKey)}</b></span><span>받침<br><b>${C.fmtPrice(x.nextS)}</b></span><span>벽<br><b>${C.fmtPrice(x.nextR)}</b></span><span class="gl-good">넘으면 강세<br><b>${C.fmtPrice(x.upKey)}</b></span></div>
       <div class="hold-chg"><span>7일 ${chg(x.chg.d7)}</span><span>30일 ${chg(x.chg.d30)}</span><span>RSI ${x.rsi.toFixed(0)}</span>${toEven != null ? `<span>본전까지 <b>${C.pctPlain(toEven)}</b></span>` : ''}<span class="hist">최근 ${hist}</span></div>
+      ${newsBlock(m)}
       <details class="checkbox-detail" data-k="${m}"><summary>오늘의 차트 분석</summary>
         <ul class="hold-c">${x.comments.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>
         <p class="small flat">최고가 ${C.fmtPrice(x.hiAll)}원(${x.hiAllDate}) · 최저가 ${C.fmtPrice(x.loAll)}원(${x.loAllDate})</p>
@@ -93,6 +99,22 @@ export function renderHoldings() {
     ${canNotify ? (notifOn ? ' · 🔔 알림 켜짐' : ` · <button type="button" class="linkbtn" data-hold="notify">🔔 기준선 알림 켜기</button>`) : ''}</span></div>
     <div class="holds">${cards}</div>`;
   box.querySelectorAll('details[data-k]').forEach((d) => { if (opened.has(d.dataset.k)) d.open = true; });
+}
+
+// ---------- 호재·악재 ----------
+function newsBlock(m) {
+  const x = N?.coins?.[m];
+  if (!x) return '';
+  const li = (arr) => arr.map((t) => `<li>${esc(t)}</li>`).join('');
+  const t = new Date(N.writtenAt).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+  return `<div class="news-sum">📰 ${esc(x.summary)} <span class="small"><span class="good-c">👍 ${x.good.length}</span> · <span class="bad-c">👎 ${x.bad.length}</span></span></div>
+    <details class="checkbox-detail" data-k="n-${m}"><summary>호재·악재·큰손 움직임 (${t})</summary>
+      ${x.good.length ? `<h5>👍 호재</h5><ul class="hold-c">${li(x.good)}</ul>` : ''}
+      ${x.bad.length ? `<h5>👎 악재</h5><ul class="hold-c">${li(x.bad)}</ul>` : ''}
+      ${x.onchain?.length ? `<h5>🐋 큰손·온체인</h5><ul class="hold-c">${li(x.onchain)}</ul>` : ''}
+      ${x.upcoming?.length ? `<h5>📅 다가오는 일정</h5><ul class="hold-c">${x.upcoming.map((u) => `<li><b>${esc(u.when)}</b> ${esc(u.what)} <span class="flat">— ${esc(u.why)}</span></li>`).join('')}</ul>` : ''}
+      <p class="small">출처: ${x.sources.map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(' · ')}</p>
+    </details>`;
 }
 
 // ---------- 알림 ----------

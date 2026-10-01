@@ -459,3 +459,7 @@ ul.hold-c { margin: 6px 0; padding-left: 18px; }
 ul.hold-c li { font-size: 13.5px; margin: 4px 0; line-height: 1.5; }
 #toast { position: fixed; left: 50%; bottom: 20px; transform: translate(-50%, 140%); max-width: min(92vw, 520px); background: var(--text); color: var(--surface); padding: 12px 16px; border-radius: 12px; font-size: 14px; line-height: 1.45; box-shadow: 0 8px 24px rgb(0 0 0 / .25); transition: transform .25s; z-index: 50; }
 #toast.show { transform: translate(-50%, 0); }
+
+.news-sum { font-size: 13.5px; background: var(--surface-2); border-radius: 8px; padding: 8px 10px; margin-top: 10px; line-height: 1.5; }
+.good-c { color: var(--sup); font-weight: 650; } .bad-c { color: var(--up); font-weight: 650; }
+.hold h5 { margin: 10px 0 2px; font-size: 13px; }

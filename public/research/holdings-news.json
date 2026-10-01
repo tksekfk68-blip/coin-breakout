@@ -1,0 +1,49 @@
+{
+  "writtenAt": "2026-10-01T19:50:00+09:00",
+  "coins": {
+    "KRW-WAXP": {
+      "summary": "호재보다 악재가 눈에 띄는 상황. 가격 반등은 거래량(관심) 덕분이지 새 소식 덕분은 아니에요.",
+      "good": [
+        "2년 만에 200일 평균선 위로 올라오며 차트상 반등 흐름 (자체 분석)",
+        "네트워크 사용량이 늘수록 코인을 태우는(소각) 구조로 바뀌는 중 — 실제 사용량이 늘어야 효과가 있어요"
+      ],
+      "bad": [
+        "해외 거래소 쿠코인 상장폐지 — 9/7 거래 종료, 10/7(수) 17시(한국 시간) 출금 마감",
+        "블록 생성 노드 21개 → 7개로 축소 (효율은 오르지만 탈중앙성은 낮아짐)",
+        "시가총액 약 250~400억 원의 소형 코인이라 소수 큰손 매매에 가격이 크게 흔들림"
+      ],
+      "onchain": [
+        "왁스는 자체 블록체인이라 아캄 등 온체인 추적 서비스에 공개된 큰손 움직임 정보가 확인되지 않았어요"
+      ],
+      "upcoming": [
+        { "when": "10/7(수) 17:00", "what": "쿠코인 왁스 출금 마감", "why": "쿠코인에 남아 있던 물량이 다른 거래소(업비트 등)로 옮겨와 팔릴 수 있음" }
+      ],
+      "sources": [
+        { "title": "KuCoin · ST: Will Delist Multiple Tokens on 2026-09-07 (WAXP 포함)", "url": "https://www.kucoin.com/announcement/en-st-kucoin-will-delist-multiple-tokens-on-2026-09-07-1" },
+        { "title": "CoinMarketCap · WAX latest updates", "url": "https://coinmarketcap.com/cmc-ai/wax/latest-updates/" }
+      ]
+    },
+    "KRW-ARB": {
+      "summary": "생태계 소식은 좋은 편이지만, 매달 풀리는 물량이 계속 부담이에요.",
+      "good": [
+        "로빈후드가 아비트럼 기술로 자체 체인 운영 — 수익 10%가 아비트럼 DAO·개발자 쪽으로 들어옴",
+        "9월 한 달 개발 활동(커밋) 1.4만 건으로 경쟁 체인보다 활발",
+        "아비트럼 재단이 프로젝트 보안 감사 비용을 대주는 지원 프로그램 시작(9/28)"
+      ],
+      "bad": [
+        "매달 16일쯤 잠겨 있던 코인이 풀림 — 다음은 10/16(금)",
+        "8월 바닥(102원) 대비 한 달 새 150% 넘게 올라 차익 매물이 나오기 쉬운 자리"
+      ],
+      "onchain": [
+        "최근 1주일 안에 공개된 아비트럼 큰손의 대량 거래소 입금·매집 보도는 확인되지 않았어요 (오래된 기사만 검색됨)"
+      ],
+      "upcoming": [
+        { "when": "10/16(금)", "what": "ARB 월간 물량 해제", "why": "팀·투자자 몫이 풀리면 거래소로 옮겨 팔리는지가 관건" }
+      ],
+      "sources": [
+        { "title": "CoinMarketCap · Arbitrum latest updates", "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/" },
+        { "title": "Tokenomist · Arbitrum unlock schedule", "url": "https://tokenomist.ai/arbitrum" }
+      ]
+    }
+  }
+}
