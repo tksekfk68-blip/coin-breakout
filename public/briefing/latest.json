@@ -1,48 +1,45 @@
 {
-  "writtenAt": "2026-10-03T07:45:00+09:00",
-  "title": "미국 고용 '쇼크'에 비트코인 8.7만 달러 찍고 되밀림 — 금리 인상 걱정은 줄었지만 8.4만~8.5만 달러로 제자리",
+  "writtenAt": "2026-10-04T07:35:00+09:00",
+  "title": "8.7만 달러 돌파 실패 뒤 비트코인 8.4만~8.5만 달러에서 조용한 주말 — 오른다에 건 4.3억 달러 강제청산",
   "mood": "조심",
-  "moodNote": "금리 인상 확률은 크게 줄었지만, 비트코인이 9월 고점(약 8.74만 달러)을 못 넘고 되밀려 아직 박스권이에요.",
+  "moodNote": "비트코인은 아직 50일 평균선 위지만, 2주 새 두 번이나 8.7만 달러에서 막혀 박스권 위쪽이 무거워요.",
   "coin": [
-    "비트코인은 고용지표 발표 뒤 약 8.7만 달러(하루 범위 8.41만~8.71만)까지 올랐다가, 미국 시간 금요일 밤엔 약 8.45만 달러로 되돌아왔어요.",
-    "이더리움도 장중 2,750달러 근처까지 갔다가 약 2,664달러(-1.3%)로 밀렸어요. 9월 말부터 이어진 2,600달러대 박스를 아직 확실히 벗어나진 못했어요.",
-    "미국 비트코인 현물 ETF는 9/30 약 1.49억 달러 순유출 뒤, 10/1엔 약 1.03억 달러 순유입으로 돌아섰어요(블랙록 IBIT 약 1.96억 달러 유입).",
-    "하루 강제청산은 약 3.44억 달러로, 72%가 '하락에 건' 쪽(숏)이었어요. 숏이 정리되며 순간적으로 가격이 튄 모습이에요.",
-    "비트코인 점유율이 60% 가까이 올랐어요. 돈이 알트보다 비트코인 쪽으로 더 몰리고 있다는 뜻이에요."
+    "비트코인은 금요일 장중 약 8.71만 달러까지 갔다가 밀려, 토요일엔 약 8.46만~8.48만 달러에서 거의 움직이지 않았어요(하루 저점 약 8.39만).",
+    "이번엔 '오른다'에 건 쪽이 당했어요. 하루 강제청산 약 4.34억 달러 중 74%(약 3.22억 달러)가 롱 포지션이었어요.",
+    "이더리움은 약 2,680달러(-1.2%)로 2,600달러대 박스에 머물러 있어요. 전체 코인 시가총액은 약 2.97조 달러(-0.6%)예요.",
+    "미국 비트코인 현물 ETF는 10/2(금) 약 3,170만 달러 순유입(블랙록 제외 잠정)이었어요. 반면 이더리움 ETF는 한 주 동안 약 1.18억 달러가 빠져나갔어요.",
+    "선물 미결제약정이 약 679억 달러로 여전히 커서, 빚내서 거래하는 돈이 많아요. 한쪽으로 크게 흔들리면 청산이 연쇄로 나올 수 있어요."
   ],
   "macro": [
-    "미국 9월 일자리는 2.9만 개 증가로 예상(약 9만 개)에 크게 못 미쳤고, 실업률은 4.2%로 올랐어요. 7·8월 숫자도 합쳐서 6만 개 줄여 고쳐졌어요.",
-    "그 결과 10월 금리 인상 확률은 일주일 전 약 64~70% → 약 22~23%로 뚝 떨어졌어요. 다만 12월 한 번 인상 가능성은 여전히 높게 보고 있어요.",
-    "그래도 미국 10년물 국채금리는 약 5.28%로 높은 수준이 이어져, 위험자산엔 계속 부담이에요. 나스닥은 +1.19%로 장중 사상 최고를 찍었어요.",
-    "유가(WTI)는 G7의 비축유 1억 배럴 방출 합의로 배럴당 91.11달러(-1.9%)로 내렸어요. 원/달러 환율은 1,350.6원으로 7.8원 내렸고(원화 강세), 코스피는 7,003.74(+0.46%)로 7,000선을 넘었어요."
+    "주말이라 새 경제지표는 없었어요. 금요일 미국 9월 일자리가 2.9만 개로 부진해 10월 금리 인상 확률은 약 17%(CME 기준)까지 내려왔어요.",
+    "그래도 미국 10년물 국채금리는 5.28%로 오히려 올랐어요. 금리가 높게 버티면 코인 같은 위험자산엔 계속 부담이에요.",
+    "금요일 기준 유가(WTI)는 91.11달러로 내렸고, 원/달러 환율은 1,350.6원(원화 강세), 코스피는 7,003.74로 7,000선을 넘었어요."
   ],
   "events": [
     { "when": "10/5(월) 23:00", "what": "미국 9월 ISM 서비스업지수", "why": "고용이 약했던 만큼 서비스 경기도 식는지 확인. 약하면 금리 인상 걱정이 더 줄어요" },
-    { "when": "10/8(목) 03:00", "what": "미국 연준(FOMC) 9월 회의 의사록 공개", "why": "9월 금리 인상 때 추가 인상을 얼마나 진지하게 논의했는지 확인" },
+    { "when": "10/7(수) 17:00", "what": "쿠코인 왁스(WAXP) 출금 마감", "why": "보유 코인 관련 — 쿠코인에 남은 물량이 다른 거래소로 옮겨와 팔릴 수 있음" },
+    { "when": "10/8(목) 03:00", "what": "미국 연준(FOMC) 9월 회의 의사록 공개", "why": "9월 인상 때 추가 인상을 얼마나 진지하게 논의했는지 확인" },
     { "when": "10/8(목) 21:30", "what": "미국 주간 실업수당 청구 건수", "why": "고용이 정말 식고 있는지 매주 확인하는 지표" },
-    { "when": "10/16(금)", "what": "아비트럼(ARB) 월간 물량 해제 약 9,265만 개", "why": "보유 코인 관련 — 풀린 물량이 거래소로 옮겨 팔리는지 지켜보기" },
-    { "when": "10/29(목) 03:00", "what": "미국 연준 10월 금리 결정", "why": "시장은 '동결'을 크게 보고 있어요. 예상과 다르면 코인이 크게 흔들릴 수 있음" }
+    { "when": "10/14(수) 21:30", "what": "미국 9월 소비자물가(CPI)", "why": "다음 주 가장 큰 일정. 물가가 높게 나오면 금리 인상 걱정이 다시 커질 수 있어요" }
   ],
   "strategy": [
-    "비트코인은 약 8.45만 달러로 50일 평균선(약 7.82만 달러, 10/2 기준)보다 위라, 우리 규칙상 '거래 가능' 구간은 유지예요.",
-    "다만 8.74만 달러(9월 고점) 돌파에 실패하고 되밀렸어요. 박스권 위쪽에서 따라 사기보다, 돌파가 확인될 때까지 신규 진입은 평소 절반 크기로.",
-    "새로 들어가면 사자마자 업비트에 손절 주문부터 걸어두기. 8.2만 달러(최근 3번 지켜낸 바닥)가 깨지면 전체적으로 더 조심해야 해요.",
-    "주말엔 거래가 얇아 가격이 갑자기 튈 수 있어요. 손절선이 깨지면 규칙대로 정리하고, 물타기는 하지 않기."
+    "비트코인 약 8.46만 달러는 50일 평균선(약 7.82만 달러, 10/2 기준)보다 위라, 우리 규칙상 '거래 가능' 구간은 유지예요.",
+    "다만 8.7만 달러에서 2주 새 두 번 막혔어요. 돌파가 확인될 때까지 신규 진입은 평소 절반 크기로만.",
+    "들어가면 업비트에 손절 주문부터 걸어두기. 8.39만 달러(어제 저점)와 8.2만 달러(최근 바닥)가 차례로 깨지면 더 조심해야 해요.",
+    "주말·중국 연휴 주간이라 거래가 얇아 가격이 갑자기 튈 수 있어요. 손절선이 깨지면 규칙대로 정리하고, 물타기는 하지 않기."
   ],
   "sources": [
-    { "title": "BLS · Employment Situation Summary, September 2026 (10/2)", "url": "https://www.bls.gov/news.release/empsit.nr0.htm" },
-    { "title": "CoinDesk · Bitcoin price & headlines (10/2)", "url": "https://www.coindesk.com/" },
-    { "title": "Cryptoticker · Bitcoin after the US jobs report: 29,000 positions (10/2)", "url": "https://cryptoticker.io/en/us-jobs-report-fed-pause-bitcoin/" },
-    { "title": "Newscord · Bitcoin Reverses Gains After Weak U.S. Jobs Data (10/2)", "url": "https://newscord.org/article/live-updates-bitcoin-posts-tentative-gains-as-rates-drop-ahead-of-fridays-jobs-r--Story_20261001_LiveupdatesBitcoinpob845c92d" },
-    { "title": "Yahoo Finance · Bitcoin and ethereum prices today, Friday, October 2, 2026 (10/2)", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-october-2-2026-crypto-prices-surging-ahead-of-september-jobs-report-112959413.html" },
-    { "title": "Nexo · Markets Today - October 2, 2026 (10/2)", "url": "https://nexo.com/blog/markets-today-october-2" },
-    { "title": "Farside · Bitcoin ETF Flow (10/1까지)", "url": "https://farside.co.uk/btc/" },
+    { "title": "The Crypto Times · Bitcoin Price Slips to $84,600 as $433M Liquidations Hit Longs After $87K Rejection (10/3)", "url": "https://www.cryptotimes.io/2026/10/03/bitcoin-price-slips-to-84600-as-433m-liquidations-hit-longs-after-87k-rejection/" },
+    { "title": "Bitcoin News Digest · October 3, 2026 (ETF 흐름·청산·금리) (10/3)", "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-3-2026" },
+    { "title": "CoinGabbar · Crypto News Oct 3 (ETH·시가총액·공포탐욕) (10/3)", "url": "https://coingabbar.com/en/crypto-news-eth-bitcoin-price-today-altcoins-latest-updates" },
+    { "title": "24/7 Wall St. · Bitcoin Is Up 33% in 90 Days but Still Down 30% From Last Year (10/3)", "url": "https://247wallst.com/investing/cryptocurrency/2026/10/03/bitcoin-is-up-33-in-90-days-but-still-down-30-from-last-year-whos-still-facing-losses/" },
+    { "title": "Future.news · Bitcoin Up or Down, October 3 (토요일 가격) (10/3)", "url": "https://future.news/event/bitcoin-up-or-down-october-3-2026-6pm-et" },
+    { "title": "CoinDesk · Bitcoin price (10/2 밤 기준)", "url": "https://www.coindesk.com/price/bitcoin" },
     { "title": "QCP · Market Colour (10/2, 50일·200일 평균선)", "url": "https://qcpgroup.com/insights/qcp-market-colour-49" },
-    { "title": "Alain Guillot · Stock Market Recap — October 2, 2026 (10/2)", "url": "https://alainguillot.com/stock-market-recap-october-2-2026" },
-    { "title": "IndexBox · 부진한 고용에 10월 연준 인상 확률 낮아져 (10/2)", "url": "https://www.indexbox.io/ko/blog/gold-and-silver-close-lower-as-soft-payrolls-cut-october-fed-hike-odds/" },
     { "title": "파이낸셜뉴스 · [국제유가] G7 1억배럴 방출 합의에 하락 (10/3)", "url": "https://www.fnnews.com/news/202610030559340158" },
     { "title": "철강금속신문 · 10월 2일 원/달러 환율 1,350.60원 (10/2)", "url": "https://www.snmnews.com/news/articleView.html?idxno=575456" },
     { "title": "뉴스1 · 코스피, 0.46% 상승한 7003.74 마감 (10/2)", "url": "https://www.news1.kr/finance/market-exr/6309178" },
-    { "title": "Federal Reserve · October 2026 events (FOMC 의사록 10/7)", "url": "https://www.federalreserve.gov/newsevents/2026-october.htm" }
+    { "title": "FedRateCalc · U.S. Economic Calendar October 2026 (CPI 10/14, 의사록 10/7)", "url": "https://fedratecalc.com/us-economic-calendar/october-2026/" },
+    { "title": "Cryptoticker · KuCoin delisting withdrawal deadline (9/29 갱신)", "url": "https://cryptoticker.io/en/kucoin-delisting-withdrawal-deadline/" }
   ]
 }
