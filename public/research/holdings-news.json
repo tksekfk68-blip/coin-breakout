@@ -1,16 +1,16 @@
 {
-  "writtenAt": "2026-10-04T07:35:00+09:00",
+  "writtenAt": "2026-10-05T07:35:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "이번 주 새 소식은 없고, 수요일 오후 5시 쿠코인 출금 마감이 가장 가까운 변수예요.",
+      "summary": "주말 새 소식은 없고, 이번 수요일 오후 5시 쿠코인 출금 마감이 가장 가까운 변수예요.",
       "good": [
         "왁스 체인 위에 예측시장 서비스가 새로 나와(9월 말) 쓰임새가 조금 늘었어요",
         "네트워크를 쓸수록 코인을 태우는(소각) 구조를 팀이 홍보 중 — 실제 사용량이 늘어야 효과가 있어요"
       ],
       "bad": [
         "해외 거래소 쿠코인 상장폐지 — 거래는 이미 끝났고 10/7(수) 17:00(한국 시간) 출금 마감",
-        "10/3 기준 가격 약 0.0062달러, 시가총액 약 2,780만 달러의 작은 코인이라 소수 큰손 매매에 가격이 크게 흔들려요",
-        "거래의 80% 이상이 바이낸스 한 곳에 몰려 있어, 그쪽 공지 하나에 크게 움직일 수 있어요"
+        "가격 약 0.0062달러, 시가총액 약 2,780만 달러의 작은 코인이라 소수 큰손 매매에 가격이 크게 흔들려요",
+        "하루 거래대금이 약 196만 달러로 적어서, 큰 주문 하나에도 가격이 쉽게 튈 수 있어요"
       ],
       "onchain": [
         "확인된 큰손 움직임 없음 — 왁스는 자체 블록체인이라 아캄·룩온체인·웨일얼럿에서 최근 2주 안에 공개된 소식이 없었어요"
@@ -21,36 +21,37 @@
       "sources": [
         { "title": "Cryptoticker · KuCoin delists 25 tokens, withdraw by Oct 7 08:00 UTC (9/29 갱신)", "url": "https://cryptoticker.io/en/kucoin-delisting-withdrawal-deadline/" },
         { "title": "CoinMarketCap · WAX latest updates (9/7~9/30)", "url": "https://coinmarketcap.com/cmc-ai/wax/latest-updates/" },
-        { "title": "CoinLore · WAX (WAXP) price & market cap (10/3 확인)", "url": "https://www.coinlore.com/coin/wax" }
+        { "title": "CoinLore · WAX (WAXP) price & market cap (10/5 확인)", "url": "https://www.coinlore.com/coin/wax" }
       ]
     },
     "KRW-ARB": {
-      "summary": "0.20달러에서 버티는 중인데, 10/2 보안 점검용 일부 기능 긴급 중단이라는 새 악재가 나왔어요.",
+      "summary": "0.20달러(업비트 약 275원)에서 버티는 중이고, 10/2 시작된 일부 기능 긴급 중단은 아직 풀리지 않았어요.",
       "good": [
-        "호주 태양광·배터리 시설(약 5억 달러 규모)을 토큰으로 만들어 아비트럼에서 판매한다는 계획이 나왔어요(10/3)",
-        "로빈후드 체인(아비트럼 기술 사용)에 맡겨진 돈이 약 10.2억 달러로 커졌고, 수익 10%가 아비트럼 쪽으로 들어와요",
-        "9월 개발 활동(커밋) 1.4만 건으로 모든 블록체인 중 가장 많았어요"
+        "호주 태양광·배터리 시설(5억 달러 이상)을 토큰으로 만들어 아비트럼에서 파는 '프로젝트 앰버'가 발표됐어요(10/3~10/4)",
+        "아비트럼의 월 수익이 약 5배로 늘었어요. 대부분(87%, 약 475만 달러)이 기술 사용료 수입이에요(10/4 보도)",
+        "9월 개발 활동(커밋) 약 1.4만 건으로 다른 블록체인보다 훨씬 많았어요"
       ],
       "bad": [
-        "10/2 보안위원회가 'Stylus'라는 새 스마트계약 기능의 신규 등록을 긴급 중단했어요. 네트워크를 멈추게 할 수 있는 약점 때문이고, 재개 날짜는 미정이에요",
-        "다행히 이미 있는 계약과 이용자 자금엔 알려진 위험이 없다고 해요. 다만 출금 확인이 늦어질 수 있는 안전장치도 함께 추가됐어요",
-        "매달 약 9,265만 ARB(약 1,900만 달러어치)가 풀려요 — 2027년 초까지 계속",
-        "10/3 기준 약 0.20달러(-4.7%). 0.19달러가 깨지면 0.15~0.16달러까지 밀릴 수 있다는 분석이 있어요"
+        "10/2 보안위원회가 'Stylus'라는 새 스마트계약 기능의 신규 등록을 긴급 중단했고, 재개 날짜는 아직 미정이에요",
+        "다행히 이용자 돈을 훔칠 수 있는 공격은 발견되지 않았고, 이미 있는 계약은 정상 작동해요",
+        "이 소식 뒤 일주일 동안 약 12% 내렸어요(10/4 기준). 다만 한 달로 보면 약 47% 오른 상태예요",
+        "매달 약 9,260만 ARB(약 1,900만 달러어치)가 풀려요 — 2027년 초까지 계속"
       ],
       "onchain": [
         "확인된 큰손 움직임 없음 — 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 아비트럼 큰손의 거래소 입금·매집 소식은 없었어요",
-        "참고(선물 시장): 10/3 미결제약정은 약 6,000만 달러로 4% 늘었고, 실제 체결은 파는 쪽이 더 많았어요(매수/매도 비율 0.66)"
+        "참고(선물 시장): 10/2~10/3 실제 체결은 파는 쪽이 더 많았어요(매수/매도 비율 0.66). 출처가 큰손 지갑 추적은 아니에요"
       ],
       "upcoming": [
-        { "when": "10/16(금)", "what": "ARB 월간 물량 해제 (약 9,265만 개)", "why": "팀·투자자 몫이 풀린 뒤 거래소로 옮겨 팔리는지가 관건" }
+        { "when": "10/16(금)", "what": "ARB 월간 물량 해제 (약 9,260만 개)", "why": "팀·투자자 몫이 풀린 뒤 거래소로 옮겨 팔리는지가 관건" },
+        { "when": "10/23(금)~10/25(일)", "what": "아비트럼·로빈후드 체인 공동 해커톤(싱가포르, 상금 30만 달러)", "why": "새 프로젝트가 생태계로 들어오는 계기 — 가격 영향은 보통 작아요" }
       ],
       "sources": [
-        { "title": "Crypto Briefing · Arbitrum pauses new Stylus activations in emergency security action (10/2)", "url": "https://cryptobriefing.com/arbitrum-pauses-new-stylus-activations/" },
-        { "title": "CryptoSlate · Arbitrum pauses new Stylus activations over AI-assisted attack risks (10/2)", "url": "https://cryptoslate.com/arbitrum-pauses-new-stylus-activations-over-ai-assisted-attack-risks/" },
-        { "title": "Coinfomania · Arbitrum Announces New Tokenized Assets, Major $500M Solar (10/3)", "url": "https://coinfomania.com/arbitrum-announces-new-tokenized-assets-major-500m-solar/" },
-        { "title": "Blockchain.News · ARB Price Prediction: Coiled at $0.20 (10/3)", "url": "https://blockchain.news/news/20261003-price-prediction-arb-coiled-at-020-arbs-next-move" },
+        { "title": "Asianet Newsable · ARB extends weekly slide after Security Council emergency action (10/4)", "url": "https://newsable.asianetnews.com/markets/arbitrum-s-arb-extends-weekly-slide-after-security-council-takes-emergency-action-articleshow-wv57x4g" },
+        { "title": "TronWeekly · Arbitrum expands tokenized energy assets (10/4)", "url": "https://tronweekly.com/arbitrum-expands-tokenized-energy-assets-as-arb-tests-key-recovery-levels" },
         { "title": "CoinMarketCap · Arbitrum latest updates (10/2~10/3)", "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/" },
-        { "title": "Shattered · Arbitrum Jumps 135% as Robinhood Chain Hits $1.02B (10/1)", "url": "https://shattered.io/arbitrum-135-percent-robinhood-chain-1-02b-2026" },
+        { "title": "Crypto Briefing · Arbitrum pauses new Stylus activations (10/2)", "url": "https://cryptobriefing.com/arbitrum-pauses-new-stylus-activations/" },
+        { "title": "24/7 Wall St. · 92.6 million ARB unlocks every month until early 2027 (10/2)", "url": "https://247wallst.com/investing/cryptocurrency/2026/10/02/arbitrum-is-up-more-than-100-since-august-and-92-6-million-arb-unlocks-every-month-until-early-2027-can-the-rally-survive-the-supply/" },
+        { "title": "Blockchain.News · ARB Price Prediction: $0.20 inflection point (10/2)", "url": "https://blockchain.news/news/20261002-price-prediction-arb-020-inflection-point-smart-money-is" },
         { "title": "Tokenomist · Arbitrum unlock schedule (다음 해제 10/16)", "url": "https://tokenomist.ai/arbitrum" }
       ]
     }

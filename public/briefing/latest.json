@@ -1,45 +1,47 @@
 {
-  "writtenAt": "2026-10-04T07:35:00+09:00",
-  "title": "8.7만 달러 돌파 실패 뒤 비트코인 8.4만~8.5만 달러에서 조용한 주말 — 오른다에 건 4.3억 달러 강제청산",
+  "writtenAt": "2026-10-05T07:35:00+09:00",
+  "title": "조용한 주말 끝에 비트코인 8.5만~8.6만 달러로 소폭 반등 — 8.7만 달러 벽은 아직 그대로",
   "mood": "조심",
-  "moodNote": "비트코인은 아직 50일 평균선 위지만, 2주 새 두 번이나 8.7만 달러에서 막혀 박스권 위쪽이 무거워요.",
+  "moodNote": "비트코인은 50일 평균선 위에서 버티고 있지만, 미국 금리가 높고 8.7만 달러 돌파가 두 번 실패해 위쪽이 무거워요.",
   "coin": [
-    "비트코인은 금요일 장중 약 8.71만 달러까지 갔다가 밀려, 토요일엔 약 8.46만~8.48만 달러에서 거의 움직이지 않았어요(하루 저점 약 8.39만).",
-    "이번엔 '오른다'에 건 쪽이 당했어요. 하루 강제청산 약 4.34억 달러 중 74%(약 3.22억 달러)가 롱 포지션이었어요.",
-    "이더리움은 약 2,680달러(-1.2%)로 2,600달러대 박스에 머물러 있어요. 전체 코인 시가총액은 약 2.97조 달러(-0.6%)예요.",
-    "미국 비트코인 현물 ETF는 10/2(금) 약 3,170만 달러 순유입(블랙록 제외 잠정)이었어요. 반면 이더리움 ETF는 한 주 동안 약 1.18억 달러가 빠져나갔어요.",
-    "선물 미결제약정이 약 679억 달러로 여전히 커서, 빚내서 거래하는 돈이 많아요. 한쪽으로 크게 흔들리면 청산이 연쇄로 나올 수 있어요."
+    "비트코인은 일요일 내내 8.5만 달러 근처에서 조용히 움직이다, 월요일 새벽 약 8.54만 달러(+0.7%)를 기록했어요. 한때 8.6만 달러(OKX)도 넘었어요.",
+    "업비트 기준 비트코인은 약 1억 1,519만 원, 이더리움은 약 364만 원(약 2,700달러, +0.6%)이에요. 전체 코인 시가총액은 약 2.91조 달러예요.",
+    "지난주 미국 비트코인 현물 ETF는 5일간 약 8,290만 달러 순유입에 그쳤어요. 그 전 주(약 23.9억 달러)보다 크게 줄어 사는 힘이 약해졌어요.",
+    "스트래티지(옛 마이크로스트래티지) 회장이 일요일 또 매수를 암시하는 글을 올렸어요. 다만 실제 매수 규모는 아직 발표되지 않았어요.",
+    "알트코인은 대부분 1~2% 오르는 정도로 잠잠했어요. 비트코인 점유율이 약 59%로 높아, 돈이 대형 코인 쪽에 몰려 있어요."
   ],
   "macro": [
-    "주말이라 새 경제지표는 없었어요. 금요일 미국 9월 일자리가 2.9만 개로 부진해 10월 금리 인상 확률은 약 17%(CME 기준)까지 내려왔어요.",
-    "그래도 미국 10년물 국채금리는 5.28%로 오히려 올랐어요. 금리가 높게 버티면 코인 같은 위험자산엔 계속 부담이에요.",
-    "금요일 기준 유가(WTI)는 91.11달러로 내렸고, 원/달러 환율은 1,350.6원(원화 강세), 코스피는 7,003.74로 7,000선을 넘었어요."
+    "주말이라 새 경제지표는 없었어요. 지난주 미국 9월 일자리가 2.9만 개로 부진해, 10월 금리 인상 확률은 약 17%까지 내려왔어요.",
+    "그래도 미국 10년물 국채금리가 지난주 한때 5.3%대로 2002년 이후 최고였고, 달러도 18개월 만에 가장 강해요. 코인 같은 위험자산엔 부담이에요.",
+    "금요일 기준 유가(WTI)는 91.11달러, 원/달러 환율은 1,350.6원, 코스피는 7,003.74로 마감했어요."
   ],
   "events": [
     { "when": "10/5(월) 23:00", "what": "미국 9월 ISM 서비스업지수", "why": "고용이 약했던 만큼 서비스 경기도 식는지 확인. 약하면 금리 인상 걱정이 더 줄어요" },
+    { "when": "10/6(화) 21:15", "what": "미국 ADP 민간 고용", "why": "지난주 부진했던 일자리 흐름이 이어지는지 보는 지표" },
     { "when": "10/7(수) 17:00", "what": "쿠코인 왁스(WAXP) 출금 마감", "why": "보유 코인 관련 — 쿠코인에 남은 물량이 다른 거래소로 옮겨와 팔릴 수 있음" },
-    { "when": "10/8(목) 03:00", "what": "미국 연준(FOMC) 9월 회의 의사록 공개", "why": "9월 인상 때 추가 인상을 얼마나 진지하게 논의했는지 확인" },
+    { "when": "10/8(목) 03:00", "what": "미국 연준(FOMC) 9월 회의 의사록 공개", "why": "추가 금리 인상을 얼마나 진지하게 논의했는지 확인" },
     { "when": "10/8(목) 21:30", "what": "미국 주간 실업수당 청구 건수", "why": "고용이 정말 식고 있는지 매주 확인하는 지표" },
     { "when": "10/14(수) 21:30", "what": "미국 9월 소비자물가(CPI)", "why": "다음 주 가장 큰 일정. 물가가 높게 나오면 금리 인상 걱정이 다시 커질 수 있어요" }
   ],
   "strategy": [
-    "비트코인 약 8.46만 달러는 50일 평균선(약 7.82만 달러, 10/2 기준)보다 위라, 우리 규칙상 '거래 가능' 구간은 유지예요.",
-    "다만 8.7만 달러에서 2주 새 두 번 막혔어요. 돌파가 확인될 때까지 신규 진입은 평소 절반 크기로만.",
-    "들어가면 업비트에 손절 주문부터 걸어두기. 8.39만 달러(어제 저점)와 8.2만 달러(최근 바닥)가 차례로 깨지면 더 조심해야 해요.",
-    "주말·중국 연휴 주간이라 거래가 얇아 가격이 갑자기 튈 수 있어요. 손절선이 깨지면 규칙대로 정리하고, 물타기는 하지 않기."
+    "비트코인 약 8.54만 달러는 50일 평균선(약 7.77만 달러, 10/1 기준)보다 위라, 우리 규칙상 '거래 가능' 구간은 유지예요.",
+    "다만 8.7만 달러에서 2주 새 두 번 막혔고 ETF 유입도 줄었어요. 돌파가 확인될 때까지 신규 진입은 평소 절반 크기로만.",
+    "들어가면 업비트에 손절 주문부터 걸어두기. 8.39만 달러(금요일 저점)와 8.2만 달러(최근 바닥)가 차례로 깨지면 더 조심해야 해요.",
+    "오늘 밤 ISM, 수요일 밤 연준 의사록 때 가격이 크게 흔들릴 수 있어요. 손절선이 깨지면 규칙대로 정리하고, 물타기는 하지 않기."
   ],
   "sources": [
-    { "title": "The Crypto Times · Bitcoin Price Slips to $84,600 as $433M Liquidations Hit Longs After $87K Rejection (10/3)", "url": "https://www.cryptotimes.io/2026/10/03/bitcoin-price-slips-to-84600-as-433m-liquidations-hit-longs-after-87k-rejection/" },
-    { "title": "Bitcoin News Digest · October 3, 2026 (ETF 흐름·청산·금리) (10/3)", "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-3-2026" },
-    { "title": "CoinGabbar · Crypto News Oct 3 (ETH·시가총액·공포탐욕) (10/3)", "url": "https://coingabbar.com/en/crypto-news-eth-bitcoin-price-today-altcoins-latest-updates" },
-    { "title": "24/7 Wall St. · Bitcoin Is Up 33% in 90 Days but Still Down 30% From Last Year (10/3)", "url": "https://247wallst.com/investing/cryptocurrency/2026/10/03/bitcoin-is-up-33-in-90-days-but-still-down-30-from-last-year-whos-still-facing-losses/" },
-    { "title": "Future.news · Bitcoin Up or Down, October 3 (토요일 가격) (10/3)", "url": "https://future.news/event/bitcoin-up-or-down-october-3-2026-6pm-et" },
-    { "title": "CoinDesk · Bitcoin price (10/2 밤 기준)", "url": "https://www.coindesk.com/price/bitcoin" },
-    { "title": "QCP · Market Colour (10/2, 50일·200일 평균선)", "url": "https://qcpgroup.com/insights/qcp-market-colour-49" },
+    { "title": "토큰포스트 · [모닝 시세브리핑] 비트코인 85,418달러, 이더리움 2,702달러 (10/5)", "url": "https://www.tokenpost.kr/news/briefing/418213" },
+    { "title": "토큰포스트 · 비트코인 8만6000USDT 넘어…24시간 1.62% 상승 (10/5)", "url": "https://www.tokenpost.kr/news/cryptocurrency/418219" },
+    { "title": "Bitcoin News Digest · October 4, 2026 (주간 ETF·청산·금리·달러) (10/4)", "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-4-2026" },
+    { "title": "crypto.news · Strategy hints at another big Bitcoin buy (10/4)", "url": "https://crypto.news/strategy-hints-at-another-big-bitcoin-buy/" },
+    { "title": "CoinMarketCap · Bitcoin latest updates (10/4)", "url": "https://coinmarketcap.com/cmc-ai/bitcoin/latest-updates/" },
+    { "title": "altFINS · Bitcoin Price Prediction October 2026 (50일·200일 평균선) (10/1)", "url": "https://altfins.com/blog/bitcoin-price-prediction-for-october-best-q3-since-2017-but-can-btc-clear-87k/" },
+    { "title": "뉴스핌 · 24년래 최고 찍은 美 금리, 오전 10시 기점 반락 (10/2)", "url": "https://www.newspim.com/news/view/20261002000012" },
     { "title": "파이낸셜뉴스 · [국제유가] G7 1억배럴 방출 합의에 하락 (10/3)", "url": "https://www.fnnews.com/news/202610030559340158" },
     { "title": "철강금속신문 · 10월 2일 원/달러 환율 1,350.60원 (10/2)", "url": "https://www.snmnews.com/news/articleView.html?idxno=575456" },
     { "title": "뉴스1 · 코스피, 0.46% 상승한 7003.74 마감 (10/2)", "url": "https://www.news1.kr/finance/market-exr/6309178" },
-    { "title": "FedRateCalc · U.S. Economic Calendar October 2026 (CPI 10/14, 의사록 10/7)", "url": "https://fedratecalc.com/us-economic-calendar/october-2026/" },
+    { "title": "Bloomingbit · 今週の主要経済・暗号資産日程 (10/4)", "url": "https://jp.bloomingbit.io/feed/news/121563" },
+    { "title": "FedRateCalc · U.S. Economic Calendar October 2026 (CPI 10/14)", "url": "https://fedratecalc.com/us-economic-calendar/october-2026/" },
     { "title": "Cryptoticker · KuCoin delisting withdrawal deadline (9/29 갱신)", "url": "https://cryptoticker.io/en/kucoin-delisting-withdrawal-deadline/" }
   ]
 }
