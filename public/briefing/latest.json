@@ -1,46 +1,48 @@
 {
-  "writtenAt": "2026-10-06T07:35:00+09:00",
-  "title": "비트코인 8.57만 달러로 소폭 상승 — 미국 서비스 경기는 탄탄, 금리는 5.3%로 여전히 높아요",
+  "writtenAt": "2026-10-07T07:50:00+09:00",
+  "title": "비트코인 8.56만 달러로 제자리 — 미국 증시는 또 최고치, 오늘 밤(목 새벽) 연준 의사록이 고비예요",
   "mood": "조심",
-  "moodNote": "비트코인은 50일 평균선 위에서 버티지만, 8.7만~8.75만 달러 벽과 높은 미국 금리 때문에 위로 뚫기가 쉽지 않아요.",
+  "moodNote": "비트코인은 50일 평균선 위라 흐름은 괜찮지만, 8.7만 달러 벽을 못 넘고 있고 달러·금리가 높아 위로 뚫기가 쉽지 않아요.",
   "coin": [
-    "비트코인은 화요일 새벽 약 8.57만 달러(+0.4%)예요. 업비트에선 약 1억 1,549만 원이에요.",
-    "이더리움은 약 2,708달러(+0.2%), 업비트 약 365만 원이에요. 비트코인 점유율은 약 59%로 대형 코인 쏠림이 계속돼요.",
-    "미국 비트코인 현물 ETF는 지난 금요일(10/2) 약 1.9억 달러가 순유입됐어요. 월요일 자금 흐름은 아직 집계 전이에요.",
-    "스트래티지(옛 마이크로스트래티지)는 10/1~10/4 비트코인 334개(약 2,870만 달러)를 샀다고 공시했어요. 규모는 작은 편이에요.",
-    "알트코인 중엔 에이다(ADA)가 약 11%, 니어(NEAR)가 약 7.6% 올랐어요. 전체가 오른 건 아니고 일부 코인만 움직였어요."
+    "비트코인은 수요일 아침 약 8.56만 달러(하루 -0.1%)예요. 업비트 기준 약 1억 1,496만 원이에요.",
+    "이더리움은 약 2,692달러(-0.6%), 약 361만 원이에요. 비트코인 점유율은 약 59%로 대형 코인 쏠림이 그대로예요.",
+    "미국 비트코인 현물 ETF는 월요일(10/5) 약 9,000만 달러가 빠져나갔고, 화요일(10/6)은 약 780만 달러 순유입으로 거의 제자리였어요.",
+    "알트코인도 큰 움직임 없이 XRP·솔라나 소폭 상승, 도지코인 -1.6% 정도예요. 선물 거래량도 하루 새 약 19% 줄어 관망 분위기예요.",
+    "미국 상원 쪽에서 테더(USDT)의 제재 준수 여부를 조사해 달라는 요청이 나왔어요. 당장 영향은 작지만 스테이블코인 규제 이슈로 지켜볼 만해요."
   ],
   "macro": [
-    "미국 9월 서비스업 경기지수(ISM)가 55.9로 예상(55.7)보다 좋았어요. 다만 그 안의 가격지수가 74로 올라 물가 걱정은 남아요.",
-    "미국 10년물 국채금리는 5.30%로 2007년 이후 최고 수준 근처예요. 금리가 높으면 코인 같은 위험자산엔 부담이에요.",
-    "미국 증시는 나스닥이 +0.71%로 사상 최고를 찍었고, 유가(WTI)는 배럴당 90.50달러로 조금 내렸어요.",
-    "한국 증시는 월요일 개천절 대체공휴일로 쉬었어요. 지난 금요일 기준 원/달러 환율 1,350.6원, 코스피 7,003.74예요."
+    "미국 증시는 S&P500이 7,818(+0.58%)로 또 사상 최고를 찍었어요. 나스닥도 +0.45% 올랐어요.",
+    "미국 10년물 국채금리는 5.28%로 조금 내렸지만 여전히 아주 높은 수준이에요. 달러지수도 약 102로 1년 반 만에 가장 강해요.",
+    "유가(WTI)는 배럴당 87.77달러로 약 1.9% 내렸어요. 유가가 내리면 물가 걱정이 조금 줄어드는 효과가 있어요.",
+    "한국은 화요일 코스피가 외국인 매도로 6,941(-0.89%)에 마감해 7,000선을 내줬어요. 원/달러 환율은 1,343.6원으로 거의 변화 없었어요."
   ],
   "events": [
     { "when": "10/7(수) 17:00", "what": "쿠코인 왁스(WAXP) 출금 마감", "why": "보유 코인 관련 — 쿠코인에 남은 물량이 다른 거래소로 옮겨와 팔릴 수 있음" },
-    { "when": "10/8(목) 03:00", "what": "미국 연준(FOMC) 9월 회의 의사록 공개", "why": "추가 금리 인상을 얼마나 진지하게 논의했는지 확인" },
-    { "when": "10/8(목) 21:30", "what": "미국 주간 실업수당 청구 건수", "why": "지난주 일자리 부진이 이어지는지 매주 확인하는 지표" },
+    { "when": "10/8(목) 03:00", "what": "미국 연준(FOMC) 9월 회의 의사록 공개", "why": "추가 금리 인상을 얼마나 진지하게 논의했는지 확인 — 이번 주 가장 큰 변수" },
+    { "when": "10/8(목) 21:30", "what": "미국 주간 실업수당 청구 건수", "why": "9월 일자리가 2.9만 개로 부진했던 흐름이 이어지는지 확인" },
     { "when": "10/9(금) 02:01", "what": "미국 30년물 국채 입찰", "why": "수요가 약하면 금리가 더 오를 수 있어 코인에도 부담" },
-    { "when": "10/9(금) 23:00", "what": "미국 10월 소비자심리지수(미시간대, 예비)", "why": "소비자들이 느끼는 경기·물가 기대를 보여줘요" },
+    { "when": "10/9(금) 23:00", "what": "미국 10월 소비자심리·물가 기대(미시간대, 예비)", "why": "소비자들이 앞으로 물가가 얼마나 오를 거라 보는지 보여줘요" },
     { "when": "10/14(수) 21:30", "what": "미국 9월 소비자물가(CPI)", "why": "다음 주 가장 큰 일정. 물가가 높게 나오면 금리 인상 걱정이 다시 커질 수 있어요" }
   ],
   "strategy": [
-    "비트코인 약 8.57만 달러는 50일 평균선(약 7.92만 달러, 10/5 기준)보다 위라, 우리 규칙상 '거래 가능' 구간은 유지예요.",
-    "다만 8.7만~8.75만 달러(올해 시작 가격)에서 계속 막히고 있어요. 돌파가 확인될 때까지 신규 진입은 평소 절반 크기로만.",
+    "비트코인 약 8.56만 달러는 50일 평균선(약 7.92만 달러, 10/5 기준)보다 위라, 우리 규칙상 '거래 가능' 구간은 유지예요.",
+    "다만 8.7만~8.74만 달러에서 몇 번째 막히고 있어요. 돌파가 확인될 때까지 신규 진입은 평소 절반 크기로만.",
     "들어가면 업비트에 손절 주문부터 걸어두기. 8.25만 달러(주요 지지선)가 깨지면 더 조심해야 해요.",
-    "목요일 새벽 연준 의사록 때 가격이 크게 흔들릴 수 있어요. 손절선이 깨지면 규칙대로 정리하고, 물타기는 하지 않기."
+    "목요일 새벽 3시 연준 의사록 때 가격이 크게 흔들릴 수 있어요. 손절선이 깨지면 규칙대로 정리하고, 물타기는 하지 않기."
   ],
   "sources": [
-    { "title": "토큰포스트 · [모닝 시세브리핑] 비트코인 85,722달러, 이더리움 2,708달러 (10/6)", "url": "https://tokenpost.kr/news/briefing/418575" },
-    { "title": "Yahoo Finance · Stock market today: Nasdaq, Nvidia post record highs (10/5)", "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-october-5-dow-sp-500-nasdaq-081220790.html" },
-    { "title": "Farside Investors · Bitcoin ETF Flow (10/2 집계)", "url": "https://farside.co.uk/btc/" },
-    { "title": "SEC · Strategy Inc Form 8-K (10/5)", "url": "https://www.sec.gov/Archives/edgar/data/0001050446/000119312526413164/mstr-20261005.htm" },
-    { "title": "FXStreet · Bitcoin: Can October deliver the BTC breakout? (10/5)", "url": "https://fxstreet.com/cryptocurrencies/news/bitcoin-can-october-deliver-the-btc-breakout-202610051722" },
-    { "title": "The Currency Analytics · Cardano surges 11% leading crypto gainers (10/5)", "url": "https://thecurrencyanalytics.com/daily-movers/cardano-surges-11-leading-crypto-gainers-as-btc-holds-steady-300250" },
+    { "title": "토큰포스트 · [모닝 시세브리핑] 비트코인 85,619달러, 이더리움 2,692달러 (10/7)", "url": "https://www.tokenpost.kr/news/briefing/419062" },
+    { "title": "토큰포스트 · [모닝 뉴스브리핑] 미 상원, 테더 제재 준수 조사 요청 外 (10/7)", "url": "https://www.tokenpost.kr/news/briefing/419061" },
+    { "title": "Farside Investors · Bitcoin ETF Flow (10/5·10/6 집계)", "url": "https://farside.co.uk/btc/" },
+    { "title": "Blockchain.News · Bitcoin ETF $89.8M net outflow on Oct 5 (10/5)", "url": "https://blockchain.news/flashnews/bitcoin-etf-89-8m-net-outflow-oct-5" },
+    { "title": "TheStreet · Stock Market Today: S&P 500 sets new record (10/6)", "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-06-2026" },
+    { "title": "FXStreet · US Dollar Index hovers around 102.00 (10/6)", "url": "https://www.fxstreet.com/news/us-dollar-index-price-forecast-hovers-around-10200-within-overbought-region-202610060812" },
+    { "title": "뉴스핌 · 코스피 6941.39 거래 마감 (10/6)", "url": "https://www.newspim.com/news/view/20261006001193" },
+    { "title": "머니투데이 · 원/달러 환율, 0.4원 내린 1343.6원 (10/6)", "url": "https://www.mt.co.kr/economy/2026/10/06/2026100615323434507" },
+    { "title": "뉴스핌 · [코인 시황] 비트코인 8만7000달러 돌파 재도전 (10/5)", "url": "https://www.newspim.com/news/view/20261005000121" },
+    { "title": "블루밍비트 · 美 고용 급랭에 10월 금리인상 가능성 후퇴 (10/5)", "url": "https://bloomingbit.io/feed/news/121609" },
+    { "title": "FXStreet · Bitcoin: Can October deliver the BTC breakout? (10/5, 50일선)", "url": "https://fxstreet.com/cryptocurrencies/news/bitcoin-can-october-deliver-the-btc-breakout-202610051722" },
     { "title": "investingLive · Week ahead: ISM services, Fed minutes (10/4)", "url": "https://investinglive.com/news/week-ahead-ism-services-fed-minutes-and-canadian-jobs-lead-the-economic-calendar-be-aware/" },
-    { "title": "month2k · 2026년 10월 달력 (10/5 대체공휴일)", "url": "https://www.month2k.com/lunar/2026-10" },
-    { "title": "철강금속신문 · 10월 2일 원/달러 환율 1,350.60원 (10/2)", "url": "https://www.snmnews.com/news/articleView.html?idxno=575456" },
-    { "title": "뉴스1 · 코스피, 0.46% 상승한 7003.74 마감 (10/2)", "url": "https://www.news1.kr/finance/market-exr/6309178" },
     { "title": "FedRateCalc · U.S. Economic Calendar October 2026 (CPI 10/14)", "url": "https://fedratecalc.com/us-economic-calendar/october-2026/" },
     { "title": "Cryptoticker · KuCoin delisting withdrawal deadline (9/29 갱신)", "url": "https://cryptoticker.io/en/kucoin-delisting-withdrawal-deadline/" }
   ]
