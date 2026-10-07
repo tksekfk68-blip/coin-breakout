@@ -463,3 +463,11 @@ ul.hold-c li { font-size: 13.5px; margin: 4px 0; line-height: 1.5; }
 .news-sum { font-size: 13.5px; background: var(--surface-2); border-radius: 8px; padding: 8px 10px; margin-top: 10px; line-height: 1.5; }
 .good-c { color: var(--sup); font-weight: 650; } .bad-c { color: var(--up); font-weight: 650; }
 .hold h5 { margin: 10px 0 2px; font-size: 13px; }
+
+/* ---------- 장중 업데이트 ---------- */
+.alert-bar { background: var(--warn-bg); color: var(--warn-text); border-radius: var(--radius); padding: 10px 14px; margin-bottom: 10px; font-size: 14px; line-height: 1.5; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.alert-bar.danger { background: color-mix(in srgb, var(--up) 18%, var(--surface)); color: var(--text); }
+.intraday { background: var(--surface); border: 1.5px solid #d9a100; border-radius: var(--radius); padding: 10px 14px; margin-bottom: 10px; font-size: 14px; }
+.intraday summary { cursor: pointer; line-height: 1.5; }
+.intraday ul { margin: 8px 0 4px; padding-left: 18px; }
+.intraday li { margin: 5px 0; line-height: 1.55; }

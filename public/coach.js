@@ -171,7 +171,10 @@ export function renderCoach() {
     <div class="mood-main"><span class="mood-icon">${mood.icon}</span><div><b>깐부 한마디</b><p>${mood.text}${mood.extra.length ? ` <span class="flat">(${mood.extra.join(' · ')})</span>` : ''}</p></div></div>
     ${ng.map(([k, t]) => `<div class="nudge ${k}">${{ stop: '🛑', warn: '⚠️', good: '🎉', ok: '✅' }[k]} ${t}</div>`).join('')}`;
   const B = C.market?.briefing;
-  $('#briefLine').innerHTML = B ? `<button type="button" class="brief-line" data-coach="news">📰 <b>오늘 시황:</b> ${esc(B.title)} <span class="flat">→</span></button>` : '';
+  const bl = $('#briefLine');
+  const openI = bl.querySelector('details.intraday')?.open;
+  bl.innerHTML = (C.liveBanner ? C.liveBanner() : '') + (B ? `<button type="button" class="brief-line" data-coach="news">📰 <b>오늘 아침 시황:</b> ${esc(B.title)} <span class="flat">→</span></button>` : '');
+  if (openI) { const d = bl.querySelector('details.intraday'); if (d) d.open = true; }
   renderPlanCard();
   renderPicks();
   renderPositions();

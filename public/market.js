@@ -14,8 +14,37 @@ export async function loadMarket() {
   ]);
   market.briefing = b.status === 'fulfilled' ? b.value : null;
   market.pulse = p.status === 'fulfilled' ? p.value : null;
+  await loadLive();
   renderMarket();
   return market;
+}
+
+// 장중 업데이트(변동성 감지 + 장중 시황) — 10분마다 다시 읽음
+async function loadLive() {
+  const get = (f) => fetch(`${RAW}/public/briefing/${f}?t=${Date.now()}`, { cache: 'no-store' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+  const [a, i] = await Promise.all([get('alert.json'), get('intraday.json')]);
+  market.alert = a;
+  market.intraday = i;
+}
+setInterval(() => { loadLive().then(() => { renderMarket(); document.dispatchEvent(new Event('market-live')); }); }, 10 * 60 * 1000);
+
+const fresh = (iso, hours) => iso && Date.now() - Date.parse(iso) < hours * 3600e3;
+const hm = (iso) => new Date(iso).toLocaleString('ko-KR', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+
+/** 상단 배너: 변동성 감지 + 최신 장중 시황 */
+export function liveBanner() {
+  const A = market.alert, U = market.intraday?.updates?.[0];
+  const parts = [];
+  if (A?.active && fresh(A.at, 3)) {
+    parts.push(`<div class="alert-bar ${A.level === '위험' ? 'danger' : ''}"><b>⚡ 변동성 ${esc(A.level || '')}</b> ${A.reasons.map(esc).join(' · ')}
+      <span class="small">비트 1시간 ${pctS(A.btc.chg1h)} · 4시간 ${pctS(A.btc.chg4h)} · ${hm(A.at)} 감지</span></div>`);
+  }
+  if (U && fresh(U.at, 18)) {
+    parts.push(`<details class="intraday" data-k="intra"><summary><span class="pill ${U.level === '위험' ? 't-hot' : 't-near'}">${esc(U.level)}</span> <b>장중 업데이트 ${hm(U.at)}</b> — ${esc(U.title)}</summary>
+      <ul>${U.lines.map((l) => `<li>${esc(l)}</li>`).join('')}</ul>
+      <p class="small">출처: ${(U.sources || []).map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(' · ')}</p></details>`);
+  }
+  return parts.join('');
 }
 
 const pctS = (x, d = 1) => (x == null ? '-' : `${x > 0 ? '+' : ''}${(x * 100).toFixed(d)}%`);
@@ -66,11 +95,13 @@ export function renderMarket() {
   const newsList = (arr, title) => !arr || !arr.length ? '' : `<div class="news-col"><h4>${title}</h4><ul class="news">${arr.slice(0, 7).map((n) => `<li><a href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.title)}</a><span class="flat small">${esc(n.source)} · ${ago(n.date)}</span></li>`).join('')}</ul></div>`;
   const news = P?.news ? `<div class="news-cols">${newsList(P.news.coinKo, '🪙 코인 뉴스')}${newsList(P.news.macroKo, '🌍 경제 뉴스')}${newsList(P.news.coinEn, '🌐 CoinDesk')}</div>` : '';
 
-  box.innerHTML = `${brief}
+  const openIntra = box.querySelector('details.intraday')?.open;
+  box.innerHTML = `${liveBanner()}${brief}
     <div class="sec-h"><h3>📡 실시간 지표</h3><span class="note small">${P ? `${ago(P.at)} 갱신 · 5분마다` : '불러오는 중…'}</span></div>
     <div class="tiles">${tiles || '<p class="note">지표를 불러오지 못했어요.</p>'}</div>
     <div class="sec-h"><h3>📰 최신 헤드라인</h3><span class="note small">자동 수집 · 제목만 보고 판단하지 말고 원문 확인</span></div>
     ${news || '<p class="note">헤드라인을 불러오지 못했어요.</p>'}`;
+  if (openIntra) { const d = box.querySelector('details.intraday'); if (d) d.open = true; }
 }
 
 setInterval(() => { fetch('/api/pulse').then((r) => r.json()).then((p) => { market.pulse = p; renderMarket(); }).catch(() => {}); }, 5 * 60 * 1000);
