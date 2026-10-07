@@ -25,8 +25,8 @@ const reasons = [];
 let level = null;
 if (Math.abs(chg1h) >= 0.015) { reasons.push(`비트코인 1시간 ${pc(chg1h)}`); level = Math.abs(chg1h) >= 0.03 ? '위험' : '주의'; }
 if (Math.abs(chg4h) >= 0.03) { reasons.push(`비트코인 4시간 ${pc(chg4h)}`); level = Math.abs(chg4h) >= 0.05 ? '위험' : level || '주의'; }
-if (down >= 0.85 && chg24h <= -0.015) { reasons.push(`원화마켓 ${Math.round(down * 100)}% 하락`); level = level || '주의'; }
-if (down <= 0.15 && chg24h >= 0.015) { reasons.push(`원화마켓 ${Math.round((1 - down) * 100)}% 상승`); level = level || '주의'; }
+if (down >= 0.85 && chg24h <= -0.01) { reasons.push(`원화마켓 ${Math.round(down * 100)}% 하락`); level = level || '주의'; }
+if (down <= 0.15 && chg24h >= 0.01) { reasons.push(`원화마켓 ${Math.round((1 - down) * 100)}% 상승`); level = level || '주의'; }
 
 const holdings = [];
 for (const m of watch) {
