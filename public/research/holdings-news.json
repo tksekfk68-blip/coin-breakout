@@ -1,16 +1,16 @@
 {
-  "writtenAt": "2026-10-12T07:35:00+09:00",
+  "writtenAt": "2026-10-13T07:30:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "일요일에도 새 소식이 없었어요. 시장이 조용히 오를 때 함께 힘을 받을 재료가 여전히 부족해요.",
+      "summary": "이번 주에도 새 소식이 없어요. 알트코인이 반짝 오르는 장에서도 함께 힘을 받을 재료가 부족해요.",
       "good": [
         "최근 2주 안에 새로 나온 악재 공지(상장폐지·보안 사고 등)는 확인되지 않았어요",
         "10/2 개발 도구(Docker) 정비 같은 작은 유지보수는 계속되고 있어요 — 가격에 줄 영향은 거의 없어요"
       ],
       "bad": [
         "해외 거래소 쿠코인 상장폐지가 10/7 출금 마감으로 끝나 거래할 수 있는 곳이 하나 줄었어요",
-        "8월 이후 눈에 띄는 새 소식(제휴·상장)이 없어, 가격을 끌어올릴 재료가 부족해요",
-        "왁스 가격은 약 0.0058달러 수준이에요(비트겟, 10/12 조회). 주말 업비트 가격은 확인하지 못했어요"
+        "주요 뉴스 페이지(비트겟·크립토랭크)에 8월 이후 왁스 관련 새 소식이 없어요. 가격을 끌어올릴 재료가 부족해요",
+        "이번 주 알트코인 상승은 스타크넷·레이어제로 등 일부 코인에 몰렸고, 왁스는 소식에 이름이 오르지 않았어요"
       ],
       "onchain": [
         "확인된 큰손 움직임 없음 — 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
@@ -18,26 +18,27 @@
       "upcoming": [],
       "sources": [
         {"title": "CoinMarketCap · WAX latest updates (Docker 10/2, 쿠코인 출금 마감 10/7)", "url": "https://coinmarketcap.com/cmc-ai/wax/latest-updates/"},
-        {"title": "Bitget · WAX news (10/12 조회, 8/4 이후 새 소식 없음)", "url": "https://www.bitget.com/price/wax/news"},
+        {"title": "Bitget · WAX news (10/13 조회, 8/4 이후 새 소식 없음)", "url": "https://www.bitget.com/price/wax/news"},
+        {"title": "CryptoRank · WAX news (10/13 조회, 최근 2주 소식 없음)", "url": "https://cryptorank.io/news/wax"},
         {"title": "Cryptoticker · KuCoin delisting: withdrawal deadline ends Oct 7", "url": "https://cryptoticker.io/en/kucoin-delisting-withdrawal-deadline/"}
       ]
     },
     "KRW-ARB": {
-      "summary": "일요일 바이낸스 기준 약 0.19달러로 +5.4% 올랐지만 숏 정리 성격이 커요. 10/15 보상안 투표와 10/16(금) 물량 해제가 이번 주 관건이에요.",
+      "summary": "10/8 저점(0.162달러)에서 약 21% 올라 0.19달러대지만 0.20달러 벽에 막혀 있어요. 이번 주 10/15 보상안 투표 시작과 10/16(금) 물량 해제가 관건이에요.",
       "good": [
+        "10/8 저점 0.162달러에서 약 21% 반등했어요. 글래스노드 자료로 레이어2 코인들이 비트코인보다 강했다는 분석이에요(10/12)",
         "제미니 커스터디가 10/8 기관용 보관 서비스에 아비트럼을 추가했어요. 기관 자금이 들어올 통로가 하나 늘었어요",
-        "팍소스 달러 스테이블코인 USDG가 10/6 아비트럼에 출시됐고, 모포 기반 이자 금고도 붙었어요(10/8)",
-        "아비트럼 위 스테이블코인 시가총액이 하루 새 약 1.27억 달러 늘었어요(10/10). 쓸 돈이 체인에 늘었다는 뜻이에요"
+        "아비트럼 위 스테이블코인이 하루 새 약 1.27억 달러 늘어 체인 중 가장 많이 늘었어요(10/10). 총 45억 달러가 넘어요"
       ],
       "bad": [
-        "10/16(금) 약 9,265만 ARB가 풀려요. 팀·투자자 몫 물량이 2027년 초까지 매달 풀리는 구조예요",
-        "USDG 보급에 ARB 1억 개를 보상으로 쓰자는 제안이 투표를 앞두고 있어요. 통과되면 시장에 풀리는 ARB가 늘 수 있어요",
-        "10/1~2 보안위원회가 '공격이 정교해졌다'며 새 Stylus 계약 활성화를 긴급 중단했어요. 자금 피해는 없지만 재개 시점은 미정이에요",
-        "일요일 상승 때 선물 미결제약정은 4.3% 줄었어요. 새 매수보다 숏 정리로 보이고, 0.20달러(20일 평균선)가 벽이에요"
+        "10/16(금) 약 9,265만 ARB(유통량의 1.56%, 약 1,800만 달러)가 풀려요. 이런 물량이 2027년 초까지 매달 풀려요",
+        "USDG 보급에 ARB 1억 개를 보상으로 쓰자는 제안이 10/15부터 투표에 들어가요. 통과되면 시장에 풀리는 ARB가 늘 수 있어요",
+        "10/2 보안위원회가 새 Stylus 계약 활성화를 긴급 중단했어요. 기존 계약은 정상이지만 재개 시점은 아직 미정이에요",
+        "월요일 선물 미결제약정이 하루 7.9% 줄고 펀딩비는 마이너스(-0.0103%)였어요. 새 매수가 붙지 않아 0.20달러를 못 넘고 있어요"
       ],
       "onchain": [
-        "확인된 큰손 움직임 없음 — 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 아비트럼 큰손의 거래소 입금·매집 소식은 없었어요",
-        "바이낸스 펀딩비는 -0.0047%로 중립에 가까워졌어요(10/11). 하락 베팅이 조금 줄었어요"
+        "확인된 큰손 움직임 없음 — 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 아비트럼 큰손의 거래소 입금·매집 소식은 찾지 못했어요",
+        "6주째 거래량이 줄고 있어요(10/12 분석). 오르긴 했지만 참여하는 돈은 많지 않다는 뜻이에요"
       ],
       "upcoming": [
         {"when": "10/15(목)~10/22(목)", "what": "USDG 보상(ARB 1억 개) 제안 오프체인 투표", "why": "통과되면 보상용 ARB가 시장에 풀릴 수 있어 공급 부담 — 최종 온체인 투표는 11/12 마감 예정"},
@@ -45,11 +46,11 @@
         {"when": "10/23(금)~10/25(일)", "what": "아비트럼·로빈후드 체인 공동 해커톤(싱가포르)", "why": "새 프로젝트가 생태계로 들어오는 계기 — 가격 영향은 보통 작아요"}
       ],
       "sources": [
-        {"title": "Blockchain.News · ARB price prediction: five-percent gain meets shrinking open interest (10/11)", "url": "https://blockchain.news/news/20261011-price-prediction-arb-five-percent-gain-meets-shrinking-open"},
-        {"title": "Yahoo Finance · Arbitrum's ARB extends weekly slide after Security Council takes emergency action (10/4)", "url": "https://finance.yahoo.com/markets/crypto/articles/arbitrum-arb-extends-weekly-slide-111320714.html"},
-        {"title": "CoinMarketCap · Arbitrum latest updates (제미니 커스터디·USDG·해커톤, 10/10)", "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"},
-        {"title": "Tron Weekly · Arbitrum adds $127M in stablecoins (10/10)", "url": "https://tronweekly.com/arbitrum-adds-127m-in-stablecoins-as-arb-price"},
-        {"title": "Cryptoticker · Crypto price today: upcoming events (10/11, ARB 언락 9,265만 개)", "url": "https://cryptoticker.io/en/crypto-price-today-bitcoin-altcoins-upcoming-events"},
+        {"title": "Blockchain.News · ARB price prediction: compressed volatility and derivatives deleveraging put $0.20 in focus (10/12)", "url": "https://blockchain.news/news/20261012-price-prediction-arb-compressed-volatility-and-derivatives-deleveraging-put"},
+        {"title": "AMBCrypto · Arbitrum looks to $0.285 after gaining 21% (10/12)", "url": "https://ambcrypto.com/arbitrum-looks-to-0-285-after-gaining-21-but-this-level-comes-first/"},
+        {"title": "CoinDesk · U.S. inflation, Ethereum upgrade talks: Crypto Week Ahead (10/12, USDG 투표·ARB 언락)", "url": "https://www.coindesk.com/markets/2026/10/12/u-s-inflation-ethereum-upgrade-talks-crypto-week-ahead"},
+        {"title": "CoinMarketCap · Arbitrum latest updates (언락·스테이블코인·보안위원회·해커톤)", "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"},
+        {"title": "Mitrade · Arbitrum DAO weighs 100 million ARB push to make USDG a core stablecoin (10/8)", "url": "https://www.mitrade.com/insights/news/live-news/article-3-2145505-20261008"},
         {"title": "24/7 Wall St. · 92.6 million ARB unlocks every month until early 2027 (10/2)", "url": "https://247wallst.com/investing/cryptocurrency/2026/10/02/arbitrum-is-up-more-than-100-since-august-and-92-6-million-arb-unlocks-every-month-until-early-2027-can-the-rally-survive-the-supply/"}
       ]
     }

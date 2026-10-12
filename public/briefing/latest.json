@@ -1,31 +1,36 @@
 {
-  "writtenAt": "2026-10-12T07:35:00+09:00",
-  "title": "조용한 일요일, 비트코인 8.36만 달러로 소폭 상승 — 숏 청산이 받쳐줬지만 수요일 물가 발표 전 관망",
+  "writtenAt": "2026-10-13T07:30:00+09:00",
+  "title": "비트코인 8.3만 달러로 숨 고르기, 알트코인만 반짝 — 코스피 3.65% 급락·물가 발표 앞두고 관망",
   "mood": "조심",
-  "moodNote": "비트코인이 50일 평균선(약 8.0만 달러)보다 약 4% 위라 거래는 가능하지만, 수요일 밤 물가 발표 전까지는 작게만 움직일 때예요.",
+  "moodNote": "비트코인은 50일 평균선(약 8.0만 달러)보다 약 4% 위라 거래는 가능하지만, 내일(수) 밤 물가 발표 전까지는 작게만 움직일 때예요.",
   "coin": [
-    "비트코인은 오늘 새벽(한국 시간 6시 무렵) 약 8.36만 달러로 하루 +0.7%예요. 주말 내내 8.3만 달러 근처에서 좁게 움직였어요.",
-    "이더리움은 약 2,534달러(+0.9%)로 50일 평균선(약 2,501달러) 바로 위에 있어요. 방향이 정해질 갈림길이란 평가예요.",
-    "지난 하루 청산 약 9,586만 달러 중 82%가 '내릴 것'에 건 숏 포지션이었어요. 상승은 새 매수보다 숏이 밀려난 영향이 커요.",
-    "지난주 전체로는 비트코인 -2.1%, 이더리움 -6.8%, 솔라나 -8.1%로 알트코인이 더 많이 빠졌어요. 비트코인 ETF는 주중 약 6.8억 달러가 빠져나갔어요.",
-    "레저(Ledger)는 피해가 난 리셀러 판매 기기에서 몰래 심어진 하드웨어 장치를 찾았다고 밝혔어요. 공식 판매처가 아닌 곳에서 산 지갑은 조심해야 해요."
+    "비트코인은 미국 장 마감 무렵(한국 시간 오늘 새벽) 약 8.30만 달러로 하루 -0.85%예요. 일요일 8.4만 달러를 넘었다가 다시 밀렸어요.",
+    "이더리움은 월요일 약 2,560달러(+2.4%)까지 올랐어요. 2,500달러가 받침, 2,600~2,700달러가 벽이란 분석이에요.",
+    "비트코인 대신 작은 알트코인이 올랐어요. 스타크넷은 일주일 +76%, 레이어제로(ZRO) +21%, 니어 +10%였지만 거래가 얇은 곳에서 오른 거라 쉽게 꺼질 수 있어요.",
+    "미국 비트코인 현물 ETF는 지난주 약 6.8억 달러가 빠져나가 6월 이후 최대 유출이었어요. 기관의 매수세가 아직 약해요.",
+    "옵션 시장에선 5.5만~8만 달러 아래로 떨어질 때를 대비한 보험(풋옵션) 거래가 많아요. 큰손들이 하락을 경계하고 있다는 뜻이에요."
   ],
   "macro": [
-    "오늘(10/12) 미국은 콜럼버스 데이라 채권시장이 쉬어요. 금요일 기준 미국 10년물 금리는 약 5.24%로 높은 수준이에요.",
-    "트럼프 대통령이 일요일 러시아·우크라이나 '에너지 휴전'을 선언했어요. 정유시설 공격이 멈추면 기름값 부담이 줄 수 있지만, 감시 방법은 불분명해요.",
-    "연준은 9월에 금리를 3.75~4.00%로 올렸고, 의사록에선 연내 한 번 더 올리자는 의견이 많았어요. 10월 인상 확률은 폴리마켓 기준 약 15% 수준이에요.",
-    "수요일 미국 9월 소비자물가(CPI)는 3.7% 안팎으로 8월(3.4%)보다 오를 것이란 전망이에요. 코스피는 오늘 연휴를 마치고 다시 열려요."
+    "코스피는 어제 외국인이 약 2조 원을 팔아 3.65% 급락한 6,384로 마감했어요. 오픈AI 매출 실망 등 AI 걱정에 삼성전자·SK하이닉스가 4%대 빠졌어요.",
+    "원/달러 환율은 약 1,335원으로 2년 만에 가장 낮아요(원화 강세). 수출 기업들이 달러를 판 영향이에요.",
+    "미국은 달러가 강했고, 유가(WTI)는 중동 긴장으로 +1.5% 오른 약 93달러예요. 미국 10년물 금리는 5.24%로 여전히 높아요.",
+    "클리블랜드 연은 해맥 총재가 물가 기대가 걱정된다는 '매파' 발언을 했어요. 수요일 미국 9월 물가(CPI)는 3.6% 안팎(8월 3.4%)으로 오를 것이란 전망이에요."
   ],
   "events": [
     {
       "when": "10/13(화) 밤",
-      "what": "JP모건·골드만삭스·씨티 등 미국 대형은행 실적 발표",
+      "what": "JP모건·골드만삭스·웰스파고·씨티 실적 발표 (미국 장 시작 전)",
       "why": "미국 증시 분위기를 좌우해 코인에도 간접 영향을 줘요"
+    },
+    {
+      "when": "10/14(수) 10:30",
+      "what": "중국 9월 소비자·생산자물가",
+      "why": "아시아 시장 분위기에 영향을 줄 수 있어요"
     },
     {
       "when": "10/14(수) 21:30",
       "what": "미국 9월 소비자물가(CPI)",
-      "why": "이번 주 가장 큰 일정. 예상(약 3.7%)보다 높으면 금리 인상 걱정이 커져 코인에 부담이에요"
+      "why": "이번 주 가장 큰 일정. 예상(약 3.6%)보다 높으면 금리 인상 걱정이 커져 코인에 부담이에요"
     },
     {
       "when": "10/15(목) 21:30",
@@ -33,30 +38,37 @@
       "why": "CPI와 함께 물가·소비가 얼마나 뜨거운지 확인하는 지표예요"
     },
     {
+      "when": "10/16(금) 12:30",
+      "what": "워시 연준 의장 대담(IMF 총재와)",
+      "why": "물가 발표 뒤 금리 방향에 대한 힌트가 나올 수 있어요"
+    },
+    {
       "when": "10/16(금) 17:00",
       "what": "데리비트 옵션 만기(비트코인 약 12.5억 달러)",
-      "why": "만기 전후로 가격이 일시적으로 흔들릴 수 있어요"
+      "why": "만기 전후로 가격이 몇 시간 흔들릴 수 있어요"
     },
     {
       "when": "10/29(목) 03:00",
       "what": "미국 연준(FOMC) 금리 결정",
-      "why": "CPI 결과에 따라 인상 가능성이 다시 계산돼요"
+      "why": "10월은 동결, 12월 인상 가능성이 거론돼요. CPI 결과에 따라 다시 계산돼요"
     }
   ],
   "strategy": [
-    "비트코인 약 8.36만 달러는 50일 평균선(약 8.0만 달러)보다 약 4.5% 위예요. 규칙상 '거래 가능' 구간이에요.",
+    "비트코인 약 8.30만 달러는 50일 평균선(약 8.0만 달러)보다 약 3.7% 위예요. 규칙상 '거래 가능' 구간이지만 여유가 줄었어요.",
     "새로 들어간다면 평소의 절반 정도 크기로만. 수요일 밤 물가 발표 때 크게 흔들릴 수 있어요.",
-    "들어가면 업비트에 손절 주문부터 걸어두기. 분석가들은 8만 달러를 1차 받침, 지난주 고점 8.66만 달러를 넘어야 할 벽으로 봐요.",
-    "종가 기준 50일선 아래로 내려가면 신규 진입은 멈추고, 물타기는 하지 않기."
+    "들어가면 업비트에 손절 주문부터 걸어두기. 분석가들은 8만 달러를 받침, 8.73만 달러를 넘어야 할 벽으로 봐요.",
+    "알트코인 급등을 따라 사는 건 피하기. 종가 기준 비트코인이 50일선 아래로 내려가면 신규 진입은 멈추고 물타기는 하지 않기."
   ],
   "sources": [
-    {"title": "토큰포스트 · 10월 12일 출근길 팟캐스트 — 비트코인 강보합 속 숏 청산 9586만달러 (10/12)", "url": "https://tokenpost.kr/news/insights/421167"},
-    {"title": "Cryptoticker · Crypto week in review: Bitcoin holds, altcoins slide (10/11)", "url": "https://cryptoticker.io/en/crypto-week-in-review-portfolio-week-41-2026/"},
-    {"title": "Cryptoticker · Crypto Outlook: the levels for BTC, ETH, XRP and SOL (10/11, 50일선)", "url": "https://cryptoticker.io/en/crypto-outlook-week-cpi-bitcoin-ether-xrp-solana/"},
-    {"title": "Cryptoticker · Crypto price today: markets brace for a big week (10/11, 이번 주 일정)", "url": "https://cryptoticker.io/en/crypto-price-today-bitcoin-altcoins-upcoming-events"},
-    {"title": "FinanceFeeds · Bitcoin price week ahead: $83,000 into CPI (10/11)", "url": "https://financefeeds.com/bitcoin-price-83000-week-ahead-cpi-bank-earnings-bull-87500-bear-80000/"},
-    {"title": "Fox News · Trump announces immediate energy ceasefire between Russia, Ukraine (10/11)", "url": "https://www.foxnews.com/politics/trump-announces-immediate-energy-ceasefire-between-russia-ukraine"},
-    {"title": "블록미디어 · [뉴욕 금·채권·달러] 미 10년물 5.24%·달러 강세 (10/10)", "url": "https://blockmedia.co.kr/archives/1149864"},
+    {"title": "investingLive · Americas FX news wrap 12 Oct: USD climbs, oil rises, stocks mixed (10/12)", "url": "https://investinglive.com/news/investinglive-americas-fx-news-wrap-12-oct-usd-climbs-eurusd-hits-a-2026-low-as-oil-rises-and-stocks-finish-mixed"},
+    {"title": "CoinDesk · Bitcoin steadies near Sunday's high as smaller tokens do the heavy lifting (10/12)", "url": "https://www.coindesk.com/markets/2026/10/12/altcoins-rally-on-thin-trading-as-bitcoin-holds-near-usd84-000"},
+    {"title": "CoinDesk · U.S. inflation, Ethereum upgrade talks: Crypto Week Ahead (10/12)", "url": "https://www.coindesk.com/markets/2026/10/12/u-s-inflation-ethereum-upgrade-talks-crypto-week-ahead"},
+    {"title": "Yahoo Finance · Bitcoin and ethereum prices today, Monday, October 12, 2026 (10/12)", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-monday-october-12-2026-how-bond-yields-threaten-crypto-prices-114018710.html"},
+    {"title": "CoinDCX · Bitcoin Price Prediction: BTC Reclaims $83K, 50일 EMA $80,016 (10/12)", "url": "https://coindcx.com/blog/price-predictions/bitcoin-price-weekly"},
+    {"title": "Cryptoticker · Ethereum price prediction: two dates decide this week (10/12)", "url": "https://cryptoticker.io/en/ethereum-price-prediction-options-expiry-cpi-levels"},
+    {"title": "서울신문 · 코스피 6300선 급락, 환율 2년 만에 최저 (10/13)", "url": "https://www.seoul.co.kr/news/economy/securities/2026/10/13/20261013031003"},
+    {"title": "뉴스핌 · [마감시황] 코스피, 외국인 2조 매도에 3%대 급락 (10/12)", "url": "https://newspim.com/news/view/20261012001236"},
+    {"title": "24/7 Wall St. · Q3 Earnings Week: Big Banks report Oct 13 (10/12)", "url": "https://247wallst.com/cards/q3-earnings-season-front-loads-everything-into-two-mornings-unh-earnings-calendar-01m4gswtqct7fbk8xh1qmb2pkm"},
     {"title": "Federal Reserve Board · Calendar: October 2026 (FOMC 10/27~28)", "url": "https://www.federalreserve.gov/newsevents/2026-october.htm"}
   ]
 }
