@@ -1,16 +1,16 @@
 {
-  "writtenAt": "2026-10-13T07:30:00+09:00",
+  "writtenAt": "2026-10-14T07:30:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "이번 주에도 새 소식이 없어요. 알트코인이 반짝 오르는 장에서도 함께 힘을 받을 재료가 부족해요.",
+      "summary": "이번 주에도 새 소식이 없어요. 어제처럼 알트코인이 크게 빠지는 장에서 버텨줄 재료가 부족해요.",
       "good": [
         "최근 2주 안에 새로 나온 악재 공지(상장폐지·보안 사고 등)는 확인되지 않았어요",
         "10/2 개발 도구(Docker) 정비 같은 작은 유지보수는 계속되고 있어요 — 가격에 줄 영향은 거의 없어요"
       ],
       "bad": [
         "해외 거래소 쿠코인 상장폐지가 10/7 출금 마감으로 끝나 거래할 수 있는 곳이 하나 줄었어요",
-        "주요 뉴스 페이지(비트겟·크립토랭크)에 8월 이후 왁스 관련 새 소식이 없어요. 가격을 끌어올릴 재료가 부족해요",
-        "이번 주 알트코인 상승은 스타크넷·레이어제로 등 일부 코인에 몰렸고, 왁스는 소식에 이름이 오르지 않았어요"
+        "주요 뉴스 페이지에 8월 이후 왁스 관련 새 소식이 없어요. 가격을 끌어올릴 재료가 부족해요",
+        "어제(10/13) 알트코인 전반이 크게 빠졌어요(스타크넷 -17%, 레이어제로 -14%). 거래가 얇은 코인일수록 이런 장에서 흔들림이 커요"
       ],
       "onchain": [
         "확인된 큰손 움직임 없음 — 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
@@ -18,40 +18,39 @@
       "upcoming": [],
       "sources": [
         {"title": "CoinMarketCap · WAX latest updates (Docker 10/2, 쿠코인 출금 마감 10/7)", "url": "https://coinmarketcap.com/cmc-ai/wax/latest-updates/"},
-        {"title": "Bitget · WAX news (10/13 조회, 8/4 이후 새 소식 없음)", "url": "https://www.bitget.com/price/wax/news"},
-        {"title": "CryptoRank · WAX news (10/13 조회, 최근 2주 소식 없음)", "url": "https://cryptorank.io/news/wax"},
-        {"title": "Cryptoticker · KuCoin delisting: withdrawal deadline ends Oct 7", "url": "https://cryptoticker.io/en/kucoin-delisting-withdrawal-deadline/"}
+        {"title": "Cryptoticker · KuCoin delisting: withdrawal deadline ends Oct 7", "url": "https://cryptoticker.io/en/kucoin-delisting-withdrawal-deadline/"},
+        {"title": "CoinDesk · BTC, ETH slip and rebound as Kospi slides (알트코인 급락, 10/13)", "url": "https://www.coindesk.com/markets/2026/10/13/bitcoin-ether-slip-and-rebound-as-south-korean-stocks-slide-on-ai-related-concerns"}
       ]
     },
     "KRW-ARB": {
-      "summary": "10/8 저점(0.162달러)에서 약 21% 올라 0.19달러대지만 0.20달러 벽에 막혀 있어요. 이번 주 10/15 보상안 투표 시작과 10/16(금) 물량 해제가 관건이에요.",
+      "summary": "10/8 저점(0.162달러)에서 반등해 0.18~0.19달러대지만 0.20달러 벽은 아직이에요. 내일(10/15) 보상안 투표 시작과 모레(10/16) 물량 해제가 이번 주 관건이에요.",
       "good": [
-        "10/8 저점 0.162달러에서 약 21% 반등했어요. 글래스노드 자료로 레이어2 코인들이 비트코인보다 강했다는 분석이에요(10/12)",
-        "제미니 커스터디가 10/8 기관용 보관 서비스에 아비트럼을 추가했어요. 기관 자금이 들어올 통로가 하나 늘었어요",
-        "아비트럼 위 스테이블코인이 하루 새 약 1.27억 달러 늘어 체인 중 가장 많이 늘었어요(10/10). 총 45억 달러가 넘어요"
+        "10/13 기준 약 0.187달러로 10/8 저점보다 약 15% 높아요. 글래스노드 자료로 레이어2 코인들이 비트코인보다 강했다는 분석도 있어요(10/12)",
+        "아비트럼 9월 네트워크 수익이 약 545만 달러로 역대 최고였어요(10/2 발표). 체인을 실제로 쓰는 곳이 늘고 있다는 뜻이에요",
+        "팩소스의 달러 스테이블코인 USDG가 10/6 아비트럼에 출시됐어요. 제미니 커스터디도 10/8 기관용 보관에 ARB를 추가했어요"
       ],
       "bad": [
-        "10/16(금) 약 9,265만 ARB(유통량의 1.56%, 약 1,800만 달러)가 풀려요. 이런 물량이 2027년 초까지 매달 풀려요",
+        "10/16(금) 약 9,265만 ARB(유통량의 1.56%, 약 1,800만 달러)가 풀려요. 이 중 약 5,613만 개는 팀·자문, 약 3,652만 개는 투자자 몫이에요",
         "USDG 보급에 ARB 1억 개를 보상으로 쓰자는 제안이 10/15부터 투표에 들어가요. 통과되면 시장에 풀리는 ARB가 늘 수 있어요",
         "10/2 보안위원회가 새 Stylus 계약 활성화를 긴급 중단했어요. 기존 계약은 정상이지만 재개 시점은 아직 미정이에요",
-        "월요일 선물 미결제약정이 하루 7.9% 줄고 펀딩비는 마이너스(-0.0103%)였어요. 새 매수가 붙지 않아 0.20달러를 못 넘고 있어요"
+        "6주째 거래량이 줄고 있고 자금 흐름 지표(CMF)도 마이너스예요. 오르긴 했지만 새로 들어오는 돈은 많지 않아요"
       ],
       "onchain": [
         "확인된 큰손 움직임 없음 — 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 아비트럼 큰손의 거래소 입금·매집 소식은 찾지 못했어요",
-        "6주째 거래량이 줄고 있어요(10/12 분석). 오르긴 했지만 참여하는 돈은 많지 않다는 뜻이에요"
+        "10/16 풀리는 팀·투자자 물량이 거래소로 옮겨지는지가 다음 주 확인할 포인트예요"
       ],
       "upcoming": [
         {"when": "10/15(목)~10/22(목)", "what": "USDG 보상(ARB 1억 개) 제안 오프체인 투표", "why": "통과되면 보상용 ARB가 시장에 풀릴 수 있어 공급 부담 — 최종 온체인 투표는 11/12 마감 예정"},
-        {"when": "10/16(금)", "what": "ARB 월간 물량 해제 (약 9,265만 개)", "why": "풀린 물량이 거래소로 옮겨 팔리는지가 관건"},
+        {"when": "10/16(금)", "what": "ARB 월간 물량 해제 (약 9,265만 개)", "why": "풀린 물량이 거래소로 옮겨 팔리는지가 관건. 이런 해제는 2027년 초까지 매달 있어요"},
         {"when": "10/23(금)~10/25(일)", "what": "아비트럼·로빈후드 체인 공동 해커톤(싱가포르)", "why": "새 프로젝트가 생태계로 들어오는 계기 — 가격 영향은 보통 작아요"}
       ],
       "sources": [
-        {"title": "Blockchain.News · ARB price prediction: compressed volatility and derivatives deleveraging put $0.20 in focus (10/12)", "url": "https://blockchain.news/news/20261012-price-prediction-arb-compressed-volatility-and-derivatives-deleveraging-put"},
-        {"title": "AMBCrypto · Arbitrum looks to $0.285 after gaining 21% (10/12)", "url": "https://ambcrypto.com/arbitrum-looks-to-0-285-after-gaining-21-but-this-level-comes-first/"},
+        {"title": "CoinMarketCap · Arbitrum latest updates (10/13 조회: 가격·언락·투표·Stylus·해커톤)", "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"},
+        {"title": "BeInCrypto · 3 token unlocks to watch in the third week of October 2026", "url": "https://beincrypto.com/token-unlocks-third-week-of-october-2026"},
+        {"title": "Lookonchain · Arbitrum (ARB) onchain news (9월 수익 10/2, USDG 출시 10/6)", "url": "https://www.lookonchain.com/token/arbitrum"},
+        {"title": "KuCoin(AMBCrypto) · Arbitrum gains 21% since October 8, eyes $0.285 (10/12)", "url": "https://kucoin.com/news/flash/arbitrum-gains-21-since-october-8-eyes-0-285-target"},
         {"title": "CoinDesk · U.S. inflation, Ethereum upgrade talks: Crypto Week Ahead (10/12, USDG 투표·ARB 언락)", "url": "https://www.coindesk.com/markets/2026/10/12/u-s-inflation-ethereum-upgrade-talks-crypto-week-ahead"},
-        {"title": "CoinMarketCap · Arbitrum latest updates (언락·스테이블코인·보안위원회·해커톤)", "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"},
-        {"title": "Mitrade · Arbitrum DAO weighs 100 million ARB push to make USDG a core stablecoin (10/8)", "url": "https://www.mitrade.com/insights/news/live-news/article-3-2145505-20261008"},
-        {"title": "24/7 Wall St. · 92.6 million ARB unlocks every month until early 2027 (10/2)", "url": "https://247wallst.com/investing/cryptocurrency/2026/10/02/arbitrum-is-up-more-than-100-since-august-and-92-6-million-arb-unlocks-every-month-until-early-2027-can-the-rally-survive-the-supply/"}
+        {"title": "Mitrade · Arbitrum DAO weighs 100 million ARB push to make USDG a core stablecoin (10/8)", "url": "https://www.mitrade.com/insights/news/live-news/article-3-2145505-20261008"}
       ]
     }
   }
