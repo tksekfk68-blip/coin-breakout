@@ -1,6 +1,37 @@
 {
   "updates": [
     {
+      "at": "2026-10-13T10:09:32+09:00",
+      "level": "주의",
+      "title": "밤사이 비트 -2.9%, 업비트 원화마켓 93%가 하락 — 미국 금리·유가 부담에 레버리지 청산",
+      "lines": [
+        "오전 10시 기준 비트코인 1억 1,015만 원. 4시간 동안 -2.1%, 하루 -2.9%예요. 업비트 원화마켓 코인 10개 중 9개 넘게(93%) 빠지는, 시장 전체가 같이 빠지는 장이에요.",
+        "미국 시간 월요일 저녁 비트코인이 8만 2천 달러 아래로 내려갔어요. 하루 동안 약 4,900억 원어치(4억 9천만 달러) 레버리지 포지션이 강제 청산됐고 그중 83%가 상승 쪽 베팅이었어요.",
+        "배경은 미국 10년 국채금리 5.2%대 상승, 러시아·우크라이나 에너지 휴전 불안과 호르무즈 해협 유조선 피격으로 오른 유가, 지난주 미국 비트코인 ETF 약 6.8억 달러 순유출이에요. 이번 주 수요일 밤 미국 물가(CPI) 발표를 앞두고 다들 몸을 사리는 분위기예요.",
+        "가장 많이 빠진 건 ICX -15.8%, GTC -14.2%, RSR -12%. 오른 코인은 DRV +9.2% 정도로 손에 꼽아요.",
+        "왁스: 7.01원(-2.8%). 첫 벽 7.17원 아래, 첫 받침 6.82원 위예요. 6.56원(반등 끝 기준선)이 깨지면 이번 반등은 끝난 걸로 봐요.",
+        "아비트럼: 237원(-2.9%). 첫 벽 258원 아래, 첫 받침 221.5원 위예요. 반등 끝 기준선은 200원, 강세 기준선은 344원이에요."
+      ],
+      "sources": [
+        {
+          "title": "Bitcoin.com News · Bitcoin Price Falls Below $82K as $406M in Longs Get Liquidated (10/12)",
+          "url": "https://news.bitcoin.com/market-updates/bitcoin-price-falls-below-82k-as-406m-in-longs-get-liquidated/"
+        },
+        {
+          "title": "Cointelegraph · Bitcoin Bids Line Up at $82,000 as Oil Gains on Ukraine, Iran Woes (10/12)",
+          "url": "https://cointelegraph.com/markets/bitcoin-drops-22-as-ukraine-iran-strikes-send-oil-toward-one-month-high"
+        },
+        {
+          "title": "Yahoo Finance · Bitcoin and ethereum prices today, Oct 12, 2026: bond yields",
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-monday-october-12-2026-how-bond-yields-threaten-crypto-prices-114018710.html"
+        },
+        {
+          "title": "업비트 실시간 시세 (코인 레이더 집계)",
+          "url": "https://coin-breakout.alclsqoa12.workers.dev/"
+        }
+      ]
+    },
+    {
       "at": "2026-10-07T11:40:00+09:00",
       "level": "주의",
       "title": "오전 장중 알트코인 일제히 하락 — 비트 -1.6%, 업비트 원화마켓 10개 중 9개가 빨간불(하락)",
@@ -12,8 +43,14 @@
         "아비트럼: 253원(-6.6%). 첫 받침 258원이 깨져서 다음 받침은 220원대, 반등 끝 기준선은 200원이에요."
       ],
       "sources": [
-        { "title": "Admirals · FOMC Minutes October 2026 (발표 10/7 오후 2시 미국 동부)", "url": "https://admiralmarkets.com/analytics/traders-blog/fomc-minutes-october-2026" },
-        { "title": "업비트 실시간 시세 (코인 레이더 집계)", "url": "https://coin-breakout.alclsqoa12.workers.dev/" }
+        {
+          "title": "Admirals · FOMC Minutes October 2026 (발표 10/7 오후 2시 미국 동부)",
+          "url": "https://admiralmarkets.com/analytics/traders-blog/fomc-minutes-october-2026"
+        },
+        {
+          "title": "업비트 실시간 시세 (코인 레이더 집계)",
+          "url": "https://coin-breakout.alclsqoa12.workers.dev/"
+        }
       ]
     }
   ]
