@@ -1,49 +1,46 @@
 {
-  "writtenAt": "2026-10-16T07:40:00+09:00",
-  "title": "도매물가 폭등·코스피 7.6% 폭락에 비트코인 한때 8만 달러 아래 — 지금은 8.2만 달러대로 회복",
+  "writtenAt": "2026-10-17T07:30:00+09:00",
+  "title": "워시 의장 '금리 힌트 없음'에 인상 확률 15%로 뚝 — 비트코인은 8.1~8.3만 달러에서 숨 고르기",
   "mood": "조심",
-  "moodNote": "비트코인은 50일 평균선(약 8.12만 달러)을 겨우 1%쯤 웃돌고 있어요. 거래는 가능하지만 평균선이 바로 아래라 새 진입은 작게 하는 게 좋아요.",
+  "moodNote": "비트코인이 50일 평균선(약 8.13만 달러)과 거의 붙어 있어요. 위아래 어느 쪽으로든 갈 수 있는 자리라 새 진입은 작게 하는 게 좋아요.",
   "coin": [
-    "비트코인은 어제(10/15) 미국 생산자물가 발표 뒤 한때 7.97만 달러까지 빠져 9/18 이후 최저를 찍었어요. 이후 8만 달러 지지 매수가 들어와 8.2만 달러대로 되돌아왔어요.",
-    "이더리움은 한때 2,324달러까지 밀렸다가 2,400달러 안팎으로 회복했어요. 일주일 기준으로는 약 6% 빠진 상태예요.",
-    "하루 새 약 9.3억~9.5억 달러어치 선물 포지션이 강제 청산됐고, 대부분 가격 상승에 건 쪽이었어요. 빚내서 투자한 물량이 많이 정리됐다는 뜻이에요.",
-    "알트코인은 더 크게 흔들렸어요. 펌프펀(PUMP) -14%, 퀀트 -9%, 옵티미즘 -7% 등이 크게 빠졌고, 스타크넷(STRK)만 +11%로 거꾸로 올랐어요.",
-    "미국 비트코인 현물 ETF에서는 10/14 하루 약 2.6억 달러, 이더리움 ETF에서 약 1.3억 달러가 빠져나갔어요. 전날 들어온 돈이 하루 만에 다시 나간 셈이에요."
+    "비트코인은 목요일 7.97만 달러까지 빠졌다가 어제(10/16) 8.1만~8.3만 달러 사이에서 움직였어요. 미국 장 마감 무렵엔 8.16만 달러 안팎이었어요.",
+    "이더리움은 어제 2,480달러 근처까지 올라 2,400달러대 중후반을 지켰어요. 다만 일주일 전보다는 아직 약 1% 낮아요.",
+    "하루 강제 청산 규모는 약 3.1억 달러로, 그 전날(약 10억 달러)보다 크게 줄었어요. 빚내서 투자한 물량이 많이 정리돼 시장이 조금 진정됐다는 뜻이에요.",
+    "알트코인은 일부만 크게 올랐어요. 셀레스티아(TIA) +31%, 인젝티브(INJ) +27%, 레이어제로(ZRO) +21%, 지캐시(ZEC) +10% 수준이었어요.",
+    "10/15 미국 현물 ETF는 비트코인 +510만 달러로 겨우 순유입, 이더리움은 -6,030만 달러 순유출이었어요. 큰 돈이 아직 적극적으로 들어오진 않고 있어요."
   ],
   "macro": [
-    "미국 9월 생산자물가가 1년 전보다 6.3% 올라 예상(5.3%)을 크게 넘었어요. 한 달 상승폭(+1.3%)은 4년여 만에 가장 커요. 소매판매도 +0.8%로 예상보다 강했어요.",
-    "그래도 미국 10년물 국채금리는 오히려 5.1% 안팎으로 내렸고 달러도 약해졌어요. 이달 금리 인상 확률은 물가 발표 직후 50%대까지 갔다가 지금은 30~40% 정도로 내려왔어요.",
-    "코스피는 외국인이 3.6조 원을 팔아 7.57% 폭락한 5,554로 마감했어요(서킷브레이커 발동). 삼성전자 -9.5%, SK하이닉스 -11%로, 물가 걱정에 AI 투자 거품 우려까지 겹쳤어요.",
-    "원/달러 환율은 6.3원 오른 1,344.6원이에요. 유가(WTI)는 배럴당 약 98달러로 다시 올라 물가 걱정을 키우고 있어요."
+    "워시 연준 의장은 어제 '앞으로의 금리 방향을 미리 말하지 않겠다'고만 했어요. 그 뒤 이달 금리 인상 확률은 33%에서 약 15%로 내려왔어요.",
+    "다만 물가 지표는 계속 뜨거워요. 9월 수입물가가 1년 전보다 8.1% 올라 2022년 중반 이후 가장 컸고, 산업생산도 +0.7%로 예상(+0.4%)보다 강했어요.",
+    "이란이 호르무즈 해협 공격을 키우면서 브렌트유가 5월 이후 처음 배럴당 110달러에 닿았어요(WTI 약 99달러). 기름값이 오르면 물가 걱정도 다시 커져요.",
+    "미국 나스닥은 AI 관련주 매도로 2.1% 빠졌지만, 코스피는 외국인 순매수로 2.05% 오른 5,668에 마감했어요. 원/달러 환율은 13.2원 내린 1,331.4원이에요."
   ],
   "events": [
-    {"when": "10/16(금) 12:30", "what": "워시 연준 의장 대담(IMF 총재와, 방콕)", "why": "물가 충격 뒤 첫 공개 발언이라 이달 금리 인상 여부 힌트가 나오면 코인이 크게 움직일 수 있어요"},
-    {"when": "10/16(금) 21:30~22:15", "what": "미국 9월 수입물가·산업생산", "why": "물가 지표가 또 뜨거우면 금리 인상 걱정이 다시 커질 수 있어요"},
-    {"when": "10/17(토)", "what": "연준 위원 발언 금지 기간 시작", "why": "이후 회의 전까지는 연준의 새 힌트가 없어 경제지표에 시장이 더 예민해져요"},
+    {"when": "10/22(목) 21:30", "what": "미국 주간 신규 실업수당 청구", "why": "고용이 강하게 나오면 금리 인상 걱정이 다시 커질 수 있어요"},
+    {"when": "10/23(금) 22:45", "what": "미국 10월 S&P 구매관리자지수(PMI) 속보치", "why": "경기가 너무 뜨거운지 식는지 가늠하는 첫 10월 지표예요"},
+    {"when": "10/23(금) 23:00", "what": "미시간대 소비자심리·기대 인플레이션(확정치)", "why": "사람들이 물가가 더 오를 거라 보면 연준이 금리를 올릴 이유가 돼요"},
     {"when": "10/29(목) 03:00", "what": "미국 연준(FOMC) 금리 결정", "why": "인상이냐 동결이냐에 따라 코인이 크게 흔들릴 수 있는 이달 최대 일정이에요"}
   ],
   "strategy": [
-    "비트코인은 50일 평균선(약 8.12만 달러) 바로 위라 추세추종 규칙상 거래는 가능해요. 다만 차이가 1% 남짓이라 한 번만 더 밀려도 평균선 아래로 내려가요.",
-    "오늘 낮 워시 의장 발언 전에는 새 진입을 서두르지 말고, 들어가더라도 평소의 절반 이하로 작게 하세요.",
-    "새로 사면 손절 주문부터 먼저 걸어두세요. 비트코인이 50일 평균선 아래에서 마감하면 새 진입은 쉬는 게 규칙이에요.",
-    "어제처럼 알트코인은 비트코인보다 몇 배 크게 빠질 수 있어요. 알트코인 비중이 크다면 전체 손실 한도를 다시 확인해 두세요."
+    "비트코인은 50일 평균선(약 8.13만 달러)보다 0.5%쯤 위라 추세추종 규칙상 거래는 가능해요. 하지만 하루만 약해도 평균선 아래로 내려갈 수 있는 거리예요.",
+    "새로 들어간다면 평소의 절반 이하로 작게 하고, 손절 주문부터 먼저 걸어두세요.",
+    "비트코인이 50일 평균선 아래에서 하루를 마감하면 새 진입은 쉬는 게 규칙이에요. 주말은 거래가 얇아 갑자기 크게 움직일 수 있어요.",
+    "어제처럼 일부 알트코인만 20~30% 튀는 날은 뒤늦게 따라붙기 쉬워요. 급등한 코인일수록 손실 한도를 먼저 정해두세요."
   ],
   "sources": [
-    {"title": "TokenPost · Bitcoin briefly slips below $80,000 as ether falls under $2,400 (10/15)", "url": "https://www.tokenpost.com/news/investing/32733"},
-    {"title": "Bitcoin.com News · Bitcoin price rebounds above $82K after brief dip below $80K (10/15)", "url": "https://news.bitcoin.com/market-updates/bitcoin-price-rebounds-above-82k-after-brief-dip-below-80k/"},
-    {"title": "FXStreet · Bitcoin rebounds near $82,000 after hot PPI inflation (10/15)", "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-rebounds-to-82-000-as-ppi-hits-63-nearly-1b-liquidated-202610151820"},
-    {"title": "Cointelegraph · Bitcoin slips under $80K after US PPI gains most in four years (10/15)", "url": "https://cointelegraph.com/markets/bitcoin-price-breaks-under-80k-after-us-ppi-gains-most-in-over-4-years"},
-    {"title": "CoinDesk · Bitcoin rebounds from near $80,000 as Kospi plunges 8%, with altcoins falling harder (10/15)", "url": "https://www.coindesk.com/markets/2026/10/15/bitcoin-holds-above-usd80-000-as-an-asian-stock-rout-drags-altcoins-lower"},
-    {"title": "Yahoo Finance · Bitcoin and ethereum prices today, October 15, 2026 (10/15)", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-october-15-2026-crypto-prices-falling-into-a-familiar-pattern-113540042.html"},
-    {"title": "The Crypto Basic · Crypto price analysis October 15: PUMP falls 14% (10/15)", "url": "https://thecryptobasic.com/2026/10/15/crypto-price-analysis-october-15-pump-falls-14-bitcoin-and-xrp-test-support-quant-remains-volatile/"},
-    {"title": "KuCoin News · Bitcoin and Ethereum ETFs record $391M in net outflows on October 14 (10/15)", "url": "https://www.kucoin.com/news/flash/bitcoin-and-ethereum-etfs-record-391m-in-net-outflows-on-october-14"},
-    {"title": "Tech Champion · Bitcoin technical picture, 15 October 2026 (SMA50 81,231) (10/15)", "url": "https://tech-champion.com/stock-markets/bitcoin-btc-technical-picture-15-october-2026/"},
-    {"title": "Investrade · Market Review: October 15, 2026 (PPI·소매판매·증시·유가·달러) (10/15)", "url": "https://investrade.com/market-review-october-15-2026/"},
-    {"title": "Seoul Economic Daily · U.S. rate path clouded as markets await Warsh's Oct. 16 remarks (10/16)", "url": "https://en.sedaily.com/international/2026/10/16/us-rate-path-clouded-as-markets-await-warshs-oct-16-remarks"},
-    {"title": "CME Group (X) · FedWatch: October rate hike expectations fade (30% 아래)", "url": "https://x.com/Interest_Rates/status/2110746074340020383"},
-    {"title": "BusinessKorea · [마감 시황] 코스피, 외국인 매도 공세로 7.57% 폭락 (10/15)", "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=278913"},
-    {"title": "뉴스핌 · 코스피 7%대 하락... 5554.22 마감 (10/15)", "url": "https://www.newspim.com/news/view/20261015001130"},
-    {"title": "Kiplinger · This week's economic calendar (Oct 12–16) (10/14)", "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar"},
+    {"title": "CoinDesk · Bitcoin buyers snap up a brief drop below $80,000 as Asian stocks rebound (10/16)", "url": "https://www.coindesk.com/markets/2026/10/16/bitcoin-buyers-snap-up-a-brief-drop-below-usd80-000-as-asian-stocks-rebound"},
+    {"title": "Yahoo Finance · Bitcoin and ethereum prices today, October 16, 2026 (10/16)", "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-october-16-2026-bitcoin-ethereum-prices-firm-despite-two-strong-inflation-reports-113928147.html"},
+    {"title": "crypto.news · Bitcoin price tests $81K support (50일 평균선 81,279달러) (10/16)", "url": "https://crypto.news/bitcoin-price-tests-81k-support-bears-hold-control/"},
+    {"title": "Decrypt · Bitcoin bounces, but where does it go next? (10/16)", "url": "https://decrypt.co/381150/bitcoin-price-rebounds-where-next-charts"},
+    {"title": "Crypto Economy · Altcoins outpace bitcoin as Warsh stays silent on rates (10/16)", "url": "https://crypto-economy.com/altcoins-outpace-bitcoin-as-warsh-stays-silent/"},
+    {"title": "KuCoin News · Bitcoin ETFs add $5.1M as ether funds lose $60.3M on October 15 (10/16)", "url": "https://www.kucoin.com/news/flash/bitcoin-etfs-add-5-1m-as-ether-funds-lose-60-3m-on-october-15"},
+    {"title": "KuCoin News · Kevin Warsh speech cuts October hike odds to 15% (10/16)", "url": "https://www.kucoin.com/news/flash/nasdaq-futures-dip-0-12-as-kevin-warsh-speech-cuts-october-hike-odds-to-15"},
+    {"title": "Yahoo Finance · Stock market today: Dow, S&P 500, Nasdaq sink as tech sell-off caps volatile week (10/16)", "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-futures-mixed-amid-volatile-week-112939401.html"},
+    {"title": "Investrade · Market Review: October 16, 2026 (증시·금리·유가·산업생산) (10/16)", "url": "https://investrade.com/market-review-october-16-2026/"},
+    {"title": "BLS · U.S. Import and Export Price Indexes, September 2026 (10/16)", "url": "https://www.bls.gov/news.release/archives/ximpim_10162026.htm"},
+    {"title": "BusinessKorea · [마감 시황] 코스피 5,600선 회복…원/달러 1,330원대 초반 (10/16)", "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=279010"},
+    {"title": "Investrade · Weekly Event Calendar: 10/19/2026 - 10/23/2026", "url": "https://investrade.com/weekly-event-calendar-10-19-2026-10-23-2026/"},
     {"title": "Admirals · Fed rate decision October 2026 (FOMC 10/28 14:00 ET) (10/9)", "url": "https://admiralmarkets.com/analytics/traders-blog/fed-rate-decision-october-2026"}
   ]
 }
