@@ -1,59 +1,62 @@
 {
-  "writtenAt": "2026-10-17T07:30:00+09:00",
+  "writtenAt": "2026-10-18T07:40:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "왁스 자체의 새 소식은 이번 주에도 없어요. 가격은 비트코인과 시장 분위기를 따라 움직이는 상태예요.",
+      "summary": "왁스 자체의 새 소식은 이번 주말에도 없어요. 가격은 비트코인과 시장 분위기를 따라 움직이는 상태예요.",
       "good": [
         "최근 2주 안에 새로 나온 악재 공지(상장폐지·보안 사고 등)는 확인되지 않았어요",
-        "어제(10/16) 코스피가 2% 반등하고 코인 시장 강제 청산도 크게 줄어, 전날 같은 급락 압력은 일단 약해졌어요"
+        "10/2 개발자용 도구(Docker) 정비 작업이 올라오는 등 개발은 조용히 이어지고 있어요"
       ],
       "bad": [
         "해외 거래소 쿠코인 상장폐지가 10/7 출금 마감으로 끝나 거래할 수 있는 곳이 하나 줄었어요",
-        "일정 안내 사이트에 왁스의 10~11월 새 일정이 없어요. 가격을 끌어올릴 재료가 부족해요",
-        "거래가 얇은 코인이라 주말이나 시장 급변 때 작은 주문에도 가격이 크게 흔들릴 수 있어요"
+        "날짜가 확인된 10~11월 새 일정이 없어요. 가격을 끌어올릴 재료가 부족해요",
+        "주말이라 시장 전체 거래가 얇아요. 거래가 적은 코인은 작은 주문에도 가격이 크게 흔들릴 수 있어요"
       ],
       "onchain": [
         "확인된 큰손 움직임 없음 — 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
       ],
       "upcoming": [],
       "sources": [
+        {"title": "CoinMarketCap · WAX latest updates (Docker 정비 10/2, 10/18 조회)", "url": "https://coinmarketcap.com/cmc-ai/wax/latest-updates/"},
         {"title": "Cryptoticker · KuCoin delisting: withdrawal deadline ends Oct 7", "url": "https://cryptoticker.io/en/kucoin-delisting-withdrawal-deadline/"},
-        {"title": "Coindar · WAX (WAXP) events feed (10/17 조회: 10~11월 일정 없음)", "url": "https://coindar.org/en/coin/wax"},
-        {"title": "BusinessKorea · [마감 시황] 코스피 5,600선 회복 (10/16)", "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=279010"},
-        {"title": "Crypto Economy · Altcoins outpace bitcoin as Warsh stays silent on rates (청산 3.1억 달러) (10/16)", "url": "https://crypto-economy.com/altcoins-outpace-bitcoin-as-warsh-stays-silent/"}
+        {"title": "Coindar · WAX (WAXP) events feed (10/18 조회)", "url": "https://coindar.org/en/coin/wax"},
+        {"title": "Bitcoin.com News · Bitcoin price at $81,500 (주말 거래량) (10/17)", "url": "https://news.bitcoin.com/market-updates/bitcoin-price-at-81500-leaves-bulls-and-bears-at-a-standoff/"}
       ]
     },
     "KRW-ARB": {
-      "summary": "어제(10/16) 약 9,265만 ARB 물량 해제가 진행됐고, 로빈후드 체인 덕에 아비트럼 수익 구조를 좋게 본 보고서가 나왔어요. USDG 보상안 투표는 10/22까지 이어져요.",
+      "summary": "10/16 물량 해제 뒤 ARB는 하루 약 3.8% 내려 0.19달러 근처에 있어요. 유럽 금융사 대상 설명회 같은 좋은 소식도 있지만, USDG 보상안 투표(~10/22)로 공급 증가 가능성도 남아 있어요.",
       "good": [
-        "자산운용사 위즈덤트리가 10/16 보고서에서 로빈후드 체인이 아비트럼 쪽에 약 437만 달러(DAO 금고로 약 350만 달러)를 냈다고 밝혔어요",
-        "아비트럼 DAO는 올해 상반기 약 619만 달러를 벌었고, 수익의 97% 이상이 남는 구조로 확인됐어요",
-        "10/15 아비트럼이 'USDG를 주 스테이블코인으로 쓰는 앱'을 대상으로 지원 프로그램 신청을 받기 시작했어요. 생태계에 돈이 더 들어올 수 있어요",
-        "10/14까지 일주일 동안 아비트럼에 약 2.05억 달러가 순유입돼 주요 체인 중 가장 많았어요"
+        "10/16 아비트럼이 운용자산 8,000억 유로가 넘는 유럽 은행·자산운용사들에게 수익 구조를 설명했어요. 다만 실제 투자 약속은 아니에요",
+        "위즈덤트리 보고서(10/16)에 따르면 로빈후드 체인이 아비트럼 쪽에 약 437만 달러를 냈어요. 쓰는 곳이 늘면 수익도 늘어요",
+        "10/15 시작한 스테이블코인 지원 프로그램은 USDG 예치 1,000만 달러를 먼저 달성한 10팀에 20만 ARB씩, 총 200만 ARB를 줘요. 생태계에 돈을 끌어오려는 장치예요",
+        "가격(0.19달러)은 아직 50일 평균선(약 0.18달러)과 200일 평균선(약 0.12달러) 위에 있어요"
       ],
       "bad": [
-        "어제(10/16) 약 9,265만 ARB(유통량의 1.56%)가 팀·자문·투자자에게 풀렸어요. 이런 해제는 2027년 초까지 매달 16일쯤 있어요",
-        "USDG 보급에 ARB 1억 개를 보상으로 쓰자는 제안이 투표 중이에요. 최종 통과되면 시장에 풀리는 ARB가 늘 수 있어요",
-        "0.20달러 저항을 아직 다시 넘지 못했고, 0.17~0.15달러가 깨지면 반등 흐름이 약해진다는 분석이 나왔어요",
+        "10/16 약 9,265만 ARB가 팀·투자자에게 풀린 뒤 하루 약 3.8% 내렸어요. 이런 해제는 2027년 초까지 매달 16일쯤 있어요",
+        "USDG 보급에 ARB 1억 개를 보상으로 쓰자는 제안(공급량의 약 1%)이 투표 중이에요. 통과되면 시장에 풀리는 ARB가 늘 수 있어요",
+        "0.20달러 저항을 넘지 못하고 있고, 0.18달러(50일 평균선)가 깨지면 흐름이 약해질 수 있다는 분석이 나왔어요",
         "10/2 보안위원회가 새 Stylus 계약 활성화를 긴급 중단했고, 재개 시점은 아직 발표되지 않았어요"
       ],
       "onchain": [
         "확인된 큰손 움직임 없음 — 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 아비트럼 큰손의 거래소 입금·매집 소식은 찾지 못했어요",
-        "어제 풀린 팀·투자자 물량이 거래소로 옮겨지는지가 다음 주 확인할 포인트예요"
+        "10/16에 풀린 팀·투자자 물량이 거래소로 옮겨지는지가 이번 주 확인할 포인트예요"
       ],
       "upcoming": [
         {"when": "10/16(금)~10/22(목)", "what": "USDG 보상(ARB 1억 개) 제안 오프체인 투표 진행 중", "why": "찬성이 많으면 10/29~11/12 최종 온체인 투표로 넘어가요. 통과 시 보상용 ARB 공급이 늘어요"},
         {"when": "10/23(금)~10/25(일)", "what": "아비트럼·로빈후드 체인 공동 해커톤(싱가포르)", "why": "새 프로젝트가 생태계로 들어오는 계기 — 가격 영향은 보통 작아요"},
-        {"when": "10/29(목)~11/12(목)", "what": "USDG 보상안 온체인 최종 투표(오프체인 통과 시)", "why": "통과되면 ARB 1억 개가 보상으로 풀리는 게 확정돼요"}
+        {"when": "10/29(목)~11/12(목)", "what": "USDG 보상안 온체인 최종 투표(오프체인 통과 시)", "why": "통과되면 ARB 1억 개가 보상으로 풀리는 게 확정돼요"},
+        {"when": "11/16(월)", "what": "다음 달 정기 물량 해제(약 9,265만 ARB)", "why": "매달 반복되는 해제라 그 전후로 파는 물량이 늘 수 있어요"}
       ],
       "sources": [
+        {"title": "Blockchain.News · ARB price prediction: pinned at pivot after 3.8% drop (10/17)", "url": "https://blockchain.news/news/20261017-price-prediction-arb-pinned-at-pivot-after-38-drop"},
+        {"title": "NewsBTC · Arbitrum courts European investors managing €800 billion (10/17)", "url": "https://newsbtc.com/altcoin-news/arbitrum-courts-european-investors-managing-800-billion-with-new-reven"},
+        {"title": "CoinGabbar · Arbitrum stablecoin program offers 2M ARB token rewards (10/17)", "url": "https://coingabbar.com/en/arbitrum-news-stablecoin-growth-program-2m-arb-token-usdg"},
         {"title": "The Crypto Times · Robinhood Chain generates $4.37M for Arbitrum: WisdomTree (10/16)", "url": "https://cryptotimes.io/2026/10/16/robinhood-chain-generates-43-7m-for-arbitrum-wisdomtree"},
-        {"title": "TokenPost · ArbitrumDAO accrued $6.19 million in first-half 2026 income (10/16)", "url": "https://www.tokenpost.com/news/business/33508"},
-        {"title": "EdaFace (CoinPedia) · Will ARB price break out next? (USDG 지원 프로그램·지지/저항) (10/16)", "url": "https://news.edaface.com/2026/10/16/will-arb-price-break-out-next/"},
         {"title": "COINOTAG · Arbitrum unlocks 92.65 million ARB on October 16 (10/12)", "url": "https://en.coinotag.com/arbitrum-arb-unlocks-92-65-million-tokens-october-16"},
+        {"title": "24/7 Wall St. · 92.6 million ARB unlocks every month until early 2027 (10/2)", "url": "https://247wallst.com/investing/cryptocurrency/2026/10/02/arbitrum-is-up-more-than-100-since-august-and-92-6-million-arb-unlocks-every-month-until-early-2027-can-the-rally-survive-the-supply/"},
+        {"title": "FinanceFeeds · Arbitrum stablecoin market adds USDG; 100M ARB DRIP proposal (10/6)", "url": "https://financefeeds.com/arbitrum-stablecoin-usdg-paxos-zero-balance/"},
         {"title": "Spotedcrypto · Paxos USDG launches on Arbitrum: 100M ARB DRIP proposal explained (투표 일정) (10/6)", "url": "https://www.spotedcrypto.com/paxos-usdg-arbitrum-launch-drip-proposal/"},
-        {"title": "CoinMarketCap · Arbitrum latest updates (순유입·Stylus·해커톤, 10/16 조회)", "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"},
-        {"title": "Bitbase (crypto.news) · Crypto week ahead: 5 events traders should watch (10/12)", "url": "https://www.bitbase.com/news/crypto-week-ahead-5-events-traders-should-watch"}
+        {"title": "CoinMarketCap · Arbitrum latest updates (Stylus·해커톤, 10/16 조회)", "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"}
       ]
     }
   }
