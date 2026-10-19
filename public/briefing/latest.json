@@ -1,27 +1,22 @@
 {
-  "writtenAt": "2026-10-19T07:30:00+09:00",
-  "title": "비트코인 주말 막판 8.1만 달러 아래로 — 50일 평균선 살짝 밑, 유가 110달러·실적 주간 앞두고 '조심'",
+  "writtenAt": "2026-10-20T07:40:00+09:00",
+  "title": "비트코인 8.2만 달러대 회복, 50일 평균선 위로 — 기술주 반등에 숨 돌렸지만 유가·금리는 여전히 부담",
   "mood": "조심",
-  "moodNote": "비트코인이 50일 평균선(약 8.14만 달러)보다 0.6%쯤 아래로 내려왔어요. 선 아래에서 하루를 마감하면 새 진입은 쉬는 게 규칙이에요.",
+  "moodNote": "비트코인이 50일 평균선(약 8.14만 달러) 위로 다시 올라왔지만 차이가 1%쯤이라 아직 걸쳐 있는 자리예요.",
   "coin": [
-    "비트코인은 일요일(10/18) 한때 약 1,000달러 빠졌다가 다시 회복했지만, 미국 시간 오후엔 8.09만 달러로 8.1만 달러 아래로 밀렸어요.",
-    "이더리움은 2,360달러까지 내려갔다 2,410달러대로 반등했지만, 저녁엔 다시 2,357달러(하루 -2.0%)로 약해졌어요.",
-    "일요일 오후 1시간 동안 약 3,300만 달러어치 선물 포지션이 강제 청산됐고, 그중 96%가 '오를 것'에 건 쪽이었어요. 이더리움 청산이 가장 많았어요.",
-    "알트코인은 대부분 약해요. 시총 상위 100개 중 지난주 오른 코인은 14개뿐이고, 솔라나는 101달러(-1.6%), 지캐시는 -5.7%였어요.",
-    "지난주(10/12~16) 미국 비트코인 현물 ETF에서 2.28억 달러가 빠져나갔고, 이더리움 ETF도 10월 들어 9.55억 달러 순유출이에요."
+    "비트코인은 일요일 8.06만 달러까지 밀렸다가 월요일(10/19) 한때 8.3만 달러를 찍고, 미국 오후엔 8.19만 달러(하루 약 +1%)에서 움직였어요.",
+    "이더리움은 2,360달러대까지 약했다가 2,410~2,430달러대로 회복했어요. 다만 지난 일주일로 보면 약 -5%예요.",
+    "알트코인은 디파이 코인이 앞장섰어요. 아비트럼(ARB) +6.7%, 펌프펀(PUMP) +7.6%, 유니스왑 +3.2%, 솔라나는 +1.6%로 약 106달러였어요.",
+    "지난 하루 강제 청산은 약 3.3억 달러로, 지난주 CPI 날(약 9.4억 달러)보다 크게 줄었어요. 오르고 내리는 쪽 청산이 비슷해 과열은 식은 상태예요.",
+    "지난주 미국 비트코인 현물 ETF에서 2.28억 달러, 이더리움 ETF에서 3.2억 달러가 빠져나갔어요. 큰 자금이 아직 돌아오지 않았다는 뜻이에요."
   ],
   "macro": [
-    "브렌트유는 금요일 109.86달러로 5월 이후 최고로 마감했어요. 주말 동안 이란은 '7일 안에 호르무즈 재개' 제안이 유효하다고 했지만, 미국과 합의 소식은 없어요.",
-    "예측시장에선 10/23까지 호르무즈 합의가 안 될 확률을 약 96%로 봐요. 유가가 계속 높으면 물가 걱정이 커져 코인에 부담이에요.",
-    "미국 10년 국채 금리는 5.08%로 여전히 높고, 선물시장은 12월 금리 '인상' 가능성까지 반영하고 있어요. 금리가 오를수록 코인 같은 위험자산엔 불리해요.",
-    "코스피는 금요일 5,668, 원/달러 환율은 1,331.4원이었어요. 월요일 아시아 장에선 유가와 미국 기술주 분위기를 먼저 확인하세요."
+    "미국 증시는 월요일 나스닥 +1.1%, S&P500 +0.4%로 기술주가 반등했어요. 지난주 AI 관련 급락이 조금 진정됐어요.",
+    "미국 원유(WTI)는 후티 반군의 사우디 시설 공격 소식에 103.66달러(+2.2%)로 올랐고, 브렌트유는 109.55달러로 높은 수준이에요.",
+    "미국 10년 국채 금리는 5.14%로 다시 올랐어요. 10월 금리 인상 확률은 약 15%로 낮지만, 12월 인상 가능성은 크게 반영돼 있어요.",
+    "코스피는 월요일 5,768(+1.8%)로 마감했고, 원/달러 환율은 1,330.3원으로 약 2년 만에 가장 낮았어요. 환율이 낮으면 원화로 본 코인 값은 덜 오를 수 있어요."
   ],
   "events": [
-    {
-      "when": "10/19(월) 11:00",
-      "what": "중국 3분기 경제성장률(GDP)",
-      "why": "중국 경기가 약하면 아시아 증시와 위험자산 분위기가 같이 식을 수 있어요"
-    },
     {
       "when": "10/20(화) 21:30",
       "what": "미국 9월 주택착공·건축허가",
@@ -64,67 +59,63 @@
     }
   ],
   "strategy": [
-    "비트코인은 50일 평균선(약 8.14만 달러)보다 조금 아래예요. 오늘 오전 9시(한국 시간) 하루 마감이 선 아래면 새 진입은 쉬는 게 규칙이에요.",
-    "선을 다시 넘어 마감하더라도 걸쳐 있는 자리라, 새로 들어갈 땐 평소 절반 이하로 작게 하고 손절 주문부터 먼저 걸어두세요.",
-    "주말에 '오를 것'에 건 포지션이 대거 청산됐어요. 이런 날엔 반등이 와도 쉽게 꺾이니 추격 매수보다 평균선 회복 확인이 먼저예요.",
-    "이더리움·알트코인 대부분은 단기 평균선 아래에 있어요. 이미 들고 있다면 정해둔 손절선을 지키는 데 집중하세요."
+    "비트코인은 50일 평균선(약 8.14만 달러)보다 1%쯤 위예요. 오늘 오전 9시(한국 시간) 하루 마감이 선 위인지 먼저 확인하세요.",
+    "선 위로 마감해도 바로 붙어 있는 자리라, 새로 들어갈 땐 평소 절반 이하로 작게 하고 손절 주문부터 걸어두세요.",
+    "8.4만 달러 근처가 최근 일주일 천장이었어요. 이 위로 올라서기 전엔 오르는 걸 따라 사기보다 기다리는 편이 규칙에 맞아요.",
+    "이번 주엔 빅테크 실적과 유가 소식에 하루에도 크게 흔들릴 수 있어요. 이미 들고 있다면 정해둔 손절선을 지키는 데 집중하세요."
   ],
   "sources": [
     {
-      "title": "TokenPost · Bitcoin falls below $81,000 to $80,925 on Binance (10/18)",
-      "url": "https://www.tokenpost.com/news/investing/34461"
+      "title": "Bitcoin.com News · Bitcoin rally stalls at $83K as ETF outflows raise concerns (10/19)",
+      "url": "https://news.bitcoin.com/market-updates/bitcoin-rally-stalls-83k-etf-outflows-raise-concerns/"
     },
     {
-      "title": "TokenPost · Long positions account for 96% of $32.96M in crypto liquidations (10/18)",
-      "url": "https://www.tokenpost.com/news/investing/34459"
+      "title": "CoinDesk · DeFi tokens lead crypto higher as Nasdaq futures rebound and China GDP beats estimates (10/19)",
+      "url": "https://coindesk.com/markets/2026/10/19/bitcoin-extends-bounce-above-usd82-000-as-stocks-rebound-defi-tokens-lead-altcoin-gains"
     },
     {
-      "title": "Analytics Insight · Black Monday fears rise as Bitcoin, ETH and AI stock futures face selloff (10/18)",
-      "url": "https://www.analyticsinsight.net/news/black-monday-fears-rise-as-bitcoin-eth-and-ai-stock-futures-face-selloff"
+      "title": "Yahoo Finance · Bitcoin and ethereum prices today, Monday, October 19, 2026 (10/19)",
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-monday-october-19-2026-crypto-prices-hold-as-oil-slides-back-from-5-month-highs-114729829.html"
     },
     {
-      "title": "Blockchain Reporter · Bitcoin slips below $81K, Ethereum nears Glamsterdam (10/18)",
-      "url": "https://blockchainreporter.net/best-crypto-to-buy-now-bitcoin-slips-below-81k-ethereum-nears-glamsterdam-zcash-bets-on-quantum-resistance/"
+      "title": "The Crypto Times · Bitcoin holds $81K, Ethereum slips to $2,365 as liquidations cool (10/19)",
+      "url": "https://www.cryptotimes.io/2026/10/19/bitcoin-price-holds-81k-ethereum-slips-to-2365-as-crypto-liquidations-cool-to-359m/"
     },
     {
-      "title": "DailyForex · Crypto overview: Bitcoin holds firm while altcoin weakness spreads (50일 평균선·ETF 흐름) (10/18)",
-      "url": "https://www.dailyforex.com/forex-technical-analysis/2026/10/crypto-overview-18-october-2026/250826"
+      "title": "CoinCodex · Bitcoin price prediction (50일 단순평균 $81,429) (10/19)",
+      "url": "https://coincodex.com/crypto/bitcoin/price-prediction/"
     },
     {
-      "title": "24/7 Wall St. · Ethereum price prediction (이더리움 ETF 10월 순유출) (10/18)",
-      "url": "https://247wallst.com/investing/cryptocurrency/2026/10/18/ethereum-price-prediction-can-eth-get-back-to-3000-before-the-end-of-2026"
+      "title": "Blockhead · Bitcoin clings on as a silent Fed, $100 oil and an AI wobble take the wheel (10/19)",
+      "url": "https://www.blockhead.co/2026/10/19/bitcoin-clings-on-as-a-silent-fed-100-oil-and-an-ai-wobble-take-the-wheel/"
     },
     {
-      "title": "FinanceFeeds · Oil price near $110 as Iran keeps Hormuz proposal open (10/18)",
-      "url": "https://financefeeds.com/oil-price-near-110-as-iran-demands-us-withdrawal-but-keeps-hormuz-proposal-open/"
+      "title": "Ted Pillows · Crypto & Finance market report (ETF 흐름·주간 고점) (10/19)",
+      "url": "https://tedpillows.substack.com/p/crypto-and-finance-market-report-3e1"
     },
     {
-      "title": "FinanceFeeds · Brent crude week ahead after the $110 close (EIA 일정) (10/17)",
-      "url": "https://financefeeds.com/brent-crude-oil-price-110-week-ahead-highest-settle-since-may-bull-115-bear-100/"
+      "title": "Investrade · Market review: October 19, 2026 (증시·금리·유가 마감) (10/19)",
+      "url": "https://investrade.com/market-review-october-19-2026/"
     },
     {
-      "title": "AND Magazine · Morning Brief (10/18)",
-      "url": "https://andmagazine.substack.com/p/morning-brief-18-october-2026"
+      "title": "TheStreet · Stock market today: Nasdaq climbs as tech rebounds (10/19)",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-oct-19-2026-nasdaq-futures-climb-as-tech-rebound-from-sell-off"
     },
     {
-      "title": "Palma Futures · Sunday Post: recap & week ahead (10년물 5.08%·12월 인상 가격 반영) (10/18)",
-      "url": "https://palmafutures.substack.com/p/sunday-post-recap-and-week-ahead-92b"
+      "title": "BabyPips · Fundies cheat sheet (10월 인상 확률·FOMC 일정) (10/19)",
+      "url": "https://www.babypips.com/analysis/fundies-cheat-sheet-2026-10-19-oil-ai-earnings-yields"
     },
     {
-      "title": "BusinessKorea · [마감 시황] 코스피 5,600선 회복…원/달러 1,330원대 초반 (10/16)",
-      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=279010"
+      "title": "이투데이 · 코스피·코스닥 동반 상승…원·달러 환율 2년 만에 최저 (10/19)",
+      "url": "https://www.etoday.co.kr/news/view/2637506"
     },
     {
-      "title": "Bitcoin Sistemi · This week's day-by-day economic & altcoin schedule (10/18)",
-      "url": "https://en.bitcoinsistemi.com/watch-out-lots-of-economic-developments-and-altcoin-events-this-week-here-s-the-day-by-day-hour-by-h-11/"
+      "title": "Investing.com · U.S. economic calendar preview: week of Oct 19–23, 2026",
+      "url": "https://ph.investing.com/news/stock-market-news/us-economic-calendar-preview-key-releases-for-the-week-of-oct-1923-2026-93CH-2636471"
     },
     {
-      "title": "Hargreaves Lansdown · Next week on the stock market (넷플릭스·메타·테슬라 실적일) (10/19 주간)",
-      "url": "https://www.hl.co.uk/shares/share-research/next-week-on-the-stock-market-19-10-2026"
-    },
-    {
-      "title": "Admirals · Fed rate decision October 2026 (FOMC 10/28 14:00 ET) (10/9)",
-      "url": "https://admiralmarkets.com/analytics/traders-blog/fed-rate-decision-october-2026"
+      "title": "crypto.news · Crypto week ahead: 5 events that could move Bitcoin (10/19)",
+      "url": "https://crypto.news/crypto-week-ahead-five-events-bitcoin-october-19-2026/"
     }
   ]
 }
