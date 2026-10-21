@@ -1,32 +1,22 @@
 {
-  "writtenAt": "2026-10-21T07:40:00+09:00",
-  "title": "비트코인 8.1만 달러대 밀렸다 8.2만 달러대 회복, 50일 평균선 바로 위 — 유가 111달러·코스피 3.7% 급락에 흔들",
+  "writtenAt": "2026-10-22T07:40:00+09:00",
+  "title": "비트코인 8.4만 달러대 회복, 50일 평균선 위로 한 걸음 더 — 숏 청산·기술주 반등에 힘, 다음 주 금리 결정은 부담",
   "mood": "조심",
-  "moodNote": "비트코인이 50일 평균선(약 8.15만 달러)보다 1%쯤 위에 겨우 걸쳐 있고, 유가·금리 부담이 그대로라 조심할 때예요.",
+  "moodNote": "비트코인이 50일 평균선(약 8.17만 달러)보다 3%쯤 위로 올라왔지만, 8.4~8.5만 달러 벽과 다음 주 금리 결정이 남아 있어 아직은 조심할 때예요.",
   "coin": [
-    "비트코인은 화요일(10/20) 미국 아침 8.13~8.14만 달러까지 밀렸다가, 미국 오후엔 8.25만 달러 안팎으로 다시 올라왔어요.",
-    "이더리움도 2,380달러대까지 약했다가 2,430달러대로 회복했어요. 다만 지난 한 달로 보면 약 -8.6%예요.",
-    "알트코인은 대부분 좁은 범위에서 움직였어요. 전날 크게 오른 아비트럼(ARB)은 약 -4%로 일부 되돌렸어요.",
-    "하루 강제 청산은 약 2.4억 달러로 전날(약 3.3억 달러)보다 더 줄었어요. 과열도, 공포도 크지 않은 상태예요.",
-    "월요일(10/19) 미국 비트코인 현물 ETF로 5.27억 달러가 들어와 약 한 달 만에 가장 많았어요. 반면 이더리움 ETF에선 1.03억 달러가 빠져 4일 연속 유출이에요."
+    "비트코인은 수요일(10/21) 하루 약 2% 올라 8.45~8.47만 달러 안팎에 거래됐어요. 장중 8.48만 달러까지 올라 10/7 이후 가장 높았어요.",
+    "이더리움도 약 2% 올라 2,490달러 안팎이에요. 지캐시(ZEC)는 11월 업그레이드 날짜가 정해지며 하루 약 +12% 뛰었어요.",
+    "오를 쪽에 베팅하지 않았던 '숏' 포지션이 하루 약 1.9억 달러 강제 청산되며 상승에 불을 붙였어요. 전체 청산은 약 2.4억 달러예요.",
+    "스페이스X 실적이 예상보다 좋았고, 테슬라와 합병을 논의한다는 소식이 나왔어요. 두 회사가 가진 비트코인은 합쳐 3만 개가 넘어요.",
+    "미국 비트코인 현물 ETF는 월요일(10/19) 5.27억 달러가 들어온 뒤 화요일(10/20)엔 0.23억 달러로 유입이 크게 줄었어요."
   ],
   "macro": [
-    "브렌트유가 사우디 시설·호르무즈 해협 공격 소식에 한때 111달러를 넘어 5월 이후 최고였어요. 마감은 108.79달러로 조금 내려왔어요.",
-    "미국 10년 국채 금리는 5.12%로 조금 내렸지만 5%대 위에 있어요. 10월 말 금리 인상 확률은 약 18%, 12월 인상 확률은 약 75%로 시장이 보고 있어요.",
-    "미국 증시는 다우 +1.0%, S&P500 +0.3%였지만 나스닥은 보합(-0.02%)이었어요. AI 투자·빚 걱정에 기술주와 비트코인 채굴주가 약했어요.",
-    "코스피는 외국인·기관이 1.5조 원 넘게 팔아 3.73% 급락한 5,552로 마감했어요. 원/달러 환율은 1,328.1원으로 더 내려 원화 기준 코인 값에는 부담이에요."
+    "미국 증시는 나스닥 +1.05%, S&P500 +0.59%, 다우 +0.69%로 기술주가 이끌었어요. 장 마감 후 메타는 약 +3%, 테슬라는 약 -2% 움직였어요.",
+    "유가는 브렌트 108.82달러로 여전히 100달러 위예요. 미국 10년 국채 금리도 5.145%로 높아 코인엔 계속 부담이에요.",
+    "시장은 10월 말 금리 동결 가능성을 약 81%로 보고 있어요. 다만 12월 인상 가능성은 약 78%로 높게 남아 있어요.",
+    "코스피는 외국인이 6,646억 원 사며 3.29% 오른 5,735.66으로 하루 만에 반등했어요. 원/달러 환율은 1,325.2원으로 2년 만에 가장 낮아 원화 기준 코인 값엔 조금 불리해요."
   ],
   "events": [
-    {
-      "when": "10/21(수) 23:30",
-      "what": "미국 주간 원유 재고(EIA)",
-      "why": "재고가 또 크게 줄면 이미 높은 유가가 더 오를 수 있어요"
-    },
-    {
-      "when": "10/22(목) 05:00경",
-      "what": "메타·테슬라 실적 발표(미국 장 마감 후)",
-      "why": "기술주 분위기가 바뀌면 코인도 같이 움직이는 경우가 많아요"
-    },
     {
       "when": "10/22(목) 21:30",
       "what": "미국 주간 신규 실업수당 청구",
@@ -44,69 +34,74 @@
     },
     {
       "when": "10/29(목) 03:00",
-      "what": "미국 연준(FOMC) 금리 결정",
+      "what": "미국 연준(FOMC) 금리 결정·워시 의장 기자회견",
       "why": "인상이냐 동결이냐에 따라 코인이 크게 흔들릴 수 있는 이달 최대 일정이에요"
     },
     {
+      "when": "10/29(목) 새벽",
+      "what": "마이크로소프트·알파벳 실적 발표(미국 장 마감 후)",
+      "why": "AI 대형주 분위기가 코인 투자 심리에도 영향을 줘요"
+    },
+    {
       "when": "10/30(금) 17:00",
-      "what": "비트코인 10월 월간 옵션 만기(약 14.9만 BTC)",
+      "what": "비트코인 10월 월간 옵션 만기",
       "why": "만기 전후로 가격이 크게 출렁일 때가 많아요"
     }
   ],
   "strategy": [
-    "비트코인은 50일 평균선(약 8.15만 달러)보다 1%쯤 위예요. 오늘 오전 9시(한국 시간) 하루 마감이 선 위인지 먼저 확인하세요.",
-    "어제 아침 8.11만 달러까지 내려 선을 거의 건드렸어요. 새로 들어간다면 평소 절반 이하로 작게 하고 손절 주문부터 걸어두세요.",
-    "위로는 20일 평균선(약 8.32만 달러)과 8.4만 달러가 막고 있어요. 이 위로 올라서기 전엔 따라 사기보다 기다리는 편이 규칙에 맞아요.",
-    "선 아래로 마감하면 추세추종 규칙상 새 진입은 쉬고, 이미 들고 있다면 정해둔 손절선을 지키는 데 집중하세요."
+    "비트코인은 50일 평균선(약 8.17만 달러)과 20일 평균선(약 8.31만 달러) 모두 위에 있어요. 오늘 오전 9시(한국 시간) 하루 마감도 선 위인지 확인하세요.",
+    "바로 위 8.4~8.5만 달러는 10월 들어 여러 번 막힌 자리예요. 이 위에서 하루 마감하기 전엔 서둘러 따라 사지 않는 편이 규칙에 맞아요.",
+    "새로 들어간다면 다음 주 금리 결정을 앞두고 평소 절반 정도로 작게 하고, 손절 주문부터 걸어두세요.",
+    "다시 8.25만 달러 아래로 밀리고 50일선까지 깨지면 새 진입은 쉬고, 들고 있다면 정해둔 손절선을 지키는 데 집중하세요."
   ],
   "sources": [
     {
-      "title": "Yahoo Finance · Bitcoin and ethereum prices today, Tuesday, October 20, 2026 (10/20)",
-      "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-october-20-2026-crypto-prices-slide-and-oil-costs-soar-as-mid-east-attacks-persist-114152288.html"
+      "title": "Motley Fool · Crypto market today, Oct. 21: Bitcoin rebounds on tech rally (10/21)",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/10/21/crypto-market-today-oct-21-bitcoin-rebounds-on-tech-rally/"
     },
     {
-      "title": "Investing.com · Bitcoin slips below $82,000 as elevated oil prices, Fed outlook weigh (10/20)",
-      "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slips-below-82000-as-elevated-oil-prices-fed-outlook-weigh-4958968"
+      "title": "Cointelegraph · BTC price tags $84.6K as US stocks head higher on SpaceX Q3 earnings beat (10/21)",
+      "url": "https://cointelegraph.com/markets/bitcoin-price-tags-846k-as-us-stocks-head-higher-on-spacex-q3-earnings-beat"
     },
     {
-      "title": "CryptoTicker · Bitcoin: will the 50-day line at $81,481 hold? (10/20)",
-      "url": "https://cryptoticker.io/en/bitcoin-price-narrow-daily-range-sma50-20-october-2026/"
+      "title": "CoinDesk · Bitcoin advances as SpaceX, Tesla explore a merger holding 30,000 BTC (10/21)",
+      "url": "https://www.coindesk.com/markets/2026/10/21/crypto-rises-with-asian-tech-stocks-zcash-extends-gain-after-setting-upgrade-date"
     },
     {
-      "title": "Au79 Macro · 20Oct2026 Crypto & Macro-Liquidity (가격·청산) (10/20)",
-      "url": "https://martyau79.substack.com/p/20oct2026-crypto-and-macro-liquidity"
+      "title": "Bitcoin.com · Bitcoin price cracks $84K as $188 million in crypto shorts get wiped out (10/21)",
+      "url": "https://news.bitcoin.com/market-updates/bitcoin-price-cracks-84k-as-188-million-in-crypto-shorts-get-wiped-out/"
     },
     {
-      "title": "Bitcoin News Digest · October 20, 2026 (10/20)",
-      "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-20-2026"
+      "title": "CryptoTicker · ETF inflows meet a Bitcoin price of $82,708: the levels that decide before the Fed meeting (10/21)",
+      "url": "https://cryptoticker.io/en/bitcoin-price-etf-inflows-fed-meeting-21-october-2026/"
     },
     {
-      "title": "Decrypt · Bitcoin ETFs post their best day in nearly a month (10/20)",
-      "url": "https://decrypt.co/381444/bitcoin-etfs-best-day-nearly-month-blackrock-does-most-buying"
+      "title": "TFTC · Bitcoin ETF flows, October 2026 (10/20 데이터)",
+      "url": "https://www.tftc.io/bitcoin-etf-flows/october-2026"
     },
     {
-      "title": "Blockchain.News · ARB price prediction: 15% open interest collapse puts $0.19 support in focus (10/20)",
-      "url": "https://blockchain.news/news/20261020-price-prediction-arb-flat-mas-and-a-15-open"
+      "title": "Fortune · Current price of Bitcoin for Oct. 21, 2026 (10/21)",
+      "url": "https://fortune.com/article/price-of-bitcoin-10-21-2026/"
     },
     {
-      "title": "Investrade · Market review: October 20, 2026 (증시·금리·유가 마감) (10/20)",
-      "url": "https://investrade.com/market-review-october-20-2026/"
+      "title": "Investrade · Market review: October 21, 2026 (증시·금리·유가 마감) (10/21)",
+      "url": "https://investrade.com/market-review-october-21-2026/"
     },
     {
-      "title": "Seoul Economic Daily · KOSPI plunges 3.73% as foreign, institutional investors dump shares (10/20)",
-      "url": "https://en.sedaily.com/finance/2026/10/20/kospi-plunges-373-percent-as-foreign-institutional"
+      "title": "TipRanks · Why Meta stock is rising after hours, while Tesla falls (10/21)",
+      "url": "https://www.tipranks.com/news/why-meta-stock-is-rising-after-hours-while-tesla-falls-and-what-wall-street-sees-next"
     },
     {
-      "title": "뉴스핌 · 코스피-코스닥, 동반 하락하며 장 마감 (환율 1,328.1원) (10/20)",
-      "url": "https://www.newspim.com/news/view/20261020001014"
+      "title": "Schwab · Stock market update: SpaceX, Netflix awaited, oil up (10/21, 주간 일정)",
+      "url": "https://www.schwab.com/learn/story/stock-market-update-open"
     },
     {
-      "title": "Investing.com · U.S. economic calendar preview: week of Oct 19–23, 2026",
-      "url": "https://ph.investing.com/news/stock-market-news/us-economic-calendar-preview-key-releases-for-the-week-of-oct-1923-2026-93CH-2636471"
+      "title": "비즈니스코리아 · 코스피, 외국인 돌아오자 3.3% 급등해 5,700선 회복 (10/21)",
+      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=279361"
     },
     {
-      "title": "crypto.news · Crypto week ahead: 5 events that could move Bitcoin (10/19)",
-      "url": "https://crypto.news/crypto-week-ahead-five-events-bitcoin-october-19-2026/"
+      "title": "서울신문 · 떨어지는 환율, 코스피는 상승 (환율 1,325.2원) (10/21)",
+      "url": "https://www.seoul.co.kr/news/economy/2026/10/21/20261021500227"
     }
   ]
 }
