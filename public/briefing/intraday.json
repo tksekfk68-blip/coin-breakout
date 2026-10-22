@@ -1,111 +1,134 @@
 {
-  "updates": [
+ "updates": [
+  {
+   "at": "2026-10-22T20:10:00+09:00",
+   "level": "주의",
+   "title": "원화마켓 88% 하락 — 미국 빅테크 실적에 AI 투자 의심 재점화, 아시아 증시 급락·디파이 코인 약세",
+   "lines": [
+    "저녁 7시 20분 기준 비트코인 1억 963만 원. 하루 -1.4%, 4시간 -0.4%, 최근 1시간은 +0.2%로 급락보다는 천천히 밀린 뒤 버티는 모습이에요. 업비트 원화마켓 코인 88%가 내렸어요.",
+    "원인으로는 테슬라·메타 실적이 엇갈리면서 \"AI에 돈을 너무 많이 쓴다\"는 의심이 다시 커진 게 꼽혀요. 코스피 -3.5%, 홍콩 항셍 -3% 이상, 닛케이 -2.7%로 아시아 증시가 크게 빠졌고 미국 나스닥 선물도 -1.3%예요.",
+    "달러 기준 비트코인은 어젯밤 8만 4,800달러 가까이 올랐다가 8만 1,600달러까지 밀렸어요(최대 -2.9%, 2주 만에 가장 큰 하락). 하루 청산 규모는 약 4억 3천만 달러로 52% 늘었어요.",
+    "알트가 더 약했고 특히 디파이 코인이 앞장서 빠졌어요(디파이 지수 약 -6%, 에테나 ENA -7%). 업비트에서는 ALT -30%, CT -11%, PUFFER -10%가 많이 빠졌고, HP +32%, BLAST +15%는 거꾸로 올랐어요.",
+    "반면 미국 비트코인 ETF에는 이번 주 사흘 동안 10억 달러 넘게 들어와 자금 흐름 자체는 나쁘지 않아요. 오늘 한국은행 금리 결정, 미국 실업수당 지표 발표가 있어요.",
+    "보유 코인 — 왁스(WAXP) 6.36원(-1.2%): 첫 받침 6.19원과 첫 벽 6.57원 사이, 받침까지 약 3% 여유. 6.19원 아래면 반등 끝 기준선 5.65원을 봐야 해요. 아비트럼(ARB) 243원(-3.2%): 첫 받침 231원(약 5% 아래)과 첫 벽 258원 사이. 강세 기준선 285원, 반등 끝 기준선 약 200원이에요."
+   ],
+   "sources": [
     {
-      "at": "2026-10-20T12:10:00+09:00",
-      "level": "주의",
-      "title": "원화마켓 89% 하락, 비트 하루 -1.5% — 8.3만 달러 벽 막힘·ETF 자금 유출 지속",
-      "lines": [
-        "오전 10시 반 기준 비트코인 1억 939만 원. 하루 -1.5%, 4시간 -0.9%, 최근 1시간 -0.2%로 급락보다는 천천히 밀리는 모습이에요. 업비트 원화마켓 코인 89%가 내렸어요.",
-        "오늘 오전 하락만 콕 집어 설명하는 뚜렷한 뉴스는 확인 안 됐어요. 다만 어제(미국 시간) 비트코인이 8만 3천 달러 위 매도 물량에 막혀 8만 2천 달러 아래로 되밀렸고, 미국 10년 국채금리가 5%대로 높은 점이 부담으로 꼽혀요.",
-        "미국 비트코인 ETF는 지난주 약 2억 3천만 달러가 빠져 2주 연속 유출, 이더리움 ETF는 3주 연속 유출이에요. 다음 연준 회의(10월 28일)를 앞두고 금리 인상 경계도 남아 있어요.",
-        "많이 빠진 코인: LSK -4.8%, MLK -4.6%, DATA -3.9%. 거꾸로 오른 코인: POD +15%, ERA +9.9% 정도로 소수예요.",
-        "왁스(WAXP) 6.21원(-1.3%): 첫 받침 6.19원 바로 위에 붙어 있어요. 첫 벽은 6.58원, 반등 끝 기준선은 5.65원이에요.",
-        "아비트럼(ARB) 265원(-0.4%): 첫 받침 258원과 첫 벽 275.5원 사이예요. 반등 끝 기준선 221.5원과는 거리가 있고, 288원을 넘어야 강세 신호예요."
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin.com – Bitcoin Rally Stalls at $83K as ETF Outflows Raise Concerns",
-          "url": "https://news.bitcoin.com/market-updates/bitcoin-rally-stalls-83k-etf-outflows-raise-concerns/"
-        },
-        {
-          "title": "Cointelegraph – Bitcoin, Ether ETFs Shed $549M in weekly outflows",
-          "url": "https://cointelegraph.com/markets/bitcoin-ether-etfs-549-million-weekly-outflows"
-        },
-        {
-          "title": "Crypto Breaking – Bitcoin slips after $83K rejection as US bond yields rebound",
-          "url": "https://www.cryptobreaking.com/bitcoin-slips-after-83k-rejection/"
-        },
-        {
-          "title": "Admirals – Bitcoin Price Today",
-          "url": "https://admiralmarkets.com/analytics/traders-blog/bitcoin-price-today-btc-edges-higher"
-        }
-      ]
+     "title": "CoinDesk: Bitcoin slides below $82,000 as AI doubts return, DeFi tokens lead declines",
+     "url": "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines"
     },
     {
-      "at": "2026-10-15T16:10:00+09:00",
-      "level": "주의",
-      "title": "비트 하루 -3%, 원화마켓 92% 하락 — 미국 물가 예상보다 높아 금리 인상 우려",
-      "lines": [
-        "오후 3시 기준 비트코인 1억 926만 원. 4시간 -1.3%, 하루 -3.0%예요. 최근 1시간은 거의 제자리라 급락은 일단 멈춘 모습이에요. 업비트 원화마켓 코인 92%가 하락했어요.",
-        "원인은 미국 9월 물가(CPI)가 3.7%로 예상(3.6%)보다 높게 나온 것이에요. 연준이 금리를 또 올릴 수 있다는 확률이 18%에서 44%까지 뛰었고, 달러가 강해지고 미국 주식(나스닥 -1.9%)도 같이 빠졌어요.",
-        "미국 비트코인 ETF에서 하루 2억 6천만 달러가 빠져나가 3주 연속 유입이 끊겼고, 하루 동안 약 9억 7천만 달러 레버리지 포지션이 강제 청산됐어요(92%가 상승 베팅). 중동(이란·후티) 긴장으로 유가 부담도 이어지고 있어요.",
-        "많이 빠진 코인: CASHCAT -14%, GTC -12%, PONS -11%. 거꾸로 오른 코인: BFC +14%, ZK +14% 정도로 소수예요.",
-        "왁스(WAXP) 6.58원(-5.5%): 첫 받침이자 반등 끝 기준선(약 6.56원) 바로 위에 붙어 있어요. 여기 아래로 내려가면 약세 신호예요.",
-        "아비트럼(ARB) 235원(-4.5%): 첫 받침 221.5원과 첫 벽 258원 사이 중간이에요. 반등 끝 기준선은 약 200원이라 아직 여유는 있어요."
-      ],
-      "sources": [
-        {
-          "title": "Coinpedia – Bitcoin Price Crash Wipes Out $89 Billion as Fed Rate Hike Odds Hit 44%",
-          "url": "https://coinpedia.org/news/bitcoin-price-crash-wipes-out-89-billion-as-fed-rate-hike-odds-hit-44/"
-        },
-        {
-          "title": "KuCoin – Crypto Daily Market Report (2026-10-15)",
-          "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-15-2026"
-        }
-      ]
-    },
-    {
-      "at": "2026-10-13T10:09:32+09:00",
-      "level": "주의",
-      "title": "밤사이 비트 -2.9%, 업비트 원화마켓 93%가 하락 — 미국 금리·유가 부담에 레버리지 청산",
-      "lines": [
-        "오전 10시 기준 비트코인 1억 1,015만 원. 4시간 동안 -2.1%, 하루 -2.9%예요. 업비트 원화마켓 코인 10개 중 9개 넘게(93%) 빠지는, 시장 전체가 같이 빠지는 장이에요.",
-        "미국 시간 월요일 저녁 비트코인이 8만 2천 달러 아래로 내려갔어요. 하루 동안 약 4,900억 원어치(4억 9천만 달러) 레버리지 포지션이 강제 청산됐고 그중 83%가 상승 쪽 베팅이었어요.",
-        "배경은 미국 10년 국채금리 5.2%대 상승, 러시아·우크라이나 에너지 휴전 불안과 호르무즈 해협 유조선 피격으로 오른 유가, 지난주 미국 비트코인 ETF 약 6.8억 달러 순유출이에요. 이번 주 수요일 밤 미국 물가(CPI) 발표를 앞두고 다들 몸을 사리는 분위기예요.",
-        "가장 많이 빠진 건 ICX -15.8%, GTC -14.2%, RSR -12%. 오른 코인은 DRV +9.2% 정도로 손에 꼽아요.",
-        "왁스: 7.01원(-2.8%). 첫 벽 7.17원 아래, 첫 받침 6.82원 위예요. 6.56원(반등 끝 기준선)이 깨지면 이번 반등은 끝난 걸로 봐요.",
-        "아비트럼: 237원(-2.9%). 첫 벽 258원 아래, 첫 받침 221.5원 위예요. 반등 끝 기준선은 200원, 강세 기준선은 344원이에요."
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin.com News · Bitcoin Price Falls Below $82K as $406M in Longs Get Liquidated (10/12)",
-          "url": "https://news.bitcoin.com/market-updates/bitcoin-price-falls-below-82k-as-406m-in-longs-get-liquidated/"
-        },
-        {
-          "title": "Cointelegraph · Bitcoin Bids Line Up at $82,000 as Oil Gains on Ukraine, Iran Woes (10/12)",
-          "url": "https://cointelegraph.com/markets/bitcoin-drops-22-as-ukraine-iran-strikes-send-oil-toward-one-month-high"
-        },
-        {
-          "title": "Yahoo Finance · Bitcoin and ethereum prices today, Oct 12, 2026: bond yields",
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-monday-october-12-2026-how-bond-yields-threaten-crypto-prices-114018710.html"
-        },
-        {
-          "title": "업비트 실시간 시세 (코인 레이더 집계)",
-          "url": "https://coin-breakout.alclsqoa12.workers.dev/"
-        }
-      ]
-    },
-    {
-      "at": "2026-10-07T11:40:00+09:00",
-      "level": "주의",
-      "title": "오전 장중 알트코인 일제히 하락 — 비트 -1.6%, 업비트 원화마켓 10개 중 9개가 빨간불(하락)",
-      "lines": [
-        "11시 반 기준 비트코인 1억 1,409만 원(-1.6%), 이더리움 356만 원(-2.6%). 비트보다 알트가 더 크게 빠지는 장이에요.",
-        "업비트 원화마켓 약 150개 중 139개가 하락. 특정 코인 악재가 아니라 시장 전체가 같이 빠지는 모습이에요.",
-        "연준 의사록(9월 회의 기록)은 아직 안 나왔어요. 발표는 한국 시간 내일(10/8 목) 새벽 3시예요. 지금 하락은 발표 전 몸 사리기에 가까워요.",
-        "왁스: 8.02원(장중 7.94원). 첫 받침 7.90원 바로 위예요. 오늘 오후 5시 쿠코인 출금 마감이라 오늘·내일 물량 출렁임 주의.",
-        "아비트럼: 253원(-6.6%). 첫 받침 258원이 깨져서 다음 받침은 220원대, 반등 끝 기준선은 200원이에요."
-      ],
-      "sources": [
-        {
-          "title": "Admirals · FOMC Minutes October 2026 (발표 10/7 오후 2시 미국 동부)",
-          "url": "https://admiralmarkets.com/analytics/traders-blog/fomc-minutes-october-2026"
-        },
-        {
-          "title": "업비트 실시간 시세 (코인 레이더 집계)",
-          "url": "https://coin-breakout.alclsqoa12.workers.dev/"
-        }
-      ]
+     "title": "KuCoin: Crypto Daily Market Report (Oct 22, 2026)",
+     "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-22-2026"
     }
-  ]
+   ]
+  },
+  {
+   "at": "2026-10-20T12:10:00+09:00",
+   "level": "주의",
+   "title": "원화마켓 89% 하락, 비트 하루 -1.5% — 8.3만 달러 벽 막힘·ETF 자금 유출 지속",
+   "lines": [
+    "오전 10시 반 기준 비트코인 1억 939만 원. 하루 -1.5%, 4시간 -0.9%, 최근 1시간 -0.2%로 급락보다는 천천히 밀리는 모습이에요. 업비트 원화마켓 코인 89%가 내렸어요.",
+    "오늘 오전 하락만 콕 집어 설명하는 뚜렷한 뉴스는 확인 안 됐어요. 다만 어제(미국 시간) 비트코인이 8만 3천 달러 위 매도 물량에 막혀 8만 2천 달러 아래로 되밀렸고, 미국 10년 국채금리가 5%대로 높은 점이 부담으로 꼽혀요.",
+    "미국 비트코인 ETF는 지난주 약 2억 3천만 달러가 빠져 2주 연속 유출, 이더리움 ETF는 3주 연속 유출이에요. 다음 연준 회의(10월 28일)를 앞두고 금리 인상 경계도 남아 있어요.",
+    "많이 빠진 코인: LSK -4.8%, MLK -4.6%, DATA -3.9%. 거꾸로 오른 코인: POD +15%, ERA +9.9% 정도로 소수예요.",
+    "왁스(WAXP) 6.21원(-1.3%): 첫 받침 6.19원 바로 위에 붙어 있어요. 첫 벽은 6.58원, 반등 끝 기준선은 5.65원이에요.",
+    "아비트럼(ARB) 265원(-0.4%): 첫 받침 258원과 첫 벽 275.5원 사이예요. 반등 끝 기준선 221.5원과는 거리가 있고, 288원을 넘어야 강세 신호예요."
+   ],
+   "sources": [
+    {
+     "title": "Bitcoin.com – Bitcoin Rally Stalls at $83K as ETF Outflows Raise Concerns",
+     "url": "https://news.bitcoin.com/market-updates/bitcoin-rally-stalls-83k-etf-outflows-raise-concerns/"
+    },
+    {
+     "title": "Cointelegraph – Bitcoin, Ether ETFs Shed $549M in weekly outflows",
+     "url": "https://cointelegraph.com/markets/bitcoin-ether-etfs-549-million-weekly-outflows"
+    },
+    {
+     "title": "Crypto Breaking – Bitcoin slips after $83K rejection as US bond yields rebound",
+     "url": "https://www.cryptobreaking.com/bitcoin-slips-after-83k-rejection/"
+    },
+    {
+     "title": "Admirals – Bitcoin Price Today",
+     "url": "https://admiralmarkets.com/analytics/traders-blog/bitcoin-price-today-btc-edges-higher"
+    }
+   ]
+  },
+  {
+   "at": "2026-10-15T16:10:00+09:00",
+   "level": "주의",
+   "title": "비트 하루 -3%, 원화마켓 92% 하락 — 미국 물가 예상보다 높아 금리 인상 우려",
+   "lines": [
+    "오후 3시 기준 비트코인 1억 926만 원. 4시간 -1.3%, 하루 -3.0%예요. 최근 1시간은 거의 제자리라 급락은 일단 멈춘 모습이에요. 업비트 원화마켓 코인 92%가 하락했어요.",
+    "원인은 미국 9월 물가(CPI)가 3.7%로 예상(3.6%)보다 높게 나온 것이에요. 연준이 금리를 또 올릴 수 있다는 확률이 18%에서 44%까지 뛰었고, 달러가 강해지고 미국 주식(나스닥 -1.9%)도 같이 빠졌어요.",
+    "미국 비트코인 ETF에서 하루 2억 6천만 달러가 빠져나가 3주 연속 유입이 끊겼고, 하루 동안 약 9억 7천만 달러 레버리지 포지션이 강제 청산됐어요(92%가 상승 베팅). 중동(이란·후티) 긴장으로 유가 부담도 이어지고 있어요.",
+    "많이 빠진 코인: CASHCAT -14%, GTC -12%, PONS -11%. 거꾸로 오른 코인: BFC +14%, ZK +14% 정도로 소수예요.",
+    "왁스(WAXP) 6.58원(-5.5%): 첫 받침이자 반등 끝 기준선(약 6.56원) 바로 위에 붙어 있어요. 여기 아래로 내려가면 약세 신호예요.",
+    "아비트럼(ARB) 235원(-4.5%): 첫 받침 221.5원과 첫 벽 258원 사이 중간이에요. 반등 끝 기준선은 약 200원이라 아직 여유는 있어요."
+   ],
+   "sources": [
+    {
+     "title": "Coinpedia – Bitcoin Price Crash Wipes Out $89 Billion as Fed Rate Hike Odds Hit 44%",
+     "url": "https://coinpedia.org/news/bitcoin-price-crash-wipes-out-89-billion-as-fed-rate-hike-odds-hit-44/"
+    },
+    {
+     "title": "KuCoin – Crypto Daily Market Report (2026-10-15)",
+     "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-15-2026"
+    }
+   ]
+  },
+  {
+   "at": "2026-10-13T10:09:32+09:00",
+   "level": "주의",
+   "title": "밤사이 비트 -2.9%, 업비트 원화마켓 93%가 하락 — 미국 금리·유가 부담에 레버리지 청산",
+   "lines": [
+    "오전 10시 기준 비트코인 1억 1,015만 원. 4시간 동안 -2.1%, 하루 -2.9%예요. 업비트 원화마켓 코인 10개 중 9개 넘게(93%) 빠지는, 시장 전체가 같이 빠지는 장이에요.",
+    "미국 시간 월요일 저녁 비트코인이 8만 2천 달러 아래로 내려갔어요. 하루 동안 약 4,900억 원어치(4억 9천만 달러) 레버리지 포지션이 강제 청산됐고 그중 83%가 상승 쪽 베팅이었어요.",
+    "배경은 미국 10년 국채금리 5.2%대 상승, 러시아·우크라이나 에너지 휴전 불안과 호르무즈 해협 유조선 피격으로 오른 유가, 지난주 미국 비트코인 ETF 약 6.8억 달러 순유출이에요. 이번 주 수요일 밤 미국 물가(CPI) 발표를 앞두고 다들 몸을 사리는 분위기예요.",
+    "가장 많이 빠진 건 ICX -15.8%, GTC -14.2%, RSR -12%. 오른 코인은 DRV +9.2% 정도로 손에 꼽아요.",
+    "왁스: 7.01원(-2.8%). 첫 벽 7.17원 아래, 첫 받침 6.82원 위예요. 6.56원(반등 끝 기준선)이 깨지면 이번 반등은 끝난 걸로 봐요.",
+    "아비트럼: 237원(-2.9%). 첫 벽 258원 아래, 첫 받침 221.5원 위예요. 반등 끝 기준선은 200원, 강세 기준선은 344원이에요."
+   ],
+   "sources": [
+    {
+     "title": "Bitcoin.com News · Bitcoin Price Falls Below $82K as $406M in Longs Get Liquidated (10/12)",
+     "url": "https://news.bitcoin.com/market-updates/bitcoin-price-falls-below-82k-as-406m-in-longs-get-liquidated/"
+    },
+    {
+     "title": "Cointelegraph · Bitcoin Bids Line Up at $82,000 as Oil Gains on Ukraine, Iran Woes (10/12)",
+     "url": "https://cointelegraph.com/markets/bitcoin-drops-22-as-ukraine-iran-strikes-send-oil-toward-one-month-high"
+    },
+    {
+     "title": "Yahoo Finance · Bitcoin and ethereum prices today, Oct 12, 2026: bond yields",
+     "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-monday-october-12-2026-how-bond-yields-threaten-crypto-prices-114018710.html"
+    },
+    {
+     "title": "업비트 실시간 시세 (코인 레이더 집계)",
+     "url": "https://coin-breakout.alclsqoa12.workers.dev/"
+    }
+   ]
+  },
+  {
+   "at": "2026-10-07T11:40:00+09:00",
+   "level": "주의",
+   "title": "오전 장중 알트코인 일제히 하락 — 비트 -1.6%, 업비트 원화마켓 10개 중 9개가 빨간불(하락)",
+   "lines": [
+    "11시 반 기준 비트코인 1억 1,409만 원(-1.6%), 이더리움 356만 원(-2.6%). 비트보다 알트가 더 크게 빠지는 장이에요.",
+    "업비트 원화마켓 약 150개 중 139개가 하락. 특정 코인 악재가 아니라 시장 전체가 같이 빠지는 모습이에요.",
+    "연준 의사록(9월 회의 기록)은 아직 안 나왔어요. 발표는 한국 시간 내일(10/8 목) 새벽 3시예요. 지금 하락은 발표 전 몸 사리기에 가까워요.",
+    "왁스: 8.02원(장중 7.94원). 첫 받침 7.90원 바로 위예요. 오늘 오후 5시 쿠코인 출금 마감이라 오늘·내일 물량 출렁임 주의.",
+    "아비트럼: 253원(-6.6%). 첫 받침 258원이 깨져서 다음 받침은 220원대, 반등 끝 기준선은 200원이에요."
+   ],
+   "sources": [
+    {
+     "title": "Admirals · FOMC Minutes October 2026 (발표 10/7 오후 2시 미국 동부)",
+     "url": "https://admiralmarkets.com/analytics/traders-blog/fomc-minutes-october-2026"
+    },
+    {
+     "title": "업비트 실시간 시세 (코인 레이더 집계)",
+     "url": "https://coin-breakout.alclsqoa12.workers.dev/"
+    }
+   ]
+  }
+ ]
 }
