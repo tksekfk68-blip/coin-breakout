@@ -1,40 +1,41 @@
 {
-  "writtenAt": "2026-10-23T07:30:00+09:00",
-  "title": "비트코인 8.5만 달러 문턱에서 되밀려 8.1만 달러대 — 유가 112달러·기술주 급락에 하루 만에 상승분 반납",
+  "writtenAt": "2026-10-24T07:30:00+09:00",
+  "title": "비트코인 8.1만 달러대에서 제자리 — ETF 6.4억 달러 유출·유가 116달러에 반등 힘 약해, 다음 주 금리 결정 대기",
   "mood": "조심",
-  "moodNote": "비트코인이 이틀 동안 오른 걸 하루 만에 내주고 50일 평균선(약 8.17만 달러) 근처까지 내려와, 추세가 위인지 아래인지 다시 애매해졌어요.",
+  "moodNote": "비트코인이 50일 평균선(약 8.1~8.2만 달러) 아래로 내려온 채 버티는 중이고, 큰 일정(금리 결정·물가 지표)을 앞두고 방향이 정해지지 않았어요.",
   "coin": [
-    "비트코인은 수요일 밤 8.5만 달러 가까이 갔다가 목요일(10/22) 약 3% 떨어져 8.13~8.14만 달러 안팎에 거래됐어요. 장중 한때 8.1만 달러 아래도 찍었어요.",
-    "이더리움은 약 3.6% 내려 2,380~2,390달러 안팎이에요. 리플(XRP) -6%, 지캐시(ZEC) -10%, 솔라나 -3%로 알트코인이 더 많이 빠졌어요.",
-    "하루 사이 강제 청산이 약 4.3억 달러였어요. 올라갈 때는 숏이, 내려올 때는 롱이 털리며 양쪽 모두 손해를 봤어요.",
-    "미국 비트코인 현물 ETF에는 10/19~21 사흘 동안 약 10.8억 달러가 들어왔어요(10/21 하루 약 5.28억 달러). 다만 10/22 하락 뒤의 자금 흐름은 아직 확인되지 않았어요."
+    "비트코인은 금요일(10/23) 하루 종일 8.1~8.2만 달러 사이에서 움직였고, 미국 장 마감 무렵 약 8.13만 달러로 거의 제자리였어요. 밤사이 저점은 약 8.10만 달러였어요.",
+    "미국 비트코인 현물 ETF에서 10/22 하루 약 6.36억 달러가 빠져나가, 6월 이후 가장 큰 하루 유출이었어요. 이더리움 ETF도 약 1.1억 달러가 빠졌어요.",
+    "이더리움은 약 2,390~2,400달러, 리플(XRP)은 약 1.33달러, 솔라나는 약 104달러로 큰 변화 없이 버텼어요. 공포·탐욕 지수는 47(중립)이에요.",
+    "10/23 룩온체인에 따르면 한 큰손이 5시간 동안 비트코인 4,000개(약 3.27억 달러)를 바이낸스·데리비트로 보냈어요. 거래소 입금은 팔 수도 있다는 신호로 보통 해석돼요.",
+    "하루 강제 청산은 약 4.4억 달러였고 그중 약 3.97억 달러가 롱(상승 베팅)이었어요."
   ],
   "macro": [
-    "미국 증시는 나스닥 -2.6%, S&P500 -1.2%로 크게 밀렸어요. 메타가 약 -7%, 테슬라가 약 -3%로 실적 발표 뒤 AI 투자 비용 걱정이 커졌어요.",
-    "브렌트유는 약 112.9달러로 5개월 만에 가장 높아요. 미국·이스라엘이 이란 재공격을 준비한다는 보도가 나오며 물가 걱정을 키웠어요.",
-    "반대로 미국 10년 국채 금리는 하루 0.1%포인트 넘게 내려 5% 안팎이에요. 안전한 채권으로 돈이 몰렸다는 뜻이에요.",
-    "코스피는 3.52% 떨어진 5,533.77로 하루 만에 다시 급락했어요. 원/달러 환율은 1,324.2원으로 5일 연속 내려 원화 기준 코인 값엔 조금 불리해요."
+    "미국 증시는 금요일 다우 -1.23%, S&P500 -0.52%, 나스닥 -0.21%로 한 주를 약하게 마쳤어요.",
+    "브렌트유는 116.72달러로 6개월 만에 가장 높고, WTI도 약 4% 올라 103달러대예요. 트럼프 대통령이 중간선거 뒤 이란 문제 확대를 시사한 게 영향을 줬어요.",
+    "미국 10년 국채 금리는 약 5%로 다시 올랐어요. 다만 다음 주 금리 인상 확률은 선물시장 기준 약 5%로, 주초(15%)보다 낮아졌어요.",
+    "코스피는 장중 4%대 급락을 딛고 0.30% 오른 5,550.30으로 마감했어요. 원/달러 환율은 0.4원 오른 1,324.6원이에요."
   ],
   "events": [
     {
-      "when": "10/23(금) 22:45",
-      "what": "미국 10월 S&P 구매관리자지수(PMI) 속보치",
-      "why": "경기가 너무 뜨거운지 식는지 보는 첫 10월 지표예요"
-    },
-    {
-      "when": "10/23(금) 23:00",
-      "what": "미시간대 소비자심리·기대 인플레이션(확정치)",
-      "why": "유가가 오른 만큼 사람들이 물가를 더 걱정하는지 볼 수 있어요"
+      "when": "10/27(화) 23:00",
+      "what": "미국 10월 소비자신뢰지수",
+      "why": "유가가 오르는 중에 사람들이 지갑을 닫는지 볼 수 있어요"
     },
     {
       "when": "10/29(목) 03:00",
       "what": "미국 연준(FOMC) 금리 결정·워시 의장 기자회견",
-      "why": "인상이냐 동결이냐에 따라 코인이 크게 흔들릴 수 있는 이달 최대 일정이에요"
+      "why": "동결 예상이 많지만, 앞으로의 말 한마디에 코인이 크게 흔들릴 수 있어요"
+    },
+    {
+      "when": "10/29(목) 05:00 이후",
+      "what": "마이크로소프트·알파벳(구글) 실적 발표",
+      "why": "이번 주 기술주 급락의 원인이 AI 투자 걱정이라, 결과가 코인 분위기에도 번질 수 있어요"
     },
     {
       "when": "10/29(목) 21:30",
-      "what": "미국 3분기 GDP 속보치",
-      "why": "금리 결정 바로 다음 날이라 경기 숫자에 시장이 더 예민하게 반응할 수 있어요"
+      "what": "미국 3분기 GDP 속보치·9월 PCE 물가",
+      "why": "연준이 가장 중요하게 보는 물가 지표라 금리 결정 다음 날 다시 한 번 출렁일 수 있어요"
     },
     {
       "when": "10/30(금) 17:00",
@@ -43,47 +44,59 @@
     }
   ],
   "strategy": [
-    "비트코인이 50일 평균선(약 8.17만 달러) 바로 근처예요. 오늘 오전 9시(한국 시간) 하루 마감이 선 위인지 아래인지 먼저 확인하세요.",
-    "선 아래로 마감하면 새 진입은 쉬는 게 추세추종 규칙에 맞아요. 들고 있다면 미리 정한 손절선을 지키는 데 집중하세요.",
-    "선 위를 지키더라도 8.4~8.5만 달러 벽에서 또 막혔어요. 새로 들어간다면 다음 주 금리 결정 전이니 평소 절반 이하로 작게, 손절 주문부터 걸어두세요.",
-    "알트코인은 비트코인보다 2~3배 더 흔들렸어요. 한 코인에 몰지 말고 전체 위험을 줄여두는 편이 안전해요."
+    "비트코인은 10/22 일봉이 8월 이후 처음으로 50일 평균선 아래로 마감했다는 분석이 나왔고, 지금도 그 선(약 8.1~8.2만 달러) 바로 아래예요.",
+    "추세추종 규칙으로는 선 아래에 있는 동안 새 진입은 쉬는 게 맞아요. 들고 있는 코인은 미리 정한 손절선을 먼저 확인하세요.",
+    "다시 50일선 위로 하루 마감하며 선을 되찾더라도, 다음 주 금리 결정 전이라 진입은 평소 절반 이하로 작게, 손절 주문부터 걸어두세요.",
+    "아래로는 밤사이 저점(약 8.1만 달러)과 8만 달러가 받침으로 꼽혀요. 알트코인은 비트코인보다 더 크게 흔들리니 전체 위험을 줄여두는 편이 안전해요."
   ],
   "sources": [
     {
-      "title": "Motley Fool · Crypto market today, Oct. 22: Bitcoin and altcoins slide as Wall Street fears spill into crypto (10/22)",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/10/22/crypto-market-today-oct-22-bitcoin-and-altcoins-slide-as-wall-street-fears-spill-into-crypto-markets/"
+      "title": "Yahoo Finance · Stock market today: Dow sinks 600 points, S&P 500, Nasdaq drop to cap a volatile week, oil prices rise (10/23)",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html"
     },
     {
-      "title": "CoinDesk · Live updates: Bitcoin's round trip to $85,000 burns traders on both sides (10/22)",
-      "url": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides"
+      "title": "Avalon Capital Research · Closing Bell: Dow drops 1.2% as crude jumps 4% (10/23)",
+      "url": "https://avaloncapitalresearch.substack.com/p/closing-bell-dow-drops-12-as-crude"
     },
     {
-      "title": "CoinDesk · Asian stocks tumble, bitcoin retreats as China enters bear market (10/22)",
-      "url": "https://www.coindesk.com/markets/2026/10/22/asian-stocks-tumble-bitcoin-retreats-as-china-enters-bear-market"
+      "title": "The Block · Bitcoin ETFs swing back to net outflows as $636 million in withdrawals erase previous day's inflows (10/23)",
+      "url": "https://www.theblock.co/news/markets/2026-10-23-bitcoin-etfs-swing-back-to-net-outflows-erase-previous-day-inflows-426483"
     },
     {
-      "title": "Yahoo Finance · Bitcoin and ethereum prices today, Oct 22: crypto gains wiped out as oil stays over $111 (10/22)",
-      "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-thursday-october-22-2026-crypto-gains-wiped-out-as-oil-prices-stay-over-111-a-barrel-113128321.html"
+      "title": "The Crypto Times · Crypto price today: Bitcoin falls to $81,668 as $635M ETF outflows drag Ethereum & XRP (10/23)",
+      "url": "https://www.cryptotimes.io/2026/10/23/crypto-price-today-bitcoin-price-falls-to-81668-as-635m-etf-outflows-drag-ethereum-xrp/"
     },
     {
-      "title": "Yahoo Finance · Stock market today: S&P 500, Nasdaq tank as tech stocks sink, Meta plummets (10/22)",
-      "url": "https://finance.yahoo.com/markets/article/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html"
+      "title": "CryptoTicker · Bitcoin price $81,568 after $431m liquidations (10/23)",
+      "url": "https://cryptoticker.io/en/bitcoin-price-long-liquidations-nasdaq-23-october-2026/"
     },
     {
-      "title": "Cointelegraph · Bitcoin ETFs reel in $528M as BTC retreats from $84.7K (10/22)",
-      "url": "https://cointelegraph.com/markets/bitcoin-etfs-528-million-btc-tops-84k"
+      "title": "COINOTAG · Bitcoin (BTC) loses 50-day moving average after range break (10/23)",
+      "url": "https://en.coinotag.com/bitcoin-btc-closes-below-50-day-moving-average-first-time-since-august"
     },
     {
-      "title": "crypto.news · Bitcoin ETFs draw over $1B in three days (10/22)",
-      "url": "https://crypto.news/bitcoin-etf-inflows-1-billion-three-days-btc-price/"
+      "title": "PANews · Whale deposits 4,000 BTC worth $327M to CEXes over past 5 hours (10/23)",
+      "url": "https://panews.io/articles/01a1685f-529e-7283-b653-90980bf27dca"
     },
     {
-      "title": "BusinessKorea · [마감 시황] 코스피 5,500선 턱걸이 마감, 원/달러 환율 5거래일 연속 하락 (10/22)",
-      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=279469"
+      "title": "Fortune · Current price of Bitcoin for October 23, 2026 (10/23)",
+      "url": "https://fortune.com/article/price-of-bitcoin-10-23-2026/"
     },
     {
-      "title": "Finance Calendar · US GDP Q3 2026 advance estimate (10/29 08:30 ET)",
-      "url": "https://www.financecalendar.com/event/us-gross-domestic-product-october-2026/"
+      "title": "BusinessKorea · [마감 시황] 코스피, 장중 4%대 급락 딛고 극적 반등…5,550선 회복 마감 (10/23)",
+      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=279567"
+    },
+    {
+      "title": "머니투데이 · 원/달러 환율, 0.4원 오른 1324.6원 (10/23)",
+      "url": "https://www.mt.co.kr/economy/2026/10/23/2026102315223170326"
+    },
+    {
+      "title": "Investrade · Weekly event calendar 10/26~10/30 (ET 기준)",
+      "url": "https://investrade.com/weekly-event-calendar-10-26-2026-10-30-2026/"
+    },
+    {
+      "title": "Newsquawk · Weekly economic release 26th~30th October 2026",
+      "url": "https://www.newsquawk.com/headlines/newsquawk-weekly-economic-release-26th---30th-october-2026-"
     }
   ]
 }
