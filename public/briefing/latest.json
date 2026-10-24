@@ -1,20 +1,20 @@
 {
-  "writtenAt": "2026-10-24T07:30:00+09:00",
-  "title": "비트코인 8.1만 달러대에서 제자리 — ETF 6.4억 달러 유출·유가 116달러에 반등 힘 약해, 다음 주 금리 결정 대기",
-  "mood": "조심",
-  "moodNote": "비트코인이 50일 평균선(약 8.1~8.2만 달러) 아래로 내려온 채 버티는 중이고, 큰 일정(금리 결정·물가 지표)을 앞두고 방향이 정해지지 않았어요.",
+  "writtenAt": "2026-10-25T07:40:00+09:00",
+  "title": "비트코인 8만 달러 깨졌다 회복 — 중동 긴장·ETF 이틀 연속 유출에 주말 청산 8억 달러, 이번 주 금리 결정 대기",
+  "mood": "위험",
+  "moodNote": "비트코인이 50일 평균선(약 8.17~8.18만 달러) 아래에서 한 달여 만의 최저가를 찍었고, 중동 긴장까지 겹쳐 주말에도 크게 흔들리고 있어요.",
   "coin": [
-    "비트코인은 금요일(10/23) 하루 종일 8.1~8.2만 달러 사이에서 움직였고, 미국 장 마감 무렵 약 8.13만 달러로 거의 제자리였어요. 밤사이 저점은 약 8.10만 달러였어요.",
-    "미국 비트코인 현물 ETF에서 10/22 하루 약 6.36억 달러가 빠져나가, 6월 이후 가장 큰 하루 유출이었어요. 이더리움 ETF도 약 1.1억 달러가 빠졌어요.",
-    "이더리움은 약 2,390~2,400달러, 리플(XRP)은 약 1.33달러, 솔라나는 약 104달러로 큰 변화 없이 버텼어요. 공포·탐욕 지수는 47(중립)이에요.",
-    "10/23 룩온체인에 따르면 한 큰손이 5시간 동안 비트코인 4,000개(약 3.27억 달러)를 바이낸스·데리비트로 보냈어요. 거래소 입금은 팔 수도 있다는 신호로 보통 해석돼요.",
-    "하루 강제 청산은 약 4.4억 달러였고 그중 약 3.97억 달러가 롱(상승 베팅)이었어요."
+    "비트코인은 토요일(10/24) 한때 약 7.91만 달러까지 떨어져 한 달여 만에 가장 낮았어요. 이후 다시 8만 달러 위로 올라와 토요일 밤 약 8.03만 달러였어요.",
+    "8만 달러가 깨지자 빚내서 산 매수(롱)가 줄줄이 강제 청산됐어요. 하루 전체 청산은 약 8.2억 달러, 그중 약 6.9억 달러가 롱이었어요.",
+    "미국 비트코인 현물 ETF에서 10/22 약 6.36억 달러, 10/23 약 1.38억 달러가 빠져 이틀 동안 약 7.7억 달러가 나갔어요. 이더리움 ETF는 10/23 약 440만 달러가 소폭 들어왔어요.",
+    "이더리움(약 2,375달러)과 솔라나(약 102달러)는 하루 2% 넘게, 리플(XRP, 약 1.28~1.29달러)도 1~2% 내렸어요. 알트코인이 비트코인보다 더 많이 빠지는 모습이에요.",
+    "좋은 소식도 있어요. 미국 통화감독청(OCC)이 10/21 스테이블코인 규칙(GENIUS법)을 확정했고, 솔라나는 같은 날 확정 속도를 크게 높인 '알펜글로우' 업그레이드를 켰어요."
   ],
   "macro": [
-    "미국 증시는 금요일 다우 -1.23%, S&P500 -0.52%, 나스닥 -0.21%로 한 주를 약하게 마쳤어요.",
-    "브렌트유는 116.72달러로 6개월 만에 가장 높고, WTI도 약 4% 올라 103달러대예요. 트럼프 대통령이 중간선거 뒤 이란 문제 확대를 시사한 게 영향을 줬어요.",
-    "미국 10년 국채 금리는 약 5%로 다시 올랐어요. 다만 다음 주 금리 인상 확률은 선물시장 기준 약 5%로, 주초(15%)보다 낮아졌어요.",
-    "코스피는 장중 4%대 급락을 딛고 0.30% 오른 5,550.30으로 마감했어요. 원/달러 환율은 0.4원 오른 1,324.6원이에요."
+    "미국이 이란의 공격 가능성을 이유로 중동 대사관·기지에서 인력을 빼기 시작했다는 월스트리트저널 보도가 토요일 나왔어요. 트럼프 대통령도 중간선거 뒤 이란 추가 공격 가능성을 언급했어요.",
+    "같은 날 예멘 후티 반군이 사우디 공항·석유 시설을 공격했다고 주장했어요. 실제 석유 시설 피해는 확인되지 않았지만, 이미 116달러를 넘은 브렌트유를 더 밀어올릴 수 있는 재료예요.",
+    "유가가 오르면 물가가 다시 오르고 금리 인하가 늦어질 수 있어요. 그래서 이번 주 연준 회의(10/27~28) 결과에 시장이 예민해요.",
+    "주말이라 주식·환율 시장은 쉬었어요. 금요일 마감 기준 코스피 5,550.30, 원/달러 1,324.6원이었어요."
   ],
   "events": [
     {
@@ -44,43 +44,51 @@
     }
   ],
   "strategy": [
-    "비트코인은 10/22 일봉이 8월 이후 처음으로 50일 평균선 아래로 마감했다는 분석이 나왔고, 지금도 그 선(약 8.1~8.2만 달러) 바로 아래예요.",
-    "추세추종 규칙으로는 선 아래에 있는 동안 새 진입은 쉬는 게 맞아요. 들고 있는 코인은 미리 정한 손절선을 먼저 확인하세요.",
-    "다시 50일선 위로 하루 마감하며 선을 되찾더라도, 다음 주 금리 결정 전이라 진입은 평소 절반 이하로 작게, 손절 주문부터 걸어두세요.",
-    "아래로는 밤사이 저점(약 8.1만 달러)과 8만 달러가 받침으로 꼽혀요. 알트코인은 비트코인보다 더 크게 흔들리니 전체 위험을 줄여두는 편이 안전해요."
+    "비트코인은 50일 평균선(약 8.17~8.18만 달러) 아래로 내려온 상태라, 추세추종 규칙으로는 새 진입은 쉬는 구간이에요.",
+    "들고 있는 코인이 있다면 미리 정한 손절선에 닿았는지부터 확인하고, 손절 주문이 걸려 있는지 점검하세요. 주말엔 거래가 적어 더 크게 출렁여요.",
+    "아래로는 약 7.84만 달러와 7.79만 달러가 다음 받침으로 꼽혀요. 다시 50일선 위로 하루 마감하면 그때 평소 절반 이하 크기로, 손절 주문부터 걸고 들어가는 게 원칙이에요.",
+    "금리 결정(10/29 새벽)과 중동 소식이 겹친 주라 알트코인은 더 크게 흔들릴 수 있어요. 전체 위험을 작게 유지하세요."
   ],
   "sources": [
     {
-      "title": "Yahoo Finance · Stock market today: Dow sinks 600 points, S&P 500, Nasdaq drop to cap a volatile week, oil prices rise (10/23)",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html"
+      "title": "Bitcoin.com News · Bitcoin price sinks to $79,146 as liquidations rock weekend trading (10/24)",
+      "url": "https://news.bitcoin.com/market-updates/bitcoin-price-sinks-to-79146-as-liquidations-rock-weekend-trading/"
     },
     {
-      "title": "Avalon Capital Research · Closing Bell: Dow drops 1.2% as crude jumps 4% (10/23)",
-      "url": "https://avaloncapitalresearch.substack.com/p/closing-bell-dow-drops-12-as-crude"
+      "title": "The Crypto Times · Bitcoin price today: BTC falls below $80,000 as $820M crypto liquidations hit longs (10/25)",
+      "url": "https://www.cryptotimes.io/2026/10/25/bitcoin-price-today-btc-falls-below-80000-as-820m-crypto-liquidations-hit-longs/"
+    },
+    {
+      "title": "Northeast Times · Bitcoin falls below $80,000 as U.S. pulls staff from Middle East posts (10/24)",
+      "url": "https://northeasttimes.com/2026/10/24/bitcoin-falls-below-80-000-as-u-s-pulls-staff-from-middle-east-posts/"
+    },
+    {
+      "title": "TokenPost · Bitcoin ETFs shed $137.9 million as Ether funds add $4.4 million (10/24)",
+      "url": "https://www.tokenpost.com/news/investing/40095"
     },
     {
       "title": "The Block · Bitcoin ETFs swing back to net outflows as $636 million in withdrawals erase previous day's inflows (10/23)",
       "url": "https://www.theblock.co/news/markets/2026-10-23-bitcoin-etfs-swing-back-to-net-outflows-erase-previous-day-inflows-426483"
     },
     {
-      "title": "The Crypto Times · Crypto price today: Bitcoin falls to $81,668 as $635M ETF outflows drag Ethereum & XRP (10/23)",
-      "url": "https://www.cryptotimes.io/2026/10/23/crypto-price-today-bitcoin-price-falls-to-81668-as-635m-etf-outflows-drag-ethereum-xrp/"
+      "title": "CaptainAltcoin · Why is the crypto market down today (October 24)?",
+      "url": "https://captainaltcoin.com/why-is-the-crypto-market-down-today-october-24/"
     },
     {
-      "title": "CryptoTicker · Bitcoin price $81,568 after $431m liquidations (10/23)",
-      "url": "https://cryptoticker.io/en/bitcoin-price-long-liquidations-nasdaq-23-october-2026/"
+      "title": "The Crypto Basic · Crypto price analysis BTC, XRP, NEAR, SOL, ZEC (10/24)",
+      "url": "https://thecryptobasic.com/2026/10/24/crypto-price-analysis-btc-xrp-near-sol-and-zec-october-24-bitcoin-rsi-falls-below-46-as-xrp-loses-daily-support/"
     },
     {
-      "title": "COINOTAG · Bitcoin (BTC) loses 50-day moving average after range break (10/23)",
-      "url": "https://en.coinotag.com/bitcoin-btc-closes-below-50-day-moving-average-first-time-since-august"
+      "title": "crypto.news · Crypto rules finalized, Bitcoin retreats, Solana upgrades (주간 정리)",
+      "url": "https://crypto.news/crypto-rules-bitcoin-solana-weekly-recap"
     },
     {
-      "title": "PANews · Whale deposits 4,000 BTC worth $327M to CEXes over past 5 hours (10/23)",
-      "url": "https://panews.io/articles/01a1685f-529e-7283-b653-90980bf27dca"
+      "title": "Al Jazeera · Houthis launch attacks on Saudi Arabia and Yemen's Aden (10/24)",
+      "url": "https://www.aljazeera.com/news/2026/10/24/houthis-launch-attacks-on-saudi-arabia-and-yemens-aden"
     },
     {
-      "title": "Fortune · Current price of Bitcoin for October 23, 2026 (10/23)",
-      "url": "https://fortune.com/article/price-of-bitcoin-10-23-2026/"
+      "title": "Yahoo Finance · Stock market today: Dow sinks 600 points, S&P 500, Nasdaq drop to cap a volatile week, oil prices rise (10/23)",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html"
     },
     {
       "title": "BusinessKorea · [마감 시황] 코스피, 장중 4%대 급락 딛고 극적 반등…5,550선 회복 마감 (10/23)",
