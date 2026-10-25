@@ -1,20 +1,20 @@
 {
-  "writtenAt": "2026-10-25T07:40:00+09:00",
-  "title": "비트코인 8만 달러 깨졌다 회복 — 중동 긴장·ETF 이틀 연속 유출에 주말 청산 8억 달러, 이번 주 금리 결정 대기",
+  "writtenAt": "2026-10-26T07:40:00+09:00",
+  "title": "비트코인 8만 달러 턱걸이 — 주말 급락 뒤 8.04만 달러로 버티는 중, 트럼프 '오늘은 이란 공격 없다'·이번 주 금리 결정 대기",
   "mood": "위험",
-  "moodNote": "비트코인이 50일 평균선(약 8.17~8.18만 달러) 아래에서 한 달여 만의 최저가를 찍었고, 중동 긴장까지 겹쳐 주말에도 크게 흔들리고 있어요.",
+  "moodNote": "비트코인이 50일 평균선(약 8.17~8.18만 달러) 아래에 머물러 있고, 이란 공격 가능성과 금리 결정이 겹친 한 주라 크게 흔들릴 수 있어요.",
   "coin": [
-    "비트코인은 토요일(10/24) 한때 약 7.91만 달러까지 떨어져 한 달여 만에 가장 낮았어요. 이후 다시 8만 달러 위로 올라와 토요일 밤 약 8.03만 달러였어요.",
-    "8만 달러가 깨지자 빚내서 산 매수(롱)가 줄줄이 강제 청산됐어요. 하루 전체 청산은 약 8.2억 달러, 그중 약 6.9억 달러가 롱이었어요.",
-    "미국 비트코인 현물 ETF에서 10/22 약 6.36억 달러, 10/23 약 1.38억 달러가 빠져 이틀 동안 약 7.7억 달러가 나갔어요. 이더리움 ETF는 10/23 약 440만 달러가 소폭 들어왔어요.",
-    "이더리움(약 2,375달러)과 솔라나(약 102달러)는 하루 2% 넘게, 리플(XRP, 약 1.28~1.29달러)도 1~2% 내렸어요. 알트코인이 비트코인보다 더 많이 빠지는 모습이에요.",
-    "좋은 소식도 있어요. 미국 통화감독청(OCC)이 10/21 스테이블코인 규칙(GENIUS법)을 확정했고, 솔라나는 같은 날 확정 속도를 크게 높인 '알펜글로우' 업그레이드를 켰어요."
+    "비트코인은 토요일 약 7.91만 달러까지 빠져 5주 만에 가장 낮았다가, 일요일엔 약 8.04~8.05만 달러로 올라와 버티고 있어요.",
+    "지난 일주일 비트코인은 약 -1.8~-2% 내렸어요. 토요일 마감가(약 8.08만 달러)는 9/17 이후 가장 낮았어요.",
+    "주말 하루 동안 약 8.1억 달러가 강제 청산됐고, 그중 약 6.9억 달러가 빚내서 산 매수(롱)였어요.",
+    "미국 비트코인 현물 ETF는 지난주 초 사흘간 약 10.7억 달러가 들어왔다가, 목·금 이틀 동안 약 7.7억 달러가 빠졌어요.",
+    "이더리움은 약 2,330~2,340달러, 솔라나는 약 101달러, 리플(XRP)은 약 1.29달러예요. 지난주 헤데라·에이브·아발란체가 10% 안팎으로 크게 빠졌어요."
   ],
   "macro": [
-    "미국이 이란의 공격 가능성을 이유로 중동 대사관·기지에서 인력을 빼기 시작했다는 월스트리트저널 보도가 토요일 나왔어요. 트럼프 대통령도 중간선거 뒤 이란 추가 공격 가능성을 언급했어요.",
-    "같은 날 예멘 후티 반군이 사우디 공항·석유 시설을 공격했다고 주장했어요. 실제 석유 시설 피해는 확인되지 않았지만, 이미 116달러를 넘은 브렌트유를 더 밀어올릴 수 있는 재료예요.",
-    "유가가 오르면 물가가 다시 오르고 금리 인하가 늦어질 수 있어요. 그래서 이번 주 연준 회의(10/27~28) 결과에 시장이 예민해요.",
-    "주말이라 주식·환율 시장은 쉬었어요. 금요일 마감 기준 코스피 5,550.30, 원/달러 1,324.6원이었어요."
+    "트럼프 대통령은 토요일 '내일이라도' 이란 공격이 가능하다고 했다가, 일요일엔 '오늘은 공격 없다'고 말을 바꿨어요. 미군은 중간선거(11/3) 뒤 공격 계획을 준비해 둔 것으로 보도됐어요.",
+    "일요일 후티 반군이 사우디 수도 리야드로 미사일·드론을 쐈지만 모두 요격됐어요. 호르무즈 해협 주변 선박 공격은 10월에만 120건이 넘어요.",
+    "브렌트유는 금요일 116.72달러로 마감해 4월 말 이후 가장 높아요. 유가가 오르면 물가가 다시 올라 금리 인하가 멀어질 수 있어요.",
+    "연준은 10/27~28 회의에서 동결할 가능성이 약 90%로 보여요. 코스피는 금요일 5,550.30, 원/달러는 1,324.6원으로 마감했어요."
   ],
   "events": [
     {
@@ -30,12 +30,22 @@
     {
       "when": "10/29(목) 05:00 이후",
       "what": "마이크로소프트·알파벳(구글) 실적 발표",
-      "why": "이번 주 기술주 급락의 원인이 AI 투자 걱정이라, 결과가 코인 분위기에도 번질 수 있어요"
+      "why": "지난주 기술주 급락이 코인도 끌어내려서, 결과가 코인 분위기에 번질 수 있어요"
     },
     {
       "when": "10/29(목) 21:30",
       "what": "미국 3분기 GDP 속보치·9월 PCE 물가",
-      "why": "연준이 가장 중요하게 보는 물가 지표라 금리 결정 다음 날 다시 한 번 출렁일 수 있어요"
+      "why": "연준이 가장 중요하게 보는 물가 지표라 금리 결정 다음 날 다시 출렁일 수 있어요"
+    },
+    {
+      "when": "10/29(목) 22:15",
+      "what": "유럽중앙은행(ECB) 금리 결정",
+      "why": "미국 지표와 같은 날 밤이라 달러 움직임이 커질 수 있어요"
+    },
+    {
+      "when": "10/30(금) 낮(시각 미정)",
+      "what": "일본은행 금리 결정",
+      "why": "일본이 금리를 올리면 엔화로 빌린 돈이 빠져나가 코인에도 부담이 될 수 있어요"
     },
     {
       "when": "10/30(금) 17:00",
@@ -44,51 +54,39 @@
     }
   ],
   "strategy": [
-    "비트코인은 50일 평균선(약 8.17~8.18만 달러) 아래로 내려온 상태라, 추세추종 규칙으로는 새 진입은 쉬는 구간이에요.",
-    "들고 있는 코인이 있다면 미리 정한 손절선에 닿았는지부터 확인하고, 손절 주문이 걸려 있는지 점검하세요. 주말엔 거래가 적어 더 크게 출렁여요.",
-    "아래로는 약 7.84만 달러와 7.79만 달러가 다음 받침으로 꼽혀요. 다시 50일선 위로 하루 마감하면 그때 평소 절반 이하 크기로, 손절 주문부터 걸고 들어가는 게 원칙이에요.",
-    "금리 결정(10/29 새벽)과 중동 소식이 겹친 주라 알트코인은 더 크게 흔들릴 수 있어요. 전체 위험을 작게 유지하세요."
+    "비트코인은 50일 평균선(약 8.17~8.18만 달러) 아래라, 추세추종 규칙으로는 새 진입은 쉬는 구간이에요.",
+    "들고 있는 코인이 있다면 미리 정한 손절선을 다시 확인하고, 손절 주문이 실제로 걸려 있는지부터 점검하세요.",
+    "아래로는 약 7.84만·7.79만 달러, 위로는 50일선과 약 8.26만 달러가 꼽혀요. 50일선 위로 하루 마감하기 전까진 기다리는 게 원칙이에요.",
+    "금리 결정(10/29 새벽)과 이란 소식이 겹쳐 알트코인은 더 크게 흔들릴 수 있어요. 다시 들어가더라도 평소 절반 이하 크기로, 손절 주문부터 걸어 두세요."
   ],
   "sources": [
     {
-      "title": "Bitcoin.com News · Bitcoin price sinks to $79,146 as liquidations rock weekend trading (10/24)",
-      "url": "https://news.bitcoin.com/market-updates/bitcoin-price-sinks-to-79146-as-liquidations-rock-weekend-trading/"
+      "title": "Investing.com · Bitcoin steadies near $80,400 after weekend selloff, Fed decision looms (10/25)",
+      "url": "https://investing.com/news/cryptocurrency-news/bitcoin-price-today-btc-recovers-to-80800-ahead-of-fed-meeting-4971035"
     },
     {
-      "title": "The Crypto Times · Bitcoin price today: BTC falls below $80,000 as $820M crypto liquidations hit longs (10/25)",
-      "url": "https://www.cryptotimes.io/2026/10/25/bitcoin-price-today-btc-falls-below-80000-as-820m-crypto-liquidations-hit-longs/"
+      "title": "Bitcoin News Digest · October 25, 2026 (주간 정리)",
+      "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-october-25-2026"
     },
     {
-      "title": "Northeast Times · Bitcoin falls below $80,000 as U.S. pulls staff from Middle East posts (10/24)",
-      "url": "https://northeasttimes.com/2026/10/24/bitcoin-falls-below-80-000-as-u-s-pulls-staff-from-middle-east-posts/"
+      "title": "TokenPost · Ethena leads top 90 crypto gainers with 8.66% rise on Oct. 25 (10/25)",
+      "url": "https://www.tokenpost.com/news/investing/40588"
     },
     {
-      "title": "TokenPost · Bitcoin ETFs shed $137.9 million as Ether funds add $4.4 million (10/24)",
-      "url": "https://www.tokenpost.com/news/investing/40095"
+      "title": "crypto.news · Bitcoin price battles $80K as major altcoins post double-digit losses (10/25)",
+      "url": "https://crypto.news/crypto-market-watch-worst-altcoins-bitcoin-price-80k/"
     },
     {
-      "title": "The Block · Bitcoin ETFs swing back to net outflows as $636 million in withdrawals erase previous day's inflows (10/23)",
-      "url": "https://www.theblock.co/news/markets/2026-10-23-bitcoin-etfs-swing-back-to-net-outflows-erase-previous-day-inflows-426483"
+      "title": "Al Jazeera · CENTCOM reportedly has plans for Iran strikes: Will Trump approve them? (10/25)",
+      "url": "https://www.aljazeera.com/news/2026/10/25/centcom-reportedly-has-plans-for-iran-strikes-will-trump-approve-them"
     },
     {
-      "title": "CaptainAltcoin · Why is the crypto market down today (October 24)?",
-      "url": "https://captainaltcoin.com/why-is-the-crypto-market-down-today-october-24/"
+      "title": "Gulf News · Missile and drone intercepted over Riyadh; Trump rules out strike today (10/25)",
+      "url": "https://gulfnews.com/world/mena/middle-east-war-drone-missile-intercepted-over-riyadh-as-king-khalid-airport-resumes-operations-1.500722685"
     },
     {
-      "title": "The Crypto Basic · Crypto price analysis BTC, XRP, NEAR, SOL, ZEC (10/24)",
-      "url": "https://thecryptobasic.com/2026/10/24/crypto-price-analysis-btc-xrp-near-sol-and-zec-october-24-bitcoin-rsi-falls-below-46-as-xrp-loses-daily-support/"
-    },
-    {
-      "title": "crypto.news · Crypto rules finalized, Bitcoin retreats, Solana upgrades (주간 정리)",
-      "url": "https://crypto.news/crypto-rules-bitcoin-solana-weekly-recap"
-    },
-    {
-      "title": "Al Jazeera · Houthis launch attacks on Saudi Arabia and Yemen's Aden (10/24)",
-      "url": "https://www.aljazeera.com/news/2026/10/24/houthis-launch-attacks-on-saudi-arabia-and-yemens-aden"
-    },
-    {
-      "title": "Yahoo Finance · Stock market today: Dow sinks 600 points, S&P 500, Nasdaq drop to cap a volatile week, oil prices rise (10/23)",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-october-23-dow-sp-500-nasdaq-tesla-meta-093000521.html"
+      "title": "NordFX · Forex and crypto forecast October 26–30, 2026: Fed, ECB and BoJ decisions",
+      "url": "https://nordfx.com/market-news/forex-cryptocurrency-forecast-october-26-30-2026"
     },
     {
       "title": "BusinessKorea · [마감 시황] 코스피, 장중 4%대 급락 딛고 극적 반등…5,550선 회복 마감 (10/23)",

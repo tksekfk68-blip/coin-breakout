@@ -1,40 +1,40 @@
 {
-  "writtenAt": "2026-10-25T07:40:00+09:00",
+  "writtenAt": "2026-10-26T07:40:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "왁스 팀이 해킹된 멀티체인 브리지를 멈추고 'WAXP와 메인 블록체인은 영향 없다'고 밝혔어요. 보상 계획은 아직 없고, 가격은 약 0.0047달러로 크게 움직이지 않았어요.",
+      "summary": "해킹됐던 왁스 브리지가 10/23 고친 뒤 다시 돌아가기 시작했고, 팀은 잃은 돈을 채워 넣겠다고 했어요. 가격은 약 0.0047달러로 조용해요.",
       "good": [
-        "왁스 측은 문제가 브리지 앱 계약 하나에만 있고, WAXP 코인과 왁스 블록체인 자체는 안전하다고 설명했어요(10/24 보도 기준, 외부 검증은 아직이에요)",
-        "추가 피해를 막기 위해 브리지 처리를 일시 중단했어요",
-        "피해 추정은 약 7.5만~9만 달러로 작은 편이고, 주말 하락장에서도 WAXP 가격은 하루 -0.3% 정도로 버텼어요"
+        "왁스 측은 10/23 밤(한국 시간 10/24 00:50) 수정과 추가 안전장치를 넣고 브리지 처리를 다시 시작했다고 밝혔어요",
+        "팀은 빠져나간 준비금을 다시 채워 모든 브리지 출금을 보장하겠다고 약속했어요",
+        "피해는 약 7.5만~9만 달러로 작은 편이고, WAXP 코인과 왁스 블록체인 자체는 영향이 없다는 게 팀 설명이에요",
+        "주말 하락장에서도 WAXP는 하루 약 -0.3%로 크게 흔들리지 않았어요"
       ],
       "bad": [
-        "보상 계획이나 자세한 사고 원인 보고서는 아직 나오지 않았어요. 최종 피해액도 확정되지 않았어요",
-        "업비트(10/22)에 이어 빗썸도 '투자유의 촉구'를 냈어요. 상장폐지는 아니지만 거래소가 계속 지켜보고 있다는 뜻이에요",
-        "브리지가 멈춰 있는 동안은 다른 체인과 오가는 이용이 막혀요",
-        "한 달 동안 약 -18%대로 큰 흐름은 여전히 아래쪽이에요"
+        "준비금을 실제로 얼마나 채웠는지 공개된 숫자는 아직 없어요. 사고 원인 보고서도 나오지 않았어요",
+        "업비트(10/22)와 빗썸이 낸 '투자유의 촉구'가 풀렸다는 소식은 아직 찾지 못했어요",
+        "한 달 동안 약 -18%대로 큰 흐름은 여전히 아래쪽이에요(지난 10/25 정리 기준)"
       ],
       "onchain": [
         "확인된 큰손 움직임 없음 — 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요",
-        "공개된 지갑 추적은 해커가 브리지에서 약 5.3만 USDC·2.16만 USDT·2.55 WETH·0.11 WBTC·840 DAI를 빼간 기록뿐이에요"
+        "공개된 지갑 추적은 해커가 10/22 브리지에서 약 5.3만 USDC·2.16만 USDT·2.55 WETH·0.11 WBTC·840 DAI를 빼간 기록뿐이에요"
       ],
       "upcoming": [],
       "sources": [
         {
-          "title": "UEEx Blog · WAX pauses multichain bridge following reported exploit (10/24)",
-          "url": "https://blog.ueex.com/wax-multichain-bridge-exploit/"
+          "title": "The Industry Spread · WAX blockchain bridge exploit paused processing, then resumed (10/25)",
+          "url": "https://theindustryspread.com/wax-blockchain-bridge-exploit-pause-and-restart/"
         },
         {
           "title": "TokenPost · WAX bridge attack releases about $90,000 on Solana and Ethereum (10/23)",
           "url": "https://www.tokenpost.com/news/technology/38523"
         },
         {
-          "title": "이코노미블록 · 빗썸, 왁스(WAXP) 코인 투자유의 촉구",
-          "url": "https://economybloc.com/article/119721/"
-        },
-        {
           "title": "디지털투데이 · 업비트, 왁스(WAXP) 유의 촉구…멀티체인 브릿지 보안 문제 의심 정황 (10/23)",
           "url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=709401"
+        },
+        {
+          "title": "이코노미블록 · 빗썸, 왁스(WAXP) 코인 투자유의 촉구",
+          "url": "https://economybloc.com/article/119721/"
         },
         {
           "title": "CoinMarketCap · WAX (WAXP) price",
@@ -43,28 +43,28 @@
       ]
     },
     "KRW-ARB": {
-      "summary": "ARB는 받침으로 꼽히던 0.1787달러를 깨고 하루 약 7% 빠져 0.167~0.17달러까지 내려왔어요. 이용자는 늘고 있지만 가격은 한 달 새 28% 떨어졌어요.",
+      "summary": "ARB는 약 0.17달러에서 0.16달러 받침을 지키고 있어요. 1억 ARB 보상안이 사전 투표에서 94.7% 찬성을 받아 10/29부터 최종 투표에 들어가요.",
       "good": [
-        "10/24 보도에 따르면 최근 28일 동안 가격은 내렸지만 아비트럼 원(One)의 활성 주소는 오히려 늘었어요",
-        "10/23 아비트럼 재단이 '개발자 길드' 규칙을 발표했어요. 오프체인랩스가 첫 회원이고, 프로토콜 순수익 2%를 개발 지원에 써요",
-        "10/24 ArbitrumDAO에서 10/2부터 멈춰 있던 새 스타일러스(Stylus) 계약 등록을 보안 점검 조건으로 다시 열자는 안건이 올라왔어요",
-        "10/24 기준 아비트럼 주간 NFT 거래액이 약 200만 달러로 전주보다 크게 늘었어요"
+        "USDG 스테이블코인에 1억 ARB를 보상으로 주는 안이 사전 투표(10/15~22)에서 94.7% 찬성, 참여율 68%로 통과했어요. 아비트럼에 스테이블코인 돈을 끌어오려는 계획이에요",
+        "10/25 기준 0.16달러 받침은 하루 마감 기준으로 아직 깨지지 않았어요",
+        "최근 28일 동안 가격은 내렸지만 아비트럼 원(One)의 활성 주소는 오히려 늘었어요(10/24 보도)",
+        "10/23 아비트럼 재단이 '개발자 길드' 규칙을 발표해 프로토콜 순수익 2%를 개발 지원에 쓰기로 했어요"
       ],
       "bad": [
-        "10/24 ARB는 하루 약 7% 내려 0.1673달러까지 밀렸고, 중요한 받침이던 0.1787달러 아래로 내려왔어요. 다음 받침으로는 0.168달러·0.16달러가 꼽혀요",
-        "최근 28일 동안 ARB -28.1%로, 비트코인(-5.2%)·이더리움(-14.4%)보다 훨씬 많이 빠졌어요",
-        "바이낸스 선물에서 파는 쪽 주문이 사는 쪽보다 약 1.5배 많았어요(10/24 한 시간 기준)",
-        "매달 16일쯤 약 9,260만 ARB가 팀·투자자에게 풀리고, 1억 ARB 보상안이 최종 통과되면 풀리는 물량이 더 늘 수 있어요"
+        "10/25 ARB는 하루 약 -2%로 약 0.17달러예요. 단기·50일 평균선(약 0.18~0.19달러)이 모두 가격 위에 있어 흐름이 약해요",
+        "최근 28일 동안 ARB는 약 -28%로, 비트코인·이더리움보다 훨씬 많이 빠졌어요",
+        "보상안이 최종 통과되면 1억 ARB가 시장에 풀릴 수 있어요. 매달 16일쯤 약 9,265만 ARB 정기 해제도 계속돼요",
+        "바이낸스 선물 미결제약정이 하루 3.4% 늘어(약 4,770만 달러) 가격이 어느 쪽으로든 크게 움직일 수 있어요"
       ],
       "onchain": [
         "10/18 아캄 추적: 한 큰손 지갑이 바이빗에서 약 1,000만 ARB(약 182만 달러)를 출금했어요. 거래소 밖으로 빼는 건 당장 팔 생각이 적다는 신호로 보통 해석돼요",
-        "10/19~25엔 아캄·룩온체인·웨일얼럿 등이 공개한 새 ARB 큰손 움직임은 확인되지 않았어요"
+        "10/19~26엔 아캄·룩온체인·웨일얼럿 등이 공개한 새 ARB 큰손 움직임은 확인되지 않았어요"
       ],
       "upcoming": [
         {
           "when": "10/29(목)~11/12(목)",
-          "what": "USDG 1억 ARB 보상안 온체인 최종 투표(예정, 10/22 끝난 사전 투표 결과는 아직 확인 못 함)",
-          "why": "통과되면 ARB 1억 개가 보상으로 풀리는 게 확정돼요"
+          "what": "USDG 1억 ARB 보상안 온체인 최종 투표",
+          "why": "사전 투표는 통과했지만, 이 투표가 끝나야 1억 ARB 지급이 확정돼요"
         },
         {
           "when": "11/16(월)",
@@ -74,24 +74,20 @@
       ],
       "sources": [
         {
-          "title": "TokenPost · Arbitrum (ARB) falls below $0.1787 as 24-hour low reaches $0.1673223 (10/24)",
-          "url": "https://www.tokenpost.com/news/investing/39840"
+          "title": "TokenPost · ArbitrumDAO vote backs 100 million ARB incentives for Global Dollar (USDG) (10/25)",
+          "url": "https://www.tokenpost.com/news/business/40459"
         },
         {
-          "title": "Blockchain.News · ARB price prediction: support breach puts $0.16 floor in focus (10/24)",
-          "url": "https://blockchain.news/news/20261024-price-prediction-arb-support-breach-puts-016-floor-in"
+          "title": "Blockchain.News · ARB price prediction: lower Bollinger band, rising open interest, bearish MA stack (10/25)",
+          "url": "https://blockchain.news/news/20261025-price-prediction-arb-lower-bollinger-band-rising-open-interest"
         },
         {
           "title": "Phemex News · ARB down 28% vs BTC & ETH, on-chain activity still growing (10/24)",
           "url": "https://phemex.com/news/article/arb-drops-28-in-28-days-outpacing-btc-and-eth-declines-while-active-addresses-rise-100931"
         },
         {
-          "title": "CoinMarketCap · Arbitrum latest updates (개발자 길드·스타일러스 안건·NFT) (10/24)",
+          "title": "CoinMarketCap · Arbitrum latest updates (개발자 길드) (10/24)",
           "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"
-        },
-        {
-          "title": "TechFlow · Multiple Arbitrum DAO proposals enter voting incl. 100M ARB for USDG (10/19)",
-          "url": "https://www.techflowpost.com/en-US/newsletter/140528"
         },
         {
           "title": "KuCoin Flash · Whale withdraws 10M ARB worth $1.8M from CEX (10/18)",
