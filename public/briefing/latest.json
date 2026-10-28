@@ -1,49 +1,40 @@
 {
-  "writtenAt": "2026-10-28T07:40:00+09:00",
-  "title": "비트코인 8만 달러 줄다리기 — 오늘 밤(목 새벽 3시) 금리 결정 앞두고 8.05만 달러 근처에서 대기, 주식은 오르고 코인은 제자리",
-  "mood": "위험",
-  "moodNote": "비트코인이 여전히 50일 평균선(약 8.17만 달러) 아래이고, 목요일 새벽 금리 결정과 물가 지표가 몰려 있어 크게 흔들릴 수 있어요.",
+  "writtenAt": "2026-10-29T07:40:00+09:00",
+  "title": "금리 동결, 그런데 '인상' 반대표 2장 — 비트코인 8.1만 달러로 소폭 반등, 오늘 밤 물가 지표가 다음 고비",
+  "mood": "조심",
+  "moodNote": "큰 고비(금리 결정)는 무난히 넘겼지만, 비트코인이 아직 50일 평균선(약 8.18만 달러) 바로 아래이고 12월 인상 가능성이 더 커졌어요.",
   "coin": [
-    "비트코인은 화요일 하루 약 7.94만~8.08만 달러 사이를 오갔고, 미국 오후 기준 약 8.05만 달러(+0.3%)로 8만 달러 언저리를 지켰어요.",
-    "금리 결정을 앞두고 다들 크게 사지도 팔지도 않는 분위기예요. 옵션 시장에선 하락에 대비하는 '풋' 수요가 여전히 많아요.",
-    "미국 비트코인 현물 ETF는 10/26(월) 약 1.1억 달러 순유입(전부 블랙록 IBIT)으로 이틀 유출을 끊었어요. 반면 이더리움 ETF는 약 8,900만 달러 빠졌어요.",
-    "스트래티지(MSTR)는 지난주 비트코인을 사지 않았고, 룩온체인은 MARA 지갑에서 약 1,000 BTC가 갤럭시디지털로 옮겨진 걸 포착했어요(판매 확정은 아님).",
-    "이더리움은 약 2,310달러, 리플(XRP)은 약 1.30달러, 솔라나는 약 100달러로 비트코인처럼 제자리예요."
+    "미국 연준은 금리를 3.75~4.00%로 묶었어요. 결정 직후 비트코인은 약 8.17만 달러까지 튀었다가 8.05만 달러 밑으로 밀린 뒤 8.1만 달러대로 돌아왔어요.",
+    "투표는 10대 2였고, 반대한 두 명은 '금리를 0.25%p 올리자'는 쪽이었어요. 그래서 12월 인상 확률이 하루 새 78%에서 86%로 올랐어요.",
+    "비트코인 현물 ETF는 10/27(화) 약 1.76억 달러가 들어와 이틀 연속 유입이에요(블랙록 IBIT 1.51억, 피델리티 FBTC 0.25억). 반면 이더리움 ETF는 약 6,000만 달러, 솔라나 ETF는 약 1,900만 달러가 빠졌어요.",
+    "이더리움은 약 2,355달러, 리플(XRP)은 약 1.33달러, 솔라나는 약 102달러로 하루 0~1%대 소폭 상승에 그쳤어요.",
+    "옵션 시장에선 여전히 하락 대비 상품(풋)이 더 비싸요. 큰 움직임에 대비하는 심리가 남아 있다는 뜻이에요."
   ],
   "macro": [
-    "미국 증시는 이틀째 올랐어요. S&P500 +0.60%, 나스닥 +1.18%로 기술주가 강했고, 10월 소비자신뢰지수도 91.7로 예상(80.4)보다 훨씬 좋았어요.",
-    "유가는 중동 평화 대화 기대로 또 내렸어요. 브렌트유 약 113.9달러(-1.7%), WTI 약 99.9달러(-1.8%)로 100달러 밑으로 내려왔어요.",
-    "다만 미국 10년 국채금리는 약 4.99%로 여전히 높고, 시장은 12월 금리 인상 가능성을 약 83%로 보고 있어요. 코인엔 부담이에요.",
-    "코스피는 앤트로픽 상장 기대와 반도체 강세로 3.09% 급등한 5,638.34로 마감했어요(외국인 약 5,900억 원 순매수). 원/달러는 1,323.7원이에요."
+    "미국 증시는 금리 동결 뒤 조금 올랐어요. S&P500 +0.28%, 나스닥 +0.27%, 다우 +0.19%로 마감했어요.",
+    "미국 10년 국채금리는 약 5.02%로 5%를 넘었어요. 금리가 높으면 코인 같은 위험자산엔 부담이에요.",
+    "유가는 사우디 정유시설 공격 소식과 이란 재공습 우려로 다시 올라 WTI가 약 101달러예요.",
+    "코스피는 SK하이닉스 역대급 실적에 반도체가 폭등해 6.63% 오른 6,012.44로 마감했어요. 다만 원/달러는 14원 뛴 1,337.7원으로 원화가 약해졌어요.",
+    "실적 발표 뒤 시간외 거래에서 마이크로소프트는 기대 이상이었고, 알파벳(구글)은 매출이 예상에 못 미쳐 밀렸어요."
   ],
   "events": [
     {
-      "when": "10/29(목) 03:00",
-      "what": "미국 연준(FOMC) 금리 결정 (03:30 워시 의장 기자회견)",
-      "why": "동결 가능성이 약 90%예요. 12월 인상 힌트가 세게 나오면 코인이 크게 흔들릴 수 있어요"
-    },
-    {
-      "when": "10/29(목) 05:00 이후",
-      "what": "마이크로소프트·알파벳(구글) 실적 발표",
-      "why": "기술주 분위기가 코인에도 번지는 경우가 많아요"
-    },
-    {
       "when": "10/29(목) 21:30",
       "what": "미국 3분기 GDP 속보치·9월 PCE 물가",
-      "why": "연준이 가장 중요하게 보는 물가 지표라 금리 결정 다음 날 다시 출렁일 수 있어요"
+      "why": "연준이 가장 중요하게 보는 물가 지표예요. 높게 나오면 12월 인상 걱정이 커져 코인이 흔들릴 수 있어요"
     },
     {
       "when": "10/29(목) 22:15",
       "what": "유럽중앙은행(ECB) 금리 결정",
-      "why": "미국 지표와 같은 날 밤이라 달러 움직임이 커질 수 있어요"
+      "why": "미국 지표와 같은 시간대라 달러 움직임이 커질 수 있어요"
     },
     {
       "when": "10/30(금) 05:00 이후",
-      "what": "아마존·인텔 실적 발표",
-      "why": "빅테크 실적이 기대에 못 미치면 위험자산 전체가 약해질 수 있어요"
+      "what": "아마존 등 빅테크 실적 발표",
+      "why": "빅테크 실적이 실망스러우면 위험자산 전체가 약해질 수 있어요"
     },
     {
-      "when": "10/30(금) 12:00",
+      "when": "10/30(금) 점심 무렵",
       "what": "일본은행 금리 결정",
       "why": "일본이 금리를 올리면 엔화로 빌린 돈이 빠져나가 코인에도 부담이 될 수 있어요"
     },
@@ -51,54 +42,55 @@
       "when": "10/30(금) 17:00",
       "what": "비트코인 10월 월간 옵션 만기",
       "why": "만기 전후로 가격이 크게 출렁일 때가 많아요"
+    },
+    {
+      "when": "11/3(화)~11/4(수)",
+      "what": "미국 중간선거",
+      "why": "선거 결과와 그 뒤 중동 상황에 따라 시장 분위기가 크게 바뀔 수 있어요"
     }
   ],
   "strategy": [
-    "비트코인은 50일 평균선(약 8.17만 달러) 아래라, 추세추종 규칙으로는 새 진입은 쉬는 구간이에요.",
-    "위로는 8.25만 달러와 50일선을 넘어 하루 마감해야 흐름이 바뀌었다고 볼 수 있어요. 그 전까진 기다리는 게 원칙이에요.",
-    "아래로는 7.93만 달러, 그다음 7.84만·7.79만 달러가 꼽혀요. 들고 있는 코인은 손절 주문이 실제로 걸려 있는지 먼저 확인하세요.",
-    "금리 결정이 새벽 3시라 자는 동안 크게 움직일 수 있어요. 들어가더라도 평소 절반 이하 크기로, 손절 주문부터 걸어 두세요."
+    "비트코인은 50일 평균선(약 8.18만 달러) 바로 아래라, 추세추종 규칙으로는 아직 새 진입을 쉬는 구간이에요.",
+    "8.25만 달러 위에서 하루를 마감해야 흐름이 바뀌었다고 볼 수 있어요. 아래로는 7.95만~7.85만 달러, 그다음 7.55만 달러가 꼽혀요.",
+    "오늘 밤 9시 반 물가 지표 전후로 크게 움직일 수 있어요. 들고 있는 코인은 손절 주문이 실제로 걸려 있는지 먼저 확인하세요.",
+    "50일선 위로 올라선 걸 확인한 뒤 들어가더라도, 처음엔 평소 절반 이하 크기로 시작하고 손절 주문부터 걸어 두세요."
   ],
   "sources": [
     {
-      "title": "Bitcoin Magazine · Bitcoin price rests near $80,500 as midterms, Fed decision loom (10/27)",
-      "url": "https://bitcoinmagazine.com/markets/bitcoin-price-rests-near-80500-midterms"
+      "title": "Bitcoin Magazine · Bitcoin Price Trades Above $81,500 as Fed Keeps Rates Steady in Split Vote (10/28)",
+      "url": "https://bitcoinmagazine.com/markets/bitcoin-price-trades-near-81500-fed"
     },
     {
-      "title": "The Crypto Times · Bitcoin below $80K as markets price 90% Fed hold; Strategy pauses, MARA moves 1K BTC (10/27)",
-      "url": "https://www.cryptotimes.io/2026/10/27/bitcoin-price-below-80k-as-markets-price-90-fed-hold-strategy-halts-buys-mara-moves-1k-btc/"
+      "title": "CoinDesk · Live updates: Bitcoin trading just above $81,000 as Fed delivers hold on rates (10/28)",
+      "url": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
     },
     {
-      "title": "KuCoin(ChainThink) · Bitcoin falls below $80,000 ahead of Fed decision, put options dominant (10/27)",
-      "url": "https://www.kucoin.com/news/flash/bitcoin-falls-below-80-000-ahead-of-fed-decision-put-options-remain-dominant"
+      "title": "Bitcoin.com · Bitcoin ETFs Add $176M as 2-Day Inflows Top $286M (10/28)",
+      "url": "https://news.bitcoin.com/bitcoin-etf/bitcoin-etfs-add-176m-as-2-day-inflows-top-286m/"
     },
     {
-      "title": "CoinGape · FOMC decision tomorrow: will Bitcoin and Ethereum rally (10/27)",
-      "url": "https://coingape.com/markets/fomc-decision-tomorrow-will-bitcoin-and-ethereum-price-rally/"
+      "title": "24/7 Wall St. · Bitcoin Is Trading Below Its 20-Day and 50-Day Averages (10/28)",
+      "url": "https://247wallst.com/investing/cryptocurrency/2026/10/28/bitcoin-is-trading-below-its-20-day-and-50-day-averages-can-it-reclaim-81800/"
     },
     {
-      "title": "Coin Gabbar · Crypto ETF news: Bitcoin inflows return as altcoins bleed (10/27)",
-      "url": "https://www.coingabbar.com/en/crypto-etf-news-today-btc-inflow-eth-xrp-sol-outflow-fed-meeting"
+      "title": "Motley Fool · Stock Market Today, Oct. 28: Markets Edge Higher as Fed Holds Rates Steady (10/28)",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/10/28/stock-market-today-oct-28-markets-edge-higher-as-fed-holds-rates-steady/"
     },
     {
-      "title": "CoinCentral · Bitcoin price: all eyes on Fed meeting, 50-day MA ~$81,700 (10/26)",
-      "url": "https://coincentral.com/bitcoin-btc-price-all-eyes-on-fed-meeting-as-80k-hangs-in-the-balance"
+      "title": "CNBC · Oil prices rise after attack on Saudi Arabian refinery reignites supply concerns (10/28)",
+      "url": "https://www.cnbc.com/amp/2026/10/28/oil-prices-rise-after-attack-on-saudi-arabian-refinery-reignites-supply-concerns.html"
     },
     {
-      "title": "Investrade · Market Review: October 27, 2026 (10/27)",
-      "url": "https://investrade.com/market-review-october-27-2026/"
+      "title": "뉴스핌 · 6.63% 상승, 6012.44 마감한 코스피 (10/28)",
+      "url": "https://www.newspim.com/news/view/20261028001405"
     },
     {
-      "title": "뉴스핌 · 코스피, 3% 상승한 5638.34 마감 (10/27)",
-      "url": "https://www.newspim.com/news/view/20261027001207"
+      "title": "뉴시스 · 원·달러 환율, 14.0원 오른 1337.7원 마감 (10/28)",
+      "url": "https://www.newsis.com/view/NISX20261028_0003845022"
     },
     {
-      "title": "매일일보 · 앤트로픽 훈풍에 코스피 3.09% 급등, 매수 사이드카 (10/27)",
-      "url": "https://www.m-i.kr/news/articleView.html?idxno=2010964"
-    },
-    {
-      "title": "Babypips · Fundies Cheat Sheet, Oct 26–30 (10/26)",
-      "url": "https://www.babypips.com/analysis/fundies-cheat-sheet-2026-10-26-fed-big-tech-oil-saudi"
+      "title": "Admiral Markets · Central Banks Week: Fed Decision Today, Then ECB and BoJ (10/28)",
+      "url": "https://admiralmarkets.com/analytics/traders-blog/central-banks-week-fed-ecb-boj-october-2026"
     }
   ]
 }
