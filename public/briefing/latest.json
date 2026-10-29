@@ -1,42 +1,26 @@
 {
-  "writtenAt": "2026-10-29T07:40:00+09:00",
-  "title": "금리 동결, 그런데 '인상' 반대표 2장 — 비트코인 8.1만 달러로 소폭 반등, 오늘 밤 물가 지표가 다음 고비",
-  "mood": "조심",
-  "moodNote": "큰 고비(금리 결정)는 무난히 넘겼지만, 비트코인이 아직 50일 평균선(약 8.18만 달러) 바로 아래이고 12월 인상 가능성이 더 커졌어요.",
+  "writtenAt": "2026-10-30T07:30:00+09:00",
+  "title": "바이낸스 지갑에서 수조 원 빠져나가 '해킹 의심' — 비트코인 7.9만 달러로 밀려, 빅테크 실적도 실망",
+  "mood": "위험",
+  "moodNote": "세계 최대 거래소 바이낸스에서 역대 최대 규모일 수 있는 해킹 의심 사고가 터졌고, 비트코인은 50일 평균선 아래에서 더 밀렸어요.",
   "coin": [
-    "미국 연준은 금리를 3.75~4.00%로 묶었어요. 결정 직후 비트코인은 약 8.17만 달러까지 튀었다가 8.05만 달러 밑으로 밀린 뒤 8.1만 달러대로 돌아왔어요.",
-    "투표는 10대 2였고, 반대한 두 명은 '금리를 0.25%p 올리자'는 쪽이었어요. 그래서 12월 인상 확률이 하루 새 78%에서 86%로 올랐어요.",
-    "비트코인 현물 ETF는 10/27(화) 약 1.76억 달러가 들어와 이틀 연속 유입이에요(블랙록 IBIT 1.51억, 피델리티 FBTC 0.25억). 반면 이더리움 ETF는 약 6,000만 달러, 솔라나 ETF는 약 1,900만 달러가 빠졌어요.",
-    "이더리움은 약 2,355달러, 리플(XRP)은 약 1.33달러, 솔라나는 약 102달러로 하루 0~1%대 소폭 상승에 그쳤어요.",
-    "옵션 시장에선 여전히 하락 대비 상품(풋)이 더 비싸요. 큰 움직임에 대비하는 심리가 남아 있다는 뜻이에요."
+    "한국 시간 새벽 5시 반쯤 바이낸스 지갑에서 이더리움 약 19.5만 개 등 대규모 코인이 빠져나갔어요. 집계는 약 33억~58억 달러로 아직 엇갈려요.",
+    "바이낸스는 '조사 중이며 고객 자산은 완전히 안전하다'고 밝혔어요. 테더·서클이 연결된 스테이블코인 약 23억~24억 달러를 동결했지만, 이더리움·비트코인은 동결할 수 없어요.",
+    "비트코인은 낮에 8.19만 달러까지 올랐다가 7.91만 달러(10/30 07:29 기준, 24시간 -2.6%)까지 밀렸어요. 바이낸스 코인(BNB)은 약 7% 빠져 큰 코인 중 가장 약했어요.",
+    "이더리움은 약 2,270~2,285달러로 3~4% 하락했고, 하이퍼리퀴드(HYPE)는 하루 15% 넘게 올라 거의 혼자 강했어요.",
+    "비트코인 현물 ETF는 10/28(수) 1.37억 달러가 들어와 사흘 연속 유입이었어요. 반면 이더리움 ETF는 10월 한 달 약 13.5억 달러가 빠졌어요."
   ],
   "macro": [
-    "미국 증시는 금리 동결 뒤 조금 올랐어요. S&P500 +0.28%, 나스닥 +0.27%, 다우 +0.19%로 마감했어요.",
-    "미국 10년 국채금리는 약 5.02%로 5%를 넘었어요. 금리가 높으면 코인 같은 위험자산엔 부담이에요.",
-    "유가는 사우디 정유시설 공격 소식과 이란 재공습 우려로 다시 올라 WTI가 약 101달러예요.",
-    "코스피는 SK하이닉스 역대급 실적에 반도체가 폭등해 6.63% 오른 6,012.44로 마감했어요. 다만 원/달러는 14원 뛴 1,337.7원으로 원화가 약해졌어요.",
-    "실적 발표 뒤 시간외 거래에서 마이크로소프트는 기대 이상이었고, 알파벳(구글)은 매출이 예상에 못 미쳐 밀렸어요."
+    "미국 3분기 성장률은 3.4%로 예상(3.2%)보다 좋았고, 9월 근원 PCE 물가는 전년 대비 3.1%로 예상과 같았어요. 지표 자체는 무난했어요.",
+    "알파벳(구글)이 실적 실망으로 하루 12.6% 폭락해 나스닥은 -1.4%, S&P500은 -0.3%로 마감했어요. 장 마감 뒤 아마존(-6%대)·인텔(-16%대)도 급락했어요.",
+    "미국 10년 국채금리는 약 4.93%로 내려왔지만, 유가는 WTI 약 102달러로 여전히 높아요. 유럽중앙은행은 금리를 2.50%로 묶었어요.",
+    "코스피는 1.24% 내린 5,937.66으로 마감했고, 원/달러는 0.9원 내린 1,336.8원(오후 3시 반 기준)이었어요."
   ],
   "events": [
     {
-      "when": "10/29(목) 21:30",
-      "what": "미국 3분기 GDP 속보치·9월 PCE 물가",
-      "why": "연준이 가장 중요하게 보는 물가 지표예요. 높게 나오면 12월 인상 걱정이 커져 코인이 흔들릴 수 있어요"
-    },
-    {
-      "when": "10/29(목) 22:15",
-      "what": "유럽중앙은행(ECB) 금리 결정",
-      "why": "미국 지표와 같은 시간대라 달러 움직임이 커질 수 있어요"
-    },
-    {
-      "when": "10/30(금) 05:00 이후",
-      "what": "아마존 등 빅테크 실적 발표",
-      "why": "빅테크 실적이 실망스러우면 위험자산 전체가 약해질 수 있어요"
-    },
-    {
       "when": "10/30(금) 점심 무렵",
-      "what": "일본은행 금리 결정",
-      "why": "일본이 금리를 올리면 엔화로 빌린 돈이 빠져나가 코인에도 부담이 될 수 있어요"
+      "what": "일본은행 금리 결정 (1.25% 동결 예상)",
+      "why": "예상과 달리 올리면 엔화로 빌린 돈이 빠져나가 코인에도 부담이 될 수 있어요"
     },
     {
       "when": "10/30(금) 17:00",
@@ -44,53 +28,79 @@
       "why": "만기 전후로 가격이 크게 출렁일 때가 많아요"
     },
     {
-      "when": "11/3(화)~11/4(수)",
+      "when": "10/30(금) 21:30",
+      "what": "미국 3분기 고용비용지수",
+      "why": "임금이 빨리 오르면 물가 걱정이 커져 12월 금리 인상 우려가 커질 수 있어요"
+    },
+    {
+      "when": "11/3(화)",
       "what": "미국 중간선거",
-      "why": "선거 결과와 그 뒤 중동 상황에 따라 시장 분위기가 크게 바뀔 수 있어요"
+      "why": "선거 결과에 따라 시장 분위기가 크게 바뀔 수 있어요"
+    },
+    {
+      "when": "11/6(금) 22:30",
+      "what": "미국 10월 고용지표",
+      "why": "12월 금리 결정(12/9)을 앞두고 가장 큰 지표예요. 서머타임이 끝나 한국 시간으론 1시간 늦어져요"
     }
   ],
   "strategy": [
-    "비트코인은 50일 평균선(약 8.18만 달러) 바로 아래라, 추세추종 규칙으로는 아직 새 진입을 쉬는 구간이에요.",
-    "8.25만 달러 위에서 하루를 마감해야 흐름이 바뀌었다고 볼 수 있어요. 아래로는 7.95만~7.85만 달러, 그다음 7.55만 달러가 꼽혀요.",
-    "오늘 밤 9시 반 물가 지표 전후로 크게 움직일 수 있어요. 들고 있는 코인은 손절 주문이 실제로 걸려 있는지 먼저 확인하세요.",
-    "50일선 위로 올라선 걸 확인한 뒤 들어가더라도, 처음엔 평소 절반 이하 크기로 시작하고 손절 주문부터 걸어 두세요."
+    "비트코인은 50일 평균선(10/24 기준 약 8.18만 달러) 아래에서 더 밀려, 추세추종 규칙으로는 새 진입을 쉬는 구간이에요.",
+    "바이낸스 사고는 아직 규모·원인이 확정되지 않았어요. 추가 발표에 따라 하루 안에 크게 출렁일 수 있으니 손절 주문이 실제로 걸려 있는지 먼저 확인하세요.",
+    "아래로는 7.85만 달러, 그다음 7.6만 달러가 지지선으로 꼽혀요. 위로는 8.14만 달러를 되찾아야 흐름이 나아졌다고 볼 수 있어요.",
+    "50일선 위로 다시 올라선 걸 확인한 뒤 들어가더라도, 처음엔 평소 절반 이하 크기로 시작하고 손절 주문부터 걸어 두세요."
   ],
   "sources": [
     {
-      "title": "Bitcoin Magazine · Bitcoin Price Trades Above $81,500 as Fed Keeps Rates Steady in Split Vote (10/28)",
-      "url": "https://bitcoinmagazine.com/markets/bitcoin-price-trades-near-81500-fed"
+      "title": "The Block · Binance investigating hack as suspicious outflows reach up to $5.8 billion (10/29)",
+      "url": "https://www.theblock.co/news/markets/2026-10-29-binance-investigating-hack-suspicious-outflows-5-billion-432171"
     },
     {
-      "title": "CoinDesk · Live updates: Bitcoin trading just above $81,000 as Fed delivers hold on rates (10/28)",
-      "url": "https://www.coindesk.com/business/2026/10/28/live-updates-bitcoin-climbs-above-usd81-000-as-majors-rally-ahead-of-fed-decision"
+      "title": "Decrypt · Binance Drained of $5.5 Billion in Suspected Hack, Tether and Circle Freeze $1.8 Billion (10/29)",
+      "url": "https://decrypt.co/382191/binance-suspected-hack-5-billion-tether-circle-freeze-crypto"
     },
     {
-      "title": "Bitcoin.com · Bitcoin ETFs Add $176M as 2-Day Inflows Top $286M (10/28)",
-      "url": "https://news.bitcoin.com/bitcoin-etf/bitcoin-etfs-add-176m-as-2-day-inflows-top-286m/"
+      "title": "Unchained · Binance Says User Funds Are 'Completely Safe' After $3.5 Billion Drains From Its Hot Wallets (10/29)",
+      "url": "https://unchainedcrypto.com/binance-says-user-funds-are-completely-safe-after-3-5-billion-drains-from-its-hot-wallets/"
     },
     {
-      "title": "24/7 Wall St. · Bitcoin Is Trading Below Its 20-Day and 50-Day Averages (10/28)",
-      "url": "https://247wallst.com/investing/cryptocurrency/2026/10/28/bitcoin-is-trading-below-its-20-day-and-50-day-averages-can-it-reclaim-81800/"
+      "title": "CoinDesk · Bitcoin price (10/29 22:29 UTC)",
+      "url": "https://www.coindesk.com/price/bitcoin"
     },
     {
-      "title": "Motley Fool · Stock Market Today, Oct. 28: Markets Edge Higher as Fed Holds Rates Steady (10/28)",
-      "url": "https://www.fool.com/coverage/stock-market-today/2026/10/28/stock-market-today-oct-28-markets-edge-higher-as-fed-holds-rates-steady/"
+      "title": "Bitcoin.com · Bitcoin Price Briefly Nears $82K, but Bears Warn of a Drop Toward $76K (10/29)",
+      "url": "https://news.bitcoin.com/market-updates/bitcoin-price-82k-bears-warn-drop-toward-76k/"
     },
     {
-      "title": "CNBC · Oil prices rise after attack on Saudi Arabian refinery reignites supply concerns (10/28)",
-      "url": "https://www.cnbc.com/amp/2026/10/28/oil-prices-rise-after-attack-on-saudi-arabian-refinery-reignites-supply-concerns.html"
+      "title": "Motley Fool · Crypto Market Today, Oct. 29: Bitcoin Slides Below $80K (10/29)",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/10/29/crypto-market-today-oct-29-bitcoin-slides-below-usd80k-as-big-tech-earnings-uncertainty-and-market-volatility-intensify/"
     },
     {
-      "title": "뉴스핌 · 6.63% 상승, 6012.44 마감한 코스피 (10/28)",
-      "url": "https://www.newspim.com/news/view/20261028001405"
+      "title": "crypto.news · Bitcoin price reclaims $80K as US GDP beats forecasts (10/29)",
+      "url": "https://crypto.news/bitcoin-price-reclaims-80k-as-us-gdp-beats-forecasts/"
     },
     {
-      "title": "뉴시스 · 원·달러 환율, 14.0원 오른 1337.7원 마감 (10/28)",
-      "url": "https://www.newsis.com/view/NISX20261028_0003845022"
+      "title": "Nexo · Markets Today - October 29, 2026 (10/29)",
+      "url": "https://nexo.com/blog/markets-today-october-29"
     },
     {
-      "title": "Admiral Markets · Central Banks Week: Fed Decision Today, Then ECB and BoJ (10/28)",
-      "url": "https://admiralmarkets.com/analytics/traders-blog/central-banks-week-fed-ecb-boj-october-2026"
+      "title": "CoinDesk · Live updates: Bitcoin falls below $80,000 as weak tech earnings set Nasdaq up for more losses (10/29)",
+      "url": "https://www.coindesk.com/business/2026/10/29/live-updates-bitcoin-clings-to-usd80-000-as-strategy-s-cushion-thins-before-earnings"
+    },
+    {
+      "title": "Kiplinger · Nasdaq Drops 365 Points on Big Alphabet Miss (10/29)",
+      "url": "https://www.kiplinger.com/investing/stocks/nasdaq-drops-365-points-on-big-alphabet-miss-stock-market-today"
+    },
+    {
+      "title": "CryptoTicker · Why bitcoin at $80,806 slipped below its 50-day line after 66 days (10/24)",
+      "url": "https://cryptoticker.io/en/bitcoin-price-50-day-moving-average-24-october-2026/"
+    },
+    {
+      "title": "뉴스1 · [코스피] 74.78p(1.24%) 내린 5937.66 마감 (10/29)",
+      "url": "https://www.news1.kr/finance/market-exr/6336628"
+    },
+    {
+      "title": "뉴스1 · [달러·원] 환율 0.9원 내린 1336.8원 (10/29)",
+      "url": "https://www.news1.kr/finance/market-exr/6336627"
     }
   ]
 }
