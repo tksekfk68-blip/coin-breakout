@@ -1,6 +1,33 @@
 {
  "updates": [
   {
+   "at": "2026-10-30T20:10:00+09:00",
+   "level": "주의",
+   "title": "비트코인 하루 -3%, 1억 440만 원대 — 바이낸스 해킹 여파 이어지고 ARB는 반등 끝 기준선 아래로",
+   "lines": [
+    "저녁 6시 30분 기준 비트코인 1억 440만 원. 하루 -3.0%, 4시간 -1.2%, 최근 1시간 -0.3%로 낙폭이 조금씩 더 커졌어요. 원화마켓 코인 약 57%가 내렸어요(아침 90%보다는 줄었어요).",
+    "가장 큰 원인은 여전히 어젯밤 바이낸스 해킹이에요. 해외 매체들은 피해 규모를 약 28억~63억 달러로 서로 다르게 보도하고 있고, 블록체인 분석업체 TRM Labs는 북한 라자루스 계열 소행으로 봤어요(바이낸스는 공식 확인 안 함). 바이낸스 출금은 아직 멈춘 상태로, 48시간 안에 재개 예정이라고 해요.",
+    "이 여파로 하루 동안 약 15억 달러(약 2조 원) 규모 선물 포지션이 강제 청산됐고, 대부분이 상승 쪽(롱)에 건 물량이었어요. 연준·ETF 같은 다른 뚜렷한 뉴스는 오늘 오후엔 확인 안 됐어요.",
+    "많이 내린 코인: MANTRA -7.2%, TRX -6.7%, GTC -6.3%. 많이 오른 코인: BEAM +35.6%, MPLX +28.2%, ELF +10%. 오른 코인은 개별 재료로 따로 움직이는 모습이에요.",
+    "WAXP 5.76원: 첫 받침(약 5.65원)과 첫 벽(약 5.90원) 사이에 있어요. 받침까지 약 2% 여유예요.",
+    "ARB 217원: 오늘 +4.3%지만 반등 끝 기준선(약 220.7원) 아래로 내려왔어요. 다시 위로 올라서는지가 관건이고, 첫 벽은 231원이에요."
+   ],
+   "sources": [
+    {
+     "title": "Blockonomi — Binance Hack Linked to North Korea’s Lazarus Group as Crypto Liquidations Top $1.5 Billion",
+     "url": "https://blockonomi.com/binance-hack-linked-to-north-koreas-lazarus-group-as-crypto-liquidations-top-1-5-billion"
+    },
+    {
+     "title": "CryptoTicker — Crypto Crash After Binance Hack: The Timeline of the Night",
+     "url": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations/"
+    },
+    {
+     "title": "Invezz — Bitcoin price crashes below $77K amid Binance hack fears, $1.5B liquidations",
+     "url": "https://invezz.com/news/2026/10/30/bitcoin-price-crash-binance-hack-crypto-liquidations/"
+    }
+   ]
+  },
+  {
    "at": "2026-10-30T10:15:00+09:00",
    "level": "주의",
    "title": "원화마켓 90% 하락 — 바이낸스 지갑에서 수조 원 빠져나가 입출금 중단, 연준 '매파 동결'·빅테크 실적 부진 겹쳐",
