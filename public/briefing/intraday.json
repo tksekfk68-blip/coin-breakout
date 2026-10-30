@@ -1,6 +1,41 @@
 {
  "updates": [
   {
+   "at": "2026-10-30T10:15:00+09:00",
+   "level": "주의",
+   "title": "원화마켓 90% 하락 — 바이낸스 지갑에서 수조 원 빠져나가 입출금 중단, 연준 '매파 동결'·빅테크 실적 부진 겹쳐",
+   "lines": [
+    "아침 8시 30분 기준 비트코인 1억 655만 원. 하루 -2.2%, 4시간 -1.8%, 최근 1시간 -0.3%로 밤사이 꾸준히 밀렸어요. 업비트 원화마켓 코인 약 90%가 내렸어요.",
+    "가장 큰 이슈는 바이낸스예요. 새벽 5시쯤 바이낸스 핫월렛에서 약 3조~4조 원어치(약 33억 달러) 코인이 외부로 빠져나갔고, 바이낸스는 입출금을 멈췄어요. 바이낸스는 '고객 자산은 안전하고 손실은 전부 보전하겠다'고 했지만 해킹 여부와 손실 규모는 아직 공식 확인 전이에요. 테더·서클이 일부(약 2조~3조 원 규모 스테이블코인)를 동결했어요.",
+    "그 전부터 분위기가 약했어요. 미국 연준이 금리를 동결하면서도 물가가 아직 높다고 해 '매파적 동결'로 받아들여졌고, 알파벳(구글) 실적 부진·삼성전자 기대 미달로 기술주가 빠지며 위험자산 회피가 커졌어요. 하루 새 선물 청산은 약 3억 5,600만 달러(대부분 상승 베팅)였어요.",
+    "오른 쪽은 TRX(+13.6%), LSK(+14.3%) 정도로 소수예요. 많이 내린 건 MPLX(-23%), AXIS(-20%), POD(-17%) 등이에요.",
+    "왁스(WAXP) 5.88원(-6.8%): 첫 받침 5.65원까지 약 4% 남았고, 첫 벽 6.19원과는 약 5% 차이로 두 기준선 사이예요.",
+    "아비트럼(ARB) 210원(-8.7%): 첫 받침 약 200원까지 약 5% 남았고, 첫 벽 약 221원과는 약 5% 차이로 두 기준선 사이예요. 바이낸스 소식이 정리될 때까지 흔들림이 클 수 있어요."
+   ],
+   "sources": [
+    {
+     "title": "CoinDesk — BTC dips below $80,000, $356M longs liquidated",
+     "url": "https://www.coindesk.com/markets/2026/10/29/bitcoin-dips-below-usd80-000-as-samsung-led-risk-aversion-in-tech-and-a-hawkish-fed-weigh-on-crypto"
+    },
+    {
+     "title": "FinanceFeeds — Binance pledges to cover all losses",
+     "url": "https://financefeeds.com/binance-will-cover-all-losses-hack/"
+    },
+    {
+     "title": "tech-ish — Binance pauses withdrawals after $3B+ leaves hot wallets",
+     "url": "https://tech-ish.com/2026/10/30/binance-pauses-withdrawals-suspected-hack/"
+    },
+    {
+     "title": "Cyber Kendra — $3.3B left hot wallets, stablecoins frozen",
+     "url": "https://www.cyberkendra.com/2026/10/binance-hot-wallet-hack-3-billion.html"
+    },
+    {
+     "title": "Motley Fool — Crypto Market Today, Oct. 29",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/10/29/crypto-market-today-oct-29-bitcoin-slides-below-usd80k-as-big-tech-earnings-uncertainty-and-market-volatility-intensify/"
+    }
+   ]
+  },
+  {
    "at": "2026-10-22T20:10:00+09:00",
    "level": "주의",
    "title": "원화마켓 88% 하락 — 미국 빅테크 실적에 AI 투자 의심 재점화, 아시아 증시 급락·디파이 코인 약세",
