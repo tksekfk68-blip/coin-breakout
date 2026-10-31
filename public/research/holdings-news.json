@@ -1,18 +1,19 @@
 {
-  "writtenAt": "2026-10-31T07:40:00+09:00",
+  "writtenAt": "2026-11-01T07:40:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "브리지 해킹(10/22) 9일째, 공식 사고 보고서·준비금 보충 확인은 아직이에요. 바이낸스 해킹 충격에 빗썸 기준 5.88원(10/30 오전 8시, 하루 -7.3%)으로 다시 밀렸어요.",
+      "summary": "브리지 해킹(10/22) 10일째, 공식 사고 보고서·준비금 보충 확인은 아직이에요. 빗썸 기준 5.858원(10/31 오전 8시, 하루 -0.37%)으로 저점 근처에서 멈춰 있어요.",
       "good": [
         "왁스는 10/23 수정·추가 안전장치를 넣고 브리지 처리를 다시 시작했어요",
         "팀은 빠져나간 준비금을 다시 채워 모든 브리지 출금을 보장하겠다고 약속했고, WAXP 코인과 블록체인 자체는 영향이 없다고 밝혔어요",
-        "피해 규모는 약 7.5만~9만 달러로 작은 편이에요"
+        "피해 규모는 약 7.5만~9만 달러로 작은 편이에요",
+        "10/30 급락 뒤 10/31엔 하루 -0.37%로 추가 하락은 멈췄어요"
       ],
       "bad": [
-        "10/31 아침까지 공식 사고 보고서는 없고, 준비금을 실제로 채웠는지 외부에서 확인된 바도 없어요",
+        "11/1 아침까지 공식 사고 보고서는 없고, 준비금을 실제로 채웠는지 외부에서 확인된 바도 없어요",
         "업비트(10/22)·빗썸의 '유의 촉구'가 풀렸다는 공지는 아직 찾지 못했어요",
-        "10/30 오전 빗썸 5.88원(하루 -7.3%), 디지털엑스 5.962원(-20.5%)으로 다시 해킹 직후 저점 근처까지 내려왔어요",
-        "바이낸스 해킹(약 63억 달러)으로 코인 시장 전체가 흔들려, 작은 코인일수록 함께 밀리기 쉬워요"
+        "빗썸 하루 거래대금이 약 8,430만 원(10/31 기준)으로 적어, 적은 주문에도 가격이 크게 움직일 수 있어요",
+        "바이낸스 해킹 여파로 시장 전체가 '공포' 구간이라, 작은 코인일수록 함께 밀리기 쉬워요"
       ],
       "onchain": [
         "확인된 큰손 움직임 없음 — 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요",
@@ -21,12 +22,8 @@
       "upcoming": [],
       "sources": [
         {
-          "title": "뉴스인사이드 · 30일 8시 0분 기준, 가상화폐 왁스 가격 변동 추이 (10/30)",
-          "url": "https://www.newsinside.kr/news/articleView.html?idxno=5036536"
-        },
-        {
-          "title": "디지털애셋 · [아침코인] 10월 30일 (10/30)",
-          "url": "https://www.digitalasset.works/news/articleView.html?idxno=43928"
+          "title": "뉴스인사이드 · 31일 8시 0분 기준, 가상화폐 왁스 가격 변동 추이 (10/31)",
+          "url": "https://www.newsinside.kr/news/articleView.html?idxno=5037205"
         },
         {
           "title": "The Industry Spread · WAX blockchain bridge exploit paused processing, then resumed (10/25)",
@@ -37,40 +34,43 @@
           "url": "https://coinmarketcap.com/cmc-ai/wax/latest-updates/"
         },
         {
+          "title": "TokenPost · Five Transactions Move About $75,000 Across WAX, Solana and Ethereum (10/23)",
+          "url": "https://www.tokenpost.com/news/technology/38520"
+        },
+        {
           "title": "디지털투데이 · 업비트, 왁스(WAXP) 유의 촉구…멀티체인 브릿지 보안 문제 의심 정황 (10/23)",
           "url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=709401"
         }
       ]
     },
     "KRW-ARB": {
-      "summary": "약 0.16달러로 약세지만, 아비트럼 보안위원회가 바이낸스 해커 자금(약 3,050만 달러)을 동결해 주목받았어요. 1억 ARB 보상안 최종 투표는 11/12까지예요.",
+      "summary": "약 0.16달러로 지지선 부근에서 버티는 중이에요. 아비트럼 위 토큰화 펀드가 11억 달러로 커졌고, 1억 ARB 보상안 최종 투표는 11/12까지예요.",
       "good": [
-        "아비트럼 보안위원회가 10/30 바이낸스 해킹 관련 약 7,456만 ARB와 8,425 ETH(약 3,050만 달러)를 동결 지갑으로 옮겼어요. 이 ARB는 당장 시장에 팔릴 수 없게 됐어요",
-        "10/30 해커가 팔던 코인들이 반등할 때 ARB도 약 4.5% 올랐어요",
-        "아비트럼 활성 주소가 10/28 109만 개로 최근 30일 중 최고였어요",
+        "아비트럼 위 토큰화 펀드 규모가 약 11억 달러로 집계됐어요(10/31 보도). 프랭클린 템플턴 BENJI 펀드도 5,600만 달러 이상 올라와 있어요",
+        "아비트럼 보안위원회가 10/30 바이낸스 해커와 연결된 약 7,456만 ARB와 8,425 ETH(약 3,050만 달러)를 동결했어요. 이 ARB는 당장 시장에 팔릴 수 없어요",
+        "아비트럼 활성 주소가 10/28 약 109만 개로 최근 30일 중 최고였어요",
         "1억 ARB 보상안은 사전 투표에서 94.7% 찬성이었고, 10/29부터 온체인 최종 투표 중이에요"
       ],
       "bad": [
-        "10/30 기준 약 0.16달러로 50일 평균선(약 0.19달러)과 20일선(약 0.18달러) 아래에 있어요. 지지선은 0.15달러, 그다음 0.13달러로 꼽혀요",
-        "바이낸스 선물 미결제약정이 하루 15.7% 늘어, 어느 쪽으로든 크게 출렁일 수 있어요",
-        "보안위원회의 긴급 동결은 '소수 위원이 자금을 묶을 수 있다'는 점에서 탈중앙성 논란의 소지가 있고, 투명성 보고서는 아직 안 나왔어요",
+        "10/31 기준 약 0.16달러(하루 약 -1~2%)로 50일 평균선(약 0.19달러)·20일선(약 0.18달러) 아래예요. 하루 종가가 0.16달러를 깨면 0.15달러가 다음 지지선이에요",
+        "최근 1시간 매도 주문이 매수보다 많았고(매수/매도 비율 0.74), 선물 미결제약정은 하루 6.9% 늘어 크게 출렁일 수 있어요",
+        "10/31 하루 거래량이 약 68% 줄어 관심이 식은 모습이에요",
         "보상안이 확정되면 1억 ARB가 풀릴 수 있고, 11/16엔 약 9,265만 ARB 정기 해제가 또 있어요"
       ],
       "onchain": [
         "10/30 동결된 약 7,456만 ARB는 바이낸스 해커와 연결된 물량이에요. 일반 큰손 매매가 아니라 해킹 자금 처리예요",
-        "10/18 아캄 추적: 한 큰손 지갑이 바이빗에서 약 1,000만 ARB를 출금했어요. 거래소 밖으로 빼는 건 보통 당장 팔 생각이 적다는 신호로 봐요",
-        "그 밖에 10/19~31엔 아캄·룩온체인·웨일얼럿 등이 공개한 새 ARB 큰손 움직임은 확인되지 않았어요"
+        "그 밖에 최근 2주(10/18~11/1) 안에 아캄·룩온체인·웨일얼럿 등이 공개한 새 ARB 큰손 움직임은 확인되지 않았어요"
       ],
       "upcoming": [
-        {
-          "when": "10/29(목)~11/12(목)",
-          "what": "USDG 1억 ARB 보상안 등 3개 안건 온체인 최종 투표",
-          "why": "이 투표가 끝나야 1억 ARB 지급이 확정돼요"
-        },
         {
           "when": "11/2(월)",
           "what": "아비버스(ArbiVerse) 뭄바이 행사",
           "why": "새 발표가 나오면 관심이 늘 수 있지만, 보통 가격 영향은 크지 않아요"
+        },
+        {
+          "when": "~11/12(목)",
+          "what": "USDG 1억 ARB 보상안 등 3개 안건 온체인 최종 투표 마감",
+          "why": "이 투표가 끝나야 1억 ARB 지급이 확정돼요"
         },
         {
           "when": "11/16(월)",
@@ -80,20 +80,24 @@
       ],
       "sources": [
         {
+          "title": "TokenPost · Arbitrum Tokenized Funds Market Cap Put at $1.1 Billion (10/31)",
+          "url": "https://tokenpost.com/news/investing/45621"
+        },
+        {
+          "title": "Blockchain.News · ARB Price Prediction: Taker Selling Collides With a Surge in Open Interest (10/31)",
+          "url": "https://blockchain.news/news/20261031-price-prediction-arb-taker-selling-collides-with-a-surge"
+        },
+        {
+          "title": "CoinMarketCap · Latest Arbitrum (ARB) Price Analysis (10/31)",
+          "url": "https://coinmarketcap.com/cmc-ai/arbitrum/price-analysis/"
+        },
+        {
+          "title": "NameCoinNews · Arbitrum Council Rescues 74.5M ARB Linked to Binance Hack (10/30)",
+          "url": "https://www.namecoinnews.com/arbitrum-freezes-30m-arb-eth-binance-hack/"
+        },
+        {
           "title": "TradingView(CoinMarketCal) · Arbitrum: Security Council freezes funds linked to Binance exploit (10/30)",
           "url": "https://www.tradingview.com/news/coinmarketcal:90e434733094b:0-arbitrum-security-council-freezes-funds-linked-to-binance-exploit-30-oct-2026/"
-        },
-        {
-          "title": "CoinGabbar · Arbitrum Security Council News: ARB and ETH Rescued (10/30)",
-          "url": "https://www.coingabbar.com/en/arbitrum-security-council-rescues-binance-exploit-funds"
-        },
-        {
-          "title": "Blockchain.News · ARB Price Prediction: Lower-Band Test Meets a 15% Open Interest Surge (10/30)",
-          "url": "https://blockchain.news/news/20261030-price-prediction-arb-lower-band-test-meets-a-15"
-        },
-        {
-          "title": "CoinDesk · Crypto liquidations jump to $1.57 billion as Binance hack sends bitcoin, ether lower (10/30)",
-          "url": "https://www.coindesk.com/markets/2026/10/30/crypto-liquidations-jump-to-usd1-57-billion-as-binance-hack-sends-bitcoin-ether-lower"
         },
         {
           "title": "TokenPost · ArbitrumDAO Opens Vote on 100 Million ARB for USDG Incentives (10/29)",
@@ -102,14 +106,6 @@
         {
           "title": "TokenPost · Arbitrum Active Addresses Reach 1.09 Million, a 30-Day High (10/29)",
           "url": "https://tokenpost.com/news/investing/43285"
-        },
-        {
-          "title": "Arbitrum Forum · 27 October, 2026 - Roundup of Active/Upcoming Votes (10/27)",
-          "url": "https://forum.arbitrum.foundation/t/27-october-2026-roundup-of-active-upcoming-votes/31622"
-        },
-        {
-          "title": "PANews · Whale withdraws $2.34M in ARB and UNI from CEX (10/18)",
-          "url": "https://panews.io/articles/01a14e75-4dfa-7597-b074-1aacf7d520a2"
         },
         {
           "title": "Tokenomist · Arbitrum unlock schedule",
