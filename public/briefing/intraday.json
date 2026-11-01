@@ -1,6 +1,28 @@
 {
  "updates": [
   {
+   "at": "2026-11-01T22:12:00+09:00",
+   "level": "주의",
+   "title": "비트코인은 1억 459만 원대에서 잠잠 — ARB만 반등 끝 기준선(약 221원) 살짝 아래",
+   "lines": [
+    "비트코인은 1억 459만 원 근처로, 1시간·4시간·하루 변동이 모두 ±0.1% 안쪽이라 거의 움직이지 않았어요. 해외에선 \"10월 중순 이후 하루 변동폭이 가장 좁은 날\"이라는 분석이 나왔어요.",
+    "오늘 뚜렷한 원인 뉴스(연준·ETF 자금·대량 청산·거래소 사고)는 확인되지 않았어요. 주말이라 거래가 한산한 흐름에 가까워요.",
+    "업비트 원화 코인 중 약 53%가 내림세라 오름·내림이 반반 수준이에요. POWR(+24%)·G(+23%)는 크게 올랐고, LSK(-10%)·XPL(-9%)은 크게 내렸어요 — 개별 종목 움직임이에요.",
+    "ARB 220원: 반등 끝 기준선(약 220.7원)을 아주 살짝 밑돌아요. 첫 벽은 약 235원, 강세 기준선은 274원이에요.",
+    "WAXP 5.83원: 첫 받침(5.645원)과 첫 벽(6.26원) 사이, 기준선 사이 구간에 머물러 있어요."
+   ],
+   "sources": [
+    {
+     "title": "CryptoTicker — Bitcoin Price: Tightest Daily Range Since October 17",
+     "url": "https://cryptoticker.io/en/bitcoin-price-narrowest-daily-range-november-2026/"
+    },
+    {
+     "title": "CoinCodex — Daily Market Update for Nov 01, 2026",
+     "url": "https://coincodex.com/article/94686/daily-market-update-for-november-01-2026"
+    }
+   ]
+  },
+  {
    "at": "2026-10-30T20:10:00+09:00",
    "level": "주의",
    "title": "비트코인 하루 -3%, 1억 440만 원대 — 바이낸스 해킹 여파 이어지고 ARB는 반등 끝 기준선 아래로",
