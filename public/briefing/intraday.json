@@ -1,6 +1,33 @@
 {
  "updates": [
   {
+   "at": "2026-11-03T10:10:00+09:00",
+   "level": "주의",
+   "title": "비트코인은 1억 367만 원대로 소폭 약세, 알트는 78%가 하락 — 미국 중간선거 앞두고 관망",
+   "lines": [
+    "비트코인은 1억 367만 원 근처로 하루 -1.1%, 4시간 -0.3%라 크게 흔들리진 않았어요. 대신 업비트 원화 코인 약 78%가 내림세라 알트 쪽 약세가 더 넓게 퍼졌어요.",
+    "원인으로 짚을 만한 건 오늘(미국 시간 11월 3일) 미국 중간선거를 앞둔 관망 분위기, 지난주 말(10/30) 미국 비트코인 현물 ETF에서 약 6.4억 달러가 빠져나간 흐름, 바이낸스 보안 사고 보도 정도예요. 오늘 새로 나온 뚜렷한 단일 악재 뉴스는 확인 안 됐어요.",
+    "크게 내린 코인: BEAM -18%, POWR·G·LSK 약 -10%, NEAR -9%(해외에선 NEAR 롱 포지션 강제청산이 보도됐어요). 반대로 MPLX +23%, SOPH +21%는 크게 올랐어요.",
+    "WAXP 5.6원(-2.3%): 첫 벽 약 5.65원 바로 아래예요. 첫 받침은 약 5.11원, 강세 기준선 7.28원과는 거리가 멀어요. 알림은 반등 끝 기준선 이탈로 표시했어요.",
+    "ARB 211원(-4.1%): 첫 받침 약 199원과 첫 벽 약 221원 사이에 있어요. 강세 기준선(274원)과는 거리가 있어요.",
+    "이번 주엔 미국 고용지표(11/6)와 MSCI의 비트코인 보유 기업 관련 결정(11/11)이 남아 있어 변동성이 이어질 수 있어요."
+   ],
+   "sources": [
+    {
+     "title": "Bitcoin price holds near USD 77,400 as ETF outflows test demand",
+     "url": "https://www.ad-hoc-news.de/boerse/news/marktberichte/bitcoin-price-holds-near-usd-77-400-as-etf-outflows-test-demand/70447158"
+    },
+    {
+     "title": "US Midterms Tomorrow: 5 Scenarios for Bitcoin, XRP and Solana",
+     "url": "https://cryptoticker.io/en/us-midterms-2026-bitcoin-xrp-solana-scenarios"
+    },
+    {
+     "title": "NEAR Protocol price slides below $4.30 on long liquidations",
+     "url": "https://cryptoticker.io/en/near-protocol-price-drop-below-4-30-support"
+    }
+   ]
+  },
+  {
    "at": "2026-11-01T22:12:00+09:00",
    "level": "주의",
    "title": "비트코인은 1억 459만 원대에서 잠잠 — ARB만 반등 끝 기준선(약 221원) 살짝 아래",
