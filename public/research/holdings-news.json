@@ -1,25 +1,29 @@
 {
-  "writtenAt": "2026-11-03T07:45:00+09:00",
+  "writtenAt": "2026-11-04T07:50:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "브리지 해킹(10/22) 12일째, 10/23 '수정 후 재개·준비금 보충 약속' 이후 새 공식 발표는 여전히 찾지 못했어요. 시장 전체 약세도 부담이에요.",
+      "summary": "브리지 해킹(10/22) 13일째, 10/23 '수정 후 재개·준비금 보충 약속' 이후 새 공식 발표나 사고 보고서는 여전히 찾지 못했어요.",
       "good": [
-        "왁스는 10/23 수정과 함께 건당 한도 등 안전장치를 넣고 브리지 처리를 다시 시작했어요",
+        "왁스는 10/23 코드 수정과 함께 건당 한도 등 안전장치를 넣고 브리지 처리를 다시 시작했어요",
         "팀은 빠져나간 준비금을 다시 채우겠다고 약속했고, WAXP 코인과 블록체인 자체는 영향이 없다고 밝혔어요",
         "피해 규모는 약 7.5만~9만 달러로 작은 편이에요"
       ],
       "bad": [
-        "11/3 아침까지 공식 사고 보고서는 없고, 준비금을 실제로 채웠는지 외부에서 확인된 바도 없어요(10/27 보안 매체 지적)",
-        "일부 보도는 첫 공격 뒤에도 코드가 한동안 공격 가능한 상태였다고 짚었어요",
+        "11/4 아침까지 공식 사고 보고서는 없고, 준비금을 실제로 채웠는지 외부에서 확인된 바도 없어요",
+        "원인은 수수료 값에 마이너스를 넣을 수 있게 둔 단순한 코드 실수였다고 분석됐어요. 관리 수준에 대한 신뢰에 부담이에요",
         "업비트(10/22)·빗썸의 '유의 촉구'가 풀렸다는 공지는 아직 찾지 못했어요",
         "거래대금이 적어 적은 주문에도 가격이 크게 움직일 수 있고, 시장 전체가 불안할 때 작은 코인이 함께 밀리기 쉬워요"
       ],
       "onchain": [
         "확인된 큰손 움직임 없음 — 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요",
-        "추적된 건 해커 쪽 자금뿐이에요. 빼간 돈 일부가 해킹 직후 HitBTC 거래소 지갑으로 보내졌어요"
+        "추적된 건 해커 쪽 자금뿐이에요. 빼간 돈 중 약 15.6 ETH가 해킹 직후 HitBTC 거래소 지갑으로 보내졌어요"
       ],
       "upcoming": [],
       "sources": [
+        {
+          "title": "Panda Security(DEV) · WAX Bridge Exploit: A Negative Fee Drained ~$90K (10/23)",
+          "url": "https://dev.to/pandasecurity/wax-bridge-exploit-a-negative-fee-drained-90k-2m5d"
+        },
         {
           "title": "Shattered · Cross-Chain Bridge Security: 3 Hacks in 7 Days (10/27)",
           "url": "https://shattered.io/bridge-hacks-cysic-wax-initia-seven-days-2026/"
@@ -29,32 +33,32 @@
           "url": "https://theindustryspread.com/wax-blockchain-bridge-exploit-pause-and-restart/"
         },
         {
-          "title": "CoinMarketCap · Latest WAX (WAXP) News Update (10/25)",
-          "url": "https://coinmarketcap.com/cmc-ai/wax/latest-updates/"
+          "title": "Blockchain Breaches · WAX Bridge Zero-Fee Withdrawal Exploit (10/22)",
+          "url": "https://www.blockchainbreaches.com/en/breaches/wax-2026"
         },
         {
-          "title": "디지털투데이 · 업비트, 왁스(WAXP) 유의 촉구…멀티체인 브릿지 보안 문제 의심 정황 (10/23)",
+          "title": "디지털투데이 · 업비트, 왁스(WAXP) 유의 촉구 (10/23)",
           "url": "https://www.digitaltoday.co.kr/disclosure/articleView.html?idxno=709401"
         }
       ]
     },
     "KRW-ARB": {
-      "summary": "11/2 약 0.157달러로 하루 -4.6% 밀려 50일선(약 0.19달러) 아래에 머물러요. SBI 제휴 소식은 있지만 1억 ARB 보상 투표(11/12 마감)·11/16 해제가 부담이에요.",
+      "summary": "11/3 약 0.155달러(하루 -3.2%)로 0.15달러 받침을 시험 중이에요. 크로스리버 은행 대출 토큰화 소식은 좋지만, 50일선(약 0.19달러) 아래에 1억 ARB 투표·11/16 해제가 부담이에요.",
       "good": [
-        "일본 SBI 디지털마켓이 기관 고객의 디지털 자산 이용을 넓히려고 아비트럼과 손잡았다고 11/2 발표했어요. 세부 조건은 아직 공개되지 않았어요",
-        "아비트럼 위 토큰화 펀드 규모가 약 11억 달러로 집계됐어요(10/31 보도)",
-        "보안위원회가 10/30 동결한 바이낸스 해커 연관 약 7,456만 ARB는 다오(DAO) 투표 없이는 움직일 수 없어, 당장 시장에 팔릴 걱정은 없어요",
-        "200일 평균선(약 0.123달러)과 90일선(약 0.152달러)보다는 아직 위예요"
+        "미국 크로스리버 은행이 대출을 아비트럼 위에서 토큰화하는 시험을 마쳤고, 2027년 초 실제 서비스를 목표로 한다고 11/3 발표했어요",
+        "아비트럼 위 USDG 대출(모포)이 한 달도 안 돼 약 1.43억 달러로 커졌어요(11/3 보도)",
+        "일본 SBI 디지털마켓도 11/2 기관 고객용으로 아비트럼과 손잡았다고 밝혔어요",
+        "200일 평균선(약 0.123달러)보다는 아직 위예요"
       ],
       "bad": [
-        "11/2 약 0.157달러로 하루 -4.6%, 한 달 -22.6%예요. 50일선(약 0.19달러)·20일선(약 0.176달러) 모두 아래라 흐름이 약해요",
-        "거래대금이 30일 평균보다 약 33% 적어, 사려는 힘이 약한 상태예요. 다음 받침은 약 0.152달러(90일선)예요",
-        "보안위원회가 개인 키 없이 지갑 자금을 옮길 수 있다는 점이 11/2 보도로 다시 부각됐어요. '탈중앙화가 약하다'는 지적으로 이어질 수 있어요",
+        "11/3 약 0.155달러로 하루 -3.2%, 한 달 약 -22%예요. 20일선(약 0.174달러)·50일선(약 0.19달러) 모두 아래라 흐름이 약해요",
+        "0.15달러가 깨지면 200일선(약 0.12달러)까지 뚜렷한 받침이 없다는 분석이 나왔어요",
+        "보안위원회가 개인 키 없이 지갑 자금을 옮길 수 있다는 점이 다시 부각돼 '탈중앙화가 약하다'는 지적이 있어요",
         "1억 ARB 보상안이 통과되면 그만큼 시장에 풀릴 수 있고, 11/16엔 약 9,265만 ARB 정기 해제가 또 있어요"
       ],
       "onchain": [
         "10/30 보안위원회가 바이낸스 해커 연관 주소에서 약 7,456만 ARB와 약 8,426 ETH를 옮겨 묶어 뒀어요. 일반 큰손 매매가 아니라 해킹 자금 처리예요",
-        "그 밖에 최근 2주(10/20~11/3) 안에 아캄·룩온체인·웨일얼럿 등이 공개한 새 ARB 큰손 움직임은 확인되지 않았어요"
+        "그 밖에 최근 2주(10/21~11/4) 안에 아캄·룩온체인·웨일얼럿 등이 공개한 새 ARB 큰손 움직임은 확인되지 않았어요"
       ],
       "upcoming": [
         {
@@ -70,24 +74,36 @@
       ],
       "sources": [
         {
-          "title": "DiarioBitcoin · ARB bajo presión el 2 de noviembre de 2026 (11/2)",
-          "url": "https://www.diariobitcoin.com/analisis/arb-bajo-presion-el-2-de-noviembre-de-2026-la-caida-reabre-dudas-sobre-arbitrum/"
+          "title": "TokenPost · Cross River Targets Early 2027 Launch for Tokenized Loans on Arbitrum One (11/3)",
+          "url": "https://www.tokenpost.com/news/business/47855"
+        },
+        {
+          "title": "TokenPost · Arbitrum Trades at $0.1545 Below Its 20-Day and 50-Day Averages (11/3)",
+          "url": "https://www.tokenpost.com/news/investing/47543"
+        },
+        {
+          "title": "Blockchain.News · ARB Price Prediction: $0.15 Support Test Keeps Bears in Control (11/3)",
+          "url": "https://blockchain.news/news/20261103-price-prediction-arb-015-support-test-keeps-bears-in"
+        },
+        {
+          "title": "Coin-Turk · Arbitrum's USDG lending on Morpho reaches $143 million (11/3)",
+          "url": "https://en.coin-turk.com/arbitrums-usdg-lending-on-morpho-reaches-143-million-arb-faces-key-support-test"
+        },
+        {
+          "title": "24/7 Wall St. · Cross River Bank Is Moving Its Loans Onto Arbitrum (11/3)",
+          "url": "https://247wallst.com/investing/cryptocurrency/2026/11/03/cross-river-bank-is-moving-its-loans-onto-arbitrum-does-that-help-arb-or-ethereum-more/"
         },
         {
           "title": "TokenPost · SBI Digital Markets Partners With Arbitrum on Institutional Access (11/2)",
           "url": "https://tokenpost.com/news/business/46691"
         },
         {
-          "title": "Unchained · Arbitrum's Security Council Can Move a Wallet's Funds Without Its Key, Binance Freeze Shows (11/2)",
+          "title": "Unchained · Arbitrum's Security Council Can Move a Wallet's Funds Without Its Key (11/2)",
           "url": "https://unchainedcrypto.com/arbitrums-security-council-can-move-a-wallets-funds-without-its-key-binance-freeze-shows/"
         },
         {
           "title": "TokenPost · Arbitrum (ARB) Holders Vote on 100 Million-Token Incentive Plan (11/2)",
           "url": "https://www.tokenpost.com/news/technology/46276"
-        },
-        {
-          "title": "TokenPost · Arbitrum Tokenized Funds Market Cap Put at $1.1 Billion (10/31)",
-          "url": "https://tokenpost.com/news/investing/45621"
         },
         {
           "title": "Tokenomist · Arbitrum unlock schedule",

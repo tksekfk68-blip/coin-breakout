@@ -1,26 +1,26 @@
 {
-  "writtenAt": "2026-11-03T07:45:00+09:00",
-  "title": "비트코인 7.7만 달러로 약세 지속 — 바이낸스 순출금 47억 달러, ETF도 6.4억 달러 빠져",
+  "writtenAt": "2026-11-04T07:50:00+09:00",
+  "title": "비트코인 7.75만 달러로 소폭 반등 — 하지만 ETF 이틀째 유출, 5주 연속 주간 하락 흐름",
   "mood": "조심",
-  "moodNote": "큰 폭락은 없지만 바이낸스와 ETF에서 돈이 계속 빠지고 있어, 아직 반등 신호로 보긴 어려워요.",
+  "moodNote": "밤사이 조금 올랐지만 ETF·바이낸스에서 돈이 계속 빠지고 있고, 오늘 미국 중간선거 결과와 금요일 고용지표가 남아 있어요.",
   "coin": [
-    "비트코인은 약 7.7만 달러(11/3 아침, 하루 -1% 안팎), 이더리움은 약 2,251달러(-0.3%)예요. 11/2엔 7.76만~7.89만 달러 사이에서만 움직였어요.",
-    "바이낸스는 출금을 다시 연 뒤 순출금이 47.2억 달러로 늘었다고 확인했어요(로이터 인용). 손실은 회사가 메우겠다는 입장이에요.",
-    "미국 비트코인 현물 ETF는 10/30(금) 하루 6.43억 달러가 빠져 6월 이후 최대 유출이었어요. 올해 쌓인 순유입의 약 64%가 하루에 사라졌어요.",
-    "하루 동안 약 2.8억 달러어치 선물 포지션이 강제 청산됐고, 그중 약 75%가 오를 쪽에 건 포지션이었어요.",
-    "알트코인은 솔라나 -2.6%, 하이퍼리퀴드(HYPE) -4.0%, 도지 -1.9%로 약했고, 트론(TRX)만 +1.9% 올랐어요. 공포·탐욕 지수는 30~34로 '공포' 구간이에요."
+    "비트코인은 약 7.75만 달러(11/4 새벽 5시, 하루 +0.7%), 이더리움은 약 2,285달러(+1.5%)예요. 어제 낮엔 7.63만 달러까지 밀렸다가 회복했어요.",
+    "미국 비트코인 현물 ETF에서 11/2(월) 3.99억 달러가 빠져 이틀 연속 유출이에요. 블랙록 IBIT만 4.05억 달러가 빠져 6월 이후 최대였고, 이더리움 ETF도 1.4억 달러 빠졌어요.",
+    "바이낸스는 출금 재개 뒤 순출금이 47.2억 달러로 더 늘었어요. 하루 강제청산은 약 3.8억 달러로 전날보다 171% 늘었어요.",
+    "비트코인은 5주 연속 주간 하락 중이고, 올해 들어 -12.4%예요. 공포·탐욕 지수는 26~34로 '공포' 구간이에요.",
+    "알트코인은 새벽 기준 XRP +2.2%, 트론 +2.2%, 도지 +2.0%, 솔라나 +1.9%로 소폭 올랐어요. 전날 니어(NEAR)는 하루 7% 떨어졌어요."
   ],
   "macro": [
-    "이란의 호르무즈 해협 재개방 계획 소식에 유가가 급락했어요. WTI는 하루 7.7% 떨어진 96.12달러예요. 물가 부담이 줄 수 있는 점은 코인에 좋은 소식이에요.",
-    "미국 10월 ISM 제조업지수는 55.5로 예상(54.5)보다 좋았어요. 다만 연준 일부 인사가 '금리를 두 번 더 올려야 한다'고 말해 금리 걱정은 여전해요.",
-    "미국 10년물 국채금리는 4.90%로 조금 내렸어요. 하지만 AI 반도체주가 크게 떨어지며 나스닥이 -1.0% 밀렸어요.",
-    "어제 코스피는 기관 매수로 2.24% 오른 5,859.08에 마감했지만, 원/달러 환율은 9.5원 오른 1,343.8원으로 원화가 약해졌어요."
+    "미국 증시는 나스닥 +0.83%, S&P500 +0.36%로 반등했지만, 애플 실적 실망에 다우는 -0.38%였어요.",
+    "미국 9월 구인 건수가 752만 건으로 예상보다 많았어요. 시장은 12월 금리 인상 가능성을 약 79%로 보고 있고, 10년물 국채금리는 4.97%로 올랐어요.",
+    "미군의 이란 케슘섬 공격 보도 뒤 유가가 다시 올라 브렌트유가 배럴당 105달러 안팎이에요. 이란과의 종전 협상 전망은 엇갈려요.",
+    "어제 코스피는 AI·반도체주 급락에 3.59% 떨어진 5,648.79에 마감했어요. 외국인·기관이 2조 원 넘게 팔았고, 원/달러 환율은 1,341~1,345원 수준이에요."
   ],
   "events": [
     {
-      "when": "11/3(화)",
-      "what": "미국 중간선거 투표 (결과는 11/4(수) 낮부터 한국 시간으로 나와요)",
-      "why": "의회 구성이 코인 규제 방향에 영향을 줄 수 있어 결과 발표 때 출렁일 수 있어요"
+      "when": "11/4(수) 낮",
+      "what": "미국 중간선거 개표 결과 발표",
+      "why": "예측시장에선 민주당 하원 승리 확률이 95%로 나와 있어, 결과가 예상과 다르면 크게 출렁일 수 있어요"
     },
     {
       "when": "11/4(수) 22:15",
@@ -28,46 +28,75 @@
       "why": "금요일 고용지표를 미리 가늠해 보는 숫자예요"
     },
     {
-      "when": "11/6(금) 22:30",
-      "what": "미국 10월 고용지표(일자리·실업률·임금)",
-      "why": "12월 금리 인상 여부를 가를 가장 큰 지표예요"
+      "when": "11/4(수) 22:30",
+      "what": "미국 재무부 분기 국채 발행 계획 발표",
+      "why": "국채 발행 규모가 바뀌면 금리가 움직이고 코인에도 영향이 가요"
     },
     {
-      "when": "11/11(수)",
-      "what": "MSCI 지수 편출 대상 최종 명단 발표",
-      "why": "스트래티지(MSTR) 같은 비트코인 보유 회사가 빠지면 시장 심리에 부담이 될 수 있어요"
+      "when": "11/5(목) 00:00",
+      "what": "미국 10월 ISM 서비스업지수",
+      "why": "경기가 강하게 나오면 금리 인상 걱정이 커질 수 있어요"
+    },
+    {
+      "when": "11/6(금) 22:30",
+      "what": "미국 10월 고용지표(예상 +5.5만~6.5만 명, 실업률 4.2%)",
+      "why": "12월 금리 인상 여부를 가를 가장 큰 지표예요"
     }
   ],
   "strategy": [
-    "비트코인은 약 7.7만 달러로 50일 평균선(10/20 기준 약 8.15만 달러) 아래에 있어요. 추세추종 규칙으로는 새 진입을 쉬는 구간이에요.",
-    "단기로는 7.89만 달러를 넘어야 8만~8.03만 달러(단기 평균가 부근)를 시도할 수 있고, 7.65만 달러가 깨지면 한 번 더 밀릴 수 있어요.",
-    "중간선거 결과와 금요일 고용지표 때 크게 흔들릴 수 있어요. 들고 있는 코인은 손절 주문이 실제로 걸려 있는지 먼저 확인하세요.",
+    "비트코인은 약 7.75만 달러로 50일 평균선(10/20 기준 약 8.15만 달러) 아래에 있어요. 추세추종 규칙으로는 새 진입을 쉬는 구간이에요.",
+    "200일 평균선(약 7.32만 달러)보다는 아직 5%쯤 위예요. 이 선이 깨지면 하락이 더 길어질 수 있으니 눈여겨보세요.",
+    "오늘 선거 결과와 금요일 고용지표 때 크게 흔들릴 수 있어요. 들고 있는 코인은 손절 주문이 실제로 걸려 있는지 먼저 확인하세요.",
     "50일선 위로 올라선 걸 확인한 뒤 들어가더라도, 처음엔 평소 절반 이하 크기로 시작하고 손절 주문부터 걸어 두세요."
   ],
   "sources": [
     {
-      "title": "토큰포스트 · 11월 3일 출근길 — 호르무즈 재개방 기대에 유가 급락, 비트코인 7만7000달러선 후퇴 (11/3)",
-      "url": "https://www.tokenpost.kr/news/insights/431607"
+      "title": "토큰포스트 · [모닝 시세브리핑] 비트코인 77,527달러, 이더리움 2,284달러 (11/4)",
+      "url": "https://www.tokenpost.kr/news/briefing/432197"
     },
     {
-      "title": "뉴스핌 · [코인 시황] 비트코인, 7만8000달러대 반등…바이낸스 해킹·美 중간선거에 시장 촉각 (11/2)",
-      "url": "https://www.newspim.com/news/view/20261102001615"
+      "title": "CoinDesk · Bitcoin steadies at $76,900 as ETFs lose $399 million and Binance outflows hit $4.7 billion (11/3)",
+      "url": "https://www.coindesk.com/markets/2026/11/03/bitcoin-steadies-after-dip-to-usd76-300-as-etf-outflows-and-midterm-elections-weigh-on-crypto"
     },
     {
-      "title": "CoinDesk · Bitcoin ETFs lost $643 million in outflows Friday, and 2026 is barely green now (11/2)",
-      "url": "https://www.coindesk.com/markets/2026/11/02/bitcoin-etfs-lost-usd643-million-in-outflows-friday-and-2026-is-barely-green-now"
+      "title": "KuCoin · U.S. Bitcoin and Ethereum ETFs Record $539M in Net Outflows on November 2 (11/3)",
+      "url": "https://www.kucoin.com/news/flash/u-s-bitcoin-and-ethereum-etfs-record-539m-in-net-outflows-on-november-2"
     },
     {
-      "title": "AMBCrypto · Bitcoin holds near $78K as Binance withdrawals resume after hack (11/2)",
-      "url": "https://ambcrypto.com/bitcoin-holds-near-78k-as-binance-withdrawals-resume-after-hack/"
+      "title": "토큰포스트 · [BTC 수익률 결산] 월간 -0.76%, 연초 대비 -12.4% (11/3)",
+      "url": "https://www.tokenpost.kr/news/cryptocurrency/431866"
     },
     {
-      "title": "investingLive · Americas FX news wrap 2 Nov: AI selling overwhelms oil's plunge (11/2)",
-      "url": "https://investinglive.com/news/investinglive-americas-fx-news-wrap-2-nov-it-s-a-wrap-ai-selling-overwhelms-oil-s-plunge/"
+      "title": "토큰포스트 · [비트코인은 지금] 7만6000달러대로 하락…공포 심화 (11/3)",
+      "url": "https://www.tokenpost.kr/news/cryptocurrency/431779"
     },
     {
-      "title": "네이트(속보) · 코스피 5859.08(▲2.24%) 마감, 원·달러 환율 1343.8원 (11/2)",
-      "url": "https://m.news.nate.com/view/20261102n26887"
+      "title": "CoinDesk · Live updates: Bitcoin and tech stocks edge higher as U.S. voters head to the polls (11/3)",
+      "url": "https://www.coindesk.com/markets/2026/11/03/live-news-bitcoin-faces-fifth-weekly-loss-as-midterm-uncertainty-and-apple-warning-weigh-on-markets"
+    },
+    {
+      "title": "CoinDesk · Bitcoin is breaking a midterm election pattern going back to 2014 (11/3)",
+      "url": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
+    },
+    {
+      "title": "TheStreet · Stock Market Today (Nov. 3, 2026) (11/3)",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-03-2026"
+    },
+    {
+      "title": "블록미디어 · [뉴욕 금·채권·달러] 미 국채금리 4.96%·달러 동반 상승 (11/4)",
+      "url": "https://www.blockmedia.co.kr/archives/1160906"
+    },
+    {
+      "title": "뉴스1 · 코스피, 3.59% 하락한 5648.79 마감 (11/3)",
+      "url": "https://www.news1.kr/finance/market-exr/6341583"
+    },
+    {
+      "title": "비즈니스코리아 · [마감 시황] 코스피 3.6% 급락 5640선 (11/3)",
+      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=280364"
+    },
+    {
+      "title": "FatTail · Week Ahead: Midterms, Refunding and Jobs, Nov 2–6 (11/1)",
+      "url": "https://fattail.ai/fattail-week-ahead-nov-2-6-2026/"
     },
     {
       "title": "Pluang(CryptoTicker) · Bitcoin 50-day line at $81,481 (10/20)",
