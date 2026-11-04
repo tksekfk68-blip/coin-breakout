@@ -1,106 +1,98 @@
 {
-  "writtenAt": "2026-11-04T07:50:00+09:00",
-  "title": "비트코인 7.75만 달러로 소폭 반등 — 하지만 ETF 이틀째 유출, 5주 연속 주간 하락 흐름",
+  "writtenAt": "2026-11-05T07:40:00+09:00",
+  "title": "민주당 의회 장악에 미국 증시 급등 — 비트코인도 8만 달러 근처로 3% 반등",
   "mood": "조심",
-  "moodNote": "밤사이 조금 올랐지만 ETF·바이낸스에서 돈이 계속 빠지고 있고, 오늘 미국 중간선거 결과와 금요일 고용지표가 남아 있어요.",
+  "moodNote": "선거 불확실성이 걷히며 크게 올랐지만, ETF에서 돈이 계속 빠졌고 비트코인은 아직 50일 평균선 근처라 금요일 고용지표까지는 조심할 때예요.",
   "coin": [
-    "비트코인은 약 7.75만 달러(11/4 새벽 5시, 하루 +0.7%), 이더리움은 약 2,285달러(+1.5%)예요. 어제 낮엔 7.63만 달러까지 밀렸다가 회복했어요.",
-    "미국 비트코인 현물 ETF에서 11/2(월) 3.99억 달러가 빠져 이틀 연속 유출이에요. 블랙록 IBIT만 4.05억 달러가 빠져 6월 이후 최대였고, 이더리움 ETF도 1.4억 달러 빠졌어요.",
-    "바이낸스는 출금 재개 뒤 순출금이 47.2억 달러로 더 늘었어요. 하루 강제청산은 약 3.8억 달러로 전날보다 171% 늘었어요.",
-    "비트코인은 5주 연속 주간 하락 중이고, 올해 들어 -12.4%예요. 공포·탐욕 지수는 26~34로 '공포' 구간이에요.",
-    "알트코인은 새벽 기준 XRP +2.2%, 트론 +2.2%, 도지 +2.0%, 솔라나 +1.9%로 소폭 올랐어요. 전날 니어(NEAR)는 하루 7% 떨어졌어요."
+    "비트코인은 약 7.99만 달러(11/5 새벽 5시, 하루 +3.0%), 이더리움은 약 2,405달러(+5.3%)예요. 어제 한때 7.57만 달러까지 밀렸다가 8.1만 달러 근처까지 올랐어요.",
+    "반등하면서 하락에 걸었던 거래가 1시간 만에 약 3.78억 달러 강제청산됐어요. 하루 전체 청산은 약 9.1억 달러예요.",
+    "미국 비트코인 현물 ETF에선 10/30~11/3 사흘간 약 11.6억 달러가 빠져 6월 말 이후 가장 많이 빠졌어요. 다만 11/3 유출은 1.16억 달러로 줄었어요.",
+    "민주당이 멈춰 있는 코인 법안(CLARITY)을 손보는 방안을 검토 중이라는 보도와, 트럼프 일가의 코인 사업을 조사하겠다는 보도가 함께 나왔어요.",
+    "알트코인은 새벽 기준 BNB +2.5%, 도지 +1.9%, XRP +1.8%, 솔라나 +1.4%로 올랐고, 트론(-1.4%)·하이퍼리퀴드(-2.0%)는 내렸어요."
   ],
   "macro": [
-    "미국 증시는 나스닥 +0.83%, S&P500 +0.36%로 반등했지만, 애플 실적 실망에 다우는 -0.38%였어요.",
-    "미국 9월 구인 건수가 752만 건으로 예상보다 많았어요. 시장은 12월 금리 인상 가능성을 약 79%로 보고 있고, 10년물 국채금리는 4.97%로 올랐어요.",
-    "미군의 이란 케슘섬 공격 보도 뒤 유가가 다시 올라 브렌트유가 배럴당 105달러 안팎이에요. 이란과의 종전 협상 전망은 엇갈려요.",
-    "어제 코스피는 AI·반도체주 급락에 3.59% 떨어진 5,648.79에 마감했어요. 외국인·기관이 2조 원 넘게 팔았고, 원/달러 환율은 1,341~1,345원 수준이에요."
+    "미국 중간선거에서 민주당이 의회를 장악하자, 다우가 3.03%(+1,569포인트) 올라 1년 반 만에 가장 크게 뛰었어요. S&P500 +1.58%, 나스닥 +1.44%예요.",
+    "유가가 크게 내렸어요(브렌트유 하루 약 8% 하락 보도). 미국 10년물 국채금리도 4.97%에서 약 4.94%로 내려와 위험자산에 숨통이 트였어요.",
+    "선거 전 예측시장은 12월 금리 인상 확률을 약 75%로 봤어요. 금요일 고용지표가 이 기대를 바꿀 가장 큰 변수예요.",
+    "어제 코스피는 장중 4% 넘게 빠졌다가 0.62% 오른 5,683.80에 마감했어요. 외국인은 2.5조 원 넘게 팔았고, 원/달러 환율은 1,341.5원이에요."
   ],
   "events": [
     {
-      "when": "11/4(수) 낮",
-      "what": "미국 중간선거 개표 결과 발표",
-      "why": "예측시장에선 민주당 하원 승리 확률이 95%로 나와 있어, 결과가 예상과 다르면 크게 출렁일 수 있어요"
+      "when": "11/5(목) 22:30",
+      "what": "미국 주간 신규 실업수당 청구",
+      "why": "고용이 약해지는지 빠르게 보여주는 숫자예요"
     },
     {
-      "when": "11/4(수) 22:15",
-      "what": "미국 10월 ADP 민간고용",
-      "why": "금요일 고용지표를 미리 가늠해 보는 숫자예요"
-    },
-    {
-      "when": "11/4(수) 22:30",
-      "what": "미국 재무부 분기 국채 발행 계획 발표",
-      "why": "국채 발행 규모가 바뀌면 금리가 움직이고 코인에도 영향이 가요"
-    },
-    {
-      "when": "11/5(목) 00:00",
-      "what": "미국 10월 ISM 서비스업지수",
-      "why": "경기가 강하게 나오면 금리 인상 걱정이 커질 수 있어요"
+      "when": "11/5(목)",
+      "what": "연준 해맥·바킨 총재 발언, 카르다노·지캐시 업그레이드 예정",
+      "why": "금리 인상 쪽 발언이 나오면 코인에 부담이 될 수 있어요"
     },
     {
       "when": "11/6(금) 22:30",
-      "what": "미국 10월 고용지표(예상 +5.5만~6.5만 명, 실업률 4.2%)",
+      "what": "미국 10월 고용지표(예상 약 +6.3만 명, 실업률 4.2%)",
       "why": "12월 금리 인상 여부를 가를 가장 큰 지표예요"
+    },
+    {
+      "when": "11/7(토) 00:00",
+      "what": "미국 11월 미시간대 소비심리(예비)",
+      "why": "소비자들의 물가 전망이 함께 나와 금리 기대에 영향을 줘요"
+    },
+    {
+      "when": "11/10(화) 22:30",
+      "what": "미국 10월 소비자물가(CPI)",
+      "why": "물가가 높게 나오면 금리 인상 걱정이 다시 커질 수 있어요"
     }
   ],
   "strategy": [
-    "비트코인은 약 7.75만 달러로 50일 평균선(10/20 기준 약 8.15만 달러) 아래에 있어요. 추세추종 규칙으로는 새 진입을 쉬는 구간이에요.",
-    "200일 평균선(약 7.32만 달러)보다는 아직 5%쯤 위예요. 이 선이 깨지면 하락이 더 길어질 수 있으니 눈여겨보세요.",
-    "오늘 선거 결과와 금요일 고용지표 때 크게 흔들릴 수 있어요. 들고 있는 코인은 손절 주문이 실제로 걸려 있는지 먼저 확인하세요.",
-    "50일선 위로 올라선 걸 확인한 뒤 들어가더라도, 처음엔 평소 절반 이하 크기로 시작하고 손절 주문부터 걸어 두세요."
+    "비트코인은 약 7.99만 달러로 50일 평균선(지수평균 기준 약 8.02만 달러, 11/2) 바로 아래예요. 아직 '위로 올라섰다'고 보긴 이르니 확인을 기다리세요.",
+    "ETF 매수 평균가(약 8.15만 달러)와 8.4만~8.5만 달러에 파는 물량이 몰려 있다는 분석이 있어요. 이 구간을 넘는지 보는 게 다음 기준이에요.",
+    "50일선 위 마감을 확인한 뒤 들어가더라도, 처음엔 평소 절반 이하 크기로 시작하고 손절 주문부터 걸어 두세요.",
+    "금요일 고용지표 때 크게 흔들릴 수 있어요. 들고 있는 코인은 손절 주문이 실제로 걸려 있는지 먼저 확인하세요."
   ],
   "sources": [
     {
-      "title": "토큰포스트 · [모닝 시세브리핑] 비트코인 77,527달러, 이더리움 2,284달러 (11/4)",
-      "url": "https://www.tokenpost.kr/news/briefing/432197"
+      "title": "토큰포스트 · [모닝 시세브리핑] 비트코인 79,889달러, 이더리움 2,405달러 (11/5)",
+      "url": "https://www.tokenpost.kr/news/briefing/432847"
     },
     {
-      "title": "CoinDesk · Bitcoin steadies at $76,900 as ETFs lose $399 million and Binance outflows hit $4.7 billion (11/3)",
-      "url": "https://www.coindesk.com/markets/2026/11/03/bitcoin-steadies-after-dip-to-usd76-300-as-etf-outflows-and-midterm-elections-weigh-on-crypto"
+      "title": "토큰포스트 · [모닝 뉴스브리핑] 비트코인 701개, 코인베이스 기관 이체 外 (11/5)",
+      "url": "https://www.tokenpost.kr/news/briefing/432849"
     },
     {
-      "title": "KuCoin · U.S. Bitcoin and Ethereum ETFs Record $539M in Net Outflows on November 2 (11/3)",
-      "url": "https://www.kucoin.com/news/flash/u-s-bitcoin-and-ethereum-etfs-record-539m-in-net-outflows-on-november-2"
+      "title": "The Motley Fool · Crypto Market Today, Nov. 4: Bitcoin Stages Sharp Recovery (11/4)",
+      "url": "https://www.fool.com/coverage/stock-market-today/2026/11/04/crypto-market-today-nov-4-bitcoin-stages-sharp-recovery-as-wall-street-rallies-and-regulatory-hopes-return/"
     },
     {
-      "title": "토큰포스트 · [BTC 수익률 결산] 월간 -0.76%, 연초 대비 -12.4% (11/3)",
-      "url": "https://www.tokenpost.kr/news/cryptocurrency/431866"
+      "title": "crypto.news · Bitcoin breaks $80K as crypto shorts lose $378M in one hour (11/4)",
+      "url": "https://crypto.news/bitcoin-80k-378m-short-liquidations-etf-outflows/"
     },
     {
-      "title": "토큰포스트 · [비트코인은 지금] 7만6000달러대로 하락…공포 심화 (11/3)",
-      "url": "https://www.tokenpost.kr/news/cryptocurrency/431779"
+      "title": "Blockport · Bitcoin Recovers as ETF Outflows Reach $1.16 Billion (11/4)",
+      "url": "https://blockport.io/latest-news/bitcoin-recovers-as-etf-outflows-reach-1-16-billion/"
     },
     {
-      "title": "CoinDesk · Live updates: Bitcoin and tech stocks edge higher as U.S. voters head to the polls (11/3)",
-      "url": "https://www.coindesk.com/markets/2026/11/03/live-news-bitcoin-faces-fifth-weekly-loss-as-midterm-uncertainty-and-apple-warning-weigh-on-markets"
+      "title": "Bloomingbit · US Stocks Surge as Midterm Election Uncertainty Eases; Dow Jumps 3.03% (11/4)",
+      "url": "https://en.bloomingbit.io/feed/news/123681"
     },
     {
-      "title": "CoinDesk · Bitcoin is breaking a midterm election pattern going back to 2014 (11/3)",
-      "url": "https://www.coindesk.com/daybook-us/2026/11/03/bitcoin-is-breaking-a-midterm-election-pattern-going-back-to-2014"
+      "title": "The Daily Macro Brief · November 4, 2026 (11/4)",
+      "url": "https://dn12448583.substack.com/p/the-daily-macro-brief-november-4"
     },
     {
-      "title": "TheStreet · Stock Market Today (Nov. 3, 2026) (11/3)",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-03-2026"
+      "title": "Rio Times · Global Economy Briefing (11/4)",
+      "url": "https://www.riotimesonline.com/global-economy-briefing-november-4-2026"
     },
     {
-      "title": "블록미디어 · [뉴욕 금·채권·달러] 미 국채금리 4.96%·달러 동반 상승 (11/4)",
-      "url": "https://www.blockmedia.co.kr/archives/1160906"
+      "title": "Businesskorea · [마감 시황] 코스피, 장중 400P 넘나든 롤러코스터 속 소폭 상승 (11/4)",
+      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=280482"
     },
     {
-      "title": "뉴스1 · 코스피, 3.59% 하락한 5648.79 마감 (11/3)",
-      "url": "https://www.news1.kr/finance/market-exr/6341583"
+      "title": "Altcoin Buzz · 5 US Events That Could Move Bitcoin This Week (11/3)",
+      "url": "https://altcoinbuzz.io/us-midterms-jobs-data-fed-events-crypto-market-november-2026"
     },
     {
-      "title": "비즈니스코리아 · [마감 시황] 코스피 3.6% 급락 5640선 (11/3)",
-      "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=280364"
-    },
-    {
-      "title": "FatTail · Week Ahead: Midterms, Refunding and Jobs, Nov 2–6 (11/1)",
-      "url": "https://fattail.ai/fattail-week-ahead-nov-2-6-2026/"
-    },
-    {
-      "title": "Pluang(CryptoTicker) · Bitcoin 50-day line at $81,481 (10/20)",
-      "url": "https://pluang.com/en/news-feed/bitcoin-akankah-garis-50-hari-di-81481-bertahan"
+      "title": "Cryptonews · BTC Price Prediction: Can BTC Reclaim $80,225? (11/2)",
+      "url": "https://cryptonews.net/news/bitcoin/33687336/"
     }
   ]
 }
