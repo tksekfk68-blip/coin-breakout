@@ -1,54 +1,60 @@
 {
-  "writtenAt": "2026-11-10T07:40:00+09:00",
-  "title": "비트코인 7.48만 달러로 밀리고 하루 청산 10억 달러 — 미국 주식은 2% 넘게 올랐지만 코인은 오늘 밤 물가 발표 앞두고 약세",
+  "writtenAt": "2026-11-11T07:30:00+09:00",
+  "title": "미국 물가가 예상보다 높게 나와 비트코인 7.33만 달러로 밀려 — 12월 금리 인상 거의 확실시, 코스피 급등과 반대로 코인은 약세",
   "mood": "위험",
-  "moodNote": "비트코인이 50일 평균선보다 9% 가까이 아래에 있고, 오른다에 건 사람들이 대거 청산됐어요. 아직은 지키는 데 집중할 때예요.",
+  "moodNote": "비트코인이 50일 평균선보다 10% 넘게 아래이고 200일선(약 7.32만 달러)까지 내려왔어요. 지금은 새로 사기보다 지키는 데 집중할 때예요.",
   "coin": [
-    "비트코인은 약 7.48만 달러(11/10 새벽 5시, 하루 -1.33%), 이더리움은 약 2,127달러(-4.57%)로 이더리움이 더 많이 빠졌어요.",
-    "하루 동안 약 10.4억 달러어치 선물 포지션이 강제 청산됐고, 그중 88%가 '오른다'에 건 쪽이었어요. 이더리움 청산이 약 5.1억 달러로 가장 컸어요.",
-    "리치먼드 연은 바킨 총재가 물가를 경계하는 발언을 하면서 금리가 쉽게 내려가지 않을 거란 걱정이 코인 약세의 원인으로 꼽혔어요.",
-    "XRP -4.97%, 솔라나 -3.38% 등 알트코인도 함께 내렸고, 비트코인 비중(도미넌스)은 60.26%로 조금 더 올랐어요.",
-    "지난주 미국 비트코인 현물 ETF에서 약 12.8억 달러가 빠져 6월 말 이후 한 주 최대 유출이었어요. 올해 누적 유입도 다시 마이너스(-9.1억 달러)로 돌아섰어요."
+    "비트코인은 약 7.33만 달러(11/11 새벽 5시, 하루 -2.03%), 이더리움은 약 2,041달러(-4.05%)로 이더리움이 또 더 많이 빠졌어요.",
+    "어젯밤 발표된 미국 10월 물가가 한 달 +0.4%(예상 +0.3%), 근원물가 +0.3%(예상 +0.2%)로 높게 나오자 비트코인이 한때 7.28만 달러까지 떨어졌어요.",
+    "하루 동안 약 6.1억 달러어치 선물 포지션이 강제 청산됐고 그중 83%가 '오른다'에 건 쪽이었어요. 이더리움 청산이 약 2.5억 달러로 가장 컸어요.",
+    "솔라나 -4.21%, 도지 -3.75%, XRP -2.60% 등 알트코인도 함께 내렸고, 비트코인 비중(도미넌스)은 60.41%로 더 올랐어요.",
+    "미국 코인 ETF에서 지난주 약 15억 달러가 빠져나갔어요. 큰 자금이 아직 돌아오지 않고 있다는 뜻이에요."
   ],
   "macro": [
-    "미국 증시는 11/9(월) S&P500 +2.35%, 나스닥 +2.74%로 크게 올랐어요. 유가 급락(브렌트 약 92.9달러, -5.5%)과 공포지수(VIX) 하락 덕분이에요.",
-    "미국 10년물 금리는 약 4.86%로 거의 그대로였고, 달러지수는 약 101.7로 0.6% 내렸어요. 주식이 오른 날에도 코인은 따라가지 못했어요.",
-    "코스피는 11/9 0.81% 내린 5,018.85로 마감했어요. 외국인이 7일째 팔았어요. 원/달러 환율은 1,347.1원으로 9.5원 내렸어요.",
-    "중국이 미국과의 무역 휴전을 두 달 연장했고, 트럼프 대통령은 이란 공격 가능성이 '매우 낮다'고 말했어요. 유가가 내린 배경이에요."
+    "물가 발표 뒤 예측시장의 12월 금리 인상 확률이 85%로 올랐고(발표 전 77%), 월러 연준 이사는 0.5%p 인상도 검토할 만하다고 말했어요.",
+    "미국 10년물 금리는 약 4.98%로 하루 0.12%p 뛰었고, 달러지수도 0.6% 올라 102.26이 됐어요. 금리·달러가 오르면 코인엔 보통 부담이에요.",
+    "미국 증시는 11/10(화) S&P500 -0.38%, 나스닥 -0.74%로 내렸어요. 엔비디아가 4% 넘게 빠진 영향이 컸어요. 유가(브렌트)는 약 91.8달러로 조금 내렸어요.",
+    "코스피는 11/10 4.39% 급등한 5,239.13으로 마감했고 외국인이 이달 처음 순매수했어요. 원/달러 환율은 9.6원 내린 1,337.5원이었어요(모두 미국 물가 발표 전)."
   ],
   "events": [
     {
-      "when": "11/10(화) 22:30",
-      "what": "미국 10월 소비자물가(CPI)",
-      "why": "고용이 강했던 만큼 물가까지 높으면 12월 금리 인상 걱정이 커져 코인에 부담이 될 수 있어요"
-    },
-    {
       "when": "11/11(수)",
       "what": "미국 재향군인의 날(채권시장 휴장)",
-      "why": "채권 거래가 쉬어서 금리 움직임이 하루 멈춰요"
+      "why": "채권 거래가 쉬어서 어제 뛴 금리가 하루 멈춰요. 주식·코인은 정상 거래돼요"
+    },
+    {
+      "when": "11/12(목)",
+      "what": "아비트럼 1억 ARB 보상안 최종 투표 마감 예정",
+      "why": "보유 코인 ARB와 관련된 일정이에요. 결과에 따라 시장에 풀릴 물량이 정해져요"
     },
     {
       "when": "11/13(금) 22:30",
       "what": "미국 10월 생산자물가(PPI)",
-      "why": "물가 흐름을 한 번 더 확인하는 지표라 금리 기대가 또 흔들릴 수 있어요"
+      "why": "어제 소비자물가가 높았던 만큼 생산자물가까지 높으면 금리 인상 걱정이 더 커질 수 있어요"
+    },
+    {
+      "when": "11/17(화) 22:30",
+      "what": "미국 10월 소매판매",
+      "why": "소비가 강하면 금리를 더 올릴 이유가 돼 코인에 부담이 될 수 있어요"
     }
   ],
   "strategy": [
-    "비트코인은 약 7.48만 달러로 50일 평균선(약 8.2만 달러, 11/8 보도)보다 9% 가까이 아래예요. 추세추종 기준으론 새로 들어갈 때가 아니에요.",
+    "비트코인은 약 7.33만 달러로 50일 평균선(약 8.2만 달러, 11/8 보도)보다 10% 넘게 아래예요. 추세추종 기준으론 새로 들어갈 때가 아니에요.",
+    "7.3만 달러 근처(200일선)가 깨지면 6.9만 달러까지 밀릴 수 있다는 분석이 있어요. 들고 있는 코인은 손절 주문이 실제로 걸려 있는지 먼저 확인하세요.",
     "신규 진입은 50일선 위 마감을 다시 볼 때까지 쉬고, 꼭 들어가야 하면 평소 절반 이하 크기로 손절 주문부터 거세요.",
-    "오늘 밤 10시 30분 물가 발표 때 위아래로 크게 흔들릴 수 있어요. 발표 전에 들고 있는 코인의 손절 주문이 실제로 걸려 있는지 확인하세요.",
-    "7.37만~7.4만 달러(20주 평균선 근처)가 무너지면 하락이 길어질 수 있다는 분석이 있어요. 그 아래로 내려가면 무리하게 버티지 마세요."
+    "금요일 밤 생산자물가 발표 때 또 크게 흔들릴 수 있어요. 발표 직전·직후엔 서둘러 사고팔지 마세요."
   ],
   "sources": [
-    { "title": "토큰포스트 · [모닝 시세브리핑] 비트코인 74,827달러, 이더리움 2,127달러 (11/10)", "url": "https://www.tokenpost.kr/news/briefing/435404" },
-    { "title": "토큰포스트 · 11월 10일 출근길 팟캐스트 — 바킨 물가 경계 발언에 암호화폐 10억달러 청산 (11/10)", "url": "https://www.tokenpost.kr/news/insights/435423" },
-    { "title": "토큰포스트 · [자정 시세브리핑] 비트코인 74,765달러 (11/10)", "url": "https://www.tokenpost.kr/news/briefing/435281" },
-    { "title": "CoinDesk · Bitcoin bulls can't rely on ETF flows: Crypto Daily (11/9)", "url": "https://www.coindesk.com/daybook-us/2026/11/09/bitcoin-bulls-can-t-rely-on-etf-flows" },
-    { "title": "Sunday Guardian · Bitcoin Price Today: BTC Slips to $74,200 (11/9)", "url": "https://sundayguardianlive.com/business/bitcoin-price-today-november-9-2026-btc-slips-to-74200-after-recent-high-of-80935-check-market-metrics-key-drivers-319660/" },
-    { "title": "JournalArta · S&P 500 Up 2.35%, Nasdaq Up 2.74% as Oil Falls (11/9)", "url": "https://journalarta.com/en/2026/11/10/stock-market-today-sp-500-surges-2-35-to-7549-94-and-nasdaq-jumps-2-74-as-oil-falls-and-vix-drops/" },
-    { "title": "비즈니스코리아 · [마감 시황] 코스피 5,018선 턱걸이 마감 (11/9)", "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=280833" },
-    { "title": "진일보 · 원·달러 환율 1347원으로 하락 (11/9)", "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000081043" },
+    { "title": "토큰포스트 · [모닝 시세브리핑] 비트코인 73,316달러, 이더리움 2,041달러 (11/11)", "url": "https://www.tokenpost.kr/news/briefing/436140" },
+    { "title": "토큰포스트 · 11월 11일 출근길 팟캐스트 — 미국 가상자산 ETF 15억달러 순유출 (11/11)", "url": "https://www.tokenpost.kr/news/insights/436156" },
+    { "title": "CoinDesk · U.S. CPI rose stronger than expected 0.4% in October; core rate rose 0.3% (11/10)", "url": "https://www.coindesk.com/markets/2026/11/10/u-s-cpi-rose-stronger-than-expected-0-4-in-october-core-rate-rose-0-3" },
+    { "title": "The Block · Bitcoin slides below $74,000 after hotter-than-expected CPI (11/10)", "url": "https://www.theblock.co/news/markets/2026-11-10-bitcoin-price-cpi-inflation-73000-support-437301" },
+    { "title": "Bitcoin.com · Bitcoin Price Crashes to $72,787 After Hotter-Than-Expected CPI (11/10)", "url": "https://news.bitcoin.com/market-updates/bitcoin-price-crashes-72787-hotter-than-expected-cpi/" },
+    { "title": "JournalArta · S&P 500 Slips 0.38%, Nasdaq Falls 0.74% as 10-Year Yield Rises to 4.98% (11/10)", "url": "https://journalarta.com/en/2026/11/11/stock-market-today-sp-500-slips-0-38-to-7520-93-and-nasdaq-falls-0-74-as-10-year-yield-rises-to-4-98/" },
+    { "title": "StockTitan · The Stock Market Today, November 10, 2026 (11/10)", "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-10-2026" },
+    { "title": "라이센스뉴스 · [마감시황] 코스피 4.39% 오른 5239.13 마감 (11/10)", "url": "https://www.lcnews.co.kr/news/articleView.html?idxno=211145" },
+    { "title": "뉴스1 · 중동 긴장 완화에 달러·원 9.6원↓…1337.5원 마감 (11/10)", "url": "https://www.news1.kr/finance/market-exr/6349414" },
     { "title": "토큰포스트 · 비트코인 7만5904달러, 50일선 8만2003달러 밑돌아 (11/8)", "url": "https://www.tokenpost.kr/news/cryptocurrency/434567" },
-    { "title": "Analytics Insight · November 2026 Economic Releases and Crypto Events to Watch (11/9)", "url": "https://www.analyticsinsight.net/cryptocurrency-analytics-insight/november-2026-economic-releases-and-crypto-events-to-watch-us-cpi-fed-minutes-pce-inflation-and-token-unlocks" }
+    { "title": "FedRateCalc · US Economic Calendar November 2026", "url": "https://fedratecalc.com/us-economic-calendar/november-2026/" }
   ]
 }

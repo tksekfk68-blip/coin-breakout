@@ -1,62 +1,56 @@
 {
-  "writtenAt": "2026-11-10T07:40:00+09:00",
+  "writtenAt": "2026-11-11T07:30:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "브리지 해킹(10/22) 19일째, 새 공식 발표·사고 보고서는 여전히 없어요. 어제 알트코인이 함께 밀린 약한 장이라 거래 적은 작은 코인엔 부담이에요.",
+      "summary": "브리지 해킹(10/22) 20일째, 공식 사고 보고서나 준비금 보충 확인은 여전히 없어요. 어젯밤 물가 충격으로 알트코인이 함께 밀린 약한 장이라 작은 코인엔 부담이에요.",
       "good": [
-        "왁스는 해킹 뒤 건당 한도 등 안전장치를 넣고 브리지 처리를 다시 시작했어요(10/25 보도)",
-        "팀은 빠져나간 준비금을 다시 채우겠다고 했고, WAXP 코인과 블록체인 자체는 영향이 없다고 밝혔어요",
-        "피해 규모는 약 7.5만~9만 달러로 작은 편이에요"
+        "피해 규모는 약 9만 달러 수준으로 작은 편이고, WAXP 코인과 블록체인 자체가 공격당한 건 아니에요",
+        "최근 2주 안에 새로운 해킹·사고 소식은 나오지 않았어요"
       ],
       "bad": [
-        "11/10 아침까지 공식 사고 보고서는 없고, 준비금을 실제로 채웠는지 외부에서 확인된 바도 없어요",
-        "원인은 수수료 확인이 빠진 단순한 코드 실수였다고 분석됐어요(10/27). 관리 수준에 대한 신뢰에 부담이에요",
-        "업비트·빗썸의 '유의 촉구'가 풀렸다는 공지는 아직 찾지 못했어요",
-        "11/9 이더리움 -4.6%, XRP -5% 등 알트코인이 함께 밀렸고 하루 청산이 10억 달러를 넘었어요. 이런 날 작은 코인은 반등이 더디기 쉬워요"
+        "해킹 정리 페이지(블록체인브리치스) 기준으로 왁스는 아직 공식 사고 보고서와 자금 회수 노력을 공개하지 않았어요",
+        "업비트·빗썸의 '유의 촉구'가 풀렸다는 날짜 확인된 공지는 이번에도 찾지 못했어요",
+        "11/10 밤 미국 물가가 높게 나오며 솔라나 -4.2%, 도지 -3.8% 등 알트코인이 함께 밀렸어요. 이런 날 거래 적은 작은 코인은 반등이 더디기 쉬워요",
+        "최근 2주 안에 나온 왁스 자체의 새 호재(업그레이드·제휴) 소식은 찾지 못했어요"
       ],
       "onchain": [
-        "확인된 큰손 움직임 없음 — 최근 2주(10/27~11/10) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
+        "확인된 큰손 움직임 없음 — 최근 2주(10/28~11/11) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
       ],
       "upcoming": [],
       "sources": [
         {
-          "title": "Shattered · Cross-Chain Bridge Security: 3 Hacks in 7 Days (10/27)",
-          "url": "https://shattered.io/bridge-hacks-cysic-wax-initia-seven-days-2026/"
+          "title": "Blockchain Breaches · WAX Bridge Zero-Fee Withdrawal Exploit (2026)",
+          "url": "https://www.blockchainbreaches.com/en/breaches/wax-2026"
         },
         {
-          "title": "The Industry Spread · WAX blockchain bridge exploit paused processing, then resumed (10/25)",
-          "url": "https://theindustryspread.com/wax-blockchain-bridge-exploit-pause-and-restart/"
-        },
-        {
-          "title": "토큰포스트 · [모닝 시세브리핑] 비트코인 74,827달러, 이더리움 2,127달러 (11/10)",
-          "url": "https://www.tokenpost.kr/news/briefing/435404"
+          "title": "토큰포스트 · [모닝 시세브리핑] 비트코인 73,316달러, 이더리움 2,041달러 (11/11)",
+          "url": "https://www.tokenpost.kr/news/briefing/436140"
         }
       ]
     },
     "KRW-ARB": {
-      "summary": "11/9 하루 +6.8% 오른 약 0.179달러, 거래량도 30일 평균보다 79% 많았어요. 다만 50일 평균선(약 0.188달러) 바로 아래이고, 11/16 정기 물량 해제가 남아 있어요.",
+      "summary": "11/9 급등분을 되돌려 11/10 밤 약 0.165달러(바이낸스)까지 밀렸어요. 50일 평균선(약 0.187달러)과 더 멀어졌고, 11/12 보상안 투표 마감과 11/16 정기 물량 해제가 남아 있어요.",
       "good": [
-        "11/9 시가 약 0.168달러에서 약 0.179달러로 하루 +6.8% 올랐어요. 비트코인이 내린 날에도 버틴 거예요",
-        "11/9 거래량이 약 2.67억 달러로 30일 평균보다 79% 많았어요. 그저께 '사려는 힘이 약하다'던 모습에서 바뀌었어요",
-        "하이퍼리퀴드가 아비트럼 기술(Orbit)로 만든 새 체인 '엘리시움'을 내놨어요(11/8). 아비트럼 기술을 쓰는 곳이 늘어난다는 뜻이에요",
-        "아비트럼 위 스테이블코인 시가총액이 11/8 하루 약 4,360만 달러 늘어 주요 체인 중 증가 폭 1위였어요"
+        "아비트럼이 지난주 스테이블코인 탈중앙거래소 거래량 증가 1위(약 6,420만 달러 증가)였다는 보도가 나왔어요(11/10)",
+        "아비트럼 위에 개인정보 보호 기능 'NullMask'가 새로 나왔어요(11/10 보도). 쓸 거리가 늘어난다는 뜻이에요",
+        "11/10 거래량이 약 2.56억 달러로 30일 평균보다 66% 많았어요. 관심은 아직 남아 있어요"
       ],
       "bad": [
-        "50일 평균선이 약 0.188달러로 지금 가격보다 위예요. 이 근처(0.184~0.188달러)가 다음 저항선으로 꼽혀요",
-        "1년 기준으론 약 -41%로 길게 보면 아직 하락 추세 안에 있어요",
-        "11/7 선물 미결제약정이 하루 20.7% 줄었어요(약 3,270만 달러). 선물 쪽 관심은 식은 상태예요",
-        "11/16엔 약 9,265만 ARB 정기 해제가 있고, 1억 ARB 보상안이 최종 통과되면 그만큼 더 풀릴 수 있어요"
+        "11/10 밤 11시 50분쯤 약 0.1653달러로 전날 마감(약 0.1749달러)보다 5% 넘게 내렸어요. 11/9 상승분을 거의 되돌렸어요",
+        "50일 평균선(약 0.187달러)이 지금 가격보다 13%쯤 위예요. 추세로 보면 아직 하락 구간이에요",
+        "11/16엔 약 9,265만 ARB 정기 해제가 있고, 1억 ARB 보상안이 최종 통과되면 그만큼 더 풀릴 수 있어요",
+        "어젯밤 미국 물가 충격으로 이더리움이 -4%대로 빠졌어요. 이더리움 기반 코인은 같이 약해지기 쉬워요"
       ],
       "onchain": [
-        "바이낸스가 해킹 뒤 동결된 약 7,456만 ARB·8,426 ETH를 돌려달라는 제안을 DAO에 올렸어요(11/5~7). 절차가 약 7주 걸려 빨라야 12월 말이에요",
-        "돌려받은 물량은 해킹 손실·준비금 보충에 쓰겠다고 했어요. 바로 시장에 팔린다는 뜻은 아니에요",
-        "그 밖에 최근 2주(10/27~11/10) 안에 아캄·룩온체인·웨일얼럿이 공개한 새 ARB 큰손 움직임은 확인되지 않았어요"
+        "아비트럼 보안위원회가 11/3 바이낸스 해킹 관련 동결 자금 약 3,000만 달러어치를 옮겼다는 보도가 있어요. 가격과의 관련은 확인되지 않았어요",
+        "바이낸스가 동결된 약 7,456만 ARB 반환을 DAO에 요청했어요(11/5~7). 절차가 약 7주 걸려 빨라야 12월 말이고, 바로 시장에 팔린다는 뜻은 아니에요",
+        "그 밖에 최근 2주(10/28~11/11) 안에 아캄·룩온체인·웨일얼럿이 공개한 새 ARB 큰손 움직임은 확인되지 않았어요"
       ],
       "upcoming": [
         {
-          "when": "~11/12(목)",
-          "what": "USDG 1억 ARB 보상안 온체인 최종 투표 마감",
-          "why": "이 투표가 끝나야 1억 ARB 지급이 확정돼요"
+          "when": "11/12(목)",
+          "what": "USDG 1억 ARB 보상안 온체인 최종 투표 마감(예정)",
+          "why": "이 투표가 끝나야 1억 ARB 지급이 확정돼요. 시장에 풀릴 물량이 늘어날 수 있어요"
         },
         {
           "when": "11/16(월)",
@@ -71,20 +65,24 @@
       ],
       "sources": [
         {
-          "title": "DiarioBitcoin · ARB gana 6,76% en la sesión y enfrenta una resistencia técnica clave (11/9)",
-          "url": "https://www.diariobitcoin.com/analisis/arb-gana-676-en-la-sesion-y-enfrenta-una-resistencia-tecnica-clave-9-de-noviembre-de-2026/"
+          "title": "The Cryptonomist · Arbitrum price shows neutral daily bias (11/10)",
+          "url": "https://en.cryptonomist.ch/2026/11/10/arbitrum-price-s-rebound-faces-hourly-resistance-november-10-2026/"
         },
         {
-          "title": "CoinMarketCap · Latest Arbitrum News (11/9)",
-          "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"
+          "title": "DiarioBitcoin · Arbitrum cae 1,22% y el volumen supera su promedio (11/10)",
+          "url": "https://www.diariobitcoin.com/analisis/arbitrum-cae-122-y-el-volumen-supera-su-promedio-el-10-de-noviembre-de-2026/"
         },
         {
-          "title": "TokenPost · Arbitrum Open Interest Falls 20.7% as Spot Price Rises 0.79% (11/7)",
-          "url": "https://www.tokenpost.com/news/investing/50730"
+          "title": "Pluang · Arbitrum posts $64.2M stablecoin DEX volume, launches NullMask (11/10)",
+          "url": "https://pluang.com/en/news-feed/arbitrum-volume-perdagangan-stablecoin-alat-privasi-dampak-harga-arb"
         },
         {
-          "title": "TokenPost · Arbitrum Stablecoin Market Cap Rises $43.6 Million in 24 Hours (11/8)",
-          "url": "https://tokenpost.com/news/investing/51583"
+          "title": "Pluang · ArbitrumDAO approves 100M ARB incentive for Global Dollar — on-chain vote 10/29~11/12 (10/25)",
+          "url": "https://pluang.com/en/news-feed/arbitrumdao-setujui-100-juta-incentive-arbitrum-untuk-global-dollar"
+        },
+        {
+          "title": "TokenPost · ArbitrumDAO Opens Vote on 100 Million ARB for USDG Incentives (10/29)",
+          "url": "https://www.tokenpost.com/news/business/43677"
         },
         {
           "title": "TokenPost · Binance Seeks ArbitrumDAO Vote to Release Frozen Ether and Arbitrum (11/7)",
@@ -93,10 +91,6 @@
         {
           "title": "crypto.news · Binance seeks return of frozen ETH and 74.56 million ARB (11/5)",
           "url": "https://crypto.news/binance-frozen-eth-arb-recovery-proposal/"
-        },
-        {
-          "title": "Analytics Insight · November 2026 Economic Releases and Crypto Events to Watch (11/9)",
-          "url": "https://www.analyticsinsight.net/cryptocurrency-analytics-insight/november-2026-economic-releases-and-crypto-events-to-watch-us-cpi-fed-minutes-pce-inflation-and-token-unlocks"
         },
         {
           "title": "Tokenomist · Arbitrum unlock schedule",
