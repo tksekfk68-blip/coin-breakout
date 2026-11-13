@@ -1,6 +1,33 @@
 {
  "updates": [
   {
+   "at": "2026-11-13T14:15:20+09:00",
+   "level": "주의",
+   "title": "비트코인 9,417만 원, 하루 -5.5% — 엔비디아 CEO 사임 충격·연준 금리 인상 우려·ETF 자금 유출, 원화 코인 93% 내림",
+   "lines": [
+    "비트코인은 9,417만 원 근처로 1시간 -0.8%, 4시간 -2.5%, 24시간 -5.5%예요. 업비트 원화 코인 약 93%가 내림세고 POKT -5.5%, ZIL -5.3%, ONDO -3.8%가 많이 빠졌어요. 반대로 BIRB +6.2%, ERA +3.7% 정도만 올랐어요.",
+    "해외에선 비트코인이 8월 이후 처음으로 7만 달러 아래(약 6만 8천 달러대)까지 밀렸어요. 엔비디아 젠슨 황 CEO 사임 소식에 기술주가 흔들렸고, 예상보다 높은 물가에 연준이 12월에 금리를 또 올릴 수 있다는 말이 나오면서 달러가 약 19개월 만에 가장 강해졌어요.",
+    "미국 비트코인 현물 ETF에서는 11월 11일 하루 약 3억 달러(블랙록 IBIT 약 2.7억 달러)가 빠지는 등 5거래일 동안 약 14억 달러가 유출됐어요.",
+    "가격이 빠지면서 24시간 동안 약 12억 달러어치 레버리지 포지션이 강제 청산됐고, 대부분 상승에 걸었던 롱 포지션이었어요. 거래소 자체 문제는 확인되지 않았어요.",
+    "WAXP 4.94원: 첫 받침·반등 끝 기준선 4.86원과 첫 벽 5.11원 사이예요. 받침까지 약 1.6% 남았어요.",
+    "ARB 199원: 첫 받침이자 반등 끝 기준선 202원 아래로 내려왔어요. 다시 위로 올라서려면 202원 회복이 먼저고, 첫 벽은 약 221원이에요."
+   ],
+   "sources": [
+    {
+     "title": "crypto.news — Bitcoin price crashes below $70K as crypto liquidations hit $1.2B",
+     "url": "https://crypto.news/bitcoin-price-crash-below-70000-nvidia-liquidations/"
+    },
+    {
+     "title": "KuCoin — Bitcoin Drops to 9-Month Low as U.S. Stocks Fall Amid NVIDIA Turmoil",
+     "url": "https://www.kucoin.com/news/flash/bitcoin-falls-to-9-month-low-as-us-stocks-decline-amid-nvidia-turmoil"
+    },
+    {
+     "title": "Why It Moved — Daily Market Report, 13 November 2026",
+     "url": "https://whyitmoved.substack.com/p/daily-market-report-friday-13-november"
+    }
+   ]
+  },
+  {
    "at": "2026-11-10T22:14:18+09:00",
    "level": "주의",
    "title": "비트코인 1억 50만 원 근처 보합, 원화 코인 71% 내림 — 오늘 밤 10시 30분 미국 물가 발표 앞두고 관망, ARB 기준선 아래로",
@@ -242,29 +269,6 @@
     {
      "title": "Admirals – Bitcoin Price Today",
      "url": "https://admiralmarkets.com/analytics/traders-blog/bitcoin-price-today-btc-edges-higher"
-    }
-   ]
-  },
-  {
-   "at": "2026-10-15T16:10:00+09:00",
-   "level": "주의",
-   "title": "비트 하루 -3%, 원화마켓 92% 하락 — 미국 물가 예상보다 높아 금리 인상 우려",
-   "lines": [
-    "오후 3시 기준 비트코인 1억 926만 원. 4시간 -1.3%, 하루 -3.0%예요. 최근 1시간은 거의 제자리라 급락은 일단 멈춘 모습이에요. 업비트 원화마켓 코인 92%가 하락했어요.",
-    "원인은 미국 9월 물가(CPI)가 3.7%로 예상(3.6%)보다 높게 나온 것이에요. 연준이 금리를 또 올릴 수 있다는 확률이 18%에서 44%까지 뛰었고, 달러가 강해지고 미국 주식(나스닥 -1.9%)도 같이 빠졌어요.",
-    "미국 비트코인 ETF에서 하루 2억 6천만 달러가 빠져나가 3주 연속 유입이 끊겼고, 하루 동안 약 9억 7천만 달러 레버리지 포지션이 강제 청산됐어요(92%가 상승 베팅). 중동(이란·후티) 긴장으로 유가 부담도 이어지고 있어요.",
-    "많이 빠진 코인: CASHCAT -14%, GTC -12%, PONS -11%. 거꾸로 오른 코인: BFC +14%, ZK +14% 정도로 소수예요.",
-    "왁스(WAXP) 6.58원(-5.5%): 첫 받침이자 반등 끝 기준선(약 6.56원) 바로 위에 붙어 있어요. 여기 아래로 내려가면 약세 신호예요.",
-    "아비트럼(ARB) 235원(-4.5%): 첫 받침 221.5원과 첫 벽 258원 사이 중간이에요. 반등 끝 기준선은 약 200원이라 아직 여유는 있어요."
-   ],
-   "sources": [
-    {
-     "title": "Coinpedia – Bitcoin Price Crash Wipes Out $89 Billion as Fed Rate Hike Odds Hit 44%",
-     "url": "https://coinpedia.org/news/bitcoin-price-crash-wipes-out-89-billion-as-fed-rate-hike-odds-hit-44/"
-    },
-    {
-     "title": "KuCoin – Crypto Daily Market Report (2026-10-15)",
-     "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-15-2026"
     }
    ]
   }
