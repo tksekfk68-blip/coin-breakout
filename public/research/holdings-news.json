@@ -1,56 +1,50 @@
 {
-  "writtenAt": "2026-11-15T07:40:00+09:00",
+  "writtenAt": "2026-11-16T07:45:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "11/12 사상 최저(4.84원)를 찍은 뒤에도 바닥권이고, 하룻밤 사이 알트코인 전체가 7~10% 빠져 부담이 커졌어요. 브리지 해킹(10/22) 이후 공식 보고서 등 새 소식은 여전히 없어요.",
+      "summary": "11/15 약 0.00348달러로 바닥권에서 큰 변화 없이 버티고 있어요. 왁스 자체의 새 소식은 이번에도 없고, 시장 전체 분위기에 끌려다니는 모습이에요.",
       "good": [
-        "브리지 해킹 피해는 약 9만 달러 수준으로 작은 편이고, WAXP 코인과 블록체인 자체가 공격당한 건 아니에요",
-        "최근 2주 안에 새로운 해킹·사고 소식은 나오지 않았어요"
+        "11/15 거래량이 하루 사이 약 53% 늘었어요. 관심이 완전히 끊기진 않았다는 뜻이에요(CoinMarketCap)",
+        "브리지 해킹(10/22) 이후 최근 2주 안에 새로운 해킹·사고 소식은 나오지 않았어요"
       ],
       "bad": [
-        "11/12 사상 최저 4.84원을 기록했고, 50일 평균선(약 6.18원, 11/14 기준)보다 한참 아래예요",
-        "밤사이 솔라나 -9.9%, 도지 -9.0% 등 알트코인 전체가 크게 빠져, 작은 코인엔 더 불리한 분위기예요",
-        "왁스는 아직 공식 사고 보고서와 자금 회수 계획을 공개했다는 확인이 없어요",
-        "업비트·빗썸의 '유의 촉구'가 풀렸다는 날짜 확인된 공지는 이번에도 찾지 못했어요",
-        "최근 2주(11/1~11/15) 안에 나온 왁스 자체의 새 호재(업그레이드·제휴) 소식은 찾지 못했어요"
+        "11/15 약 0.00348달러로, 7일 평균(약 0.00368달러)보다 아래예요. 10/26(약 0.00456달러)보다 20% 넘게 낮아요",
+        "비트코인이 한 주 -13% 빠진 '극단적 공포' 장이라, 시가총액이 작은 코인엔 더 불리한 분위기예요",
+        "왁스가 공식 사고 보고서와 자금 회수 계획을 공개했다는 확인은 여전히 없어요",
+        "최근 2주 안에 나온 왁스 자체의 호재(업그레이드·제휴·상장) 소식은 찾지 못했어요"
       ],
       "onchain": [
-        "확인된 큰손 움직임 없음 — 최근 2주(11/1~11/15) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
+        "확인된 큰손 움직임 없음 — 최근 2주(11/2~11/16) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
       ],
       "upcoming": [],
       "sources": [
         {
+          "title": "CoinMarketCap · Latest WAX (WAXP) Price Analysis (11/15)",
+          "url": "https://coinmarketcap.com/cmc-ai/wax/price-analysis/"
+        },
+        {
           "title": "Blockchain Breaches · WAX Bridge Zero-Fee Withdrawal Exploit (2026)",
           "url": "https://www.blockchainbreaches.com/en/breaches/wax-2026"
-        },
-        {
-          "title": "CoinMarketCap · Latest WAX (WAXP) News Update (10/25)",
-          "url": "https://coinmarketcap.com/cmc-ai/wax/latest-updates/"
-        },
-        {
-          "title": "토큰포스트 · [모닝 시세브리핑] 비트코인 65,763달러, 이더리움 1,836달러 (11/15)",
-          "url": "https://www.tokenpost.kr/news/briefing/438422"
         }
       ]
     },
     "KRW-ARB": {
-      "summary": "11/14 약 0.138달러로 일주일 새 16% 넘게 빠졌고, 내일(11/16) 약 9,265만 ARB 정기 해제가 있어요. 그래도 아비트럼 안의 스테이블코인은 하루 1억 달러 넘게 늘었어요.",
+      "summary": "11/15 약 0.13~0.14달러로 한 주 새 약 20% 빠졌고, 오늘(11/16) 약 9,265만 ARB 정기 해제가 있어요. 1억 ARB 보상안도 통과돼 앞으로 풀릴 물량이 늘었어요.",
       "good": [
-        "아비트럼 안 스테이블코인이 11/14 하루 약 1.02억 달러 늘어 38.35억 달러가 됐어요. 일주일 동안 2.18억 달러 늘었어요(DefiLlama)",
-        "바이낸스 월렛이 아비트럼 네트워크 입출금을 새로 지원하기 시작했어요(11/12)",
-        "스트라이프가 아비트럼에서 USDC 지급을 지원하기 시작했어요(11/5). 실제 결제에 쓰이는 곳이 늘어난다는 뜻이에요"
+        "아비트럼 안 스테이블코인이 약 9,180만 달러 더 늘었어요. 돈이 네트워크로 계속 들어오고 있다는 신호예요(11/15 보도)",
+        "11/15 새벽 4시간 만에 7.44% 반등(0.1237→0.1329달러)하는 등 매수세가 아주 없진 않아요",
+        "아비트럼이 새 유동성 거래 방식(propAMM)을 준비 중이라고 확인했어요. 날짜는 아직 정해지지 않았어요",
+        "1,800 ETH를 재무 관리·개발자 지원에 쓰는 안건도 통과됐어요(11/12)"
       ],
       "bad": [
-        "11/14 약 0.1384달러로 7일 동안 -16.4%예요. 50일 평균(약 0.156달러) 아래라 추세로는 하락 구간이에요",
+        "한 주 약 -20%로 비트코인(-14%)보다 더 많이 빠졌어요. 50일 평균(약 0.16달러)·200일 평균(약 0.15달러) 모두 아래예요",
         "11/16 약 9,265만 ARB가 풀려요(투자자 약 3,652만, 팀·자문 약 5,613만). 시장에 나올 물량이 늘 수 있어요",
-        "전체 발행량의 약 31%가 아직 시장에 안 풀렸어요. 앞으로도 매달 해제 부담이 이어져요",
-        "1억 ARB 보상안 최종 투표(11/12 마감)가 통과되면 그만큼 더 풀릴 수 있어요. 결과 보도는 아직 확인 못 했어요",
+        "1억 ARB를 USDG 보상에 쓰는 안건이 11/12 통과됐어요(찬성 1.55억 ARB). 보상으로 풀린 물량이 시장에 팔릴 수 있어요",
         "GMX가 아비트럼 거버넌스 위원회를 끝내기로 했어요(11/11). 생태계 참여가 줄어드는 신호로 볼 수도 있어요"
       ],
       "onchain": [
-        "11/14 하루 ARB 선물 청산 약 77만 달러 중 92%가 '오른다'에 건 쪽이었어요(CoinGlass)",
-        "상위 10개 지갑이 전체의 약 47.5%를 갖고 있어, 큰손이 움직이면 가격이 크게 흔들릴 수 있어요",
-        "바이낸스가 동결된 약 7,456만 ARB와 8,426 ETH 반환을 DAO에 요청했어요(11/5). 절차가 길어 바로 시장에 풀린다는 뜻은 아니에요",
+        "하루 ARB 선물 청산 약 35.6만 달러 중 99.9%가 '오른다'에 건 쪽이었어요. 미결제약정은 한 달 새 약 30% 줄었어요(CoinStats)",
+        "보안위원회가 해킹 관련 약 7,456만 ARB와 8,425 ETH를 보관 주소로 옮겨 묶어뒀어요. 움직이려면 DAO 투표가 필요해 바로 시장에 풀리진 않아요",
         "그 밖에 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 새 ARB 큰손 거래소 입출금은 확인되지 않았어요"
       ],
       "upcoming": [
@@ -60,35 +54,35 @@
           "why": "매달 반복되는 해제라 그 전후로 파는 물량이 늘 수 있어요"
         },
         {
-          "when": "11월 중",
-          "what": "USDG 1억 ARB 보상안 최종 투표 결과 확인, 바이낸스 동결 자금 반환안 토론",
-          "why": "보상안이 통과되면 시장에 풀릴 물량이 늘 수 있고, 동결 권한 논란이 다시 커질 수 있어요"
+          "when": "12월 하순 예상",
+          "what": "바이낸스 동결 자금 반환안 DAO 투표",
+          "why": "동결 권한 논란이 다시 커질 수 있고, 결과에 따라 묶인 ARB의 행방이 정해져요"
         }
       ],
       "sources": [
         {
-          "title": "Phemex(PANews) · Arbitrum Stablecoin Supply Jumps $102M in One Day to $3.835B (11/14)",
-          "url": "https://phemex.com/news/article/arbitrum-stablecoin-supply-jumps-102m-in-one-day-to-hit-3835b-103580"
+          "title": "CryptoDaily · ARB Falls 20% in a Week, Lagging Bitcoin Even as Arbitrum Draws $91.8M in Stablecoins (11/15)",
+          "url": "https://cryptodaily.co.uk/2026/11/arb-falls-20-in-a-week-lagging-bitcoin-even-as-arbitrum-draws-91-8m-in-stablecoins"
         },
         {
-          "title": "CoinGabbar · Arbitrum Price Prediction: Can ARB Hold $0.1351 Support? (11/14)",
-          "url": "https://www.coingabbar.com/en/arbitrum-price-prediction-arb-support-this-week"
+          "title": "TokenPost · Arbitrum Rises 7.44% in Four Hours to $0.1329 on Binance (11/15)",
+          "url": "https://www.tokenpost.com/news/investing/57691"
         },
         {
-          "title": "KuCoin · ARB holders finish voting on 100M ARB plan (11/9)",
-          "url": "https://www.kucoin.com/news/insight/ARB/6af1fc4f4fd70f00078e90c8"
+          "title": "Coinranking · Arbitrum governance vote on 100 million ARB USDG plan ends (11/13 업데이트)",
+          "url": "https://coinranking.com/news/arbitrum-governance-vote-100-million-arb-usdg-plan-ends"
         },
         {
-          "title": "CoinMarketCap · Arbitrum latest updates (11/13)",
+          "title": "CoinMarketCap · Arbitrum latest updates (11/15)",
           "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"
+        },
+        {
+          "title": "CoinStats · Arbitrum (ARB) News Today (11/14)",
+          "url": "https://coinstats.app/ai/a/latest-news-for-arbitrum"
         },
         {
           "title": "TokenPost · GMX Will End Governance Committee and Move Arbitrum Role to Contributors (11/11)",
           "url": "https://www.tokenpost.com/news/technology/54100"
-        },
-        {
-          "title": "Tokenomist · Arbitrum unlock schedule",
-          "url": "https://tokenomist.ai/arbitrum"
         }
       ]
     }
