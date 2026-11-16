@@ -1,78 +1,86 @@
 {
-  "writtenAt": "2026-11-16T07:45:00+09:00",
-  "title": "비트코인 6.2만 달러까지 밀렸다가 6.5만 달러 근처로 — 한 주 -13%, 공포지수 10으로 '극단적 공포'",
+  "writtenAt": "2026-11-17T07:50:00+09:00",
+  "title": "비트코인 6.5만 달러 근처에서 숨 고르기 — 미국 기술주 급락·엔비디아 실적 앞두고 여전히 '극단적 공포'",
   "mood": "위험",
-  "moodNote": "비트코인이 50일·200일 평균선 모두 한참 아래이고 6주 연속 하락 중이에요. 지금은 새로 사기보다 가진 걸 지키는 게 먼저예요.",
+  "moodNote": "비트코인이 50일 평균선보다 한참 아래이고 ETF 돈도 계속 빠져요. 오늘 밤 소매판매·내일 새벽 엔비디아 실적이 큰 변수라 지금은 지키는 게 먼저예요.",
   "coin": [
-    "비트코인은 약 64,853달러(11/16 새벽 5시, 하루 -1.44%), 이더리움은 약 1,821달러(-0.91%)예요.",
-    "토요일 밤~일요일 새벽 비트코인이 약 6.2만 달러까지 떨어졌다가 1시간 만에 6.5만 달러 위로 반등했어요. 7월 이후 가장 낮은 가격이에요.",
-    "한 주 동안 비트코인은 약 -13%, 이더리움은 약 -18%였어요. 하루 강제 청산은 약 20억 달러였고 대부분 '오른다'에 건 쪽이었어요.",
-    "미국 비트코인 현물 ETF에서 11/13까지 7거래일 연속 돈이 빠졌고, 그동안 약 19.1억 달러가 나갔어요.",
-    "공포·탐욕 지수는 10까지 내려가 '극단적 공포' 상태예요. 다만 1,000개 넘게 가진 큰손 지갑은 오히려 비트코인을 늘렸어요(CryptoQuant)."
+    "비트코인은 약 64,990달러(11/17 새벽 5시, 하루 +0.18%), 이더리움은 약 1,821달러(+0.01%)로 어제와 거의 같아요.",
+    "하루 동안 6.5만 달러 아래로 다시 내려갔다 올라오는 등 바닥을 다지려는 흐름이지만, 한 주로 보면 여전히 약 -14%예요.",
+    "미국 비트코인 현물 ETF는 11/13에도 약 1.85억 달러가 빠졌어요. 11월 들어 빠진 돈이 약 21억 달러예요.",
+    "하루 강제 청산은 약 2.2억 달러로 지난 주말(약 20억 달러)보다 크게 줄었어요. 급한 매도는 일단 진정된 모습이에요.",
+    "알트코인은 대부분 ±1% 안쪽으로 조용했고, 하이퍼리퀴드(HYPE)만 +2% 정도 올랐어요. 공포·탐욕 지수는 여전히 '극단적 공포'예요."
   ],
   "macro": [
-    "미국 10월 소비자물가가 한 달 +0.4%로 예상(0.3%)보다 높게 나왔어요. 시장은 12월 금리 0.25%p 인상을 사실상 확정으로 보고 있어요.",
-    "지난주 미국 10년 국채금리는 5.15%, 달러지수는 103.38로 높은 수준이에요. 돈이 위험한 자산에서 빠지기 쉬운 환경이에요.",
-    "원/달러 환율은 약 1,335원(11/15 기사 기준)이에요. 업비트 원화 가격은 달러 가격과 환율을 같이 봐야 해요.",
-    "미국 나스닥은 AI주 급락으로 조정 구간에 들어갔어요. 기술주가 약하면 코인 심리도 같이 약해지는 경향이 있어요."
+    "11/16 미국 증시가 크게 빠졌어요. 나스닥 -2.5%, S&P500 -1.9%로 3일 연속 하락이고, 엔비디아(-4.1%)가 AI주 매도를 이끌었어요.",
+    "엔비디아는 젠슨 황 CEO 사임 이후 흔들리고 있고, 미국 정부의 AI 칩 원격 접속 제한 규칙도 부담이 됐어요. 기술주가 약하면 코인 심리도 같이 약해져요.",
+    "미국 10년 국채금리는 5.13%로 여전히 높아요. 유가(브렌트)는 -3.5% 내린 92.44달러였어요.",
+    "코스피는 11/16 -3.59% 급락한 5,100.50으로 마감했어요. 원/달러 환율은 1,335.7원으로 거의 그대로라, 업비트 원화 가격은 달러 가격을 따라 움직일 가능성이 커요."
   ],
   "events": [
-    {
-      "when": "11/16(월)",
-      "what": "아비트럼 정기 물량 해제(약 9,265만 ARB)",
-      "why": "보유 코인 ARB와 관련돼요. 해제 전후로 파는 물량이 늘 수 있어요"
-    },
     {
       "when": "11/17(화) 22:30",
       "what": "미국 10월 소매판매",
       "why": "소비가 강하게 나오면 금리를 더 올릴 이유가 돼 코인에 부담이 될 수 있어요"
     },
     {
-      "when": "11/17(화) 미국 현지",
-      "what": "엔비디아 실적 발표",
-      "why": "흔들리는 AI·기술주 분위기가 코인 심리에도 그대로 옮겨오고 있어요"
+      "when": "11/18(수) 새벽 6시 전후",
+      "what": "엔비디아 3분기 실적 발표",
+      "why": "요즘 코인은 AI·기술주와 같이 움직여요. 실적이 실망스러우면 코인도 더 흔들릴 수 있어요"
     },
     {
       "when": "11/19(목) 04:00",
       "what": "미국 연준 10월 회의록 공개",
-      "why": "12월 이후에도 금리를 더 올릴지 힌트가 나올 수 있어요"
+      "why": "앞으로 금리를 더 올릴지 힌트가 나올 수 있어요"
     },
     {
-      "when": "11/30(월)",
-      "what": "MSCI 지수에서 스트래티지(MSTR) 제외",
-      "why": "비트코인을 많이 가진 회사라 지수 펀드의 기계적 매도가 비트코인 심리에 부담이 될 수 있어요"
+      "when": "11/19(목) 22:30",
+      "what": "미국 주간 실업수당 청구 건수",
+      "why": "고용이 탄탄하면 금리 인하 기대가 더 줄어들 수 있어요"
+    },
+    {
+      "when": "11/21(토) 00:00",
+      "what": "미국 미시간대 소비심리·기대 물가(확정치)",
+      "why": "사람들이 예상하는 물가가 높으면 금리 부담이 커져요"
     }
   ],
   "strategy": [
-    "비트코인은 약 6.5만 달러로 50일 평균선보다 한참 아래이고, 200일선(약 7.3만 달러)도 깨졌어요. 추세추종 기준으론 새로 들어갈 때가 아니에요.",
-    "들고 있는 코인은 손절 주문이 걸려 있는지 먼저 확인하세요. 손절선을 계속 아래로 옮기는 건 피하는 게 좋아요.",
+    "비트코인은 약 6.5만 달러로 50일 평균선(약 7.7만 달러)과 200일 평균선(약 7.6만 달러) 모두 한참 아래예요. 추세추종 기준으론 새로 들어갈 때가 아니에요.",
+    "들고 있는 코인은 손절 주문이 걸려 있는지 먼저 확인하세요. 큰 발표(엔비디아 실적) 전후엔 가격이 순간적으로 크게 움직일 수 있어요.",
     "신규 진입은 50일선 위 마감을 다시 볼 때까지 쉬고, 꼭 들어가야 하면 평소 절반 이하 크기로 손절 주문부터 거세요.",
-    "급락 뒤 반짝 반등(1시간 +5%)이 자주 나오는 장이에요. 반등만 보고 서둘러 따라 사지 마세요."
+    "청산이 줄고 가격이 버티는 건 좋은 신호지만, 추세가 바뀌었다는 뜻은 아니에요. 반등만 보고 서둘러 따라 사지 마세요."
   ],
   "sources": [
     {
-      "title": "토큰포스트 · [모닝 시세브리핑] 비트코인 64,853달러, 이더리움 1,821달러 (11/16)",
-      "url": "https://www.tokenpost.kr/news/briefing/438729"
+      "title": "토큰포스트 · [모닝 시세브리핑] 비트코인 64,990달러, 이더리움 1,821달러 (11/17)",
+      "url": "https://www.tokenpost.kr/news/briefing/439345"
     },
     {
-      "title": "CryptoTicker · Bitcoin price: overnight low and the weekly close (11/15)",
-      "url": "https://cryptoticker.io/en/bitcoin-price-overnight-low-weekly-close-november-15-2026/"
+      "title": "토큰포스트 · 11월 17일 출근길 팟캐스트 (11/17)",
+      "url": "https://www.tokenpost.kr/news/insights/439359"
     },
     {
-      "title": "The Sunday Crypto Desk · 15 November 2026 (11/15)",
-      "url": "https://thecryptodesk.substack.com/p/the-sunday-crypto-desk-15-november"
+      "title": "Cryptonomist · Bitcoin price faces $2.1B November ETF outflows (11/16)",
+      "url": "https://en.cryptonomist.ch/2026/11/16/bitcoin-price-faces-1b-november-etf-outflows-november-16-2026/"
     },
     {
-      "title": "토큰포스트 · 비트코인 16일 중 14일 손실 실현…ETF 7거래일 순유출 (11/15)",
-      "url": "https://www.tokenpost.kr/news/cryptocurrency/438554"
+      "title": "KuCoin · BTC ETF Flows — Last 10 Trading Sessions (11/16)",
+      "url": "https://www.kucoin.com/news/insight/BTC/6afaa146777a44000755570d"
     },
     {
-      "title": "Stocktwits · The Weekly Spread: What Shaped US Treasury Yields And The Dollar This Week (11/13)",
-      "url": "https://stocktwits.com/news-articles/markets/equity/what-shaped-us-treasury-yields-and-the-dollar-in-week-ended-november-13/cNb2sojR9Qd"
+      "title": "AP(947qdr) · Stocks tumble on Wall Street as Nvidia leads another sell-off (11/16)",
+      "url": "https://www.947qdr.com/2026/11/16/the-closing-bell-stocks-tumble-on-wall-street-as-nvidia-leads-another-sell-off-in-technology-companies/"
     },
     {
-      "title": "Newsquawk · Week in Focus 16-20th November 2026 (11/13)",
-      "url": "https://www.newsquawk.com/headlines/week-in-focus--16-20th-november-2026-highlights-include-us-retail-sales-fomc-minutes-chinese-activity-data-pboc-lpr-rba-minutes-uk-inflation-and-uk-jobs"
+      "title": "인베스팅닷컴 · [1116마감체크] 코스피 3거래일 연속 하락 마감 (11/16)",
+      "url": "https://kr.investing.com/news/stock-market-news/article-2176965"
+    },
+    {
+      "title": "토큰포스트 · [오늘의 원화] 달러-원 1,335.7원 (11/16)",
+      "url": "https://www.tokenpost.kr/news/insights/438987"
+    },
+    {
+      "title": "CoinDesk · FOMC minutes, Nvidia earnings: Crypto Week Ahead (11/16)",
+      "url": "https://www.coindesk.com/markets/2026/11/16/fomc-minutes-nvidia-earnings-russia-s-retail-crypto-rules-crypto-week-ahead"
     }
   ]
 }

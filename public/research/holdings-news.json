@@ -1,88 +1,72 @@
 {
-  "writtenAt": "2026-11-16T07:45:00+09:00",
+  "writtenAt": "2026-11-17T07:50:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "11/15 약 0.00348달러로 바닥권에서 큰 변화 없이 버티고 있어요. 왁스 자체의 새 소식은 이번에도 없고, 시장 전체 분위기에 끌려다니는 모습이에요.",
+      "summary": "약 0.00345달러로 11/15에 역대 최저가(약 0.00328달러)를 찍은 뒤 그 근처에 머물러 있어요. 왁스 자체의 새 소식은 이번에도 없어요.",
       "good": [
-        "11/15 거래량이 하루 사이 약 53% 늘었어요. 관심이 완전히 끊기진 않았다는 뜻이에요(CoinMarketCap)",
+        "최근 하루는 -0.3~-0.9% 정도로 크게 더 빠지진 않았어요. 급락은 일단 멈춘 모습이에요(CoinGecko·CoinStats)",
         "브리지 해킹(10/22) 이후 최근 2주 안에 새로운 해킹·사고 소식은 나오지 않았어요"
       ],
       "bad": [
-        "11/15 약 0.00348달러로, 7일 평균(약 0.00368달러)보다 아래예요. 10/26(약 0.00456달러)보다 20% 넘게 낮아요",
-        "비트코인이 한 주 -13% 빠진 '극단적 공포' 장이라, 시가총액이 작은 코인엔 더 불리한 분위기예요",
-        "왁스가 공식 사고 보고서와 자금 회수 계획을 공개했다는 확인은 여전히 없어요",
+        "11/15에 역대 최저가(약 0.00328달러)를 새로 썼어요. 한 주 동안은 약 -9.4%예요",
+        "하루 거래량이 약 49만 달러 수준으로 작아요. 사고팔 때 가격이 크게 튈 수 있어요",
+        "미국 기술주 급락과 비트코인 '극단적 공포' 분위기라, 시가총액이 작은 코인엔 더 불리해요",
         "최근 2주 안에 나온 왁스 자체의 호재(업그레이드·제휴·상장) 소식은 찾지 못했어요"
       ],
       "onchain": [
-        "확인된 큰손 움직임 없음 — 최근 2주(11/2~11/16) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
+        "확인된 큰손 움직임 없음 — 최근 2주(11/3~11/17) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
       ],
       "upcoming": [],
       "sources": [
         {
-          "title": "CoinMarketCap · Latest WAX (WAXP) Price Analysis (11/15)",
-          "url": "https://coinmarketcap.com/cmc-ai/wax/price-analysis/"
+          "title": "CoinGecko · WAX (WAXP) 가격 (11/16)",
+          "url": "https://www.coingecko.com/en/coins/wax"
         },
         {
-          "title": "Blockchain Breaches · WAX Bridge Zero-Fee Withdrawal Exploit (2026)",
-          "url": "https://www.blockchainbreaches.com/en/breaches/wax-2026"
+          "title": "CoinStats · WAX (WAXP) 가격·역대 최저가 (11/16)",
+          "url": "https://coinstats.app/coins/wax/"
         }
       ]
     },
     "KRW-ARB": {
-      "summary": "11/15 약 0.13~0.14달러로 한 주 새 약 20% 빠졌고, 오늘(11/16) 약 9,265만 ARB 정기 해제가 있어요. 1억 ARB 보상안도 통과돼 앞으로 풀릴 물량이 늘었어요.",
+      "summary": "약 0.13달러로 한 주 약 -26%예요. 11/16 약 9,265만 ARB 정기 해제가 지나갔고, 동결 자금을 바이낸스에 돌려줄지 정하는 투표 결과를 기다리는 중이에요.",
       "good": [
-        "아비트럼 안 스테이블코인이 약 9,180만 달러 더 늘었어요. 돈이 네트워크로 계속 들어오고 있다는 신호예요(11/15 보도)",
-        "11/15 새벽 4시간 만에 7.44% 반등(0.1237→0.1329달러)하는 등 매수세가 아주 없진 않아요",
-        "아비트럼이 새 유동성 거래 방식(propAMM)을 준비 중이라고 확인했어요. 날짜는 아직 정해지지 않았어요",
-        "1,800 ETH를 재무 관리·개발자 지원에 쓰는 안건도 통과됐어요(11/12)"
+        "아비트럼 안 스테이블코인이 하루 새 약 9,180만 달러 늘었어요. 돈이 네트워크로 계속 들어오고 있다는 신호예요(11/15)",
+        "11/16 정기 해제는 예정대로 지나갔어요. 이번 달 해제 물량 부담은 일단 지나간 셈이에요",
+        "아비트럼이 새 유동성 거래 방식(propAMM)을 준비 중이라고 했어요. 날짜는 아직 정해지지 않았어요"
       ],
       "bad": [
-        "한 주 약 -20%로 비트코인(-14%)보다 더 많이 빠졌어요. 50일 평균(약 0.16달러)·200일 평균(약 0.15달러) 모두 아래예요",
-        "11/16 약 9,265만 ARB가 풀려요(투자자 약 3,652만, 팀·자문 약 5,613만). 시장에 나올 물량이 늘 수 있어요",
-        "1억 ARB를 USDG 보상에 쓰는 안건이 11/12 통과됐어요(찬성 1.55억 ARB). 보상으로 풀린 물량이 시장에 팔릴 수 있어요",
-        "GMX가 아비트럼 거버넌스 위원회를 끝내기로 했어요(11/11). 생태계 참여가 줄어드는 신호로 볼 수도 있어요"
+        "약 0.1315달러로 한 주 약 -26%예요. 비트코인(약 -14%)보다 훨씬 많이 빠졌어요(CoinGecko)",
+        "11/16 약 9,265만 ARB(유통량의 약 1.5%)가 풀렸어요. 받은 쪽이 팔면 며칠간 매도 압력이 될 수 있어요",
+        "11/12 통과된 1억 ARB 보상안 물량도 앞으로 시장에 나올 수 있어요",
+        "보안위원회가 지갑 키 없이 자금을 옮길 수 있다는 게 드러나 '탈중앙화' 논란이 이어지고 있어요"
       ],
       "onchain": [
-        "하루 ARB 선물 청산 약 35.6만 달러 중 99.9%가 '오른다'에 건 쪽이었어요. 미결제약정은 한 달 새 약 30% 줄었어요(CoinStats)",
-        "보안위원회가 해킹 관련 약 7,456만 ARB와 8,425 ETH를 보관 주소로 옮겨 묶어뒀어요. 움직이려면 DAO 투표가 필요해 바로 시장에 풀리진 않아요",
+        "보안위원회가 해킹 관련 약 7,456만 ARB와 8,426 ETH를 보관 주소에 묶어뒀어요. 11/16 끝나는 투표는 이를 바이낸스에 돌려주는 안건인데, 결과는 아직 확인하지 못했어요",
+        "ARB 선물 미결제약정이 2주 새 약 27% 줄었어요. 빚내서 거는 돈이 빠지고 있다는 뜻이에요(CoinStats, 11/15)",
         "그 밖에 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 새 ARB 큰손 거래소 입출금은 확인되지 않았어요"
       ],
-      "upcoming": [
-        {
-          "when": "11/16(월)",
-          "what": "정기 물량 해제(약 9,265만 ARB, 전체의 약 0.93%)",
-          "why": "매달 반복되는 해제라 그 전후로 파는 물량이 늘 수 있어요"
-        },
-        {
-          "when": "12월 하순 예상",
-          "what": "바이낸스 동결 자금 반환안 DAO 투표",
-          "why": "동결 권한 논란이 다시 커질 수 있고, 결과에 따라 묶인 ARB의 행방이 정해져요"
-        }
-      ],
+      "upcoming": [],
       "sources": [
         {
-          "title": "CryptoDaily · ARB Falls 20% in a Week, Lagging Bitcoin Even as Arbitrum Draws $91.8M in Stablecoins (11/15)",
-          "url": "https://cryptodaily.co.uk/2026/11/arb-falls-20-in-a-week-lagging-bitcoin-even-as-arbitrum-draws-91-8m-in-stablecoins"
+          "title": "CoinGecko · Arbitrum (ARB) 가격 (11/16)",
+          "url": "https://www.coingecko.com/en/coins/arbitrum"
         },
         {
-          "title": "TokenPost · Arbitrum Rises 7.44% in Four Hours to $0.1329 on Binance (11/15)",
-          "url": "https://www.tokenpost.com/news/investing/57691"
+          "title": "CoinDesk · Crypto Week Ahead — ARB 해제·DAO 투표 (11/16)",
+          "url": "https://www.coindesk.com/markets/2026/11/16/fomc-minutes-nvidia-earnings-russia-s-retail-crypto-rules-crypto-week-ahead"
         },
         {
-          "title": "Coinranking · Arbitrum governance vote on 100 million ARB USDG plan ends (11/13 업데이트)",
-          "url": "https://coinranking.com/news/arbitrum-governance-vote-100-million-arb-usdg-plan-ends"
+          "title": "TokenPost · Four Token Unlocks Carry About $17.5 Million This Week (11/16)",
+          "url": "https://www.tokenpost.com/news/investing/57958"
         },
         {
-          "title": "CoinMarketCap · Arbitrum latest updates (11/15)",
-          "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"
-        },
-        {
-          "title": "CoinStats · Arbitrum (ARB) News Today (11/14)",
+          "title": "CoinStats · Arbitrum (ARB) News Today (11/15)",
           "url": "https://coinstats.app/ai/a/latest-news-for-arbitrum"
         },
         {
-          "title": "TokenPost · GMX Will End Governance Committee and Move Arbitrum Role to Contributors (11/11)",
-          "url": "https://www.tokenpost.com/news/technology/54100"
+          "title": "crypto.news · Arbitrum moved stolen Binance funds. Returning them takes a vote (11/3)",
+          "url": "https://crypto.news/arbitrum-moved-stolen-binance-funds-returning-them-takes-a-vote/"
         }
       ]
     }
