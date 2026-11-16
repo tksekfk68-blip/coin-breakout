@@ -1,268 +1,272 @@
 {
-  "updates": [
+ "updates": [
+  {
+   "at": "2026-11-16T18:12:00+09:00",
+   "level": "주의",
+   "title": "비트코인 8,848만 원 횡보, 원화 코인 92% 내림 — ETF 자금 유출·극단적 공포 지속",
+   "lines": [
+    "비트코인은 8,848만 원 근처로 1시간 -0.5%, 4시간 -0.4%, 24시간 -1.7%예요. 큰 급락은 아니지만 업비트 원화 코인 약 92%가 내림세고 NCT -13.3%, KAVA -12.2%, DRV -8.1%가 많이 빠졌어요. 오른 건 SKR +23.1%, SANC +7.1% 정도예요.",
+    "해외에선 비트코인이 주말에 약 6만 2천 달러까지 밀렸다가(7월 이후 최저) 6만 4~6만 5천 달러로 조금 회복한 상태예요. 공포·탐욕 지수는 10으로 \"극단적 공포\"예요.",
+    "미국 비트코인 현물 ETF에서 13일까지 7거래일 연속 약 19억 달러가 빠져나갔고, 12월 연준 금리 인상 우려도 이어지고 있어요. 이번 주 앤트로픽 대형 상장(19일 예정)에 돈이 몰린다는 해석도 있지만 확인된 원인은 아니에요. 오늘 몇 시간 사이 새로 터진 뚜렷한 뉴스는 확인 안 됨.",
+    "이번 주 일정: 오늘 밤(한국 시간 17일 새벽) 연준 의장 발언, 18일 엔비디아 실적, 19일 새벽 연준 회의록이 나와요. 이때 변동이 커질 수 있어요.",
+    "왁스(WAXP) 4.72원: 첫 받침이자 반등 끝 기준선 4.55원(사상 최저가)보다 약 3.6% 위, 첫 벽 4.86원 아래예요. 4.55원이 깨지면 새 최저가 구간이에요.",
+    "아비트럼(ARB) 181원: 첫 받침 178원에 약 1.7%까지 가까워졌어요. 그 아래 기준선은 168원, 위로 첫 벽은 203원이에요."
+   ],
+   "sources": [
     {
-      "at": "2026-11-15T10:12:00+09:00",
-      "level": "주의",
-      "title": "비트코인 8,807만 원, 하루 -5.5% — 연준 12월 금리 인상 우려·ETF 자금 유출·롱 청산, 원화 코인 93% 내림",
-      "lines": [
-        "비트코인은 8,807만 원 근처로 1시간 -1.2%, 4시간 -2.5%, 24시간 -5.5%예요. 업비트 원화 코인 약 93%가 내림세고 KAVA -32.4%, SANC -24.8%, PENGU -21.2%가 크게 빠졌어요. 오른 건 PIEVERSE +10.1%, ORBS +6.3% 정도예요.",
-        "해외에선 비트코인이 6만 3천 달러대까지 밀려 8월 이후 가장 낮은 수준이에요. 11월 5일 약 8만 달러에서 9일 만에 약 21% 빠졌고, 이더리움·솔라나·XRP 등은 하루 9~12% 더 크게 내렸어요.",
-        "10월 물가와 고용이 예상보다 강하게 나오면서 연준이 12월에 금리를 올릴 거란 전망이 거의 확실시되고 있어요(CME 기준 인상 확률 거의 100%).",
-        "미국 비트코인 현물 ETF에서 11월 9~13일 약 10.7억 달러가 빠졌고(블랙록 IBIT 약 9억 달러), 24시간 강제 청산은 약 10억 달러로 대부분 상승에 건 롱 포지션이었어요. 공포·탐욕 지수는 13(극단적 공포)이에요. 거래소 자체 문제는 확인되지 않았어요.",
-        "WAXP 4.63원: 첫 받침이자 반등 끝 기준선 4.56원까지 약 1.5% 남았어요. 첫 벽은 4.86원, 강세 기준선은 6.41원이에요.",
-        "ARB 176원: 첫 받침·반등 끝 기준선 168원보다 약 4.8% 위, 첫 벽 178원 바로 아래예요. 강세 기준선은 255원으로 멀어요."
-      ],
-      "sources": [
-        {
-          "title": "CryptoTicker — Crypto news: bitcoin falls to $63,500, ether down 9% (Nov 14, 2026)",
-          "url": "https://cryptoticker.io/en/crypto-news-bitcoin-falls-to-63500-fed-hike-bets-november-14-2026/"
-        },
-        {
-          "title": "CryptoSlate — Bitcoin drops below $64,000 as bullish bets get wiped out over the weekend",
-          "url": "https://cryptoslate.com/bitcoin-drops-below-66000-as-bullish-bets-get-wiped-out/"
-        }
-      ]
+     "title": "Crypto week ahead: Fed, Nvidia, Anthropic IPO (crypto.news)",
+     "url": "https://crypto.news/bitcoin-fed-nvidia-anthropic-ipo-crypto-week-ahead/"
     },
     {
-      "at": "2026-11-13T14:15:20+09:00",
-      "level": "주의",
-      "title": "비트코인 9,417만 원, 하루 -5.5% — 엔비디아 CEO 사임 충격·연준 금리 인상 우려·ETF 자금 유출, 원화 코인 93% 내림",
-      "lines": [
-        "비트코인은 9,417만 원 근처로 1시간 -0.8%, 4시간 -2.5%, 24시간 -5.5%예요. 업비트 원화 코인 약 93%가 내림세고 POKT -5.5%, ZIL -5.3%, ONDO -3.8%가 많이 빠졌어요. 반대로 BIRB +6.2%, ERA +3.7% 정도만 올랐어요.",
-        "해외에선 비트코인이 8월 이후 처음으로 7만 달러 아래(약 6만 8천 달러대)까지 밀렸어요. 엔비디아 젠슨 황 CEO 사임 소식에 기술주가 흔들렸고, 예상보다 높은 물가에 연준이 12월에 금리를 또 올릴 수 있다는 말이 나오면서 달러가 약 19개월 만에 가장 강해졌어요.",
-        "미국 비트코인 현물 ETF에서는 11월 11일 하루 약 3억 달러(블랙록 IBIT 약 2.7억 달러)가 빠지는 등 5거래일 동안 약 14억 달러가 유출됐어요.",
-        "가격이 빠지면서 24시간 동안 약 12억 달러어치 레버리지 포지션이 강제 청산됐고, 대부분 상승에 걸었던 롱 포지션이었어요. 거래소 자체 문제는 확인되지 않았어요.",
-        "WAXP 4.94원: 첫 받침·반등 끝 기준선 4.86원과 첫 벽 5.11원 사이예요. 받침까지 약 1.6% 남았어요.",
-        "ARB 199원: 첫 받침이자 반등 끝 기준선 202원 아래로 내려왔어요. 다시 위로 올라서려면 202원 회복이 먼저고, 첫 벽은 약 221원이에요."
-      ],
-      "sources": [
-        {
-          "title": "crypto.news — Bitcoin price crashes below $70K as crypto liquidations hit $1.2B",
-          "url": "https://crypto.news/bitcoin-price-crash-below-70000-nvidia-liquidations/"
-        },
-        {
-          "title": "KuCoin — Bitcoin Drops to 9-Month Low as U.S. Stocks Fall Amid NVIDIA Turmoil",
-          "url": "https://www.kucoin.com/news/flash/bitcoin-falls-to-9-month-low-as-us-stocks-decline-amid-nvidia-turmoil"
-        },
-        {
-          "title": "Why It Moved — Daily Market Report, 13 November 2026",
-          "url": "https://whyitmoved.substack.com/p/daily-market-report-friday-13-november"
-        }
-      ]
+     "title": "Bitcoin rebounds from $61,970 (The Crypto Basic)",
+     "url": "https://thecryptobasic.com/2026/11/16/crypto-price-analysis-btc-eth-cc-qnt-and-zec-nov-16-canton-and-quant-gain-as-bitcoin-rebounds-from-61970"
     },
     {
-      "at": "2026-11-10T22:14:18+09:00",
-      "level": "주의",
-      "title": "비트코인 1억 50만 원 근처 보합, 원화 코인 71% 내림 — 오늘 밤 10시 30분 미국 물가 발표 앞두고 관망, ARB 기준선 아래로",
-      "lines": [
-        "비트코인은 1억 49만 원 근처로 1시간 거의 0%, 4시간 -0.7%, 24시간 -0.5%예요. 크게 빠지진 않았지만 업비트 원화 코인 약 71%가 내림세고 DOS -17%, BIRB -12%, ARB -7.6%가 많이 빠졌어요. 반대로 NCT +37%, MANTRA +31%처럼 일부 코인만 튀었어요.",
-        "오늘 밤 10시 30분(한국 시간)에 미국 10월 소비자물가(CPI)가 나와요. 12월 금리 인상 가능성이 높게 점쳐지는 상황이라 결과에 따라 코인 값이 크게 흔들릴 수 있어서, 발표 전 지켜보는 분위기예요.",
-        "11월 첫 주 비트코인 현물 ETF에서 약 12.8억 달러가 빠져나가 6월 말 이후 가장 큰 유출이었어요. 전날 미국 주식은 크게 올랐는데 비트코인은 따라가지 못하고 7만 5천 달러 근처에 머물러 있어요.",
-        "아비트럼(ARB)은 220원으로 '반등 끝 기준선'(약 221원) 바로 아래로 내려왔어요. ARB만의 뚜렷한 뉴스는 확인 안 됨이고, 다음 받침은 약 201원, 다시 올라서면 첫 벽은 231원이에요.",
-        "왁스(WAXP)는 5.12원으로 첫 받침 5.11원에 거의 붙어 있어요. 아래로 깨지면 다음 받침은 역대 최저 근처 4.86원, 위로는 첫 벽 5.44원·강세 기준선 7.26원이에요."
-      ],
-      "sources": [
-        {
-          "title": "CryptoTicker — Bitcoin price $74,600: US CPI without an annual rate",
-          "url": "https://cryptoticker.io/en/bitcoin-price-us-cpi-no-annual-rate/"
-        },
-        {
-          "title": "KuCoin — Crypto Market Report 2026-11-10",
-          "url": "https://kucoin.com/news/articles/crypto-daily-market-report-november-10-2026"
-        }
-      ]
-    },
-    {
-      "at": "2026-11-09T10:09:20+09:00",
-      "level": "주의",
-      "title": "비트코인 1억 200만 원대, 원화 코인 91% 내림 — 레버리지 청산·ETF 자금 유출에 위험 회피 분위기",
-      "lines": [
-        "비트코인은 1억 200만 원 근처로 최근 1시간 -1.4%, 4시간 -1.5%예요. 업비트 원화 코인 약 91%가 내림세고, CYBER -11%, CARV -9%, WLD -7% 등이 많이 빠졌어요.",
-        "코인만의 뚜렷한 악재보다는 위험 회피 분위기 영향이 커요. 달러 기준 비트코인은 7만 5천 달러 아래로 내려가 한때 7만 3,708달러(8월 이후 최저)까지 밀렸어요.",
-        "빚을 내 오를 쪽에 건 포지션이 강제로 정리(청산)된 규모가 10억 달러를 넘었고, 대부분이 상승 쪽 베팅이었어요. 미국 비트코인 ETF에서도 지난주(11/6까지) 약 12.8억 달러가 빠져나가 6월 이후 가장 많았어요.",
-        "미국 중간선거 뒤 규제 불확실성, 엔비디아 관련 악재로 인한 기술주 불안, 주말 이라크 쿠르드 지역 가스전 드론 공격 같은 지정학 뉴스도 분위기를 무겁게 했어요.",
-        "WAXP 5.03원(오늘 -5.8%): 첫 받침 4.86원과 첫 벽 5.11원 사이, 벽 바로 아래예요.",
-        "ARB 224원(오늘 -3.0%): 첫 받침 220.7원 바로 위, 첫 벽은 233원이에요. 받침과 거리가 1.5% 정도로 가까워요."
-      ],
-      "sources": [
-        {
-          "title": "investingLive — Bitcoin continues to trade heavily, under $74,600",
-          "url": "https://investinglive.com/cryptocurrency/bitcoin-continues-to-trade-heavily-under-74-600-risk-mood-turns-wary"
-        },
-        {
-          "title": "InteractiveCrypto — $1 Billion Deleveraging Wave Meets an Institutional ETF Retreat",
-          "url": "https://interactivecrypto.com/crypto-s-1-billion-deleveraging-wave-meets-an-institutional-etf-retreat"
-        },
-        {
-          "title": "Tech Insider — Crypto two-month lows after midterms",
-          "url": "https://tech-insider.org/crypto-two-month-lows-bitcoin-73708-ether-2223-after-midterms-2026/"
-        },
-        {
-          "title": "Bloomingbit — Bitcoin Falls Below $75,000 as Major Altcoins Slide",
-          "url": "https://en.bloomingbit.io/feed/news/123918"
-        }
-      ]
-    },
-    {
-      "at": "2026-11-06T10:10:00+09:00",
-      "level": "주의",
-      "title": "비트코인 1억 247만 원대, 하루 -5.4% — 미국 반도체·AI 주식 급락에 동반 하락, 원화 코인 91% 내림",
-      "lines": [
-        "비트코인은 1억 247만 원 근처로 하루 -5.4%, 최근 4시간 -1.3%예요. 업비트 원화 코인 약 91%가 내림세라 거의 전부가 같이 빠졌어요.",
-        "주된 원인은 미국 주식 급락이에요. 목요일(11/5) 반도체 지수가 하루 -12%로 2020년 3월 이후 최악이었고, 나스닥 -5.5%, 다우 -1,833포인트였어요. AI 관련주에 몰렸던 돈이 한꺼번에 빠지면서 코인도 같이 팔렸어요.",
-        "미국 중간선거에서 민주당이 의회를 가져가면서 데이터센터 규제 우려가 커진 것, 실업수당 청구가 예상보다 적어 연준이 금리를 내리기 어렵다는 해석도 부담이 됐어요. 하락 중 한 시간 만에 약 3.7억 달러(약 5천억 원)어치 빚투 매수 포지션이 강제 청산됐어요.",
-        "크게 내린 코인: ELSA -21%, AXIS -17%, BMT -13%, ENA -11%, UNI -11%. 오른 코인: SOPH +19%, CAP +12%, UP2 +12%, EDGE +11%.",
-        "WAXP 5.4원(하루 -5.1%): 첫 받침 5.11원보다 약 6% 위, 첫 벽 5.65원 아래 — 두 기준선 사이예요. 강세 기준선 7.26원과는 거리가 멀어요.",
-        "ARB 212원(하루 -3.2%): 첫 받침 199원보다 약 6% 위, 첫 벽 221원 아래 — 두 기준선 사이예요. 오늘 밤(한국시간) 미국 10월 고용지표 발표가 다음 변수예요."
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin Magazine — Bitcoin Price Crashes Over 5% to $75,000 as Tech Rout Wipes Out Leveraged Longs",
-          "url": "https://bitcoinmagazine.com/markets/bitcoin-price-drops-below-75000-tech"
-        },
-        {
-          "title": "CoinDesk — Bitcoin drops more than 5% as stocks close out worst day since April 2025",
-          "url": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
-        },
-        {
-          "title": "Yahoo Finance — Dow plunges 1,800 points, Nasdaq enters correction in AI trade meltdown",
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-plunge-chip-stocks-melt-down-193726491.html"
-        }
-      ]
-    },
-    {
-      "at": "2026-11-03T10:10:00+09:00",
-      "level": "주의",
-      "title": "비트코인은 1억 367만 원대로 소폭 약세, 알트는 78%가 하락 — 미국 중간선거 앞두고 관망",
-      "lines": [
-        "비트코인은 1억 367만 원 근처로 하루 -1.1%, 4시간 -0.3%라 크게 흔들리진 않았어요. 대신 업비트 원화 코인 약 78%가 내림세라 알트 쪽 약세가 더 넓게 퍼졌어요.",
-        "원인으로 짚을 만한 건 오늘(미국 시간 11월 3일) 미국 중간선거를 앞둔 관망 분위기, 지난주 말(10/30) 미국 비트코인 현물 ETF에서 약 6.4억 달러가 빠져나간 흐름, 바이낸스 보안 사고 보도 정도예요. 오늘 새로 나온 뚜렷한 단일 악재 뉴스는 확인 안 됐어요.",
-        "크게 내린 코인: BEAM -18%, POWR·G·LSK 약 -10%, NEAR -9%(해외에선 NEAR 롱 포지션 강제청산이 보도됐어요). 반대로 MPLX +23%, SOPH +21%는 크게 올랐어요.",
-        "WAXP 5.6원(-2.3%): 첫 벽 약 5.65원 바로 아래예요. 첫 받침은 약 5.11원, 강세 기준선 7.28원과는 거리가 멀어요. 알림은 반등 끝 기준선 이탈로 표시했어요.",
-        "ARB 211원(-4.1%): 첫 받침 약 199원과 첫 벽 약 221원 사이에 있어요. 강세 기준선(274원)과는 거리가 있어요.",
-        "이번 주엔 미국 고용지표(11/6)와 MSCI의 비트코인 보유 기업 관련 결정(11/11)이 남아 있어 변동성이 이어질 수 있어요."
-      ],
-      "sources": [
-        {
-          "title": "Bitcoin price holds near USD 77,400 as ETF outflows test demand",
-          "url": "https://www.ad-hoc-news.de/boerse/news/marktberichte/bitcoin-price-holds-near-usd-77-400-as-etf-outflows-test-demand/70447158"
-        },
-        {
-          "title": "US Midterms Tomorrow: 5 Scenarios for Bitcoin, XRP and Solana",
-          "url": "https://cryptoticker.io/en/us-midterms-2026-bitcoin-xrp-solana-scenarios"
-        },
-        {
-          "title": "NEAR Protocol price slides below $4.30 on long liquidations",
-          "url": "https://cryptoticker.io/en/near-protocol-price-drop-below-4-30-support"
-        }
-      ]
-    },
-    {
-      "at": "2026-11-01T22:12:00+09:00",
-      "level": "주의",
-      "title": "비트코인은 1억 459만 원대에서 잠잠 — ARB만 반등 끝 기준선(약 221원) 살짝 아래",
-      "lines": [
-        "비트코인은 1억 459만 원 근처로, 1시간·4시간·하루 변동이 모두 ±0.1% 안쪽이라 거의 움직이지 않았어요. 해외에선 \"10월 중순 이후 하루 변동폭이 가장 좁은 날\"이라는 분석이 나왔어요.",
-        "오늘 뚜렷한 원인 뉴스(연준·ETF 자금·대량 청산·거래소 사고)는 확인되지 않았어요. 주말이라 거래가 한산한 흐름에 가까워요.",
-        "업비트 원화 코인 중 약 53%가 내림세라 오름·내림이 반반 수준이에요. POWR(+24%)·G(+23%)는 크게 올랐고, LSK(-10%)·XPL(-9%)은 크게 내렸어요 — 개별 종목 움직임이에요.",
-        "ARB 220원: 반등 끝 기준선(약 220.7원)을 아주 살짝 밑돌아요. 첫 벽은 약 235원, 강세 기준선은 274원이에요.",
-        "WAXP 5.83원: 첫 받침(5.645원)과 첫 벽(6.26원) 사이, 기준선 사이 구간에 머물러 있어요."
-      ],
-      "sources": [
-        {
-          "title": "CryptoTicker — Bitcoin Price: Tightest Daily Range Since October 17",
-          "url": "https://cryptoticker.io/en/bitcoin-price-narrowest-daily-range-november-2026/"
-        },
-        {
-          "title": "CoinCodex — Daily Market Update for Nov 01, 2026",
-          "url": "https://coincodex.com/article/94686/daily-market-update-for-november-01-2026"
-        }
-      ]
-    },
-    {
-      "at": "2026-10-30T20:10:00+09:00",
-      "level": "주의",
-      "title": "비트코인 하루 -3%, 1억 440만 원대 — 바이낸스 해킹 여파 이어지고 ARB는 반등 끝 기준선 아래로",
-      "lines": [
-        "저녁 6시 30분 기준 비트코인 1억 440만 원. 하루 -3.0%, 4시간 -1.2%, 최근 1시간 -0.3%로 낙폭이 조금씩 더 커졌어요. 원화마켓 코인 약 57%가 내렸어요(아침 90%보다는 줄었어요).",
-        "가장 큰 원인은 여전히 어젯밤 바이낸스 해킹이에요. 해외 매체들은 피해 규모를 약 28억~63억 달러로 서로 다르게 보도하고 있고, 블록체인 분석업체 TRM Labs는 북한 라자루스 계열 소행으로 봤어요(바이낸스는 공식 확인 안 함). 바이낸스 출금은 아직 멈춘 상태로, 48시간 안에 재개 예정이라고 해요.",
-        "이 여파로 하루 동안 약 15억 달러(약 2조 원) 규모 선물 포지션이 강제 청산됐고, 대부분이 상승 쪽(롱)에 건 물량이었어요. 연준·ETF 같은 다른 뚜렷한 뉴스는 오늘 오후엔 확인 안 됐어요.",
-        "많이 내린 코인: MANTRA -7.2%, TRX -6.7%, GTC -6.3%. 많이 오른 코인: BEAM +35.6%, MPLX +28.2%, ELF +10%. 오른 코인은 개별 재료로 따로 움직이는 모습이에요.",
-        "WAXP 5.76원: 첫 받침(약 5.65원)과 첫 벽(약 5.90원) 사이에 있어요. 받침까지 약 2% 여유예요.",
-        "ARB 217원: 오늘 +4.3%지만 반등 끝 기준선(약 220.7원) 아래로 내려왔어요. 다시 위로 올라서는지가 관건이고, 첫 벽은 231원이에요."
-      ],
-      "sources": [
-        {
-          "title": "Blockonomi — Binance Hack Linked to North Korea’s Lazarus Group as Crypto Liquidations Top $1.5 Billion",
-          "url": "https://blockonomi.com/binance-hack-linked-to-north-koreas-lazarus-group-as-crypto-liquidations-top-1-5-billion"
-        },
-        {
-          "title": "CryptoTicker — Crypto Crash After Binance Hack: The Timeline of the Night",
-          "url": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations/"
-        },
-        {
-          "title": "Invezz — Bitcoin price crashes below $77K amid Binance hack fears, $1.5B liquidations",
-          "url": "https://invezz.com/news/2026/10/30/bitcoin-price-crash-binance-hack-crypto-liquidations/"
-        }
-      ]
-    },
-    {
-      "at": "2026-10-30T10:15:00+09:00",
-      "level": "주의",
-      "title": "원화마켓 90% 하락 — 바이낸스 지갑에서 수조 원 빠져나가 입출금 중단, 연준 '매파 동결'·빅테크 실적 부진 겹쳐",
-      "lines": [
-        "아침 8시 30분 기준 비트코인 1억 655만 원. 하루 -2.2%, 4시간 -1.8%, 최근 1시간 -0.3%로 밤사이 꾸준히 밀렸어요. 업비트 원화마켓 코인 약 90%가 내렸어요.",
-        "가장 큰 이슈는 바이낸스예요. 새벽 5시쯤 바이낸스 핫월렛에서 약 3조~4조 원어치(약 33억 달러) 코인이 외부로 빠져나갔고, 바이낸스는 입출금을 멈췄어요. 바이낸스는 '고객 자산은 안전하고 손실은 전부 보전하겠다'고 했지만 해킹 여부와 손실 규모는 아직 공식 확인 전이에요. 테더·서클이 일부(약 2조~3조 원 규모 스테이블코인)를 동결했어요.",
-        "그 전부터 분위기가 약했어요. 미국 연준이 금리를 동결하면서도 물가가 아직 높다고 해 '매파적 동결'로 받아들여졌고, 알파벳(구글) 실적 부진·삼성전자 기대 미달로 기술주가 빠지며 위험자산 회피가 커졌어요. 하루 새 선물 청산은 약 3억 5,600만 달러(대부분 상승 베팅)였어요.",
-        "오른 쪽은 TRX(+13.6%), LSK(+14.3%) 정도로 소수예요. 많이 내린 건 MPLX(-23%), AXIS(-20%), POD(-17%) 등이에요.",
-        "왁스(WAXP) 5.88원(-6.8%): 첫 받침 5.65원까지 약 4% 남았고, 첫 벽 6.19원과는 약 5% 차이로 두 기준선 사이예요.",
-        "아비트럼(ARB) 210원(-8.7%): 첫 받침 약 200원까지 약 5% 남았고, 첫 벽 약 221원과는 약 5% 차이로 두 기준선 사이예요. 바이낸스 소식이 정리될 때까지 흔들림이 클 수 있어요."
-      ],
-      "sources": [
-        {
-          "title": "CoinDesk — BTC dips below $80,000, $356M longs liquidated",
-          "url": "https://www.coindesk.com/markets/2026/10/29/bitcoin-dips-below-usd80-000-as-samsung-led-risk-aversion-in-tech-and-a-hawkish-fed-weigh-on-crypto"
-        },
-        {
-          "title": "FinanceFeeds — Binance pledges to cover all losses",
-          "url": "https://financefeeds.com/binance-will-cover-all-losses-hack/"
-        },
-        {
-          "title": "tech-ish — Binance pauses withdrawals after $3B+ leaves hot wallets",
-          "url": "https://tech-ish.com/2026/10/30/binance-pauses-withdrawals-suspected-hack/"
-        },
-        {
-          "title": "Cyber Kendra — $3.3B left hot wallets, stablecoins frozen",
-          "url": "https://www.cyberkendra.com/2026/10/binance-hot-wallet-hack-3-billion.html"
-        },
-        {
-          "title": "Motley Fool — Crypto Market Today, Oct. 29",
-          "url": "https://www.fool.com/coverage/stock-market-today/2026/10/29/crypto-market-today-oct-29-bitcoin-slides-below-usd80k-as-big-tech-earnings-uncertainty-and-market-volatility-intensify/"
-        }
-      ]
-    },
-    {
-      "at": "2026-10-22T20:10:00+09:00",
-      "level": "주의",
-      "title": "원화마켓 88% 하락 — 미국 빅테크 실적에 AI 투자 의심 재점화, 아시아 증시 급락·디파이 코인 약세",
-      "lines": [
-        "저녁 7시 20분 기준 비트코인 1억 963만 원. 하루 -1.4%, 4시간 -0.4%, 최근 1시간은 +0.2%로 급락보다는 천천히 밀린 뒤 버티는 모습이에요. 업비트 원화마켓 코인 88%가 내렸어요.",
-        "원인으로는 테슬라·메타 실적이 엇갈리면서 \"AI에 돈을 너무 많이 쓴다\"는 의심이 다시 커진 게 꼽혀요. 코스피 -3.5%, 홍콩 항셍 -3% 이상, 닛케이 -2.7%로 아시아 증시가 크게 빠졌고 미국 나스닥 선물도 -1.3%예요.",
-        "달러 기준 비트코인은 어젯밤 8만 4,800달러 가까이 올랐다가 8만 1,600달러까지 밀렸어요(최대 -2.9%, 2주 만에 가장 큰 하락). 하루 청산 규모는 약 4억 3천만 달러로 52% 늘었어요.",
-        "알트가 더 약했고 특히 디파이 코인이 앞장서 빠졌어요(디파이 지수 약 -6%, 에테나 ENA -7%). 업비트에서는 ALT -30%, CT -11%, PUFFER -10%가 많이 빠졌고, HP +32%, BLAST +15%는 거꾸로 올랐어요.",
-        "반면 미국 비트코인 ETF에는 이번 주 사흘 동안 10억 달러 넘게 들어와 자금 흐름 자체는 나쁘지 않아요. 오늘 한국은행 금리 결정, 미국 실업수당 지표 발표가 있어요.",
-        "보유 코인 — 왁스(WAXP) 6.36원(-1.2%): 첫 받침 6.19원과 첫 벽 6.57원 사이, 받침까지 약 3% 여유. 6.19원 아래면 반등 끝 기준선 5.65원을 봐야 해요. 아비트럼(ARB) 243원(-3.2%): 첫 받침 231원(약 5% 아래)과 첫 벽 258원 사이. 강세 기준선 285원, 반등 끝 기준선 약 200원이에요."
-      ],
-      "sources": [
-        {
-          "title": "CoinDesk: Bitcoin slides below $82,000 as AI doubts return, DeFi tokens lead declines",
-          "url": "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines"
-        },
-        {
-          "title": "KuCoin: Crypto Daily Market Report (Oct 22, 2026)",
-          "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-october-22-2026"
-        }
-      ]
+     "title": "Bitcoin at $64K slips behind Tesla (Bitcoin.com)",
+     "url": "https://news.bitcoin.com/featured/bitcoin-falls-behind-tesla-global-asset-ranking/"
     }
-  ]
+   ]
+  },
+  {
+   "at": "2026-11-15T10:12:00+09:00",
+   "level": "주의",
+   "title": "비트코인 8,807만 원, 하루 -5.5% — 연준 12월 금리 인상 우려·ETF 자금 유출·롱 청산, 원화 코인 93% 내림",
+   "lines": [
+    "비트코인은 8,807만 원 근처로 1시간 -1.2%, 4시간 -2.5%, 24시간 -5.5%예요. 업비트 원화 코인 약 93%가 내림세고 KAVA -32.4%, SANC -24.8%, PENGU -21.2%가 크게 빠졌어요. 오른 건 PIEVERSE +10.1%, ORBS +6.3% 정도예요.",
+    "해외에선 비트코인이 6만 3천 달러대까지 밀려 8월 이후 가장 낮은 수준이에요. 11월 5일 약 8만 달러에서 9일 만에 약 21% 빠졌고, 이더리움·솔라나·XRP 등은 하루 9~12% 더 크게 내렸어요.",
+    "10월 물가와 고용이 예상보다 강하게 나오면서 연준이 12월에 금리를 올릴 거란 전망이 거의 확실시되고 있어요(CME 기준 인상 확률 거의 100%).",
+    "미국 비트코인 현물 ETF에서 11월 9~13일 약 10.7억 달러가 빠졌고(블랙록 IBIT 약 9억 달러), 24시간 강제 청산은 약 10억 달러로 대부분 상승에 건 롱 포지션이었어요. 공포·탐욕 지수는 13(극단적 공포)이에요. 거래소 자체 문제는 확인되지 않았어요.",
+    "WAXP 4.63원: 첫 받침이자 반등 끝 기준선 4.56원까지 약 1.5% 남았어요. 첫 벽은 4.86원, 강세 기준선은 6.41원이에요.",
+    "ARB 176원: 첫 받침·반등 끝 기준선 168원보다 약 4.8% 위, 첫 벽 178원 바로 아래예요. 강세 기준선은 255원으로 멀어요."
+   ],
+   "sources": [
+    {
+     "title": "CryptoTicker — Crypto news: bitcoin falls to $63,500, ether down 9% (Nov 14, 2026)",
+     "url": "https://cryptoticker.io/en/crypto-news-bitcoin-falls-to-63500-fed-hike-bets-november-14-2026/"
+    },
+    {
+     "title": "CryptoSlate — Bitcoin drops below $64,000 as bullish bets get wiped out over the weekend",
+     "url": "https://cryptoslate.com/bitcoin-drops-below-66000-as-bullish-bets-get-wiped-out/"
+    }
+   ]
+  },
+  {
+   "at": "2026-11-13T14:15:20+09:00",
+   "level": "주의",
+   "title": "비트코인 9,417만 원, 하루 -5.5% — 엔비디아 CEO 사임 충격·연준 금리 인상 우려·ETF 자금 유출, 원화 코인 93% 내림",
+   "lines": [
+    "비트코인은 9,417만 원 근처로 1시간 -0.8%, 4시간 -2.5%, 24시간 -5.5%예요. 업비트 원화 코인 약 93%가 내림세고 POKT -5.5%, ZIL -5.3%, ONDO -3.8%가 많이 빠졌어요. 반대로 BIRB +6.2%, ERA +3.7% 정도만 올랐어요.",
+    "해외에선 비트코인이 8월 이후 처음으로 7만 달러 아래(약 6만 8천 달러대)까지 밀렸어요. 엔비디아 젠슨 황 CEO 사임 소식에 기술주가 흔들렸고, 예상보다 높은 물가에 연준이 12월에 금리를 또 올릴 수 있다는 말이 나오면서 달러가 약 19개월 만에 가장 강해졌어요.",
+    "미국 비트코인 현물 ETF에서는 11월 11일 하루 약 3억 달러(블랙록 IBIT 약 2.7억 달러)가 빠지는 등 5거래일 동안 약 14억 달러가 유출됐어요.",
+    "가격이 빠지면서 24시간 동안 약 12억 달러어치 레버리지 포지션이 강제 청산됐고, 대부분 상승에 걸었던 롱 포지션이었어요. 거래소 자체 문제는 확인되지 않았어요.",
+    "WAXP 4.94원: 첫 받침·반등 끝 기준선 4.86원과 첫 벽 5.11원 사이예요. 받침까지 약 1.6% 남았어요.",
+    "ARB 199원: 첫 받침이자 반등 끝 기준선 202원 아래로 내려왔어요. 다시 위로 올라서려면 202원 회복이 먼저고, 첫 벽은 약 221원이에요."
+   ],
+   "sources": [
+    {
+     "title": "crypto.news — Bitcoin price crashes below $70K as crypto liquidations hit $1.2B",
+     "url": "https://crypto.news/bitcoin-price-crash-below-70000-nvidia-liquidations/"
+    },
+    {
+     "title": "KuCoin — Bitcoin Drops to 9-Month Low as U.S. Stocks Fall Amid NVIDIA Turmoil",
+     "url": "https://www.kucoin.com/news/flash/bitcoin-falls-to-9-month-low-as-us-stocks-decline-amid-nvidia-turmoil"
+    },
+    {
+     "title": "Why It Moved — Daily Market Report, 13 November 2026",
+     "url": "https://whyitmoved.substack.com/p/daily-market-report-friday-13-november"
+    }
+   ]
+  },
+  {
+   "at": "2026-11-10T22:14:18+09:00",
+   "level": "주의",
+   "title": "비트코인 1억 50만 원 근처 보합, 원화 코인 71% 내림 — 오늘 밤 10시 30분 미국 물가 발표 앞두고 관망, ARB 기준선 아래로",
+   "lines": [
+    "비트코인은 1억 49만 원 근처로 1시간 거의 0%, 4시간 -0.7%, 24시간 -0.5%예요. 크게 빠지진 않았지만 업비트 원화 코인 약 71%가 내림세고 DOS -17%, BIRB -12%, ARB -7.6%가 많이 빠졌어요. 반대로 NCT +37%, MANTRA +31%처럼 일부 코인만 튀었어요.",
+    "오늘 밤 10시 30분(한국 시간)에 미국 10월 소비자물가(CPI)가 나와요. 12월 금리 인상 가능성이 높게 점쳐지는 상황이라 결과에 따라 코인 값이 크게 흔들릴 수 있어서, 발표 전 지켜보는 분위기예요.",
+    "11월 첫 주 비트코인 현물 ETF에서 약 12.8억 달러가 빠져나가 6월 말 이후 가장 큰 유출이었어요. 전날 미국 주식은 크게 올랐는데 비트코인은 따라가지 못하고 7만 5천 달러 근처에 머물러 있어요.",
+    "아비트럼(ARB)은 220원으로 '반등 끝 기준선'(약 221원) 바로 아래로 내려왔어요. ARB만의 뚜렷한 뉴스는 확인 안 됨이고, 다음 받침은 약 201원, 다시 올라서면 첫 벽은 231원이에요.",
+    "왁스(WAXP)는 5.12원으로 첫 받침 5.11원에 거의 붙어 있어요. 아래로 깨지면 다음 받침은 역대 최저 근처 4.86원, 위로는 첫 벽 5.44원·강세 기준선 7.26원이에요."
+   ],
+   "sources": [
+    {
+     "title": "CryptoTicker — Bitcoin price $74,600: US CPI without an annual rate",
+     "url": "https://cryptoticker.io/en/bitcoin-price-us-cpi-no-annual-rate/"
+    },
+    {
+     "title": "KuCoin — Crypto Market Report 2026-11-10",
+     "url": "https://kucoin.com/news/articles/crypto-daily-market-report-november-10-2026"
+    }
+   ]
+  },
+  {
+   "at": "2026-11-09T10:09:20+09:00",
+   "level": "주의",
+   "title": "비트코인 1억 200만 원대, 원화 코인 91% 내림 — 레버리지 청산·ETF 자금 유출에 위험 회피 분위기",
+   "lines": [
+    "비트코인은 1억 200만 원 근처로 최근 1시간 -1.4%, 4시간 -1.5%예요. 업비트 원화 코인 약 91%가 내림세고, CYBER -11%, CARV -9%, WLD -7% 등이 많이 빠졌어요.",
+    "코인만의 뚜렷한 악재보다는 위험 회피 분위기 영향이 커요. 달러 기준 비트코인은 7만 5천 달러 아래로 내려가 한때 7만 3,708달러(8월 이후 최저)까지 밀렸어요.",
+    "빚을 내 오를 쪽에 건 포지션이 강제로 정리(청산)된 규모가 10억 달러를 넘었고, 대부분이 상승 쪽 베팅이었어요. 미국 비트코인 ETF에서도 지난주(11/6까지) 약 12.8억 달러가 빠져나가 6월 이후 가장 많았어요.",
+    "미국 중간선거 뒤 규제 불확실성, 엔비디아 관련 악재로 인한 기술주 불안, 주말 이라크 쿠르드 지역 가스전 드론 공격 같은 지정학 뉴스도 분위기를 무겁게 했어요.",
+    "WAXP 5.03원(오늘 -5.8%): 첫 받침 4.86원과 첫 벽 5.11원 사이, 벽 바로 아래예요.",
+    "ARB 224원(오늘 -3.0%): 첫 받침 220.7원 바로 위, 첫 벽은 233원이에요. 받침과 거리가 1.5% 정도로 가까워요."
+   ],
+   "sources": [
+    {
+     "title": "investingLive — Bitcoin continues to trade heavily, under $74,600",
+     "url": "https://investinglive.com/cryptocurrency/bitcoin-continues-to-trade-heavily-under-74-600-risk-mood-turns-wary"
+    },
+    {
+     "title": "InteractiveCrypto — $1 Billion Deleveraging Wave Meets an Institutional ETF Retreat",
+     "url": "https://interactivecrypto.com/crypto-s-1-billion-deleveraging-wave-meets-an-institutional-etf-retreat"
+    },
+    {
+     "title": "Tech Insider — Crypto two-month lows after midterms",
+     "url": "https://tech-insider.org/crypto-two-month-lows-bitcoin-73708-ether-2223-after-midterms-2026/"
+    },
+    {
+     "title": "Bloomingbit — Bitcoin Falls Below $75,000 as Major Altcoins Slide",
+     "url": "https://en.bloomingbit.io/feed/news/123918"
+    }
+   ]
+  },
+  {
+   "at": "2026-11-06T10:10:00+09:00",
+   "level": "주의",
+   "title": "비트코인 1억 247만 원대, 하루 -5.4% — 미국 반도체·AI 주식 급락에 동반 하락, 원화 코인 91% 내림",
+   "lines": [
+    "비트코인은 1억 247만 원 근처로 하루 -5.4%, 최근 4시간 -1.3%예요. 업비트 원화 코인 약 91%가 내림세라 거의 전부가 같이 빠졌어요.",
+    "주된 원인은 미국 주식 급락이에요. 목요일(11/5) 반도체 지수가 하루 -12%로 2020년 3월 이후 최악이었고, 나스닥 -5.5%, 다우 -1,833포인트였어요. AI 관련주에 몰렸던 돈이 한꺼번에 빠지면서 코인도 같이 팔렸어요.",
+    "미국 중간선거에서 민주당이 의회를 가져가면서 데이터센터 규제 우려가 커진 것, 실업수당 청구가 예상보다 적어 연준이 금리를 내리기 어렵다는 해석도 부담이 됐어요. 하락 중 한 시간 만에 약 3.7억 달러(약 5천억 원)어치 빚투 매수 포지션이 강제 청산됐어요.",
+    "크게 내린 코인: ELSA -21%, AXIS -17%, BMT -13%, ENA -11%, UNI -11%. 오른 코인: SOPH +19%, CAP +12%, UP2 +12%, EDGE +11%.",
+    "WAXP 5.4원(하루 -5.1%): 첫 받침 5.11원보다 약 6% 위, 첫 벽 5.65원 아래 — 두 기준선 사이예요. 강세 기준선 7.26원과는 거리가 멀어요.",
+    "ARB 212원(하루 -3.2%): 첫 받침 199원보다 약 6% 위, 첫 벽 221원 아래 — 두 기준선 사이예요. 오늘 밤(한국시간) 미국 10월 고용지표 발표가 다음 변수예요."
+   ],
+   "sources": [
+    {
+     "title": "Bitcoin Magazine — Bitcoin Price Crashes Over 5% to $75,000 as Tech Rout Wipes Out Leveraged Longs",
+     "url": "https://bitcoinmagazine.com/markets/bitcoin-price-drops-below-75000-tech"
+    },
+    {
+     "title": "CoinDesk — Bitcoin drops more than 5% as stocks close out worst day since April 2025",
+     "url": "https://www.coindesk.com/business/2026/11/05/live-updates-bitcoin-steady-around-usd80-000-as-markets-rally-after-democratic-sweep"
+    },
+    {
+     "title": "Yahoo Finance — Dow plunges 1,800 points, Nasdaq enters correction in AI trade meltdown",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-5-dow-sp-500-nasdaq-plunge-chip-stocks-melt-down-193726491.html"
+    }
+   ]
+  },
+  {
+   "at": "2026-11-03T10:10:00+09:00",
+   "level": "주의",
+   "title": "비트코인은 1억 367만 원대로 소폭 약세, 알트는 78%가 하락 — 미국 중간선거 앞두고 관망",
+   "lines": [
+    "비트코인은 1억 367만 원 근처로 하루 -1.1%, 4시간 -0.3%라 크게 흔들리진 않았어요. 대신 업비트 원화 코인 약 78%가 내림세라 알트 쪽 약세가 더 넓게 퍼졌어요.",
+    "원인으로 짚을 만한 건 오늘(미국 시간 11월 3일) 미국 중간선거를 앞둔 관망 분위기, 지난주 말(10/30) 미국 비트코인 현물 ETF에서 약 6.4억 달러가 빠져나간 흐름, 바이낸스 보안 사고 보도 정도예요. 오늘 새로 나온 뚜렷한 단일 악재 뉴스는 확인 안 됐어요.",
+    "크게 내린 코인: BEAM -18%, POWR·G·LSK 약 -10%, NEAR -9%(해외에선 NEAR 롱 포지션 강제청산이 보도됐어요). 반대로 MPLX +23%, SOPH +21%는 크게 올랐어요.",
+    "WAXP 5.6원(-2.3%): 첫 벽 약 5.65원 바로 아래예요. 첫 받침은 약 5.11원, 강세 기준선 7.28원과는 거리가 멀어요. 알림은 반등 끝 기준선 이탈로 표시했어요.",
+    "ARB 211원(-4.1%): 첫 받침 약 199원과 첫 벽 약 221원 사이에 있어요. 강세 기준선(274원)과는 거리가 있어요.",
+    "이번 주엔 미국 고용지표(11/6)와 MSCI의 비트코인 보유 기업 관련 결정(11/11)이 남아 있어 변동성이 이어질 수 있어요."
+   ],
+   "sources": [
+    {
+     "title": "Bitcoin price holds near USD 77,400 as ETF outflows test demand",
+     "url": "https://www.ad-hoc-news.de/boerse/news/marktberichte/bitcoin-price-holds-near-usd-77-400-as-etf-outflows-test-demand/70447158"
+    },
+    {
+     "title": "US Midterms Tomorrow: 5 Scenarios for Bitcoin, XRP and Solana",
+     "url": "https://cryptoticker.io/en/us-midterms-2026-bitcoin-xrp-solana-scenarios"
+    },
+    {
+     "title": "NEAR Protocol price slides below $4.30 on long liquidations",
+     "url": "https://cryptoticker.io/en/near-protocol-price-drop-below-4-30-support"
+    }
+   ]
+  },
+  {
+   "at": "2026-11-01T22:12:00+09:00",
+   "level": "주의",
+   "title": "비트코인은 1억 459만 원대에서 잠잠 — ARB만 반등 끝 기준선(약 221원) 살짝 아래",
+   "lines": [
+    "비트코인은 1억 459만 원 근처로, 1시간·4시간·하루 변동이 모두 ±0.1% 안쪽이라 거의 움직이지 않았어요. 해외에선 \"10월 중순 이후 하루 변동폭이 가장 좁은 날\"이라는 분석이 나왔어요.",
+    "오늘 뚜렷한 원인 뉴스(연준·ETF 자금·대량 청산·거래소 사고)는 확인되지 않았어요. 주말이라 거래가 한산한 흐름에 가까워요.",
+    "업비트 원화 코인 중 약 53%가 내림세라 오름·내림이 반반 수준이에요. POWR(+24%)·G(+23%)는 크게 올랐고, LSK(-10%)·XPL(-9%)은 크게 내렸어요 — 개별 종목 움직임이에요.",
+    "ARB 220원: 반등 끝 기준선(약 220.7원)을 아주 살짝 밑돌아요. 첫 벽은 약 235원, 강세 기준선은 274원이에요.",
+    "WAXP 5.83원: 첫 받침(5.645원)과 첫 벽(6.26원) 사이, 기준선 사이 구간에 머물러 있어요."
+   ],
+   "sources": [
+    {
+     "title": "CryptoTicker — Bitcoin Price: Tightest Daily Range Since October 17",
+     "url": "https://cryptoticker.io/en/bitcoin-price-narrowest-daily-range-november-2026/"
+    },
+    {
+     "title": "CoinCodex — Daily Market Update for Nov 01, 2026",
+     "url": "https://coincodex.com/article/94686/daily-market-update-for-november-01-2026"
+    }
+   ]
+  },
+  {
+   "at": "2026-10-30T20:10:00+09:00",
+   "level": "주의",
+   "title": "비트코인 하루 -3%, 1억 440만 원대 — 바이낸스 해킹 여파 이어지고 ARB는 반등 끝 기준선 아래로",
+   "lines": [
+    "저녁 6시 30분 기준 비트코인 1억 440만 원. 하루 -3.0%, 4시간 -1.2%, 최근 1시간 -0.3%로 낙폭이 조금씩 더 커졌어요. 원화마켓 코인 약 57%가 내렸어요(아침 90%보다는 줄었어요).",
+    "가장 큰 원인은 여전히 어젯밤 바이낸스 해킹이에요. 해외 매체들은 피해 규모를 약 28억~63억 달러로 서로 다르게 보도하고 있고, 블록체인 분석업체 TRM Labs는 북한 라자루스 계열 소행으로 봤어요(바이낸스는 공식 확인 안 함). 바이낸스 출금은 아직 멈춘 상태로, 48시간 안에 재개 예정이라고 해요.",
+    "이 여파로 하루 동안 약 15억 달러(약 2조 원) 규모 선물 포지션이 강제 청산됐고, 대부분이 상승 쪽(롱)에 건 물량이었어요. 연준·ETF 같은 다른 뚜렷한 뉴스는 오늘 오후엔 확인 안 됐어요.",
+    "많이 내린 코인: MANTRA -7.2%, TRX -6.7%, GTC -6.3%. 많이 오른 코인: BEAM +35.6%, MPLX +28.2%, ELF +10%. 오른 코인은 개별 재료로 따로 움직이는 모습이에요.",
+    "WAXP 5.76원: 첫 받침(약 5.65원)과 첫 벽(약 5.90원) 사이에 있어요. 받침까지 약 2% 여유예요.",
+    "ARB 217원: 오늘 +4.3%지만 반등 끝 기준선(약 220.7원) 아래로 내려왔어요. 다시 위로 올라서는지가 관건이고, 첫 벽은 231원이에요."
+   ],
+   "sources": [
+    {
+     "title": "Blockonomi — Binance Hack Linked to North Korea’s Lazarus Group as Crypto Liquidations Top $1.5 Billion",
+     "url": "https://blockonomi.com/binance-hack-linked-to-north-koreas-lazarus-group-as-crypto-liquidations-top-1-5-billion"
+    },
+    {
+     "title": "CryptoTicker — Crypto Crash After Binance Hack: The Timeline of the Night",
+     "url": "https://cryptoticker.io/en/crypto-crash-binance-hack-timeline-liquidations/"
+    },
+    {
+     "title": "Invezz — Bitcoin price crashes below $77K amid Binance hack fears, $1.5B liquidations",
+     "url": "https://invezz.com/news/2026/10/30/bitcoin-price-crash-binance-hack-crypto-liquidations/"
+    }
+   ]
+  },
+  {
+   "at": "2026-10-30T10:15:00+09:00",
+   "level": "주의",
+   "title": "원화마켓 90% 하락 — 바이낸스 지갑에서 수조 원 빠져나가 입출금 중단, 연준 '매파 동결'·빅테크 실적 부진 겹쳐",
+   "lines": [
+    "아침 8시 30분 기준 비트코인 1억 655만 원. 하루 -2.2%, 4시간 -1.8%, 최근 1시간 -0.3%로 밤사이 꾸준히 밀렸어요. 업비트 원화마켓 코인 약 90%가 내렸어요.",
+    "가장 큰 이슈는 바이낸스예요. 새벽 5시쯤 바이낸스 핫월렛에서 약 3조~4조 원어치(약 33억 달러) 코인이 외부로 빠져나갔고, 바이낸스는 입출금을 멈췄어요. 바이낸스는 '고객 자산은 안전하고 손실은 전부 보전하겠다'고 했지만 해킹 여부와 손실 규모는 아직 공식 확인 전이에요. 테더·서클이 일부(약 2조~3조 원 규모 스테이블코인)를 동결했어요.",
+    "그 전부터 분위기가 약했어요. 미국 연준이 금리를 동결하면서도 물가가 아직 높다고 해 '매파적 동결'로 받아들여졌고, 알파벳(구글) 실적 부진·삼성전자 기대 미달로 기술주가 빠지며 위험자산 회피가 커졌어요. 하루 새 선물 청산은 약 3억 5,600만 달러(대부분 상승 베팅)였어요.",
+    "오른 쪽은 TRX(+13.6%), LSK(+14.3%) 정도로 소수예요. 많이 내린 건 MPLX(-23%), AXIS(-20%), POD(-17%) 등이에요.",
+    "왁스(WAXP) 5.88원(-6.8%): 첫 받침 5.65원까지 약 4% 남았고, 첫 벽 6.19원과는 약 5% 차이로 두 기준선 사이예요.",
+    "아비트럼(ARB) 210원(-8.7%): 첫 받침 약 200원까지 약 5% 남았고, 첫 벽 약 221원과는 약 5% 차이로 두 기준선 사이예요. 바이낸스 소식이 정리될 때까지 흔들림이 클 수 있어요."
+   ],
+   "sources": [
+    {
+     "title": "CoinDesk — BTC dips below $80,000, $356M longs liquidated",
+     "url": "https://www.coindesk.com/markets/2026/10/29/bitcoin-dips-below-usd80-000-as-samsung-led-risk-aversion-in-tech-and-a-hawkish-fed-weigh-on-crypto"
+    },
+    {
+     "title": "FinanceFeeds — Binance pledges to cover all losses",
+     "url": "https://financefeeds.com/binance-will-cover-all-losses-hack/"
+    },
+    {
+     "title": "tech-ish — Binance pauses withdrawals after $3B+ leaves hot wallets",
+     "url": "https://tech-ish.com/2026/10/30/binance-pauses-withdrawals-suspected-hack/"
+    },
+    {
+     "title": "Cyber Kendra — $3.3B left hot wallets, stablecoins frozen",
+     "url": "https://www.cyberkendra.com/2026/10/binance-hot-wallet-hack-3-billion.html"
+    },
+    {
+     "title": "Motley Fool — Crypto Market Today, Oct. 29",
+     "url": "https://www.fool.com/coverage/stock-market-today/2026/10/29/crypto-market-today-oct-29-bitcoin-slides-below-usd80k-as-big-tech-earnings-uncertainty-and-market-volatility-intensify/"
+    }
+   ]
+  }
+ ]
 }
