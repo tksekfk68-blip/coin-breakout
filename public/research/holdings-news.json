@@ -1,72 +1,63 @@
 {
-  "writtenAt": "2026-11-17T07:50:00+09:00",
+  "writtenAt": "2026-11-18T07:45:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "약 0.00345달러로 11/15에 역대 최저가(약 0.00328달러)를 찍은 뒤 그 근처에 머물러 있어요. 왁스 자체의 새 소식은 이번에도 없어요.",
+      "summary": "업비트 약 4.68원으로 11/15에 찍은 최저가(4.55원) 바로 위에 머물러 있어요. 왁스 자체의 새 소식은 이번에도 없어요.",
       "good": [
-        "최근 하루는 -0.3~-0.9% 정도로 크게 더 빠지진 않았어요. 급락은 일단 멈춘 모습이에요(CoinGecko·CoinStats)",
+        "최저가(4.55원) 아래로 더 내려가진 않고 버티는 중이에요(업비트, 11/18 새벽 기준)",
         "브리지 해킹(10/22) 이후 최근 2주 안에 새로운 해킹·사고 소식은 나오지 않았어요"
       ],
       "bad": [
-        "11/15에 역대 최저가(약 0.00328달러)를 새로 썼어요. 한 주 동안은 약 -9.4%예요",
-        "하루 거래량이 약 49만 달러 수준으로 작아요. 사고팔 때 가격이 크게 튈 수 있어요",
-        "미국 기술주 급락과 비트코인 '극단적 공포' 분위기라, 시가총액이 작은 코인엔 더 불리해요",
+        "한 주 약 -8%, 한 달 약 -26%로 계속 내려가는 흐름이에요. 20·50·200일 평균선 모두 아래예요(업비트 기준)",
+        "거래량이 평소의 4분의 1 수준으로 줄었어요. 사고팔 때 가격이 크게 튈 수 있어요",
+        "비트코인이 다시 밀리고 코스피·미국 기술주도 약해, 작은 코인엔 더 불리한 분위기예요",
         "최근 2주 안에 나온 왁스 자체의 호재(업그레이드·제휴·상장) 소식은 찾지 못했어요"
       ],
       "onchain": [
-        "확인된 큰손 움직임 없음 — 최근 2주(11/3~11/17) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
+        "확인된 큰손 움직임 없음 — 최근 2주(11/4~11/18) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
       ],
       "upcoming": [],
       "sources": [
         {
-          "title": "CoinGecko · WAX (WAXP) 가격 (11/16)",
-          "url": "https://www.coingecko.com/en/coins/wax"
-        },
-        {
-          "title": "CoinStats · WAX (WAXP) 가격·역대 최저가 (11/16)",
-          "url": "https://coinstats.app/coins/wax/"
+          "title": "Coindar · WAX (WAXP) 일정·뉴스 (확인일 11/18)",
+          "url": "https://coindar.org/en/coin/wax"
         }
       ]
     },
     "KRW-ARB": {
-      "summary": "약 0.13달러로 한 주 약 -26%예요. 11/16 약 9,265만 ARB 정기 해제가 지나갔고, 동결 자금을 바이낸스에 돌려줄지 정하는 투표 결과를 기다리는 중이에요.",
+      "summary": "업비트 약 179원으로 한 주 약 -13%예요. 아비트럼이 수익·새 파트너 소식을 냈지만, 바이낸스 동결 자금 반환 투표 결과는 아직 확인되지 않았어요.",
       "good": [
-        "아비트럼 안 스테이블코인이 하루 새 약 9,180만 달러 늘었어요. 돈이 네트워크로 계속 들어오고 있다는 신호예요(11/15)",
-        "11/16 정기 해제는 예정대로 지나갔어요. 이번 달 해제 물량 부담은 일단 지나간 셈이에요",
-        "아비트럼이 새 유동성 거래 방식(propAMM)을 준비 중이라고 했어요. 날짜는 아직 정해지지 않았어요"
+        "아비트럼이 다섯 가지 수익원에서 약 740만 달러를 벌었다고 밝혔어요. 올해 누적 수익은 1,360만 달러가 넘어요(11/17)",
+        "미국 은행 크로스리버뱅크와 하베스트 파이낸스 등이 아비트럼 생태계에 합류했어요(11/17)",
+        "달러 스테이블코인 USDG의 모포 대출 시장 규모가 1.5억 달러를 넘었어요. 네트워크 사용이 늘고 있다는 신호예요(11/17)",
+        "11/16 정기 해제(유통량의 약 1.5%)는 예정대로 지나가, 이번 달 해제 부담은 일단 끝났어요"
       ],
       "bad": [
-        "약 0.1315달러로 한 주 약 -26%예요. 비트코인(약 -14%)보다 훨씬 많이 빠졌어요(CoinGecko)",
-        "11/16 약 9,265만 ARB(유통량의 약 1.5%)가 풀렸어요. 받은 쪽이 팔면 며칠간 매도 압력이 될 수 있어요",
-        "11/12 통과된 1억 ARB 보상안 물량도 앞으로 시장에 나올 수 있어요",
-        "보안위원회가 지갑 키 없이 자금을 옮길 수 있다는 게 드러나 '탈중앙화' 논란이 이어지고 있어요"
+        "한 주 약 -13%, 한 달 약 -33%로 내려가는 흐름이에요. 20·50·200일 평균선 모두 아래예요(업비트 기준)",
+        "11/16 풀린 약 9,265만 ARB를 받은 쪽이 팔면 며칠간 매도 압력이 될 수 있어요",
+        "보안위원회가 지갑 키 없이 자금을 옮길 수 있다는 게 드러나 '탈중앙화' 논란이 남아 있어요"
       ],
       "onchain": [
-        "보안위원회가 해킹 관련 약 7,456만 ARB와 8,426 ETH를 보관 주소에 묶어뒀어요. 11/16 끝나는 투표는 이를 바이낸스에 돌려주는 안건인데, 결과는 아직 확인하지 못했어요",
-        "ARB 선물 미결제약정이 2주 새 약 27% 줄었어요. 빚내서 거는 돈이 빠지고 있다는 뜻이에요(CoinStats, 11/15)",
-        "그 밖에 최근 2주 안에 아캄·룩온체인·웨일얼럿이 공개한 새 ARB 큰손 거래소 입출금은 확인되지 않았어요"
+        "보안위원회가 바이낸스 해킹 관련 약 7,456만 ARB와 8,426 ETH를 보관 주소에 묶어둔 상태예요. 11/16 끝난 반환 투표의 결과는 아직 확인하지 못했어요",
+        "그 밖에 최근 2주(11/4~11/18) 안에 아캄·룩온체인·웨일얼럿이 공개한 새 ARB 큰손 거래소 입출금은 확인되지 않았어요"
       ],
       "upcoming": [],
       "sources": [
         {
-          "title": "CoinGecko · Arbitrum (ARB) 가격 (11/16)",
-          "url": "https://www.coingecko.com/en/coins/arbitrum"
+          "title": "TokenPost · Arbitrum Says It Recorded $7.4 Million Across Five Revenue Streams (11/17)",
+          "url": "https://www.tokenpost.com/news/business/59730"
+        },
+        {
+          "title": "TokenPost · Arbitrum Adds Cross River Bank and Harvest Finance to Its Ecosystem (11/17)",
+          "url": "https://www.tokenpost.com/news/technology/59849"
         },
         {
           "title": "CoinDesk · Crypto Week Ahead — ARB 해제·DAO 투표 (11/16)",
           "url": "https://www.coindesk.com/markets/2026/11/16/fomc-minutes-nvidia-earnings-russia-s-retail-crypto-rules-crypto-week-ahead"
         },
         {
-          "title": "TokenPost · Four Token Unlocks Carry About $17.5 Million This Week (11/16)",
-          "url": "https://www.tokenpost.com/news/investing/57958"
-        },
-        {
-          "title": "CoinStats · Arbitrum (ARB) News Today (11/15)",
-          "url": "https://coinstats.app/ai/a/latest-news-for-arbitrum"
-        },
-        {
-          "title": "crypto.news · Arbitrum moved stolen Binance funds. Returning them takes a vote (11/3)",
-          "url": "https://crypto.news/arbitrum-moved-stolen-binance-funds-returning-them-takes-a-vote/"
+          "title": "Hokanews · Arbitrum Freezes 8,425 ETH and 74.5 Million ARB (11/7)",
+          "url": "https://www.hokanews.com/2026/11/arbitrum-freezes-8425-eth-and-745.html"
         }
       ]
     }
