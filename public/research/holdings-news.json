@@ -1,64 +1,51 @@
 {
-  "writtenAt": "2026-11-18T07:45:00+09:00",
+  "writtenAt": "2026-11-19T07:40:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "업비트 약 4.68원으로 11/15에 찍은 최저가(4.55원) 바로 위에 머물러 있어요. 왁스 자체의 새 소식은 이번에도 없어요.",
+      "summary": "업비트 약 4.8원으로 11/15 최저가(4.55원) 위에서 조금 반등했지만, 큰 흐름은 여전히 내려가는 중이에요. 왁스 자체의 새 소식은 없어요.",
       "good": [
-        "최저가(4.55원) 아래로 더 내려가진 않고 버티는 중이에요(업비트, 11/18 새벽 기준)",
+        "최저가(4.55원) 아래로는 다시 내려가지 않고 4.8원 근처까지 올라왔어요(업비트, 11/19 새벽 기준)",
+        "힘의 세기를 보여주는 RSI가 약 29로 '많이 팔린 상태'예요. 짧은 반등이 나오기 쉬운 자리이긴 해요",
         "브리지 해킹(10/22) 이후 최근 2주 안에 새로운 해킹·사고 소식은 나오지 않았어요"
       ],
       "bad": [
-        "한 주 약 -8%, 한 달 약 -26%로 계속 내려가는 흐름이에요. 20·50·200일 평균선 모두 아래예요(업비트 기준)",
-        "거래량이 평소의 4분의 1 수준으로 줄었어요. 사고팔 때 가격이 크게 튈 수 있어요",
-        "비트코인이 다시 밀리고 코스피·미국 기술주도 약해, 작은 코인엔 더 불리한 분위기예요",
+        "한 주 약 -5%, 한 달 약 -24%로 계속 내려가는 흐름이에요. 20·50·200일 평균선 모두 아래예요(업비트 기준)",
+        "거래량이 평소의 약 4분의 3 수준이라 사고팔 때 가격이 튈 수 있어요",
+        "연준이 금리를 더 올릴 신호를 주고 비트코인도 밀려, 작은 코인엔 불리한 분위기예요",
         "최근 2주 안에 나온 왁스 자체의 호재(업그레이드·제휴·상장) 소식은 찾지 못했어요"
       ],
       "onchain": [
-        "확인된 큰손 움직임 없음 — 최근 2주(11/4~11/18) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
+        "확인된 큰손 움직임 없음 — 최근 2주(11/5~11/19) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
       ],
       "upcoming": [],
       "sources": [
-        {
-          "title": "Coindar · WAX (WAXP) 일정·뉴스 (확인일 11/18)",
-          "url": "https://coindar.org/en/coin/wax"
-        }
+        {"title": "Coindar · WAX (WAXP) 일정·뉴스 (확인일 11/19)", "url": "https://coindar.org/en/coin/wax"}
       ]
     },
     "KRW-ARB": {
-      "summary": "업비트 약 179원으로 한 주 약 -13%예요. 아비트럼이 수익·새 파트너 소식을 냈지만, 바이낸스 동결 자금 반환 투표 결과는 아직 확인되지 않았어요.",
+      "summary": "업비트 약 173원으로 한 주 약 -15%예요. 수익·제휴 소식은 있었지만, 바이낸스 동결 자금 반환 투표는 아직 결과가 확인되지 않았어요.",
       "good": [
         "아비트럼이 다섯 가지 수익원에서 약 740만 달러를 벌었다고 밝혔어요. 올해 누적 수익은 1,360만 달러가 넘어요(11/17)",
         "미국 은행 크로스리버뱅크와 하베스트 파이낸스 등이 아비트럼 생태계에 합류했어요(11/17)",
-        "달러 스테이블코인 USDG의 모포 대출 시장 규모가 1.5억 달러를 넘었어요. 네트워크 사용이 늘고 있다는 신호예요(11/17)",
-        "11/16 정기 해제(유통량의 약 1.5%)는 예정대로 지나가, 이번 달 해제 부담은 일단 끝났어요"
+        "페닉스와 손잡고 양자컴퓨터에도 견디는 비밀 토큰 도구를 내놓기로 했어요(11/17)",
+        "11/16 정기 해제(약 9,265만 ARB)는 예정대로 지나가, 이번 달 해제 부담은 일단 끝났어요"
       ],
       "bad": [
-        "한 주 약 -13%, 한 달 약 -33%로 내려가는 흐름이에요. 20·50·200일 평균선 모두 아래예요(업비트 기준)",
-        "11/16 풀린 약 9,265만 ARB를 받은 쪽이 팔면 며칠간 매도 압력이 될 수 있어요",
+        "한 주 약 -15%, 한 달 약 -31%로 내려가는 흐름이에요. 20·50·200일 평균선 모두 아래예요(업비트 기준)",
+        "11/16 팀·초기 투자자에게 풀린 약 9,265만 ARB가 시장에 나오면 매도 압력이 될 수 있어요. 앞으로도 매달 해제가 이어져요",
+        "거래량이 평소의 절반 수준이라 반등 힘이 약해요",
         "보안위원회가 지갑 키 없이 자금을 옮길 수 있다는 게 드러나 '탈중앙화' 논란이 남아 있어요"
       ],
       "onchain": [
-        "보안위원회가 바이낸스 해킹 관련 약 7,456만 ARB와 8,426 ETH를 보관 주소에 묶어둔 상태예요. 11/16 끝난 반환 투표의 결과는 아직 확인하지 못했어요",
-        "그 밖에 최근 2주(11/4~11/18) 안에 아캄·룩온체인·웨일얼럿이 공개한 새 ARB 큰손 거래소 입출금은 확인되지 않았어요"
+        "보안위원회가 바이낸스 해킹 관련 약 7,450만 ARB와 약 8,425 ETH를 묶어둔 상태예요. 반환 투표 일정·결과는 아직 확인되지 않았어요",
+        "그 밖에 최근 2주(11/5~11/19) 안에 아캄·룩온체인·웨일얼럿이 공개한 새 ARB 큰손 거래소 입출금은 확인되지 않았어요"
       ],
       "upcoming": [],
       "sources": [
-        {
-          "title": "TokenPost · Arbitrum Says It Recorded $7.4 Million Across Five Revenue Streams (11/17)",
-          "url": "https://www.tokenpost.com/news/business/59730"
-        },
-        {
-          "title": "TokenPost · Arbitrum Adds Cross River Bank and Harvest Finance to Its Ecosystem (11/17)",
-          "url": "https://www.tokenpost.com/news/technology/59849"
-        },
-        {
-          "title": "CoinDesk · Crypto Week Ahead — ARB 해제·DAO 투표 (11/16)",
-          "url": "https://www.coindesk.com/markets/2026/11/16/fomc-minutes-nvidia-earnings-russia-s-retail-crypto-rules-crypto-week-ahead"
-        },
-        {
-          "title": "Hokanews · Arbitrum Freezes 8,425 ETH and 74.5 Million ARB (11/7)",
-          "url": "https://www.hokanews.com/2026/11/arbitrum-freezes-8425-eth-and-745.html"
-        }
+        {"title": "TokenPost · Arbitrum Says It Recorded $7.4 Million Across Five Revenue Streams (11/17)", "url": "https://www.tokenpost.com/news/business/59730"},
+        {"title": "TokenPost · Arbitrum Adds Cross River Bank and Harvest Finance to Its Ecosystem (11/17)", "url": "https://www.tokenpost.com/news/technology/59849"},
+        {"title": "CoinMarketCap · Arbitrum 최신 소식 정리 (11/18)", "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"},
+        {"title": "Hokanews · Arbitrum Freezes 8,425 ETH and 74.5 Million ARB (11/7)", "url": "https://www.hokanews.com/2026/11/arbitrum-freezes-8425-eth-and-745.html"}
       ]
     }
   }
