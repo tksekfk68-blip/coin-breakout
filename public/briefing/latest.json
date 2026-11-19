@@ -1,46 +1,61 @@
 {
-  "writtenAt": "2026-11-19T07:40:00+09:00",
-  "title": "연준 회의록 '금리 더 올린다' 신호에 비트코인 6.25만 달러로 밀려 — 달러 19개월 최고, 여전히 위험 구간",
+  "writtenAt": "2026-11-20T07:40:00+09:00",
+  "title": "미국 증시 급락(다우 -2.2%)에 비트코인 6.2만 달러대로 밀려 — ETF 자금 이탈 계속, 공포지수 10",
   "mood": "위험",
-  "moodNote": "연준이 12월 금리 인상을 사실상 예고했고 비트코인은 50일·200일 평균선 한참 아래예요. 지금은 지키는 게 먼저예요.",
+  "moodNote": "금리 인상 걱정에 미국 증시까지 크게 빠졌고, 비트코인은 50일 평균선 한참 아래예요. 지금은 지키는 게 먼저예요.",
   "coin": [
-    "비트코인은 11/19 0시 약 63,695달러(-1.74%)였다가, 미국 장 마감(새벽 6시) 무렵 약 62,534달러(-3.28%)까지 더 밀렸어요.",
-    "이더리움은 11/19 0시 기준 약 1,773달러(-1.93%)로 1,800달러 아래에 머물러 있어요.",
-    "미국 비트코인 현물 ETF에서 11/17 약 2.4억 달러가 빠져나갔어요. 그중 블랙록 IBIT가 약 2.1억 달러예요. 이더리움 ETF도 약 2,900만 달러 유출이에요.",
-    "크립토퀀트는 비트코인이 다시 '하락 국면'에 들어섰고 아직 바닥 신호는 없다고 봤어요. 지지 구간으로 6.2만~6.5만 달러를 꼽았어요.",
-    "알트코인은 리플 +1.6%, 솔라나 +0.8%로 버텼고, 하이퍼리퀴드는 -3.2%로 약했어요(11/19 0시 기준)."
+    "비트코인은 11/19 아침(미국 동부 6시) 약 63,748달러였다가, 미국 장 마감 무렵 약 61,500~61,800달러로 더 내려왔어요.",
+    "이더리움은 11/19 아침 약 1,802달러였고, 하루 사이 1,800달러 아래로 다시 내려갔어요.",
+    "미국 비트코인 현물 ETF에서 11/18 하루 약 3.07억 달러가 빠져나갔어요. 12개 펀드 모두 유출이었고, 11월 누적 유출은 약 29억 달러예요.",
+    "이더리움 현물 ETF도 11/18 약 3,980만 달러가 빠져나갔어요.",
+    "공포·탐욕 지수는 10으로 '극단적 공포' 상태예요. 분석가들은 6.2만 달러가 깨지면 6만 달러 시험도 가능하다고 봤어요."
   ],
   "macro": [
-    "11/19 새벽 공개된 연준 10월 회의록에서 거의 모든 위원이 추가 금리 인상이 맞다고 봤어요. 12월에 0.5%p 인상도 논의됐어요.",
-    "시장은 12월 금리 인상(0.25%p) 가능성을 약 95%로 보고 있어요. 달러지수는 약 103.8로 19개월 만에 가장 높아요.",
-    "11/18 미국 증시는 다우 -1.1%, 나스닥 +0.3%로 엇갈렸어요. 10년 국채금리는 약 5.06%로 조금 내렸고, 유가(WTI)는 약 83달러로 -3% 떨어졌어요.",
-    "코스피는 11/18 엔비디아 효과로 +1.99% 오른 5,067.44로 하루 만에 5,000을 되찾았어요. 원/달러 환율은 1,333원으로 5.2원 내렸어요."
+    "11/19 미국 증시는 다우 -2.19%, S&P500 -2.02%, 나스닥 -2.25%로 크게 떨어졌어요. S&P500은 6일 연속 하락이에요.",
+    "금리·물가 걱정과 비싼 주가 부담이 겹쳤고, 앤트로픽 상장(공모가 대비 +17% 마감)으로 AI 주식 매도도 나왔어요. 공포지수(VIX)는 약 28로 14% 올랐어요.",
+    "미국 실업수당 청구는 20.3만 건으로 예상(19.6만)보다 많았고, 필라델피아 제조업 지수는 6.3으로 크게 꺾였어요. 다만 원가 부담(가격 지수)은 58.2로 뛰어 금리 걱정은 그대로예요.",
+    "코스피는 11/19 +1.39% 오른 5,137.89로 이틀째 올랐지만, 외국인은 약 4,055억 원을 팔았어요. 원/달러 환율은 1,330원(종가)으로 조금 내렸어요."
   ],
   "events": [
     {
-      "when": "11/19(목) 22:30",
-      "what": "미국 주간 실업수당 청구·필라델피아 연준 제조업 지수",
-      "why": "고용이 탄탄하면 12월 금리 인상, 특히 0.5%p 인상 쪽에 힘이 실릴 수 있어요"
-    },
-    {
       "when": "11/21(토) 00:00",
       "what": "미국 미시간대 소비심리·기대 물가(확정치)",
-      "why": "사람들이 예상하는 물가가 높으면 금리 부담이 커져 코인에 불리해요"
+      "why": "사람들이 예상하는 물가가 높게 나오면 금리 인상 걱정이 커져 코인에 불리해요"
+    },
+    {
+      "when": "11/23(월) 23:45",
+      "what": "미국 S&P 글로벌 구매관리자지수(PMI) 예비치",
+      "why": "경기가 얼마나 식고 있는지 보여줘요. 너무 약하면 경기 걱정, 너무 강하면 금리 걱정이 커져요"
+    },
+    {
+      "when": "11/25(수) 22:30",
+      "what": "미국 3분기 성장률(수정치)·10월 PCE 물가",
+      "why": "연준이 가장 중시하는 물가 지표라 12월 금리 인상 크기에 직접 영향을 줘요"
+    },
+    {
+      "when": "11/26(목)~27(금)",
+      "what": "미국 추수감사절 휴장(27일은 조기 마감)",
+      "why": "거래가 얇아져 코인 가격이 작은 주문에도 크게 튈 수 있어요"
     }
   ],
   "strategy": [
-    "비트코인은 약 6.25만 달러로 50일 평균선과 200일 평균선 모두 한참 아래예요. 추세추종 기준으론 새로 들어갈 때가 아니에요.",
-    "연준이 금리를 더 올리겠다는 신호를 줬어요. 50일선 위 마감을 다시 확인할 때까지 신규 진입은 쉬는 게 원칙이에요.",
-    "들고 있는 코인은 손절 주문이 걸려 있는지부터 확인하세요. 목요일 밤 10시 30분 고용 지표 발표 때 가격이 크게 흔들릴 수 있어요.",
+    "비트코인은 약 6.2만 달러로 50일 평균선(지수평균 약 7.57만 달러)보다 한참 아래예요. 추세추종 기준으론 새로 들어갈 때가 아니에요.",
+    "미국 증시까지 흔들리고 ETF 자금도 계속 빠지고 있어요. 50일선 위 마감을 다시 확인할 때까지 신규 진입은 쉬는 게 원칙이에요.",
+    "들고 있는 코인은 손절 주문이 걸려 있는지부터 확인하세요. 다음 주 수요일 밤 PCE 물가 발표와 추수감사절 휴장 때 가격이 크게 흔들릴 수 있어요.",
     "꼭 들어가야 한다면 평소 절반 이하 크기로, 손절 주문을 먼저 건 다음에 사세요."
   ],
   "sources": [
-    {"title": "토큰포스트 · [자정 시세브리핑] 비트코인 63,695달러, 이더리움 1,773달러 (11/19)", "url": "https://www.tokenpost.kr/news/briefing/440393"},
-    {"title": "Finwire · Financial & Forex Market Recap: Nov. 18, 2026 (11/18)", "url": "https://finwire.io/news/forex-news/financial-forex-market-recap-nov-18-2026"},
-    {"title": "Bitcoin Sistemi · The Fed Releases Its Highly Anticipated Meeting Minutes (11/18)", "url": "https://en.bitcoinsistemi.com/breaking-the-fed-releases-its-highly-anticipated-meeting-minutes/"},
-    {"title": "Federal Reserve · Minutes of the FOMC, October 27-28, 2026 (11/18)", "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261118a.htm"},
-    {"title": "BitcoinWorld · Bitcoin ETFs Shed $240M as CryptoQuant Flags Bearish Phase (11/18)", "url": "https://bitcoinworld.co.in/bitcoin-etf-outflows-240m-cryptoquant-bearish-phase/"},
-    {"title": "포인트데일리 · 코스피, 2% 오른 5067 마감…하루만에 '오천피' 탈환 (11/18)", "url": "https://www.pointdaily.co.kr/news/articleView.html?idxno=326535"},
-    {"title": "CoinDesk · FOMC minutes, Nvidia earnings: Crypto Week Ahead (11/16)", "url": "https://www.coindesk.com/markets/2026/11/16/fomc-minutes-nvidia-earnings-russia-s-retail-crypto-rules-crypto-week-ahead"}
+    {"title": "Fortune · Current price of Bitcoin for November 19, 2026 (11/19)", "url": "https://fortune.com/article/price-of-bitcoin-11-19-2026/"},
+    {"title": "KuCoin · Crypto Daily Market Report (11/19)", "url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-november-19-2026"},
+    {"title": "Cryptonomist · Bitcoin price analysis, November ETF outflows (11/19)", "url": "https://en.cryptonomist.ch/2026/11/19/bitcoin-price-s-9b-november-etf-outflows-november-19-2026/"},
+    {"title": "Coinpaper · Bitcoin ETFs Lose Another $306 Million, November Outflows Near $2.9 Billion (11/19)", "url": "https://coinpaper.com/39052/bitcoin-et-fs-lose-another-306-million-november-outflows-near-2-9-billion"},
+    {"title": "KuCoin Flash · BTC·ETH spot ETFs net outflows on November 18 (11/19)", "url": "https://www.kucoin.com/news/flash/us-bitcoin-and-ethereum-spot-etfs-recorded-net-outflows-of-306-5m-and-39-8m-on-nov-18"},
+    {"title": "Motley Fool · Stock Market Today, Nov. 19: Dow Plunges 1,100 Points (11/19)", "url": "https://www.fool.com/coverage/stock-market-today/2026/11/19/stock-market-today-nov-19-dow-plunges-1-100-points-as-the-s-and-p-500-suffers-its-6th-straight-day-of-losses/"},
+    {"title": "Yahoo Finance · Stock market today: Dow sinks 1,100 points (11/19)", "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html"},
+    {"title": "1Trader · US Jobless Claims 203K vs 196K Forecast; Philly Fed 6.3 (11/19)", "url": "https://1trader.com/en/us-claims-2026-11-19/"},
+    {"title": "글로벌이코노믹 · 코스피, 금리 부담 누르고 이틀째 상승…5100선 안착 (11/19)", "url": "https://www.g-enews.com/article/Securities/2026/11/202611191646413045923c501012_1"},
+    {"title": "코리안투데이 · [오늘의 환율] 11월 20일 달러 1,331.1원 (11/20)", "url": "https://www.thekorean.today/61942"},
+    {"title": "LiteFinance · Weekly economic calendar 23.11–29.11.2026", "url": "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-23112026-29112026/"},
+    {"title": "Admirals · Stock market hours Thanksgiving & Black Friday 2026 (11/19)", "url": "https://admiralmarkets.com/analytics/traders-blog/stock-market-hours-thanksgiving-black-friday-2026"}
   ]
 }
