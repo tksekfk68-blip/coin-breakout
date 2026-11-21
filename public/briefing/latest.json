@@ -1,55 +1,43 @@
 {
-  "writtenAt": "2026-11-21T07:50:00+09:00",
-  "title": "비트코인 6만 달러 붕괴(최저 약 5.9만) — 미국 기술주 폭락·ETF 대량 유출에 하루 청산 15억 달러",
+  "writtenAt": "2026-11-22T07:40:00+09:00",
+  "title": "비트코인 한때 5.5만 달러(2년 만의 최저) 찍고 6만 달러 근처로 반등 — 청산 하루 20억 달러 넘어",
   "mood": "위험",
-  "moodNote": "미국 나스닥이 하루 5% 넘게 빠지면서 코인도 7월 이후 최저로 밀렸어요. 지금은 새로 사기보다 지키는 게 먼저예요.",
+  "moodNote": "반등은 나왔지만 2년 만의 최저까지 밀린 직후라 아직 흐름이 바뀌었다고 보기 어려워요. 새로 사기보다 지키는 게 먼저예요.",
   "coin": [
-    "비트코인은 11/20 밤(한국 시간 21일 새벽 1시쯤) 6만 달러 아래로 내려가 한때 약 58,995달러까지 떨어졌어요. 7월 초 이후 가장 낮은 수준이에요.",
-    "이더리움은 하루 약 8% 빠져 1,640달러대까지 내려왔어요. 솔라나도 한때 70달러 아래로 떨어졌어요.",
-    "하루 동안 강제 청산된 금액은 약 15.7~15.8억 달러였고, 그중 90% 넘게가 오를 거라고 베팅한 쪽이었어요.",
-    "미국 비트코인 현물 ETF에서 11/19 하루 약 5.82억 달러가 빠져나갔어요(블랙록 IBIT만 약 5.41억). 11월 누적 유출은 약 34.7억 달러예요.",
-    "공포·탐욕 지수는 12로 여전히 '극단적 공포'예요. 코인 전체 시가총액은 하루 약 8% 줄어 약 2.07조 달러가 됐어요."
+    "비트코인은 11/21(토) 한때 약 55,250달러까지 떨어졌어요. 2024년 9월 이후 가장 낮은 가격이에요.",
+    "그 뒤 9% 가까이 반등해 11/21 밤(한국 시간) 약 6만~6.07만 달러에서 거래됐어요. 24시간 기준으론 여전히 약 -1%예요.",
+    "같은 시점 이더리움은 약 1,690달러, 솔라나는 약 71달러, 리플은 약 0.93달러였어요.",
+    "하루 강제 청산은 약 24억 달러(코인데스크·코인글래스)로, 대부분이 오를 거라고 베팅한 쪽이었어요. 공포·탐욕 지수는 11로 '극단적 공포'예요.",
+    "미국 비트코인 현물 ETF는 11/20에도 약 1.25억 달러가 빠져나갔고(파사이드), 한 주 유출은 약 12.5억 달러, 11월 누적은 약 35.9억 달러예요."
   ],
   "macro": [
-    "11/20 미국 증시는 나스닥 -5.3%, S&P500 -3.7%, 다우 -1.9%로 마감했어요. S&P500은 고점 대비 10% 넘게 빠진 '조정' 구간에 들어갔고, 7일 연속 하락이에요.",
-    "AI·반도체 주식이 크게 빠진 게 원인이에요. 반도체 지수는 -10.7%, 엔비디아는 -13.8%였고, 미국의 대중국 반도체 수출 규제 강화 걱정도 겹쳤어요.",
-    "미국 10년 국채 금리는 5.04%에서 4.93%로 내려왔지만, 이란 전쟁과 호르무즈 해협 긴장으로 브렌트유는 92.57달러로 조금 올랐어요.",
-    "코스피는 11/20 -5.21% 폭락한 4,869.96으로 약 10개월 만에 최저였고, 외국인은 약 1.13조 원을 팔았어요. 원/달러 환율은 1,336.2원으로 6.2원 올랐어요."
+    "11/20(금) 미국 증시는 나스닥 -5.28%(22,617), S&P500 -3.70%(6,910), 다우 -1.93%로 마감했어요. S&P500은 7일 연속 하락이에요.",
+    "엔비디아가 하루 -14% 빠지는 등 AI·반도체주가 폭락했어요. 공포 지수(VIX)는 35를 넘어 올해 가장 높은 수준으로 마감했어요.",
+    "시장은 연준이 12/9(한국 시간 10일 새벽) 금리를 올릴 확률을 90% 넘게 보고 있어요. 금리 인상은 코인 같은 위험 자산에 부담이에요.",
+    "코스피는 11/20 -5.21%(4,869.96), 원/달러 환율은 1,336.2원이었어요. 브렌트유는 92.57달러로 소폭 올랐어요."
   ],
   "events": [
-    {
-      "when": "11/25(수) 22:30",
-      "what": "미국 3분기 성장률(수정치)·10월 PCE 물가·실업수당 청구",
-      "why": "연준이 가장 중시하는 물가 지표예요. 높게 나오면 12월 금리 인상 걱정이 커져 코인에 불리해요"
-    },
-    {
-      "when": "11/26(목) 04:00",
-      "what": "연준 베이지북(지역 경기 보고서)",
-      "why": "경기가 얼마나 식었는지 연준의 시각을 볼 수 있어요"
-    },
-    {
-      "when": "11/26(목)~28(토) 새벽",
-      "what": "미국 추수감사절 휴장(26일), 27일은 조기 마감(한국 28일 03:00)",
-      "why": "거래가 얇아져 코인 가격이 작은 주문에도 크게 튈 수 있어요"
-    },
-    {
-      "when": "11/27(금) 17:00",
-      "what": "데리비트 비트코인·이더리움 월간 옵션 만기",
-      "why": "만기 전후로 가격이 크게 흔들리는 경우가 많아요"
-    }
+    {"when": "11/25(수) 22:30", "what": "미국 3분기 성장률(수정치)·10월 PCE 물가·실업수당 청구", "why": "연준이 가장 중시하는 물가 지표예요. 높게 나오면 12월 금리 인상 걱정이 커져 코인에 불리해요"},
+    {"when": "11/26(목) 04:00", "what": "연준 베이지북(지역 경기 보고서)", "why": "경기가 얼마나 식었는지 연준의 시각을 볼 수 있어요"},
+    {"when": "11/26(목)~28(토) 새벽", "what": "미국 추수감사절 휴장(26일), 27일은 조기 마감(한국 28일 03:00)", "why": "거래가 얇아져 코인 가격이 작은 주문에도 크게 튈 수 있어요"},
+    {"when": "11/27(금) 17:00", "what": "데리비트 비트코인·이더리움 월간 옵션 만기", "why": "만기 전후로 가격이 크게 흔들리는 경우가 많아요"}
   ],
   "strategy": [
-    "비트코인은 약 5.9만~6만 달러로, 주요 이동평균선이 몰린 약 7.55만 달러보다 20% 넘게 아래예요. 50일 평균선 아래라 추세추종 기준으론 새로 들어갈 때가 아니에요.",
-    "미국 증시 조정과 ETF 대량 유출이 함께 이어지고 있어요. 50일선 위 마감을 다시 확인할 때까지 신규 진입은 쉬는 게 원칙이에요.",
-    "들고 있는 코인은 손절 주문이 걸려 있는지부터 확인하세요. 다음 주 수요일 밤 PCE 발표와 추수감사절 휴장 때 크게 흔들릴 수 있어요.",
+    "비트코인은 약 6만 달러로, 50일 평균선(약 7.5만 달러대)보다 20% 가까이 아래예요. 추세추종 기준으론 새로 들어갈 때가 아니에요.",
+    "급락 뒤 반등은 자주 나오지만, 50일선 위로 다시 올라서기 전까지는 '반등'일 뿐 '상승 전환'이 아니에요.",
+    "들고 있는 코인은 손절 주문이 걸려 있는지부터 확인하세요. 수요일 밤 PCE 발표와 추수감사절 휴장 때 크게 흔들릴 수 있어요.",
     "꼭 들어가야 한다면 평소 절반 이하 크기로, 손절 주문을 먼저 건 다음에 사세요."
   ],
   "sources": [
-    {"title": "CryptoTicker · Bitcoin crash live: price below $60,000 (11/20)", "url": "https://cryptoticker.io/en/bitcoin-crash-live-updates/"},
-    {"title": "Coin-Turk · Crypto liquidations hit $1.57 billion as BTC and ETH dive (11/20)", "url": "https://en.coin-turk.com/crypto-liquidations-hit-1-57-billion-as-btc-and-eth-dive-stocks-tumble/"},
-    {"title": "Fortune · Current price of Bitcoin for November 20, 2026 (11/20)", "url": "https://fortune.com/article/price-of-bitcoin-11-20-2026/"},
+    {"title": "The Crypto Basic · What Happened in Crypto on November 21, 2026 (11/21)", "url": "https://thecryptobasic.com/2026/11/21/tcb-daily-edition-what-happened-in-crypto-on-november-21-2026/"},
+    {"title": "Eurasia Business News · BTC Rebounds Above $60,000 as Solana Leads (11/21)", "url": "https://eurasiabusinessnews.com/2026/11/21/bitcoin-price-today-november-21-2026-btc-rebounds-above-60000-as-solana-leads-crypto-gains/"},
+    {"title": "KuCoin News · Bitcoin Surges $5,000 After Hitting Two-Year Low (11/21)", "url": "https://www.kucoin.com/news/flash/bitcoin-surges-5-000-after-hitting-two-year-low"},
+    {"title": "CoinGlass · Bitcoin Price Today (11/21 확인)", "url": "https://www.coinglass.com/currencies/BTC"},
+    {"title": "crypto.news · Bitcoin and Ether ETFs shed $1.47B in weekly outflows (11/21)", "url": "https://crypto.news/bitcoin-ether-etf-outflows-nov-16-20-2026/"},
+    {"title": "Noctaaa · Daily Brief Saturday 21 November 2026 (11/21)", "url": "https://noctaaa.substack.com/p/daily-brief-saturday-21-november-2026"},
+    {"title": "24/7 Wall St. · The Nasdaq-100 Is Now Just 49 Points From a Bear Market (11/21)", "url": "https://247wallst.com/investing/2026/11/21/the-nasdaq-100-is-now-just-49-points-from-a-bear-market/"},
+    {"title": "MarketCalls · Weekly Roundup 21 November 2026 (11/21)", "url": "https://www.marketcalls.in/futures-and-options/weekly-market-roundup-21-november-2026.html"},
     {"title": "U.Today · Bitcoin Price Analysis for November 20: Death Cross Is Here (11/20)", "url": "https://u.today/price-analysis/bitcoin-btc-price-analysis-for-november-20-death-cross-is-here"},
-    {"title": "AP(NBC Washington) · S&P 500 sinks 3.7%, Nasdaq goes negative for the year (11/20)", "url": "https://www.nbcwashington.com/news/national-international/november-20-stock-market-updates/4186324/"},
     {"title": "Businesskorea · 코스피 5.21% 폭락에 4,860선 추락 (11/20)", "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=281841"},
     {"title": "이투데이 · [환율마감] 원·달러 사흘만 상승 (11/20)", "url": "https://www.etoday.co.kr/news/view/2651048"},
     {"title": "SimianX · US Economic Calendar November 2026 (10/30 갱신)", "url": "https://www.simianx.ai/stories/us-economic-calendar-this-month-in-your-time-zone"}
