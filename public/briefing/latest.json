@@ -1,20 +1,20 @@
 {
-  "writtenAt": "2026-11-22T07:40:00+09:00",
-  "title": "비트코인 한때 5.5만 달러(2년 만의 최저) 찍고 6만 달러 근처로 반등 — 청산 하루 20억 달러 넘어",
+  "writtenAt": "2026-11-23T07:40:00+09:00",
+  "title": "비트코인 6만 달러 근처에서 버티기 — 이번 주 미국 물가(PCE) 발표가 다음 방향을 정할 듯",
   "mood": "위험",
-  "moodNote": "반등은 나왔지만 2년 만의 최저까지 밀린 직후라 아직 흐름이 바뀌었다고 보기 어려워요. 새로 사기보다 지키는 게 먼저예요.",
+  "moodNote": "주말 동안 큰 추가 하락은 없었지만, 2년 만의 최저 직후이고 금리 인상 걱정도 그대로예요. 새로 사기보다 지키는 게 먼저예요.",
   "coin": [
-    "비트코인은 11/21(토) 한때 약 55,250달러까지 떨어졌어요. 2024년 9월 이후 가장 낮은 가격이에요.",
-    "그 뒤 9% 가까이 반등해 11/21 밤(한국 시간) 약 6만~6.07만 달러에서 거래됐어요. 24시간 기준으론 여전히 약 -1%예요.",
-    "같은 시점 이더리움은 약 1,690달러, 솔라나는 약 71달러, 리플은 약 0.93달러였어요.",
-    "하루 강제 청산은 약 24억 달러(코인데스크·코인글래스)로, 대부분이 오를 거라고 베팅한 쪽이었어요. 공포·탐욕 지수는 11로 '극단적 공포'예요.",
-    "미국 비트코인 현물 ETF는 11/20에도 약 1.25억 달러가 빠져나갔고(파사이드), 한 주 유출은 약 12.5억 달러, 11월 누적은 약 35.9억 달러예요."
+    "비트코인은 주말 사이 5.9만~6.1만 달러를 오갔어요. 11/22(일) 오전 약 59,000달러, 11/23 새벽엔 약 61,000달러 근처였어요.",
+    "한 주 동안 비트코인은 약 -7.2%(65,468→60,752달러)였고, 한때 55,106달러까지 빠져 2024년 9월 이후 최저를 찍었어요.",
+    "11/22 기준 이더리움은 약 1,666달러, 리플은 약 0.92달러, 솔라나는 약 69달러였어요.",
+    "공포·탐욕 지수는 12로 '극단적 공포'예요(한 달 전엔 약 70). 이번 주엔 16개 알트코인의 큰 토큰 해제가 몰려 있다는 점도 부담이에요.",
+    "미국 비트코인 현물 ETF는 11월 들어 하루 빼고 거의 매일 돈이 빠져나갔고, 11/19엔 블랙록 IBIT에서만 하루 5.4억 달러가 빠져 사상 최대였어요."
   ],
   "macro": [
-    "11/20(금) 미국 증시는 나스닥 -5.28%(22,617), S&P500 -3.70%(6,910), 다우 -1.93%로 마감했어요. S&P500은 7일 연속 하락이에요.",
-    "엔비디아가 하루 -14% 빠지는 등 AI·반도체주가 폭락했어요. 공포 지수(VIX)는 35를 넘어 올해 가장 높은 수준으로 마감했어요.",
-    "시장은 연준이 12/9(한국 시간 10일 새벽) 금리를 올릴 확률을 90% 넘게 보고 있어요. 금리 인상은 코인 같은 위험 자산에 부담이에요.",
-    "코스피는 11/20 -5.21%(4,869.96), 원/달러 환율은 1,336.2원이었어요. 브렌트유는 92.57달러로 소폭 올랐어요."
+    "지난주 나스닥100은 10% 넘게 빠져 2020년 이후 가장 큰 주간 하락이었고, 엔비디아는 한 주 -23%로 18년 만의 최대 낙폭이었어요.",
+    "시장은 연준이 12월(한국 시간 12/10 새벽) 금리를 0.25%p 올릴 확률을 약 90~94%로 봐요. 현재 기준금리는 3.75~4.00%예요.",
+    "11/25 나올 10월 PCE 물가는 3.6%에서 3.8%로 오를 것으로 예상돼요. 예상보다 높으면 코인에 또 부담이 될 수 있어요.",
+    "주말이라 새 지표는 없고, 금요일(11/20) 코스피는 -5.21%(4,869.96), 원/달러 환율은 1,336.2원으로 마감했어요."
   ],
   "events": [
     {"when": "11/25(수) 22:30", "what": "미국 3분기 성장률(수정치)·10월 PCE 물가·실업수당 청구", "why": "연준이 가장 중시하는 물가 지표예요. 높게 나오면 12월 금리 인상 걱정이 커져 코인에 불리해요"},
@@ -23,20 +23,18 @@
     {"when": "11/27(금) 17:00", "what": "데리비트 비트코인·이더리움 월간 옵션 만기", "why": "만기 전후로 가격이 크게 흔들리는 경우가 많아요"}
   ],
   "strategy": [
-    "비트코인은 약 6만 달러로, 50일 평균선(약 7.5만 달러대)보다 20% 가까이 아래예요. 추세추종 기준으론 새로 들어갈 때가 아니에요.",
-    "급락 뒤 반등은 자주 나오지만, 50일선 위로 다시 올라서기 전까지는 '반등'일 뿐 '상승 전환'이 아니에요.",
-    "들고 있는 코인은 손절 주문이 걸려 있는지부터 확인하세요. 수요일 밤 PCE 발표와 추수감사절 휴장 때 크게 흔들릴 수 있어요.",
-    "꼭 들어가야 한다면 평소 절반 이하 크기로, 손절 주문을 먼저 건 다음에 사세요."
+    "비트코인은 약 6만 달러로, 50일 평균선(약 7.5만 달러대)보다 20% 가까이 아래예요. 추세추종 기준으론 아직 새로 들어갈 때가 아니에요.",
+    "분석가들은 6.1만~6.2만 달러를 첫 저항, 5.3만~5.6만 달러를 지지 구간으로 봐요. 저항을 넘어도 50일선 회복 전까진 반등일 뿐이에요.",
+    "그래도 들어간다면 평소의 절반 이하 크기로, 사기 전에 손절 주문부터 걸어 두세요.",
+    "PCE 발표(11/25 밤)와 추수감사절 연휴엔 가격이 크게 튈 수 있어요. 이미 가진 코인은 손절선이 제대로 걸려 있는지 먼저 확인하세요."
   ],
   "sources": [
-    {"title": "The Crypto Basic · What Happened in Crypto on November 21, 2026 (11/21)", "url": "https://thecryptobasic.com/2026/11/21/tcb-daily-edition-what-happened-in-crypto-on-november-21-2026/"},
-    {"title": "Eurasia Business News · BTC Rebounds Above $60,000 as Solana Leads (11/21)", "url": "https://eurasiabusinessnews.com/2026/11/21/bitcoin-price-today-november-21-2026-btc-rebounds-above-60000-as-solana-leads-crypto-gains/"},
-    {"title": "KuCoin News · Bitcoin Surges $5,000 After Hitting Two-Year Low (11/21)", "url": "https://www.kucoin.com/news/flash/bitcoin-surges-5-000-after-hitting-two-year-low"},
-    {"title": "CoinGlass · Bitcoin Price Today (11/21 확인)", "url": "https://www.coinglass.com/currencies/BTC"},
-    {"title": "crypto.news · Bitcoin and Ether ETFs shed $1.47B in weekly outflows (11/21)", "url": "https://crypto.news/bitcoin-ether-etf-outflows-nov-16-20-2026/"},
-    {"title": "Noctaaa · Daily Brief Saturday 21 November 2026 (11/21)", "url": "https://noctaaa.substack.com/p/daily-brief-saturday-21-november-2026"},
-    {"title": "24/7 Wall St. · The Nasdaq-100 Is Now Just 49 Points From a Bear Market (11/21)", "url": "https://247wallst.com/investing/2026/11/21/the-nasdaq-100-is-now-just-49-points-from-a-bear-market/"},
-    {"title": "MarketCalls · Weekly Roundup 21 November 2026 (11/21)", "url": "https://www.marketcalls.in/futures-and-options/weekly-market-roundup-21-november-2026.html"},
+    {"title": "블록미디어 · 엔비디아 23% 폭락·비트코인 6만달러…美 물가 발표 앞두고 금융시장 '긴장' (11/23)", "url": "https://www.blockmedia.co.kr/archives/1169136"},
+    {"title": "블록미디어 · 비트코인 6만달러 붕괴…하루 11억달러 강제 청산 (11/22)", "url": "https://www.blockmedia.co.kr/archives/1169095"},
+    {"title": "Bitcoin News Digest · November 22, 2026 (11/22)", "url": "https://bitcoinnewsdigest.substack.com/p/bitcoin-news-digest-november-22-2026"},
+    {"title": "World Today Journal · Bitcoin Traded Below 60,000 Dollars on Sunday Morning (11/22)", "url": "https://world-today-journal.com/bitcoin-traded-below-60000-dollars-on-sunday-morning/"},
+    {"title": "Bitcoin Sistemi · November 22, 2026: Bitcoin and Crypto News (11/22)", "url": "https://en.bitcoinsistemi.com/live/live-november-22-2026-bitcoin-and-crypto-news-daily-highlights/"},
+    {"title": "Cointribune · Bitcoin Collapses Below $60,000 (11/20)", "url": "https://www.cointribune.com/en/bitcoin-collapses-below-60000-and-causes-a-cascade-of-liquidations"},
     {"title": "U.Today · Bitcoin Price Analysis for November 20: Death Cross Is Here (11/20)", "url": "https://u.today/price-analysis/bitcoin-btc-price-analysis-for-november-20-death-cross-is-here"},
     {"title": "Businesskorea · 코스피 5.21% 폭락에 4,860선 추락 (11/20)", "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=281841"},
     {"title": "이투데이 · [환율마감] 원·달러 사흘만 상승 (11/20)", "url": "https://www.etoday.co.kr/news/view/2651048"},
