@@ -1,54 +1,56 @@
 {
-  "writtenAt": "2026-11-23T07:40:00+09:00",
+  "writtenAt": "2026-11-24T07:30:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "최근 2주 안에 왁스 자체의 새 소식은 없고, 한 달 새 30% 넘게 빠진 채 약세 흐름이 이어지고 있어요.",
+      "summary": "최근 2주 안에 왁스 자체의 새 소식은 여전히 없고, 시장 전체 공포 속에 약세 흐름이 이어지고 있어요.",
       "good": [
         "10/22 브리지 해킹 이후 최근 2주 안에 새로운 해킹·사고나 새 상장폐지 소식은 나오지 않았어요"
       ],
       "bad": [
         "11/15 기준 약 0.0035달러로 한 달 -32%였어요(코인마켓캡)",
-        "11/22 기술적 분석에서도 '하락(이탈)이 진행 중'이라는 평가가 이어졌어요(Stock Traders Daily)",
+        "11/22 기술적 분석에서도 '하락(이탈)이 진행 중'이라는 평가가 나왔어요(Stock Traders Daily)",
         "최근 2주 안에 나온 왁스 자체의 호재(업그레이드·제휴·상장) 소식은 찾지 못했어요",
-        "비트코인이 2년 만의 최저 근처에 머물고 공포 지수가 12라, 작은 코인부터 팔리기 쉬운 분위기예요"
+        "공포 지수가 9까지 떨어진 '극단적 공포' 장이라, 작은 코인부터 팔리기 쉬운 분위기예요"
       ],
       "onchain": [
-        "확인된 큰손 움직임 없음 — 최근 2주(11/9~11/23) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
+        "확인된 큰손 움직임 없음 — 최근 2주(11/10~11/24) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요",
+        "검색에 걸리는 '미국 정부의 FTX 압류 WAXP 이동' 기사는 2025년 11월 소식이라 이번 흐름과는 관계없어요"
       ],
       "upcoming": [],
       "sources": [
         {"title": "Stock Traders Daily · Where are the Opportunities in WAXPUSDT (11/22)", "url": "https://crypto.stocktradersdaily.com/news/where-are-the-opportunities-in-waxpusdt-20261122-9e1ee6ba"},
         {"title": "CoinMarketCap · Latest WAX News (11/15)", "url": "https://coinmarketcap.com/cmc-ai/wax/latest-updates/"},
-        {"title": "블록미디어 · 비트코인 6만달러 붕괴…하루 11억달러 강제 청산 (11/22)", "url": "https://www.blockmedia.co.kr/archives/1169095"}
+        {"title": "블록미디어 · '젠슨 황 효과'에도 비트코인 상승분 반납 (11/24)", "url": "https://www.blockmedia.co.kr/archives/1169654"}
       ]
     },
     "KRW-ARB": {
-      "summary": "11/21 약 0.112달러로 하루 4% 반등했지만 모든 평균선 아래이고, 한 달 -39%로 아직 바닥 신호는 없어요.",
+      "summary": "11/22 약 0.114달러로 이틀 연속 소폭 반등했지만 한 달 -35%로 모든 평균선 아래이고, 아직 바닥 신호는 없어요.",
       "good": [
-        "최근 7일 아비트럼 원에 스테이블코인이 약 3.27억 달러 늘어, 여러 체인 중 가장 많이 들어왔어요(토큰터미널, 11/20)",
-        "11/21 하루 +4.17% 반등했고, RSI가 25.9로 '과하게 팔린' 구간이에요(디아리오비트코인). 다만 반등 신호로 확정된 건 아니에요",
-        "11/12 아비트럼 DAO가 스테이블코인 USDG 성장 예산(1억 ARB) 안건을 큰 차이로 통과시켰어요",
+        "11/21까지 한 주 동안 아비트럼 원에 스테이블코인이 약 3.27억 달러 늘어 여러 체인 중 가장 많았어요(토큰터미널). 다만 체인 간 이동일 수도 있어요",
+        "11/22 하루 약 +6% 반등해 0.114달러였어요(코인마켓캡). RSI도 '과하게 팔린' 구간이지만 반등 신호로 확정된 건 아니에요",
+        "11/12 아비트럼 DAO가 스테이블코인 USDG 성장 예산(1억 ARB) 안건을 찬성 1.55억 ARB로 통과시켰어요",
         "로빈후드 체인과 아비트럼이 두 번째 개발자 멘토링 프로그램(상금 총 10만 달러)을 열었어요(11/20)"
       ],
       "bad": [
-        "11/21 기준 5일·20일·200일 평균선 모두 아래예요. 한 주 -15%, 2주 -33%, 한 달 -39%예요(디아리오비트코인)",
-        "11/18 스타일러스(새 스마트 계약 기능)의 신규 활성화가 버그로 멈췄고, 재개 날짜는 아직 없어요",
-        "팀·초기 투자자 몫 해제는 2027년 3월 마지막 회차까지 매달 이어져 꾸준한 매도 압력이 될 수 있어요",
-        "가장 가까운 지지선은 약 0.105~0.108달러, 그 아래로는 약 0.083달러가 거론돼요"
+        "11/22 기준 한 주 -15%, 한 달 약 -35%이고, 50일·200일 평균선 모두 아래예요(코인스탯츠·코인마켓캡)",
+        "11/16 팀·투자자 몫 약 9,265만 ARB(유통량의 1.34%)가 풀렸고, 이런 해제는 2027년 3월까지 매달 이어져요",
+        "11/18 스타일러스(새 스마트 계약 기능)의 신규 활성화가 멈춘 상태이고, 재개 날짜는 아직 없어요",
+        "지지선으로 약 0.11달러, 그 아래로 약 0.083달러가 거론돼요"
       ],
       "onchain": [
-        "바이낸스가 11/5 해킹 뒤 동결된 자산 반환을 아비트럼 DAO에 요청한 건은 아직 결론이 없어요(12월 말쯤 결정 전망)",
-        "그 밖에 최근 2주(11/9~11/23) 안에 아캄·룩온체인·웨일얼럿이 공개한 ARB 큰손 거래소 입출금은 확인되지 않았어요"
+        "확인된 큰손 움직임 없음 — 최근 2주(11/10~11/24) 안에 아캄·룩온체인·웨일얼럿이 공개한 ARB 큰손 거래소 입출금은 찾지 못했어요",
+        "11/20 하루 최대 단일 청산은 112만 달러였고, 최근 청산은 대부분 상승에 건 쪽(롱)이었어요(코인스탯츠)",
+        "바이낸스가 동결 자산 반환을 DAO에 요청한 건은 아직 결론이 없어요(12월 말쯤 결정 전망, 확정 아님)"
       ],
       "upcoming": [
         {"when": "12/6(일)", "what": "로빈후드 체인×아비트럼 멘토링 2기 신청 마감", "why": "개발자 유입 소식이지만 가격에 주는 영향은 작을 수 있어요"}
       ],
       "sources": [
-        {"title": "DiarioBitcoin · Arbitrum (ARB) rebota 4,17% el 21 de noviembre (11/21)", "url": "https://www.diariobitcoin.com/analisis/arbitrum-arb-rebota-417-el-21-de-noviembre-de-2026-pero-sigue-bajo-presion-tecnica/"},
-        {"title": "CoinMarketCap · Latest Arbitrum News (11/21)", "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"},
+        {"title": "CoinMarketCap · Latest Arbitrum News (11/22)", "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"},
         {"title": "CoinStats · Arbitrum (ARB) News Today (11/22)", "url": "https://coinstats.app/ai/a/latest-news-for-arbitrum"},
-        {"title": "CoinTurk · Arbitrum Ecosystem Records $1.3B TVL, ARB Supply Update (11/19)", "url": "https://en.coin-turk.com/arbitrum-ecosystem-records-1-3-billion-tvl-arb-supply-update-revealed/"},
-        {"title": "CryptoDaily · Arbitrum's $327M Stablecoin Gain Fails to Lift ARB (11/21)", "url": "https://cryptodaily.co.uk/2026/11/arbitrums-327m-stablecoin-gain-fails-to-lift-arb-as-sellers-keep-control"}
+        {"title": "The Defiant · Arbitrum's ARB Falls 26% in a Week (11/16)", "url": "https://thedefiant.io/news/markets/arbitrum-s-arb-falls-26-in-a-week-lagging-btc-and-eth"},
+        {"title": "CoinTurk · Standard Chartered sets $10 target for Arbitrum by 2030 (11/13)", "url": "https://en.coin-turk.com/standard-chartered-sets-10-target-for-arbitrum-by-2030-as-arb-trades-over-90yuzde-below-peak/"},
+        {"title": "DiarioBitcoin · Arbitrum (ARB) rebota 4,17% el 21 de noviembre (11/21)", "url": "https://www.diariobitcoin.com/analisis/arbitrum-arb-rebota-417-el-21-de-noviembre-de-2026-pero-sigue-bajo-presion-tecnica/"}
       ]
     }
   }
