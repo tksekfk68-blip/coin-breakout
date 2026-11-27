@@ -1,29 +1,36 @@
 {
-  "writtenAt": "2026-11-27T07:50:00+09:00",
+  "writtenAt": "2026-11-28T07:50:00+09:00",
   "coins": {
     "KRW-WAXP": {
-      "summary": "11/25 이유 없이 급등한 뒤 11/26 하루 약 6% 되돌렸어요. 새 호재 소식은 여전히 없어요.",
+      "summary": "11/25 급등·11/26 되돌림 뒤 업비트 약 4.71원(11/27 밤, 하루 약 -1.5%)으로 잠잠해요. 새 호재·악재 소식은 없어요.",
       "good": [
-        "11/25 하루 약 +13.7%(약 0.00385달러) 올랐고, 그날 거래액이 약 1,490만 달러로 평소의 20배 넘게 늘었어요(코인마켓캡)",
-        "10/22 브리지 해킹 이후 최근 2주 안에 새로운 해킹·사고나 상장폐지 소식은 나오지 않았어요"
+        "11/25 하루 약 +13.7%(약 0.00385달러) 올랐고, 그날 거래액이 약 1,490만 달러로 크게 늘었어요(코인마켓캡)",
+        "최근 7일 기준으론 약 +4.7%로, 11/21 저점(4.27원)보다는 올라와 있어요(업비트 기준)",
+        "최근 2주 안에 새로운 해킹·사고나 상장폐지 소식은 나오지 않았어요"
       ],
       "bad": [
-        "11/26엔 하루 약 -6.2%로 약 0.00351달러까지 되돌렸고, 거래액도 약 38% 줄었어요. 코인마켓캡은 '시장과 상관없는 개별 약세'라고 봤어요",
+        "11/26 하루 약 -6.2%로 약 0.00351달러까지 되돌렸고 거래액도 약 38% 줄었어요. 코인마켓캡은 '시장과 상관없는 개별 약세'라고 봤어요",
         "급등·급락 모두 이유(뉴스·공지)가 확인되지 않았어요. 이런 움직임은 다시 크게 흔들릴 수 있어요",
-        "30일·200일 평균선 아래에 있어요. 지지선은 약 0.00347달러, 그 아래 약 0.00312달러가 거론돼요(코인마켓캡)",
+        "30일 기준 약 -19%이고, 20·50·200일 평균선 모두 아래예요. 지지선은 약 0.00347달러, 그 아래 약 0.00312달러가 거론돼요(코인마켓캡)",
         "최근 2주 안에 나온 왁스 자체의 호재(업그레이드·제휴·상장) 소식은 찾지 못했어요"
       ],
       "onchain": [
-        "확인된 큰손 움직임 없음 — 최근 2주(11/13~11/27) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
+        "확인된 큰손 움직임 없음 — 최근 2주(11/14~11/28) 안에 아캄·룩온체인·웨일얼럿이 공개한 왁스 큰손 소식은 찾지 못했어요"
       ],
       "upcoming": [],
       "sources": [
-        {"title": "CoinMarketCap · Latest WAX (WAXP) Price Analysis (11/26)", "url": "https://coinmarketcap.com/cmc-ai/wax/price-analysis/"},
-        {"title": "Coinfomania · WAXP Climbs 30.5% Amid Strong Buying Pressure (11/25)", "url": "https://coinfomania.com/waxp-climbs-30-5-amid-strong-buying-pressure/"}
+        {
+          "title": "CoinMarketCap · Latest WAX (WAXP) Price Analysis (11/26)",
+          "url": "https://coinmarketcap.com/cmc-ai/wax/price-analysis/"
+        },
+        {
+          "title": "Coinfomania · WAXP Climbs 30.5% Amid Strong Buying Pressure (11/25)",
+          "url": "https://coinfomania.com/waxp-climbs-30-5-amid-strong-buying-pressure/"
+        }
       ]
     },
     "KRW-ARB": {
-      "summary": "11/26 약 0.115달러로 하루 +5% 반등했지만 한 주 약 -9.5%이고 평균선 아래예요. 다음 토큰 해제는 12/16이에요.",
+      "summary": "업비트 약 158원(11/27 밤)으로 0.10~0.12달러 지지 구간에서 버티는 중이에요. 다음 토큰 해제는 12/16이에요.",
       "good": [
         "11/25 힌칼이 아비트럼에서 산 스테이블코인(USDC·USDT 등)을 바로 비공개 지갑으로 받을 수 있게 연결했어요",
         "11/24 오프체인의 투자 조직 탠덤이 로빈후드와 함께 리알토의 500만 달러 투자에 참여했고, 리알토 스왑 기능이 아비트럼에서 열렸어요",
@@ -31,25 +38,52 @@
         "3분기 재단 수익은 약 740만 달러로 전 분기의 약 3배였어요. 다만 ARB 보유자에게 얼마나 돌아올지는 정해지지 않았어요"
       ],
       "bad": [
-        "11/26 기준 약 0.115달러로 한 주 약 -9.5%이고, 50일 평균선(약 0.16달러) 아래예요",
+        "11/25 약 0.114달러로 0.10~0.12달러 지지 구간까지 내려왔어요. 이 구간이 깨지면 더 약해질 수 있다는 분석이에요(크립토뉴스랜드)",
+        "30일 기준 약 -25%이고, 20·50·200일 평균선 모두 아래예요(업비트 기준)",
         "생태계 숫자는 좋아지는데 가격은 계속 약해요. 매달 풀리는 물량이 부담이에요(11/16 약 9,265만 ARB 해제)",
-        "스타일러스(새 스마트 계약 기능)의 신규 활성화는 아직 멈춘 상태예요(11/18 기준)",
-        "지지선으로 약 0.099달러, 그 아래 약 0.083달러가, 저항선으로 약 0.119달러가 거론돼요"
+        "스타일러스(새 스마트 계약 기능)의 신규 활성화는 아직 멈춘 상태예요(11/18 기준)"
       ],
       "onchain": [
-        "확인된 큰손 움직임 없음 — 최근 2주(11/13~11/27) 안에 아캄·룩온체인·웨일얼럿이 공개한 ARB 큰손 거래소 입출금은 찾지 못했어요",
+        "확인된 큰손 움직임 없음 — 최근 2주(11/14~11/28) 안에 아캄·룩온체인·웨일얼럿이 공개한 ARB 큰손 거래소 입출금은 찾지 못했어요",
         "선물 미결제약정은 약 1.16억 달러로 한 달 새 약 49% 줄었어요. 빚내서 거래하는 돈이 많이 빠졌다는 뜻이에요(코인스탯츠, 11/25)"
       ],
       "upcoming": [
-        {"when": "12/6(일)", "what": "로빈후드 체인×아비트럼 멘토링 2기 신청 마감", "why": "개발자 유입 소식이지만 가격 영향은 작을 수 있어요"},
-        {"when": "12/16(수)", "what": "팀·투자자 몫 약 9,265만 ARB 해제(약 1,000만 달러어치)", "why": "시장에 풀리는 물량이 늘어 가격에 부담이 될 수 있어요"}
+        {
+          "when": "12/6(일)",
+          "what": "로빈후드 체인×아비트럼 멘토링 2기 신청 마감",
+          "why": "개발자 유입 소식이지만 가격 영향은 작을 수 있어요"
+        },
+        {
+          "when": "12/16(수)",
+          "what": "팀·투자자 몫 약 9,265만 ARB 해제(약 1,000만 달러어치)",
+          "why": "시장에 풀리는 물량이 늘어 가격에 부담이 될 수 있어요"
+        }
       ],
       "sources": [
-        {"title": "BitcoinWorld · Arbitrum Adds Private Stablecoin Deposits via Hinkal (11/26)", "url": "https://bitcoinworld.co.in/arbitrum-hinkal-private-stablecoin-deposits"},
-        {"title": "CoinMarketCap · Latest Arbitrum (ARB) News Update (11/25)", "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"},
-        {"title": "CoinStats · Arbitrum (ARB) News Today: Why ARB Is Down (11/25)", "url": "https://coinstats.app/ai/a/latest-news-for-arbitrum"},
-        {"title": "CryptoDaily · ARB Unlocks for Team and Investors (11/17)", "url": "https://cryptodaily.co.uk/2026/11/arb-unlocks-12-5m-in-arbitrum-for-team-and-investors-as-extreme-fear-grips-crypto"},
-        {"title": "Tokenomist · Arbitrum (ARB) Unlock Events", "url": "https://tokenomist.ai/arbitrum/unlock-events"}
+        {
+          "title": "BitcoinWorld · Arbitrum Adds Private Stablecoin Deposits via Hinkal (11/26)",
+          "url": "https://bitcoinworld.co.in/arbitrum-hinkal-private-stablecoin-deposits"
+        },
+        {
+          "title": "CryptoNewsLand · ARB Returns to Major Support as Buyers Defend $0.10 (11/25)",
+          "url": "https://cryptonewsland.com/arb-returns-to-major-support-as-buyers-defend/"
+        },
+        {
+          "title": "CoinMarketCap · Latest Arbitrum (ARB) News Update (11/25)",
+          "url": "https://coinmarketcap.com/cmc-ai/arbitrum/latest-updates/"
+        },
+        {
+          "title": "CoinStats · Arbitrum (ARB) News Today: Why ARB Is Down (11/25)",
+          "url": "https://coinstats.app/ai/a/latest-news-for-arbitrum"
+        },
+        {
+          "title": "CryptoDaily · ARB Unlocks for Team and Investors (11/17)",
+          "url": "https://cryptodaily.co.uk/2026/11/arb-unlocks-12-5m-in-arbitrum-for-team-and-investors-as-extreme-fear-grips-crypto"
+        },
+        {
+          "title": "Tokenomist · Arbitrum (ARB) Unlock Events",
+          "url": "https://tokenomist.ai/arbitrum/unlock-events"
+        }
       ]
     }
   }
